@@ -47,6 +47,23 @@ body
     margin: 10 auto;
 }
 
+.a[href^="mailto:"]{
+
+	font-family: "Audimat", sans-serif;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.a[href^="mailto:"]:hover{
+	color:#FFF94A;
+}
+
+.a[href^="mailto:"]:visited{
+	text-decoration: none;
+}
+
+
 a:link {text-decoration:none;}
 a:visited {text-decoration:none;}
 a:hover {color:#FFF94A;}
