@@ -63,6 +63,14 @@ body
 	text-decoration: none;
 }
 
+.pic{
+  font-family: "AUdimat", sans-serif;
+  text-align:center;
+  color: #FFFFFF; 
+  font-weight: normal;
+  margin-top: 20px;
+
+}
 
 a:link {text-decoration:none;}
 a:visited {text-decoration:none;}
