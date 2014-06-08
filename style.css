@@ -1,91 +1,88 @@
-.align-centerwhite{
-	font-family: "AUdimat", sans-serif;
-  text-align:center;
-  color: #FFFFFF; 
-  font-weight: normal;
+header{
+
+	background-color: #DC3D24;
+	width: cover;
+	height: auto;
+	margin: 0;
+	padding: 10px;
+}
+header h1{
+	margin: 0;
+	padding: 0;
+
+}
+header ul{
+
+	padding: 0;
+	float: right;
+	display: inline-block;
+	margin: 0;
+
 }
 
-.middleguy{
+header li{
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+	margin-top: -8%;
+}
 
-background-color: #123456;
-background-position: center;
+header a{
+	text-decoration: none;
+	color: #111;
+}
+
+body{
+	margin: 0;
+	font-family: 'Ruda';
+	color: #E9E9E9;
+}
+
+
+#Spector{
+	font-size: 150px;
+	font-family: 'Ruda';
+	font-weight: 900;
+	text-align: center;
+	padding-top: 50px;
+	
+}
+
+#Dev{
+	font-size: 150px;
+	font-family: 'Ruda';
+	font-weight: 900;
+	text-align: center;
+}
+#container{
 width: cover;
-height:400px;
-margin: 30px 50px;
-text-align: center;
-opacity: 0.6;
+margin: 0 auto;
 }
 
-.middleguy p{
-	margin: 30px 40px;
-	font-weight: bold;
-	color: #000000;
-	opacity: 1.0;
+.row1{
+	width: cover;
+	height: 500px;
+	background-color: #222930;
 }
-.red{
-	font-family: "AUdimat", sans-serif;
-	color:#96F3F5;
-	font-weight: normal;
+.row2{
+	width: cover;
+	height: 600px;
+	background-color: #E9E9E9;
 }
-
-.font{
-	font-family: "AUdimat", sans-serif;
-	font-weight: normal;
-
+.row3{
+	width: cover;
+	height: 600px;
+	background-color: #4EB1BA;
 }
-body
-{
-	background-image:url("bg-9-full.jpg");
-	background-repeat:repeat;
-	background-size: cover;
+.row4{
+	width: cover;
+	height: 600px;
+	background-color:  #222930;
 }
+footer{
 
-#footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin: 10 auto;
-}
-
-.a[href^="mailto:"]{
-
-	font-family: "Audimat", sans-serif;
-	color: #FFFFFF;
-	font-weight: normal;
-	text-decoration: none;
-}
-
-.a[href^="mailto:"]:hover{
-	color:#FFF94A;
-}
-
-.a[href^="mailto:"]:visited{
-	text-decoration: none;
-}
-
-.pic{
-  font-family: "AUdimat", sans-serif;
-  text-align:center;
-  color: #FFFFFF; 
-  font-weight: normal;
-  margin-top: 20px;
+width: cover;
+height: 100px;
+background-color: #DC3D24;
 
 }
-#align-centermail{
-	font-family: "AUdimat", sans-serif;
-  text-align:center;
-  color: #FFFFFF; 
-  font-weight: normal;
-  color: #FFFFFF;
-}
-.linked{
-text-align: center;
-margin-top:1cm;
-
-}
-
-
-a:link {text-decoration:none;}
-a:visited {text-decoration:none;}
-a:hover {color:#FFF94A;}
-a:active {text-decoration:none;}
