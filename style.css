@@ -1,10 +1,10 @@
 header{
-
 	background-color: #DC3D24;
-	width: cover;
+	width: 100%;
 	height: auto;
 	margin: 0;
 	padding: 10px;
+	position: fixed;
 }
 header h1{
 	margin: 0;
@@ -23,13 +23,16 @@ header ul{
 header li{
 	float: left;
 	list-style: none;
-	margin-right: 10px;
-	margin-top: -8%;
+	margin-right: 30px;
+	margin-top: -4%;
 }
 
 header a{
 	text-decoration: none;
-	color: #111;
+	color: #222930;
+}
+header a:hover{
+	color: #E9E9E9;
 }
 
 body{
@@ -58,27 +61,69 @@ body{
 width: cover;
 margin: 0 auto;
 }
+/**row1**/
 
 .row1{
 	width: cover;
 	height: 500px;
 	background-color: #222930;
+	padding-top: 100px;
 }
+
+/**ROW 2**/
 .row2{
 	width: cover;
 	height: 600px;
 	background-color: #E9E9E9;
+	color: #111;
 }
+
+.row2 h2{
+
+	font-size: 50px;
+}
+.part1{
+	float: left;
+	width: 33%;
+	text-align: center;
+	visibility: hidden;
+	color: #222930;
+
+
+}
+.part2{
+	float: left;
+	width: 33%;
+	text-align: center;
+	visibility: hidden;
+	color: #4EB1BA;
+}
+
+.part3{
+	float: left;
+	width: 33%;
+	text-align: center;
+	visibility: hidden;
+	color: #222930;
+
+}
+
+/**Row3**/
 .row3{
 	width: cover;
 	height: 600px;
 	background-color: #4EB1BA;
 }
+
+/**row4**/
 .row4{
 	width: cover;
 	height: 600px;
 	background-color:  #222930;
 }
+
+
+/**footer**/
 footer{
 
 width: cover;
