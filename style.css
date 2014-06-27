@@ -64,7 +64,7 @@ margin: 0 auto;
 /**row1**/
 
 .row1{
-	width: cover;
+	width: 100%;
 	height: 500px;
 	background-color: #222930;
 	padding-top: 100px;
@@ -72,50 +72,68 @@ margin: 0 auto;
 
 /**ROW 2**/
 .row2{
-	width: cover;
+	width: 100%;
 	height: 600px;
 	background-color: #E9E9E9;
 	color: #111;
 	padding-top: 20px;
+	font-size: 30px;
 }
 
 .row2 h2{
 
-	font-size: 50px;
+	font-size: 60px;
+	text-align: center;
+}
+.row2 ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .part1{
 	float: left;
-	width: 33%;
+	width: 30%;
 	text-align: center;
 	visibility: hidden;
 	color: #222930;
-
-
+	line-height: 1.5;
 }
 .part2{
 	float: left;
-	width: 33%;
+	width: 30%;
 	text-align: center;
 	visibility: hidden;
 	color: #4EB1BA;
+	margin-left: 40px;
+	margin-right:40px;
+	line-height: 1.4;
+	font-size: 25px;
 }
+.mich{
 
+	font-size: 15px;
+}
 .part3{
 	float: left;
-	width: 33%;
+	width: 30%;
 	text-align: center;
 	visibility: hidden;
 	color: #222930;
-
+	line-height: 1.5;
+	font-size: 20px;
 }
 
 /**Row3**/
 .row3{
-	width: cover;
+	width: 100%;
 	height: 600px;
 	background-color: #4EB1BA;
 }
 
+.row3 h2{
+	margin: 0;
+	padding: 0;
+}
 /**row4**/
 .row4{
 	width: cover;
@@ -127,8 +145,26 @@ margin: 0 auto;
 /**footer**/
 footer{
 
-width: cover;
+width: 100%;
 height: 100px;
 background-color: #DC3D24;
 
+
+}
+
+footer h2{
+	margin: 0;
+	padding: 0;
+	float: right;
+	text-align: center;
+	margin-top: 34px;
+	margin-right: 40px;
+
+}
+
+footer img{
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+	margin-left: 20px;
 }
