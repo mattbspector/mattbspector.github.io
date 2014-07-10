@@ -24,7 +24,7 @@ $(document).ready(function(){
 	playerArray[0][18] = "Lesean Mccoy";//NAME
 	playerArray[0][19] = "RB"; //POSITION
 	playerArray[0][20] = "eagles"; //TEAM
-	playerArray[0][21] = "Images/Lesean-McCoy.png";//PIC
+	playerArray[0][21] = "Images/Lesean-Mccoy.png";//PIC
 	playerArray[0][22] = "LM";
 
 
