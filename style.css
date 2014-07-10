@@ -1,170 +1,476 @@
-header{
-	background-color: #DC3D24;
-	width: 100%;
-	height: auto;
-	margin: 0;
-	padding: 10px;
-	position: fixed;
-}
-header h1{
-	margin: 0;
-	padding: 0;
-
-}
-header ul{
-
-	padding: 0;
-	float: right;
-	display: inline-block;
-	margin: 0;
-
-}
-
-header li{
-	float: left;
-	list-style: none;
-	margin-right: 30px;
-	margin-top: -4%;
-}
-
-header a{
-	text-decoration: none;
-	color: #222930;
-}
-header a:hover{
-	color: #E9E9E9;
-}
-
 body{
+	font-family: 'Lato';
 	margin: 0;
-	font-family: 'Ruda';
-	color: #E9E9E9;
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+#playerGrid a{
+	padding:1em 0;
+	float: left;
+	text-decoration: none;
+	height: 200px;
+	text-align: center;
+	position: relative;
+	display: block;
+	z-index: 10;
+}
+#player-0{
+	background-color: #0a4737;
+	color: white;
+	text-decoration: none;
 }
 
+#player-1{
+	background-color: purple;
+	color: yellow;
+	text-decoration: none;
+}
 
-#Spector{
-	font-size: 150px;
-	font-family: 'Ruda';
-	font-weight: 900;
-	text-align: center;
-	padding-top: 50px;
+#player-2{
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+}
+
+#player-3{
+	background-color: red;
+	color: yellow;
+	text-decoration: none;
+}
+
+#player-4{
+	background-color: blue;
+	color: orange;
+	text-decoration: none;
+}
+
+#player-5{
+	background-color: blue;
+	color: lightgreen;
+	text-decoration: none;
+}
+#player-6{
+	
+	background-color: green;
+	color: yellow;
+	text-decoration: none;
+}
+
+#player-7{
+
+	background-color: orange;
+	color: blue;
+	text-decoration: none;
+}
+
+#player-8{
+	
+	background-color: grey;
+	color: red;
+	text-decoration: none;
+}
+#player-9{
+
+	background-color: gold;
+	color: black;
+	text-decoration: none;
+}
+
+#player-10{
+	
+	background-color: red;
+	color: blue;
+	text-decoration: none;
+}
+
+#player-11{
+	
+	background-color: green;
+	color: yellow;
+	text-decoration: none;
+}
+#player-12{
+	
+	background-color: darkblue;
+	color: gold;
+	text-decoration: none;
+}
+
+#player-13{
+	
+	background-color: blue;
+	color: silver;
+	text-decoration: none;
+}
+
+#player-14{
+
+	background-color: orange;
+	color: blue;
+	text-decoration: none;
+}
+#player-15{
+
+	background-color: orange;
+	color: black;
+	text-decoration: none;
+}
+
+#player-16{
+
+	background-color: gold;
+	color: black;
+	text-decoration: none;
+}
+
+#player-17{
+
+	background-color: blue;
+	color: silver;
+	text-decoration: none;
+}
+#player-18{
+
+	background-color: black;
+	color: yellow;
+	text-decoration: none;
+}
+
+#player-19{
+
+	background-color: blue;
+	color: orange;
+	text-decoration: none;
+}
+
+#player-20{
+
+	background-color: red;
+	color: black;
+	text-decoration: none;
+}
+#player-21{
+
+	background-color: green;
+	color: yellow;
+	text-decoration: none;
+}
+
+#player-22{
+	
+	background-color: yellow;
+	color: red;
+	text-decoration: none;
+}
+
+#player-23{
+
+	background-color: blue;
+	color: orange;
+	text-decoration: none;
+}
+#player-24{
+
+	background-color: orange;
+	color: blue;
+	text-decoration: blue;
+}
+
+#player-25{
+	
+	background-color: orange;
+	color: black;
+	text-decoration: none;
+}
+
+#player-26{
+	
+	background-color: orange;
+	color: blue;
+	text-decoration: none;
+}
+#player-27{
+
+	background-color: black;
+	color: yellow;
+	text-decoration: none;
+}
+
+#player-28{
+	
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+}
+#player-29{
+
+	background-color: green;
+	color: yellow;
+	text-decoration: blue;
+}
+
+#player-30{
+
+	background-color: red;
+	color: blue;
+	text-decoration: none;
+}
+
+#player-31{
+	
+	background-color: brown;
+	color: orange;
+	text-decoration: none;
+}
+#player-32{
+	
+	background-color: grey;
+	color: red;
+	text-decoration: none;
+}
+
+a img{
+	display:block;
+	margin: auto auto
+}
+
+.bears{
+	background-image: url(Images/Background/Bears.png);
+	background-size: cover;
+}
+.packers{
+	background-image: url(Images/Background/Packers.png);
+	background-size: cover;
+}
+
+.ravens{
+	background-image: url(Images/Background/Ravens.png);
+	background-size: cover;
+}
+
+.bengals{
+	background-image: url(Images/Background/Bengals.png);
+	background-size: cover;
+}
+
+.browns{
+	background-image: url(Images/Background/Browns.png);
+	background-size: cover;
+}
+
+.steelers{
+	background-image: url(Images/Background/Steelers.png);
+	background-size: cover;
+}
+
+.texans{
+	background-image: url(Images/Background/Texans.png);
+	background-size: cover;
+}
+.colts{
+	background-image: url(Images/Background/Colts.png);
+	background-size: cover;
+}
+
+.jaguars{
+	background-image: url(Images/Background/Jaguars.png);
+	background-size: cover;
+}
+
+.titans{
+	background-image: url(Images/Background/Titans.png);
+	background-size: cover;
+}
+
+.falcons{
+	background-image: url(Images/Background/Falcons.png);
+	background-size: cover;
+}
+
+.panthers{
+
+	background-image: url(Images/Background/panthers.png);
+	background-size: cover;
+}
+
+.saints{
+	background-image: url(Images/Background/Saints.png);
+	background-size: cover;
+}
+
+.buccaneers{
+	background-image: url(Images/Background/Buccaneers.png);
+	background-size: cover;
+}
+
+.bills{
+	background-image: url(Images/Background/Bills.png);
+	background-size: cover;
+}
+
+.dolphins{
+	background-image: url(Images/Background/Dolphins.png);
+	background-size: cover;
+}
+
+.patriots{
+
+	background-image: url(Images/Background/Patriots.png);
+	background-size: cover;
+}
+
+.jets{
+	background-image: url(Images/Background/Jets.png);
+	background-size: cover;
+}
+
+.cowboys{
+	background-image: url(Images/Background/Cowboys.png);
+	background-size: cover;
+}
+
+.giants{
+	background-image: url(Images/Background/Giants.png);
+	background-size: cover;
+}
+
+.redskins{
+	background-image: url(Images/Background/Redskins.png);
+	background-size: cover;
+}
+
+.broncos{
+	background-image: url(Images/Background/Broncos.png);
+	background-size: cover;
+}
+
+.raiders{
+	background-image: url(Images/Background/Raiders.png);
+	background-size: cover;
+}
+
+.chargers{
+	background-image: url(Images/Background/Chargers.png);
+	background-size: cover;
+}
+
+.cardinals{
+	background-image: url(Images/Background/Cardinals.png);
+	background-size: cover;
+}
+.chiefs{
+	background-image: url(Images/Background/Chiefs.png);
+	background-size: cover;
+}
+.eagles{
+	background-image: url(Images/Background/Eagles.png);
+	background-size: cover;
+}
+.lions{
+	background-image: url(Images/Background/Lions.png);
+	background-size: cover;
+}
+.vikings{
+	background-image: url(Images/Background/Vikings.png);
+	background-size: cover;
+}
+
+.fortyniners{
+	background-image: url(Images/Background/Fortyniners.png);
+	background-size: cover;
+}
+
+.seahawks{
+	background-image: url(Images/Background/Seahawks.png);
+	background-size: cover;
+}
+
+.rams{
+	background-image: url(Images/Background/Rams.png);
+	background-size: cover;
+}
+
+a h2{
+	padding: 0;
+	margin: 0;
+	width: cover;
+	background-color:#222; 
+	margin-top: -16.5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	font-style: none;
+	border-right: 2px #AAA solid;
+	color: #FFF;
+
+
+
+}
+.last h2{
+	border-right: none;
+}
+footer{
+
+	width: 100%;
+	background-color: #222;
+	color:#222;
+	position: absolute;
+	z-index: 100;
+}
+
+#inputs{
+	position: relative;
+	z-index: 10;
+}
+.containme{
+	position: fixed;
+	top:0;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+.holder{
+	padding: 1em 0;
+	height: 100%;
+	width: 100%;
+	display: block;
 	
 }
 
-#Dev{
-	font-size: 150px;
-	font-family: 'Ruda';
-	font-weight: 900;
-	text-align: center;
-}
-#container{
-width: cover;
-margin: 0 auto;
-}
-/**row1**/
-
-.row1{
+.second{
+	background-color: red;
+	padding: 1em 0;
+	height: 100%;
 	width: 100%;
-	height: 500px;
-	background-color: #222930;
-	padding-top: 100px;
+	
 }
 
-/**ROW 2**/
-.row2{
+.Ppage{
+	padding: 1em 0;
+	height: 100%;
 	width: 100%;
-	height: 600px;
-	background-color: #E9E9E9;
-	color: #111;
-	padding-top: 20px;
-	font-size: 30px;
+	display: none;
+	background-color: white;
 }
-
-.row2 h2{
-
-	font-size: 60px;
-	text-align: center;
-}
-.row2 ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.part1{
-	float: left;
-	width: 30%;
-	text-align: center;
-	visibility: hidden;
-	color: #222930;
-	line-height: 1.5;
-}
-.part2{
-	float: left;
-	width: 30%;
-	text-align: center;
-	visibility: hidden;
-	color: #4EB1BA;
-	margin-left: 40px;
-	margin-right:40px;
-	line-height: 1.4;
-	font-size: 25px;
-}
-.mich{
-
-	font-size: 15px;
-}
-.part3{
-	float: left;
-	width: 30%;
-	text-align: center;
-	visibility: hidden;
-	color: #222930;
-	line-height: 1.5;
-	font-size: 20px;
-}
-
-/**Row3**/
-.row3{
-	width: 100%;
-	height: 600px;
-	background-color: #4EB1BA;
-}
-
-.row3 h2{
-	margin: 0;
-	padding: 0;
-}
-/**row4**/
-.row4{
-	width: cover;
-	height: 600px;
-	background-color:  #222930;
-}
+.Ppage.LM{
+	background-color: green;
+	}
 
 
-/**footer**/
-footer{
-
-width: 100%;
-height: 100px;
-background-color: #DC3D24;
-
+.Ppage.AP{
+	background-color: purple;
+	
+}
+.Ppage.PM{
+	background-color: orange;
 
 }
-
-footer h2{
-	margin: 0;
-	padding: 0;
-	float: right;
-	text-align: center;
-	margin-top: 34px;
-	margin-right: 40px;
+.Ppage.CJ{
+	background-color: blue;
 
 }
+.Ppage.JC{
+	background-color: red;
 
-footer img{
-	text-align: center;
-	padding-top: 30px;
-	float: left;
-	margin-left: 20px;
 }

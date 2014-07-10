@@ -1,114 +1,957 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Ruda:400,900,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="grid.css">
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="animation.css">
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src = "JQuery.js"></script>
+<script type="text/javascript" src = "script.js"></script>
+<link rel ="shortcut icon" href="Images/crown.png">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<title>Fantasy Kings</title>
 </head>
-<header>
-<h1>Matthew Spector</h1>
-<ul>
-<li><a href="#sec1">HOME</a></li>
-<li><a href="#sec2">ABOUT</a></li>
-<li><a href="#sec3">PROJECTS</a></li>
-<li><a href="#sec4">CONTACT</a></li>
-
-</ul>
-</header>
-<script>
-	$(window).scroll(function() {
-		$('.part1').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("fadeIn");
-			}
-		});
-	});
-</script>
-<script>
-	$(window).scroll(function() {
-		$('.part2').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+350) {
-				$(this).addClass("fadeIn");
-			}
-		});
-	});
-</script>
-<script>
-	$(window).scroll(function() {
-		$('.part3').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+300) {
-				$(this).addClass("fadeIn");
-			}
-		});
-	});
-</script>
-
 <body>
-<div id = "container">
-	<A NAME="sec1">
-<div class = "row1">
-<div id = "Spector" class ="slideLeft">Spector
+<div id = "mainbody">
+<div id = "inputs">
+<input type = "text" id = "completion">Points Per Completion</input>
+<div class = "clear" ></div>
+<input type = "text" id = "PassYards">Passing Yards per Point</input>
+<div class = "clear"></div>
+<input type = "text" id = "PassTD">POINTS Per Passing Touchdown</input>
+<div class = "clear"></div>
+<input type = "text" id = "QBInt">POINTS PER INTERCEPTION THROWN</input>
+<div class = "clear"></div>
+<input type = "text" id = "RushYards">Rushing Yards Per Point</input>
+<div class = "clear"></div>
+<input type = "text" id = "RushTD">Points Per Rush TD</input>
+<div class = "clear" ></div>
+<input type = "text" id = "PPR">Points Per Reception</input>
+<div class = "clear"></div>
+<input type = "text" id = "RECyd">Receiving Yards per Point</input>
+<div class = "clear"></div>
+<input type = "text" id = "CatchTD">Points Per Receiving TD</input>
+<div class = "clear"></div>
+<input type = "text" id = "FG0-19">Points per Field Goal 0-19</input>
+<div class = "clear"></div>
+<input type = "text" id = "FG20-29">Points per Field Goal 20-29</input>
+<div class = "clear" ></div>
+<input type = "text" id = "FG30-39">Points per Field Goal 30-39</input>
+<div class = "clear"></div>
+<input type = "text" id = "FG40-49">Points per Field Goal 40-49</input>
+<div class = "clear"></div>
+<input type = "text" id = "FG50">Points per Field Goal 50+</input>
+<div class = "clear"></div>
+<input type = "text" id = "PAT">POINTS PER PAT</input>
+<div class = "clear"></div>
+<input type = "text" id = "SACKS">Points Per Sack</input>
+<div class = "clear" ></div>
+<input type = "text" id = "PICK">Points per Interception DEFENSE</input>
+<div class = "clear"></div>
+<button id = "submit">SUBMIT</button>
 </div>
-<div id = "Dev" class="slideRight">Developments
-</div>
-</div>
-	<A NAME="sec2">
-<div class = "row2">
-<div class = "part1">
-	<h2>SKILLS</h2>
 
-	<ul>
-		<li>C++/C</li>
-		<li>HTML/CSS/JavaScript</li>
-		<li>Objective C</li>
-		<li>Web Design/Development</li>
-		<li>Social Media</li>
-	</ul>
+
+
+<div class = "clear"></div>
+
+<div id = "playerGrid">
+	<div class = "section group firstsec">
+		<a href="#" id = "player-0" class = "current span_3_of_12 eagles LM"><h2>Lesean Mccoy</h2>
+			<img src="Images/Lesean-McCoy.png">
+		</a>
+		<a href="#" id = "player-1" class = "span_3_of_12 vikings AP"><h2>Adrian Peterson</h2>
+			<img src="Images/Adrian-Peterson.png"></a>
+		<a href="#" id = "player-2" class = "span_3_of_12 lions CJ"><h2>Calvin Johnson</h2>
+			<img src="Images/Calvin-Johnson.png"></a>
+		<a href="#" id = "player-3" class = "span_3_of_12 chiefs last JC"><h2>Jamaal Charles</h2>
+			<img src="Images/Jamaal-Charles.png"></a>
 	</div>
-	<div class = "part2">
-	<h2>EDUCATION</h2>
 
-	<ul>
-		<li>University of Michigan<span class = "mich"><br>L.S.A Class of 2016</span></li>
-		<li>B.S. in Computer Science</li>
-		<li>Steven M. Ross Minor in Business<span class = "mich"><br> Expected 2016</span></li>
-	</ul>
+	<div class = "section group">
+		<a href="#" id = "player-4" class = "span_3_of_12 bears MF"><h2>Matt Forte</h2>
+			<img src="Images/Matt-Forte.png">
+		</a>
+		<a href="#" id = "player-5" class = "span_3_of_12 seahawks ML"><h2>Marshawn Lynch</h2>
+			<img src="Images/Marshawn-Lynch.png">
+		</a>
+		<a href="#" id = "player-6" class = "span_3_of_12 packers EL"><h2>Eddie Lacy</h2>
+			<img src="Images/Eddie-Lacy.png">
+		</a>
+		<a href="#" id = "player-7" class = "span_3_of_12 broncos last PM"><h2>Peyton Manning</h2>
+			<img src="Images/Peyton-Manning.png">
+		</a>
 	</div>
-	<div class = "part3">
-	<h2>GOALS</h2>
 
-	<ul>
-		<li>Bacon ipsum dolor sit amet flank short loin short ribs pig rump pastrami boudin. Prosciutto turducken pancetta venison. Tri-tip t-bone spare ribs, venison pork belly fatback filet mignon salami kevin pork loin swine shankle doner bacon. Corned beef beef meatball swine sausage filet mignon leberkas chicken flank beef ribs pig chuck ribeye.</li>
-
-	</ul>
+	<div class = "section group">
+		<a href="#" id = "player-8" class = "span_3_of_12 buccaneers DM"><h2>Doug Martin</h2>
+			<img src="Images/Doug-Martin.png"></a>
+		<a href="#" id = "player-9" class = "span_3_of_12 saints JG"><h2>Jimmy Graham</h2>
+			<img src="Images/Jimmy-Graham.png"></a>
+		<a href="#" id = "player-10" class = "span_3_of_12 texans AF"><h2>Arian Foster</h2>
+			<img src="Images/Arian-Foster.png"></a>
+		<a href="#" id = "player-11" class = "span_3_of_12 packers last AR"><h2>Aaron Rodgers</h2>
+			<img src="Images/Aaron-Rodgers.png"></a>
 	</div>
-</div>
-<A NAME="sec3">
-<div class = "row3">
-<h2>Projects</h2>
-</div>
-</body>
+
+	<div class = "section group">
+		<a href="#" id = "player-12" class = "span_3_of_12 rams ZS"><h2>Zac Stacy</h2>
+			<img src="Images/Zac-Stacy.png"></a>
+		<a href="#" id = "player-13" class = "span_3_of_12 cowboys DM1"><h2>DeMarco Murray</h2>
+			<img src="Images/Demarco-Murray.png"></a>
+		<a href="#" id = "player-14" class = "span_3_of_12 broncos DT"><h2>Demaryius Thomas</h2>
+			<img src="Images/Demariyus-Thomas.png"></a>
+		<a href="#" id = "player-15" class = "span_3_of_12 bengals last AG"><h2>A.J. Green</h2>
+		<img src="Images/AJ-Green.png"></a>
+	</div>
 
 
-<A NAME="sec4">
+	<div class = "section group">
+		<a href="#" id = "player-16" class = "span_3_of_12 saints DB"><h2>Drew Brees</h2>
+			<img src="Images/Drew-Brees.png"></a>
+		<a href="#" id = "player-17" class = "span_3_of_12 cowboys DB1"><h2>Dez Bryant</h2>
+			<img src="Images/Dez-Bryant.png"></a>
+		<a href="#" id = "player-18" class = "span_3_of_12 steelers LB"><h2>Le'Veon Bell</h2>
+			<img src="Images/Leveon-Bell.png"></a>
+		<a href="#" id = "player-19" class = "span_3_of_12 bears last BM"><h2>Brandon Marshall</h2>
+			<img src="Images/Brandon-Marshall.png"></a>
+	</div>
+
+	<div class = "section group">
+		<a href="#" id = "player-20" class = "span_3_of_12 falcons JJ"><h2>Julio Jones</h2>
+			<img src="Images/Julio-Jones.png"></a>
+		<a href="#" id = "player-21" class = "span_3_of_12 packers JN"><h2>Jordy Nelson</h2>
+			<img src="Images/Jordy-Nelson.png"></a>
+		<a href="#" id = "player-22" class = "span_3_of_12 redskins AM"><h2>Alfred Morris</h2>
+			<img src="Images/Alfred-Morris.png"></a>
+		<a href="#" id = "player-23" class = "span_3_of_12 bears last AJ"><h2>Alshon Jeffery</h2>
+			<img src="Images/Alshon-Jeffery.png"></a>
+	</div>
+<div class = "section group">
+<a href="#" id = "player-24" class = "span_3_of_12 broncos MB"><h2>Montee Ball</h2>
+	<img src="Images/Montee-Ball.png"></a>
+<a href="#" id = "player-25" class = "span_3_of_12 bengals GB"><h2>Giovani Bernard</h2>
+	<img src="Images/Giovani-Bernard.png"></a>
+<a href="#" id = "player-26" class = "span_3_of_12 broncos JT"><h2>Julius Thomas</h2>
+	<img src="Images/Julius-Thomas.png"></a>
+<a href="#" id = "player-27" class = "span_3_of_12 steelers last AB"><h2>Antonio Brown</h2>
+	<img src="Images/Antonio-Brown.png"></a>
+</div>
+
+<div class = "section group">
+
+<a href="#" id = "player-28" class = "span_3_of_12 lions RB"><h2>Reggie Bush</h2>
+	<img src="Images/Reggie-Bush.png"></a>
+<a href="#" id = "player-29" class = "span_3_of_12 packers RC"><h2>Randall Cobb</h2>
+	<img src="Images/Randall-Cobb.png"></a>
+<a href="#" id = "player-30" class = "span_3_of_12 texans AJ1"><h2>Andre Johnson</h2>
+	<img src="Images/Andre-Johnson.png"></a>
+<a href="#" id = "player-31" class = "span_3_of_12 browns last BT"><h2>Ben Tate</h2>
+	<img src="Images/Ben-Tate.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-32" class = "span_3_of_12 bucaneers VJ"><h2>Vincent Jackson</h2>
+	<img src="Images/Vincent-Jackson.png"></a>
+	<a href="#" id = "player-33" class = "span_3_of_12 cardinals LF"><h2>Larry Fitzgerald</h2>
+	<img src="Images/Larry-Fitzgerald.png"></a>
+	<a href="#" id = "player-34" class = "span_3_of_12 patriots RG"><h2>Rob Gronkowski</h2>
+	<img src="Images/Rob-Gronkowski.png"></a>
+	<a href="#" id = "player-35" class = "span_3_of_12 redskins last PG"><h2>Pierre Garcon</h2>
+	<img src="Images/Pierre-Garcon.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-36" class = "span_3_of_12 chargers RM"><h2>Ryan Mathews</h2>
+	<img src="Images/Ryan-Mathews.png"></a>
+	<a href="#" id = "player-37" class = "span_3_of_12 redskins DS"><h2>DeSean Jackson</h2>
+	<img src="Images/Desean-Jackson.png"></a>
+	<a href="#" id = "player-38" class = "span_3_of_12 lions MS"><h2>Matthew Stafford</h2>
+	<img src="Images/Matthew-Stafford.png"></a>
+	<a href="#" id = "player-39" class = "span_3_of_12 bills last CS"><h2>C.J. Spiller</h2>
+	<img src="Images/CJ-Spiller.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-40" class = "span_3_of_12 fortyniners FG"><h2>Frank Gore</h2>
+	<img src="Images/Frank-Gore.png"></a>
+	<a href="#" id = "player-41" class = "span_3_of_12 chargers KA"><h2>Keenan Allen</h2>
+	<img src="Images/Keenan-Allen.png"></a>
+	<a href="#" id = "player-42" class = "span_3_of_12 giants VC"><h2>Victor Cruz</h2>
+	<img src="Images/Victor-Cruz.png"></a>
+	<a href="#" id = "player-43" class = "span_3_of_12 falcons last RW"><h2>Roddy White</h2>
+	<img src="Images/Roddy-White.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-44" class = "span_3_of_12 panthers CN"><h2>Cam Newton</h2>
+	<img src="Images/Cam-Newton.png"></a>
+	<a href="#" id = "player-45" class = "span_3_of_12 cardinals AE"><h2>Andre Ellington</h2>
+	<img src="Images/Andre-Ellington.png"></a>
+	<a href="#" id = "player-46" class = "span_3_of_12 broncos WW"><h2>Wes Welker</h2>
+	<img src="Images/Wes-Welker.png"></a>
+	<a href="#" id = "player-47" class = "span_3_of_12 colts last AL"><h2>Andrew Luck</h2>
+	<img src="Images/Andrew-Luck.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-48" class = "span_3_of_12 seahawks PH"><h2>Percy Harvin</h2>
+	<img src="Images/Percy-Harvin.png"></a>
+	<a href="#" id = "player-49" class = "span_3_of_12 fortyniners VD"><h2>Vernon Davis</h2>
+	<img src="Images/Vernon-Davis.png"></a>
+	<a href="#" id = "player-50" class = "span_3_of_12 colts TR"><h2>Trent Richardson</h2>
+	<img src="Images/Trent-Richardson.png"></a>
+	<a href="#" id = "player-51" class = "span_3_of_12 jets last CJ1"><h2>Chris Johnson</h2>
+	<img src="Images/Chris-Johnson.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-52" class = "span_3_of_12 fortyniners MC"><h2>Michael Crabtree</h2>
+	<img src="Images/Michael-Crabtree.png"></a>
+	<a href="#" id = "player-53" class = "span_3_of_12 ravens RR"><h2>Ray Rice</h2>
+	<img src="Images/Ray-Rice.png"></a>
+	<a href="#" id = "player-54" class = "span_3_of_12 falcons SJ"><h2>Steven Jackson</h2>
+	<img src="Images/Steven-Jackson.png"></a>
+	<a href="#" id = "player-55" class = "span_3_of_12 colts last TH"><h2>T.Y. Hilton</h2>
+	<img src="Images/TY-Hilton.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-56" class = "span_3_of_12 giants RJ"><h2>Rashad Jennings</h2>
+	<img src="Images/Rashad-Jennings.png"></a>
+	<a href="#" id = "player-57" class = "span_3_of_12 patriots SV"><h2>Shane Vereen</h2>
+	<img src="Images/Shane-Vereen.png"></a>
+	<a href="#" id = "player-58" class = "span_3_of_12 ravens TS"><h2>Torrey Smith</h2>
+	<img src="Images/Torrey-Smith.png"></a>
+	<a href="#" id = "player-59" class = "span_3_of_12 lions last JB"><h2>Joique Bell</h2>
+	<img src="Images/Joique-Bell.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-60" class = "span_3_of_12 patriots JE"><h2>Julian Edelman</h2>
+	<img src="Images/Julian-Edelman.png"></a>
+	<a href="#" id = "player-61" class = "span_3_of_12 redskins RG1"><h2>Robert Griffin III</h2>
+	<img src="Images/Robert-Griffin.png"></a>
+	<a href="#" id = "player-62" class = "span_3_of_12 eagles NF"><h2>Nick Foles</h2>
+	<img src="Images/Nick-Foles.png"></a>
+	<a href="#" id = "player-63" class = "span_3_of_12 vikings last CP"><h2>Cordarrelle Patterson</h2>
+	<img src="Images/Cordarrelle-Patterson.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-64" class = "span_3_of_12 cardinals MF1"><h2>Michael Floyd</h2>
+	<img src="Images/Michael-Floyd.png"></a>
+	<a href="#" id = "player-65" class = "span_3_of_12 patriots SR"><h2>Stevan Ridley</h2>
+	<img src="Images/Stevan-Ridley.png"></a>
+	<a href="#" id = "player-66" class = "span_3_of_12 eagles JM"><h2>Jeremy Maclin</h2>
+	<img src="Images/Jeremy-Maclin.png"></a>
+	<a href="#" id = "player-67" class = "span_3_of_12 titans last BS"><h2>Bishop Sankey</h2>
+	<img src="Images/Bishop-Sankey.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-68" class = "span_3_of_12 colts RW1"><h2>Reggie Wayne</h2>
+	<img src="Images/Reggie-Wayne.png"></a>
+	<a href="#" id = "player-69" class = "span_3_of_12 saints MC1"><h2>Marques Colston</h2>
+	<img src="Images/Marques-Colston.png"></a>
+	<a href="#" id = "player-70" class = "span_3_of_12 seahawks RW2"><h2>Russell Wilson</h2>
+	<img src="Images/Russell-Wilson.png"></a>
+	<a href="#" id = "player-71" class = "span_3_of_12 saints last PT"><h2>Pierre Thomas</h2>
+	<img src="Images/Pierre-Thomas.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-72" class = "span_3_of_12 bills SW"><h2>Sammy Watkins</h2>
+	<img src="Images/Sammy-Watkins.png"></a>
+	<a href="#" id = "player-73" class = "span_3_of_12 titans KW"><h2>Kendall Wright</h2>
+	<img src="Images/Kendall-Wright.png"></a>
+	<a href="#" id = "player-74" class = "span_3_of_12 cowboys JW"><h2>Jason Witten</h2>
+	<img src="Images/Jason-Witten.png"></a>
+	<a href="#" id = "player-75" class = "span_3_of_12 broncos last ES"><h2>Emmanuel Sanders</h2>
+	<img src="Images/Emmanuel-Sanders.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-76" class = "span_3_of_12 dolphins KM"><h2>Knowshon Moreno</h2>
+	<img src="Images/Knowshon-Moreno.png"></a>
+	<a href="#" id = "player-77" class = "span_3_of_12 dolphins MW"><h2>Mike Wallace</h2>
+	<img src="Images/Mike-Wallace.png"></a>
+	<a href="#" id = "player-78" class = "span_3_of_12 lions GT"><h2>Golden Tate</h2>
+	<img src="Images/Golden-Tate.png"></a>
+	<a href="#" id = "player-79" class = "span_3_of_12 jaguars last TG"><h2>Toby Gerhart</h2>
+	<img src="Images/Toby-Gerhart.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-80" class = "span_3_of_12 jets ED"><h2>Eric Decker</h2>
+	<img src="Images/Eric-Decker.png"></a>
+	<a href="#" id = "player-81" class = "span_3_of_12 jaguars CS1"><h2>Cecil Shorts</h2>
+	<img src="Images/Cecil-Shorts.png"></a>
+	<a href="#" id = "player-82" class = "span_3_of_12 cowboys TW"><h2>Terrance Williams</h2>
+	<img src="Images/Terrance-Williams.png"></a>
+	<a href="#" id = "player-83" class = "span_3_of_12 raiders last MJD"><h2>Maurice Jones-Drew</h2>
+	<img src="Images/Maurice-Jones-Drew.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-84" class = "span_3_of_12 jets CI"><h2>Chris Ivory</h2>
+	<img src="Images/Chris-Ivory.png"></a>
+	<a href="#" id = "player-85" class = "span_3_of_12 bills FJ"><h2>Fred Jackson</h2>
+	<img src="Images/Fred-Jackson.png"></a>
+	<a href="#" id = "player-86" class = "span_3_of_12 chargers DW"><h2>Danny Woodhead</h2>
+	<img src="Images/Danny-Woodhead.png"></a>
+	<a href="#" id = "player-87" class = "span_3_of_12 browns last JG1"><h2>Josh Gordon</h2>
+	<img src="Images/Josh-Gordon.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-88" class = "span_3_of_12 eagles DS1"><h2>Darren Sproles</h2>
+	<img src="Images/Darren-Sproles.png"></a>
+	<a href="#" id = "player-89" class = "span_3_of_12 fortyniners AB1"><h2>Anquan Boldin</h2>
+	<img src="Images/Anquan-Boldin.png"></a>
+	<a href="#" id = "player-90" class = "span_3_of_12 panthers DW1"><h2>DeAngelo Williams</h2>
+	<img src="Images/Deangelo-Williams.png"></a>
+	<a href="#" id = "player-91" class = "span_3_of_12 giants last DW2"><h2>David Wilson</h2>
+	<img src="Images/David-Wilson.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-92" class = "span_3_of_12 ravens BP"><h2>Bernard Pierce</h2>
+	<img src="Images/Bernard-Pierce.png"></a>
+	<a href="#" id = "player-93" class = "span_3_of_12 texans DH"><h2>DeAndre Hopkins</h2>
+	<img src="Images/DeAndre-Hopkins.png"></a>
+	<a href="#" id = "player-94" class = "span_3_of_12 eagles RC1"><h2>Riley Cooper</h2>
+	<img src="Images/Riley-Cooper.png"></a>
+	<a href="#" id = "player-95" class = "span_3_of_12 browns last JC1"><h2>Jordan Cameron</h2>
+	<img src="Images/Jordan-Cameron.png"></a>
+</div>
+
+<div class = "section group">
+<a href="#" id = "player-96" class = "span_3_of_12 patriots DA"><h2>Danny Amendola</h2>
+	<img src="Images/Danny-Amendola.png"></a>
+	<a href="#" id = "player-97" class = "span_3_of_12 seahawks SDST"><h2>Seahawks D/ST</h2>
+	<img src="Images/Seahawks-DST.png"></a>
+	<a href="#" id = "player-98" class = "span_3_of_12 fortyniners CK"><h2>Colin Kaepernick</h2>
+	<img src="Images/Colin-Kaepernick.png"></a>
+	<a href="#" id = "player-99" class = "span_3_of_12 falcons last MR"><h2>Matt Ryan</h2>
+	<img src="Images/Matt-Ryan.png"></a>
+</div>
+</div>
+</div>
+<div class = "clear"></div>
 <footer>
-
-<a href = "mailto:matt.bspector@yahoo.com"?Subject=Hello!> <img src="Mail.png"></a>
-<a href = "#"><img src = "Twitter.png"></a>
-<a href = "#"><img src="Facebook.png"></a>
-
-<div class = "thankyou">
-<h2>Thank's For Checking out My Site!</h2>
-</div>
+ a
 </footer>
+
+
+<div class = "containme">
+	<div class = "section group holder">
+		<div class = "span_12_of_12">
+		</div>
+	</div>
+	<div class = "section group first Ppage LM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>LESEAN MCCOY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AP">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ADRIAN PETERSON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CJ">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>CALVIN JOHNSON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JC">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JAMAAL CHARLES</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MF">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MATT FORTE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage ML">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>LYNCH</p>
+		</div>
+	</div>
+	<div class = "section group Ppage EL">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>LACY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage PM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>PEYTON MANNING</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DMART</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JG">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JIMGRAHAM</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AF">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ARIAN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AR">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RODGERS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage ZS">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>STACY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DM1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>Murray</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DT">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DTHOMAS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AG">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>AJGREEN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DB">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>BREESEY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DB1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DEZ</p>
+		</div>
+	</div>
+	<div class = "section group Ppage LB">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>LEVEON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage BM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>BMARSH</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JJ">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JULIO</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JN">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JORDY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ALfred</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AJ">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ALSHON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MB">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MONTEE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage GB">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>GIO</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JT">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JTHOMAS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AB">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ABROWN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RB">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>REGGIE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RC">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RANDALLC</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AJ1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ANDRE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage BT">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>BENTATE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage VJ">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>VJAX</p>
+		</div>
+	</div>
+	<div class = "section group Ppage LF">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>LARRYFITZ</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RG">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>GRONK</p>
+		</div>
+	</div>
+	<div class = "section group Ppage PG">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>GARCON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RYANMATH</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DS">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DESEASN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MS">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>STAFFORD</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CS">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>SPILLER</p>
+		</div>
+	</div>
+	<div class = "section group Ppage FG">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>GORE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage KA">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>KEENAN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage VC">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>CRUZ</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RODDY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CN">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>CAM</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AE">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ELLINGTON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage WW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>WES</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AL">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>LUCK</p>
+		</div>
+	</div>
+	<div class = "section group Ppage PH">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>PERCY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage VD">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>VERNON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage TR">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>TRENT</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CJ1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>CJ2K</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MC">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>CRABBUSH</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RR">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RAYRICE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage SJ">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>STEVEJAX</p>
+		</div>
+	</div>
+	<div class = "section group Ppage TH">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>TY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RJ">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RASHAD</p>
+		</div>
+	</div>
+	<div class = "section group Ppage SV">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>SHANE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage TS">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>TSMITH</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JB">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JOIQUE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JE">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JULES</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RG1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RG3</p>
+		</div>
+	</div>
+	<div class = "section group Ppage NF">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>FOLES</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CP">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>CPATT</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MF1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>FLOYD</p>
+		</div>
+	</div>
+	<div class = "section group Ppage SR">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RIDLLER</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MACLIN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage BS">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>BISHOP</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RW1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RWAYNE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MC1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MARQUES</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RW2">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RUSS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage PT">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>PIERRE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage SW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>SAMMYWAT</p>
+		</div>
+	</div>
+	<div class = "section group Ppage KW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>KENDALL</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JWITT</p>
+		</div>
+	</div>
+	<div class = "section group Ppage ES">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>SANDERS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage KM">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MORENO</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MIKEWALLACE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage GT">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>GOLDEN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage TG">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>TOBY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage ED">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DECKER</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CS1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>CECIL</p>
+		</div>
+	</div>
+	<div class = "section group Ppage TW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>TWILLIAMS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MJD">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MOJO</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CI">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>IVORY</p>
+		</div>
+	</div>
+	<div class = "section group Ppage FJ">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>FREDJAX</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DW">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>WOODHEAD</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JG1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JGORDON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DS1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>SPROLES</p>
+		</div>
+	</div>
+	<div class = "section group Ppage AB1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>ANQUAN</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DW1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DEANGELO WILLIAMS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DW2">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DAVEWILSON</p>
+		</div>
+	</div>
+	<div class = "section group Ppage BP">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>PIERCE</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DH">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DHOPKINs</p>
+		</div>
+	</div>
+	<div class = "section group Ppage RC1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>RILEYCOOP</p>
+		</div>
+	</div>
+	<div class = "section group Ppage JC1">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>JORDAN CAM</p>
+		</div>
+	</div>
+	<div class = "section group Ppage DA">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>DAMENDOLA</p>
+		</div>
+	</div>
+	<div class = "section group Ppage SDST">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>SEAHWAKS</p>
+		</div>
+	</div>
+	<div class = "section group Ppage CK">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>KAPP</p>
+		</div>
+	</div>
+	<div class = "section group Ppage MR">
+		<div class = "span_12_of_12">
+			<button class = "close">X</button>
+			<p>MATTYICE</p>
+		</div>
+	</div>
+
+
+
+
+</div>
+
+</body>
 </html>
