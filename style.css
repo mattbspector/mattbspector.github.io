@@ -429,6 +429,8 @@ footer{
 	height: 100%;
 	width: 100%;
 	z-index: 0;
+	padding: 0;
+	margin: 0;
 }
 .holder{
 	padding: 1em 0;
@@ -447,16 +449,12 @@ footer{
 }
 
 .Ppage{
-	padding: 1em 0;
+	padding: 0;
 	height: 100%;
 	width: 100%;
 	display: none;
 	background-color: white;
 }
-.Ppage.LM{
-	background-color: green;
-	}
-
 
 .Ppage.AP{
 	background-color: purple;
@@ -473,4 +471,32 @@ footer{
 .Ppage.JC{
 	background-color: red;
 
+}
+
+.pageHeader{
+	background-color: #222;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+
+}
+
+.pageHeader img{
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 10px;
+}
+
+.Ppage p{
+	padding: 0;
+	margin: 0;
+}
+.Ppage.LM .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #3d9970;
+	color: #222;
+	height: 300px;
 }
