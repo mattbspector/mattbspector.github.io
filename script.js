@@ -2371,7 +2371,7 @@ playerArray[50] = new Array(23);
 	playerArray[93][18] = "DeAndre Hopkins";//NAME
 	playerArray[93][19] = "WR"; //POSITION
 	playerArray[93][20] = "texans"; //TEAM
-	playerArray[93][21] = "Images/Deandre-Hopkins.png";//PIC
+	playerArray[93][21] = "Images/DeAndre-Hopkins.png";//PIC
 	playerArray[93][22] = "DH";
 
 	playerArray[94] = new Array(23);
