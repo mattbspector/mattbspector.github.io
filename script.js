@@ -2749,6 +2749,9 @@ playerArray[50] = new Array(23);
 				$(".containme").css("z-index", "1000");
 				mainbody.slideUp(1300, function(){
 					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+
 				});
 			}
 					
@@ -4119,6 +4122,8 @@ playerArray[50] = new Array(23);
 																	
 		$(".buttonClose").click(function(){
 			$("#playerGrid").css("display","block");
+			$("#inputs").css("display","block");
+			$(".containme").css("position","fixed");
 			mainbody.slideDown(1000,function(){
 			$(".containme").css("z-index","0");
 			$(".Ppage.alive").css("display","none");
@@ -4126,6 +4131,7 @@ playerArray[50] = new Array(23);
 			});
 
 			$(".holder").css("display","block");
+
 			return false;
 
 		});
