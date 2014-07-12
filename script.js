@@ -4135,6 +4135,22 @@ playerArray[50] = new Array(23);
 			return false;
 
 		});
+			$("button").click(function(){
+			$("#playerGrid").css("display","block");
+			$("#inputs").css("display","block");
+			$(".containme").css("position","fixed");
+			mainbody.slideDown(1000,function(){
+			$(".containme").css("z-index","0");
+			$(".Ppage.alive").css("display","none");
+			$(".alive").removeClass("alive");
+			});
+
+			$(".holder").css("display","block");
+
+			return false;
+
+		});//will eventually remove this
+
 
 	});//hover
 
