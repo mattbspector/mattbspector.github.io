@@ -3,6 +3,161 @@ body{
 	margin: 0;
 	height: 100%;
 }
+#inputs{
+	background-color: gold;
+}
+.navbar{
+	height: 400px;
+	margin: 0;
+}
+
+.bar{
+
+	height: 400px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.sec{
+	
+	height: 400px;
+	float: left;
+	margin: 0;
+	padding: 0;
+
+
+}
+.passingsection table, .rushingsection table, .receivingsection table{
+	margin-top: 50px;
+}
+.passingsection td, .rushingsection td, .receivingsection td{
+	padding: 15px;
+}
+
+.passingsection, .rushingsection, .receivingsection {
+	text-align: center;
+}
+.passingsection .boxes, .rushingsection .boxes, .receivingsection .boxes{
+	margin-left: 14%;
+
+}
+
+.passingsection input, .rushingsection input, .receivingsection input{
+	border:1px solid #FFF;
+	border-radius:40px;
+	height: 30px;
+	width: 150px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+}
+
+.sec .boxes{
+	position: absolute;
+	text-align: center;
+}
+
+td{
+	padding: 10px;
+}
+select{
+	text-indent: 50px;
+}
+.styled select{
+   background: transparent;
+   width: 150px;
+   padding: 5px;
+   font-size: 20px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.styled{
+   width: 120px;
+   height: 34px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
+
+
+.leaguebar{
+	background-color: black;
+	position: relative;
+	z-index: 11;
+}
+.leaguesection{
+	background-color: grey;
+	display: block;
+	position: relative;
+	z-index: 11;
+}
+.passingbar{
+	background-color: blue;
+	position: relative;
+	z-index: 12;
+
+}
+.passingsection{
+	background-color: lightblue;
+	display: none;
+	position: relative;
+	z-index: 12;
+}
+.rushingbar{
+	background-color: red;
+	position: relative;
+	z-index: 13;
+}
+.rushingsection{
+	background-color: pink;
+	display: none;
+	position: relative;
+	z-index: 13;
+}
+
+.receivingbar{
+	background-color: green;
+	position: relative;
+	z-index: 14;
+}
+.receivingsection{
+	background-color: lightgreen;
+	display: none;
+	position: relative;
+	z-index: 14;
+}
+.kickingbar{
+	background-color: darkorange;
+	position: relative;
+	z-index: 15;
+}
+.kickingsection{
+	background-color: orange;
+	display: none;
+	position: relative;
+	z-index: 15;
+}
+.defensebar{
+	background-color: gold;
+	position: relative;
+	z-index: 16;
+}
+.defensesection{
+	background-color: yellow;
+	display: none;
+	position: relative;
+	z-index: 16;
+}
+.fill{
+	z-index: 17;
+	background-color: gold;
+	width: 2%;
+}
+
+/*use 6 bars, one of them has width 7 the other have width 1*/
+
 .clear{
 	clear: both;
 }
@@ -226,14 +381,6 @@ footer{
 	
 }
 
-.second{
-	background-color: red;
-	padding: 1em 0;
-	height: 100%;
-	width: 100%;
-	
-}
-
 .Ppage{
 	padding: 0;
 	height: 100%;
@@ -285,4 +432,62 @@ footer{
 	background-color: #3d9970;
 	color: #222;
 	height: 300px;
+}
+
+
+@media only screen and (max-width: 1020px) {
+	td{
+		padding: 8px;
+	}
+
+
+}
+
+@media only screen and (max-width: 888px) {
+
+	.styled select{
+   background: transparent;
+   width: 140px;
+   padding: 4px;
+   font-size: 18px;
+   border: 1px solid #CCC;
+   height: 30px;
+ 
+}
+
+@media only screen and (max-width: 722px) {
+	.passingsection td, .rushingsetion td, .receivingsection td{
+		padding: 10px;
+	}
+
+
+}
+
+.styled{
+   width: 120px;
+   height: 30px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
+
+td{
+		padding: 0px;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	.sec{
+		display: block;
+	}
+	.bar{
+		height: 80px;
+	}
+	.sec{
+		height: 350px;
+	}
+	td{
+		padding: 2px;
+	}
+	
 }

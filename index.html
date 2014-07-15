@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="grid.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src = "JQuery.js"></script>
+<script type="text/javascript" src = "jquery-ui.js"></script>
 <script type="text/javascript" src = "script.js"></script>
 <link rel ="shortcut icon" href="Images/crown.png">
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
@@ -12,43 +13,238 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
+
+
+
 <div id = "mainbody">
 <div id = "inputs">
-<input type = "text" id = "completion">Points Per Completion</input>
-<div class = "clear" ></div>
-<input type = "text" id = "PassYards">Passing Yards per Point</input>
-<div class = "clear"></div>
-<input type = "text" id = "PassTD">POINTS Per Passing Touchdown</input>
-<div class = "clear"></div>
-<input type = "text" id = "QBInt">POINTS PER INTERCEPTION THROWN</input>
-<div class = "clear"></div>
-<input type = "text" id = "RushYards">Rushing Yards Per Point</input>
-<div class = "clear"></div>
-<input type = "text" id = "RushTD">Points Per Rush TD</input>
-<div class = "clear" ></div>
-<input type = "text" id = "PPR">Points Per Reception</input>
-<div class = "clear"></div>
-<input type = "text" id = "RECyd">Receiving Yards per Point</input>
-<div class = "clear"></div>
-<input type = "text" id = "CatchTD">Points Per Receiving TD</input>
-<div class = "clear"></div>
-<input type = "text" id = "FG0-19">Points per Field Goal 0-19</input>
-<div class = "clear"></div>
-<input type = "text" id = "FG20-29">Points per Field Goal 20-29</input>
-<div class = "clear" ></div>
-<input type = "text" id = "FG30-39">Points per Field Goal 30-39</input>
-<div class = "clear"></div>
-<input type = "text" id = "FG40-49">Points per Field Goal 40-49</input>
-<div class = "clear"></div>
-<input type = "text" id = "FG50">Points per Field Goal 50+</input>
-<div class = "clear"></div>
-<input type = "text" id = "PAT">POINTS PER PAT</input>
-<div class = "clear"></div>
-<input type = "text" id = "SACKS">Points Per Sack</input>
-<div class = "clear" ></div>
-<input type = "text" id = "PICK">Points per Interception DEFENSE</input>
-<div class = "clear"></div>
-<button id = "submit">SUBMIT</button>
+<div class = "section group navbar">
+	<a href = "#" class = "span_1_of_12 bar leaguebar"></a>
+	<div class = "span_6_of_12 active sec leaguesection">
+		<div class = "boxes">
+		<h1>League Settings</h1>
+		<table>
+			<tr>
+				<td>Number of Teams: </td>
+					<td>
+						<div class = "styled">
+							<select>
+			
+							<option value="4" selected = "selected">4</option>
+							<option value="6">6</option>
+							<option value="8">8</option>
+							<option value="10">10</option>
+							<option value="12">12</option>
+							<option value="14">14</option>
+							<option value="16">16</option>
+							<option value="18">18</option>
+							<option value="12">20</option>
+							<option value="14">22</option>
+							<option value="16">24</option>
+
+							</select>
+						</div>
+				</td>
+				<td>RB/WR (FLEX) Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="0" selected = "selected">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select></div>
+				</td>
+			</tr>
+			<tr>
+				<td>QB Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="1" selected = "selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			</select></div>
+				</td>
+				<td>RB/WR/TE (FLEX) Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="0" selected = "selected">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select></div>
+				</td>
+			</tr>
+			<tr>
+				<td>RB Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="1" selected = "selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select></div>
+				</td>
+				<td>K Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="0" selected = "selected">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			</select></div>
+				</td>
+			</tr>
+			<tr>
+				<td>WR Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="1" selected = "selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			</select></div>
+				</td>
+				<td> D/ST Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="0" selected = "selected">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			</select></div>
+				</td>
+			</tr>
+			<tr>
+				<td>TE Starters: </td>
+						<td>	<div class = "styled"><select>
+			<option value="0" selected = "selected">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select></div>
+				</td>
+				<td>Bench: </td>
+						<td>	<div class = "styled"><select>
+			<option value="0" selected = "selected">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="4">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			</select></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+	<a href = "#" class = "span_1_of_12 bar passingbar"></a>
+	<div href = "#" class = "span_1_of_12 sec passingsection">
+	<div class = "boxes">
+		<h1>Passing Settings</h1>
+		<table>
+			<tr>
+				<td>Points per Completion: </td>
+					<td>
+						
+							<input>
+						
+					</td>
+			</tr>
+
+			<tr>
+				<td>Passing Yards per Point </td>
+						<td>	
+							<input>
+						</td>
+			</tr>
+
+			<tr>
+				<td>Passing Yards per Point </td>
+						<td>	<input>
+				</td>
+			</tr>
+			<tr>
+					<td>Points per Passing TD </td>
+						<td>	
+									<input>
+				
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+
+
+
+	</div>
+	<a href = "#" class = "span_1_of_12 bar rushingbar"> </a>
+	<div href = "#"  class = "span_1_of_12 sec rushingsection">
+		<div class = "boxes">
+		<h1>Rushing Settings</h1>
+		<table>
+			<tr>
+				<td>Rushing Yards per Point </td>
+					<td>
+						
+							<input>
+						
+					</td>
+			</tr>
+
+			<tr>
+				<td>Points per Rushing TD </td>
+						<td>	
+							<input>
+						</td>
+			</tr>
+
+			<tr>
+				<td>Points per Fumble</td>
+						<td>	<input>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	<a href = "#" class = "span_1_of_12 bar receivingbar"></a>
+	<div href = "#" class = "span_1_of_12 sec receivingsection">
+		<div class = "boxes">
+		<h1>Receiving Settings</h1>
+		<table>
+			<tr>
+				<td>Points per Reception</td>
+					<td>
+						
+							<input>
+						
+					</td>
+			</tr>
+
+			<tr>
+				<td>Receiving Yards per Point </td>
+						<td>	
+							<input>
+						</td>
+			</tr>
+
+			<tr>
+				<td>Points per Receiving Touchdown</td>
+						<td>	<input>
+				</td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	<a href = "#" class = "span_1_of_12 bar kickingbar"> </a>
+	<div   class = "span_1_of_12 sec kickingsection"></div>
+	<a href = "#" class = "span_1_of_12 bar defensebar"></a>
+	<div class = "span_1_of_12 sec defensesection"></div>
+
+
+
+</div>
 </div>
 
 

@@ -1,6 +1,73 @@
 $(document).ready(function(){
 
+
+ var $window = $(window);
+
+        // Function to handle changes to style classes based on window width
+        function checkWidth() {
+        if ($window.width() < 480) {
+            $('.sec').addClass('span_12_of_12');
+            };
+
+        if ($window.width() >= 480) {
+           $('.sec').removeClass('span_12_of_12');
+        }
+    }
+
+    // Execute on load
+    checkWidth();
+
+    // Bind event listener
+    $(window).resize(checkWidth);
+
+
+
+
+	$(".bar").click(function(){
+		var slider = $(this).next();
+		var checker = $(".active");
+		if($(".sec").is(":animated"))
+		{
+			return false;
+		}
+
+		if(slider.hasClass("active")){
+			return false;
+		}
+		else if($(".sec").hasClass("active")){
+			$(".active").toggleClass("span_6_of_12", 1000);
+			$(".active").hide(200);
+			$(".active").removeClass("active");
+	
+			slider.removeClass("span_1_of_12");
+			slider.show();
+		slider.css("display","block");
+		slider.toggleClass("span_6_of_12", 1000);
+		slider.addClass("active");
+		
+		}
+
+		return false;
+	});
+
+
+
+
 	var playerArray = new Array(100);
+
+	/*var player = [
+		
+		{
+			name:'Mccoy', 
+			age: 22, 
+			rush: 24,
+			passes: 50
+		},
+		{name: ''}
+
+		];
+
+	$('select').append(players[4].name);*/
 
 	playerArray[0] = new Array(23);
 	playerArray[0][0] = 0;//COMPLETIONS
@@ -1137,12 +1204,12 @@ playerArray[44] = new Array(23);
          playerArray[44][22] = "RW";
  
 playerArray[45] = new Array(23);
-         playerArray[45][0] = 1266;//COMPLETIONS
-         playerArray[45][1] = 171;//PASSING YARDS
-         playerArray[45][2] = 29;//PASSING TOUCHDOWNS
-         playerArray[45][3] = 10;//INTERCEPTIONS
-         playerArray[45][4] = 1;//RUSH YARDS
-         playerArray[45][5] = 0;//RUSHING TOUCHDOWNS
+         playerArray[45][0] = 276;//COMPLETIONS
+         playerArray[45][1] = 3365;//PASSING YARDS
+         playerArray[45][2] = 20;//PASSING TOUCHDOWNS
+         playerArray[45][3] = 15;//INTERCEPTIONS
+         playerArray[45][4] = 637;//RUSH YARDS
+         playerArray[45][5] = 8;//RUSHING TOUCHDOWNS
          playerArray[45][6] = 0;//RECEPTIONS
          playerArray[45][7] = 0;//RECEIVING YARDS
          playerArray[45][8] = 0;//RECEIVING TOUCHDOWNS
@@ -1210,7 +1277,7 @@ playerArray[47] = new Array(23);
          playerArray[47][16] = 0;//Interceptions
          playerArray[47][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
          playerArray[47][18] = "Wes Welker";//NAME
-         playerArray[35][19] = "WR";//NAME
+         playerArray[47][19] = "WR";//NAME
          playerArray[47][20] = "broncos";//BACKGROUND COLOR
          playerArray[47][21] = "Images/Wes-Welker.png";//FONT-COLOR
          playerArray[47][22] = "WW";
@@ -1218,12 +1285,12 @@ playerArray[47] = new Array(23);
  
  
 playerArray[48] = new Array(23);
-         playerArray[48][0] = 1266;//COMPLETIONS
-         playerArray[48][1] = 171;//PASSING YARDS
-         playerArray[48][2] = 29;//PASSING TOUCHDOWNS
+         playerArray[48][0] = 357;//COMPLETIONS
+         playerArray[48][1] = 4071;//PASSING YARDS
+         playerArray[48][2] = 23;//PASSING TOUCHDOWNS
          playerArray[48][3] = 10;//INTERCEPTIONS
-         playerArray[48][4] = 1;//RUSH YARDS
-         playerArray[48][5] = 0;//RUSHING TOUCHDOWNS
+         playerArray[48][4] = 365;//RUSH YARDS
+         playerArray[48][5] = 3;//RUSHING TOUCHDOWNS
          playerArray[48][6] = 0;//RECEPTIONS
          playerArray[48][7] = 0;//RECEIVING YARDS
          playerArray[48][8] = 0;//RECEIVING TOUCHDOWNS
@@ -1804,7 +1871,7 @@ playerArray[50] = new Array(23);
 	playerArray[71][3] = 0;//INTERCEPTIONS
 	playerArray[71][4] = 380;//RUSH YARDS
 	playerArray[71][5] = 2;//RUSHING TOUCHDOWNS
-	playerArray[71][6] = 90;//RECEPTIONS
+	playerArray[71][6] = 70;//RECEPTIONS
 	playerArray[71][7] = 612;//RECEIVING YARDS
 	playerArray[71][8] = 5;//RECEIVING TOUCHDOWNS
 	playerArray[71][9] = 0;//Field Goals 0-19 Yards
@@ -2531,6 +2598,8 @@ playerArray[50] = new Array(23);
 
 
 		$("#submit").click(function(){
+			var x = $('selector').val();
+
 			var Completions = parseFloat(document.getElementById("completion").value);
 			var PassYards = parseFloat(document.getElementById("PassYards").value);
 			var PassTD = parseFloat(document.getElementById("PassTD").value);
@@ -2679,7 +2748,115 @@ playerArray[50] = new Array(23);
 
 			}
 
-			playerArray.sort(function(a,b){return b[17] - a[17]}); //sort
+				playerArray.sort(function(a,b){return b[17] - a[17]}); //sort
+
+			var qbBase = Math.ceil(1.19625 * 8);
+			var rbBase = Math.ceil(1.92625 * 2.33 * 8);
+			var wrBase = Math.ceil(1.1975 * 3.33 * 8);
+			var teBase = Math.ceil(0.92975 * 1.33 * 8);
+
+			var qbnum = 0;
+			var rbnum = 0;
+			var wrnum = 0;
+			var tenum = 0;
+
+			var qbcount = 0;
+			var rbcount = 0;
+			var wrcount = 0;
+			var tecount = 0;
+
+
+
+
+			for(var i = 0; i < 100; i = i + 1){
+
+				if(playerArray[i][19] == "QB" && (qbnum < qbBase))
+				{
+					qbnum = qbnum + 1;
+				}
+				if(playerArray[i][19] == "RB" && (rbnum < rbBase))
+				{
+					rbnum = rbnum + 1;
+				}
+				if(playerArray[i][19] == "TE" && (tenum < teBase))
+				{
+					tecount = i;
+				}
+				if(playerArray[i][19] == "WR" && (wrnum < wrBase))
+				{
+					wrnum = wrnum + 1;
+				}
+
+				if(qbnum == qbBase && qbcount == 0)
+				{	
+					qbcount = i;
+				}
+
+
+				if(rbnum == rbBase && rbcount == 0)
+				{	
+					rbcount = i;
+				}
+
+				if(wrnum == wrBase && wrcount == 0)
+				{	
+					wrcount = i;
+				}
+
+				if(tenum == teBase && tecount == 0)
+				{	
+					tecount = i;
+				}
+
+			}
+
+			if(qbcount == 0)
+				{	
+					qbcount = qbnum;
+				}
+
+
+				if(rbcount == 0)
+				{	
+					rbcount = rbnum;
+				}
+
+				if(wrcount == 0)
+				{	
+					wrcount = wrnum;
+				}
+
+				if(tecount == 0)
+				{	
+					tecount = tenum;
+				}
+
+
+
+			for(var i = 0; i < 100; i = i + 1)
+			{
+				if(playerArray[i][19] == "QB")
+				{
+					playerArray[i][0] = playerArray[i][17] - playerArray[qbcount][17];
+				}
+				if(playerArray[i][19] == "RB")
+				{
+					playerArray[i][0] = playerArray[i][17] - playerArray[rbcount][17];
+				}
+				if(playerArray[i][19] == "TE")
+				{
+					playerArray[i][0] = playerArray[i][17] - playerArray[tecount][17];
+				}
+				if(playerArray[i][19] == "WR")
+				{
+					playerArray[i][0] = playerArray[i][17] - playerArray[wrcount][17];
+				}
+			}
+
+
+
+
+			playerArray.sort(function(a,b){return b[0] - a[0]}); //sort
 			$("#playerGrid").css("display","none");
 
 
@@ -2739,6 +2916,9 @@ playerArray[50] = new Array(23);
 	var mainbody = $(".holder");
 	$("#playerGrid").hover(function(){
 
+
+		//USE THIS
+		//click on an A tag
 		$(".LM").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("LM")){

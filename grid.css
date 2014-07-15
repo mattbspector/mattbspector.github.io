@@ -73,7 +73,7 @@
 }
 
 .span_1_of_12 {
-  	width: 8.333%;
+  	width: 8%;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
@@ -121,4 +121,11 @@
 	.span_1_of_12 {
 		width: 100%;
 	}
+	.bar{
+		display: block;
+	}
+	.sec{
+		display: block;
+	}
+
 }
