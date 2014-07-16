@@ -3,20 +3,40 @@ body{
 	margin: 0;
 	height: 100%;
 }
+/*star nav bar*/
 #inputs{
-	background-color: gold;
+	background-color: #cb9ae0;
 }
+
 .navbar{
 	height: 400px;
 	margin: 0;
 }
-
 .bar{
 
 	height: 400px;
 	float: left;
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	text-decoration: none;
+}
+.bar .vertext{
+  text-decoration: none;
+  font-size: 50px;
+  -ms-transform:rotate(270deg); /* IE 9 */
+  -moz-transform:rotate(270deg); /* Firefox */
+  -webkit-transform:rotate(270deg); /* Safari and Chrome */
+  -o-transform:rotate(270deg); /* Opera */
+  color: #FFF;
+  margin-top: 210px;
+  text-align: center;
+}
+.passingbar .vertext{
+	margin-top: 220px;
+}
+.rushingbar .vertext{
+	margin-top: 280px;
 }
 .sec{
 	
@@ -27,24 +47,42 @@ body{
 
 
 }
-.passingsection table, .rushingsection table, .receivingsection table{
-	margin-top: 50px;
-}
-.passingsection td, .rushingsection td, .receivingsection td{
-	padding: 15px;
-}
-
-.passingsection, .rushingsection, .receivingsection {
-	text-align: center;
-}
-.passingsection .boxes, .rushingsection .boxes, .receivingsection .boxes{
-	margin-left: 14%;
-
+.boxes{
+	float: left;
+	padding: 1em 0;
+	float: left;
 }
 
-.passingsection input, .rushingsection input, .receivingsection input{
+.rightarrow{
+
+		padding: 1em 0;
+		float: left;
+
+}
+.rightarrow img{
+
+	margin-top: 100%;
+
+}
+.leftarrow{
+
+		padding: 1em 0;
+		float: left;
+}
+.leftarrow img{
+	margin-top: 100%;
+
+}
+
+table{
+	position: relative;
+}
+table img{
+	position: absolute;
+}
+.passingsection input, .receivingsection input{
 	border:1px solid #FFF;
-	border-radius:40px;
+	border-radius:20px;
 	height: 30px;
 	width: 150px;
 	text-align: center;
@@ -54,7 +92,19 @@ body{
 	color: #222;
 }
 
-.sec .boxes{
+.rushingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+}
+
+.sec .content{
 	position: absolute;
 	text-align: center;
 }
@@ -62,9 +112,10 @@ body{
 td{
 	padding: 10px;
 }
-select{
-	text-indent: 50px;
+.rushingsection td{
+	padding: 5px;
 }
+
 .styled select{
    background: transparent;
    width: 150px;
@@ -83,80 +134,46 @@ select{
 
 
 .leaguebar{
-	background-color: black;
+	background-color: #68228B;
 	position: relative;
 	z-index: 11;
 }
 .leaguesection{
-	background-color: grey;
+	background-color: #7b548c;
 	display: block;
 	position: relative;
 	z-index: 11;
+	color: #333;
 }
 .passingbar{
-	background-color: blue;
+	background-color: #9b50ba;
 	position: relative;
 	z-index: 12;
 
 }
 .passingsection{
-	background-color: lightblue;
+	background-color: #bd76db;
 	display: none;
 	position: relative;
 	z-index: 12;
+	color: #333;
 }
 .rushingbar{
-	background-color: red;
+	background-color: #cb9ae0;
 	position: relative;
 	z-index: 13;
 }
 .rushingsection{
-	background-color: pink;
+	background-color: #efccff;
 	display: none;
 	position: relative;
 	z-index: 13;
+	color: #222;
 }
+/*end nav bar*/
 
-.receivingbar{
-	background-color: green;
-	position: relative;
-	z-index: 14;
-}
-.receivingsection{
-	background-color: lightgreen;
-	display: none;
-	position: relative;
-	z-index: 14;
-}
-.kickingbar{
-	background-color: darkorange;
-	position: relative;
-	z-index: 15;
-}
-.kickingsection{
-	background-color: orange;
-	display: none;
-	position: relative;
-	z-index: 15;
-}
-.defensebar{
-	background-color: gold;
-	position: relative;
-	z-index: 16;
-}
-.defensesection{
-	background-color: yellow;
-	display: none;
-	position: relative;
-	z-index: 16;
-}
-.fill{
-	z-index: 17;
-	background-color: gold;
-	width: 2%;
-}
 
-/*use 6 bars, one of them has width 7 the other have width 1*/
+
 
 .clear{
 	clear: both;

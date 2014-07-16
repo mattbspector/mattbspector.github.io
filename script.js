@@ -20,29 +20,104 @@ $(document).ready(function(){
     // Bind event listener
     $(window).resize(checkWidth);
 
+    $(".rightarrow").click(function(){
+    	if($(this).parent().parent().hasClass("leaguesection"))
+    	{
+    		var slider = $(".passingsection");
+			console.log("league");
+			$(".active").toggleClass("span_9_of_12", 1000);
+			$(".active").hide(200);
+			$(".active").removeClass("active");
+			slider.removeClass("span_1_of_12");
+			slider.show();
+			slider.css("display","block");
+			slider.toggleClass("span_9_of_12", 1000);
+			slider.addClass("active");
+	
 
 
+    	}
+
+    	else if($(this).parent().parent().hasClass("passingsection"))
+    	{
+
+    		console.log("offense");
+    		var slider = $(".rushingsection");
+			console.log("league");
+			$(".active").toggleClass("span_9_of_12", 1000);
+			$(".active").hide(200);
+			$(".active").removeClass("active");
+			slider.removeClass("span_1_of_12");
+			slider.show();
+			slider.css("display","block");
+			slider.toggleClass("span_9_of_12", 1000);
+			slider.addClass("active");
+			$(".navbar").css("background-color", "#efccff");
+    	}
+
+    })
+
+    	 $(".leftarrow").click(function(){
+    	if($(this).parent().parent().hasClass("passingsection"))
+    	{
+    		var slider = $(".leaguesection");
+			console.log("league");
+			$(".active").toggleClass("span_9_of_12", 1000);
+			$(".active").hide(200);
+			$(".active").removeClass("active");
+			slider.removeClass("span_1_of_12");
+			slider.show();
+			slider.css("display","block");
+			slider.toggleClass("span_9_of_12", 1000);
+			slider.addClass("active");
+	
+
+
+    	}
+    	else if($(this).parent().parent().hasClass("rushingsection"))
+    	{
+    			console.log("offense");
+    		var slider = $(".passingsection");
+			console.log("league");
+			$(".active").toggleClass("span_9_of_12", 1000);
+			$(".active").hide(200);
+			$(".active").removeClass("active");
+			slider.removeClass("span_1_of_12");
+			slider.show();
+			slider.css("display","block");
+			slider.toggleClass("span_9_of_12", 1000);
+			slider.addClass("active");
+			$(".navbar").css("background-color", "#cb9ae0");
+    	}
+    });
 
 	$(".bar").click(function(){
+		if($(this).hasClass("rushingbar"))
+		{
+			$(".navbar").css("background-color", "#efccff");
+		}
+		else{
+			$(".navbar").css("background-color", "#cb9ae0");
+		}
+
 		var slider = $(this).next();
 		var checker = $(".active");
-		if($(".sec").is(":animated"))
-		{
-			return false;
+		if($(".sec").is(":animated")){
+					return false;
 		}
 
 		if(slider.hasClass("active")){
 			return false;
 		}
 		else if($(".sec").hasClass("active")){
-			$(".active").toggleClass("span_6_of_12", 1000);
+			$(".active").toggleClass("span_9_of_12", 1000);
 			$(".active").hide(200);
 			$(".active").removeClass("active");
 	
 			slider.removeClass("span_1_of_12");
 			slider.show();
 		slider.css("display","block");
-		slider.toggleClass("span_6_of_12", 1000);
+		slider.toggleClass("span_9_of_12", 1000);
 		slider.addClass("active");
 		
 		}
@@ -68,6 +143,62 @@ $(document).ready(function(){
 		];
 
 	$('select').append(players[4].name);*/
+
+	/*//OFFENSIVE PLAYER
+	playerArray[0] = new Array(17);
+	playerArray[0][0] = 0;//COMPLETIONS
+	playerArray[0][1] = 0;//PASSING YARDS
+	playerArray[0][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[0][3] = 0;//INTERCEPTIONS
+	playerArray[0][4] = 1402;//RUSH YARDS
+	playerArray[0][5] = 9;//RUSHING TOUCHDOWNS
+	playerArray[0][6] = 42;//RECEPTIONS
+	playerArray[0][7] = 342;//RECEIVING YARDS
+	playerArray[0][8] = 3;//RECEIVING TOUCHDOWNS
+	playerArray[0][9] = 0;//FUMBLES
+	playerArray[0][10] = 0;//TOTAL POINTS
+	playerArray[0][11] = 0;//BASELINE 
+	playerArray[0][12] = "Lesean Mccoy";//NAME
+	playerArray[0][13] = "RB"; //POSITION
+	playerArray[0][14] = "eagles"; //TEAM
+	playerArray[0][15] = "Images/Lesean-Mccoy.png";//PIC
+	playerArray[0][16] = "LesanMccoy";
+
+
+	//Kicker
+	playerArray[0] = new Array(13);
+	playerArray[0][0] = 0;//0-19 FG 
+	playerArray[0][1] = 0;//20-29 FG
+	playerArray[0][2] = 0;//30-39 FG
+	playerArray[0][3] = 0;//40-49 FG
+	playerArray[0][4] = 1402;//50+ FG
+	playerArray[0][5] = 9;//PAT
+	playerArray[0][6] = 0;//TOTAL POINTS
+	playerArray[0][7] = 0;//BASELINE 
+	playerArray[0][8] = "Lesean Mccoy";//NAME
+	playerArray[0][9] = "K"; //POSITION
+	playerArray[0][10] = "eagles"; //TEAM
+	playerArray[0][11] = "Images/Lesean-Mccoy.png";//PIC
+	playerArray[0][12] = "LesanMccoy";
+
+	//DEFENSE
+	playerArray[0] = new Array(14);
+	playerArray[0][0] = 0;//PTS ALLOW
+	playerArray[0][1] = 0;//SACK
+	playerArray[0][2] = 0;//SAFE
+	playerArray[0][3] = 0;//INT
+	playerArray[0][4] = 0;//FUM REC
+	playerArray[0][5] = 0;//TD
+	playerArray[0][6] = 0;//BLK KICK
+	playerArray[0][7] = 0;//TOTAL POINTS
+	playerArray[0][8] = 0;//BASELINE 
+	playerArray[0][9] = "Lesean Mccoy";//NAME
+	playerArray[0][10] = "D/ST"; //POSITION
+	playerArray[0][11] = "eagles"; //TEAM
+	playerArray[0][12] = "Images/Lesean-Mccoy.png";//PIC
+	playerArray[0][13] = "LesanMccoy";*/
+
+
 
 	playerArray[0] = new Array(23);
 	playerArray[0][0] = 0;//COMPLETIONS

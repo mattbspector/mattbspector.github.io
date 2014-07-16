@@ -19,9 +19,15 @@
 <div id = "mainbody">
 <div id = "inputs">
 <div class = "section group navbar">
-	<a href = "#" class = "span_1_of_12 bar leaguebar"></a>
-	<div class = "span_6_of_12 active sec leaguesection">
-		<div class = "boxes">
+	<a href = "#" class = "span_1_of_12 bar leaguebar">
+
+			<div class = "vertext">LEAGUE</div>
+	</a>
+	<div class = "span_9_of_12 active sec leaguesection">
+		<div class = "section group content span_12_of_12">
+		<div class = "leftarrow span_1_of_12">
+		</div>
+		<div class = "boxes span_9_of_12">
 		<h1>League Settings</h1>
 		<table>
 			<tr>
@@ -112,6 +118,7 @@
 				</td>
 			</tr>
 			<tr>
+
 				<td>TE Starters: </td>
 						<td>	<div class = "styled"><select>
 			<option value="0" selected = "selected">0</option>
@@ -138,12 +145,25 @@
 			</tr>
 		</table>
 	</div>
+	<div class = "rightarrow span_2_of_12">
+				<img src="Images/right-arrow.png">
+	</div>
 </div>
-	<a href = "#" class = "span_1_of_12 bar passingbar"></a>
+</div>
+
+
+
+	<a href = "#" class = "span_1_of_12 bar passingbar">
+			<div class = "vertext">OFFENSE</div>
+	</a>
 	<div href = "#" class = "span_1_of_12 sec passingsection">
-	<div class = "boxes">
+	<div class = "section group content span_12_of_12">
+		<div class = "leftarrow span_2_of_12">
+			<img src="Images/left-arrow.png">
+		</div>
+	<div class = "boxes span_8_of_12">
 		<h1>Passing Settings</h1>
-		<table>
+			<table>
 			<tr>
 				<td>Points per Completion: </td>
 					<td>
@@ -151,6 +171,12 @@
 							<input>
 						
 					</td>
+					<td>Rushing Yards per Point </td>
+					<td>
+						
+							<input>
+						
+					</td>
 			</tr>
 
 			<tr>
@@ -158,34 +184,85 @@
 						<td>	
 							<input>
 						</td>
+							<td>Points per Rushing TD</td>
+					<td>
+						
+							<input>
+						
+					</td>
 			</tr>
 
 			<tr>
-				<td>Passing Yards per Point </td>
+				<td>Points per Passing TD </td>
 						<td>	<input>
 				</td>
+					<td>Points per Reception </td>
+					<td>
+						
+							<input>
+						
+					</td>
 			</tr>
 			<tr>
-					<td>Points per Passing TD </td>
+					<td>Points per Interception</td>
 						<td>	
 									<input>
 				
 				</td>
+					<td>Receiving Yards per Point</td>
+					<td>
+						
+							<input>
+						
+					</td>
 			</tr>
-			
-		</table>
+			<tr>
+					<td>Points per Fumble </td>
+						<td>	
+									<input>
+				
+				</td>
+					<td>Points per Receiving TD</td>
+					<td>
+						
+							<input>
+						
+					</td>
+			</tr>
+			</table>
+		
+	</div>
+	<div class = "rightarrow span_2_of_12">
+		<img src="Images/right-arrow.png">
 	</div>
 
-
-
 	</div>
-	<a href = "#" class = "span_1_of_12 bar rushingbar"> </a>
+</div>
+	<a href = "#" class = "span_1_of_12 bar rushingbar"> 
+			<div class = "vertext">KICKING/DST</div>
+	</a>
 	<div href = "#"  class = "span_1_of_12 sec rushingsection">
-		<div class = "boxes">
-		<h1>Rushing Settings</h1>
-		<table>
+		<div class = "section group content span_12_of_12">
+		<div class = "leftarrow span_1_of_12">
+			<img src="Images/left-arrow.png">
+		</div>
+	<div class = "boxes span_10_of_12">
+		<h1>Kicking and Defense Settings</h1>
+			<table>
 			<tr>
-				<td>Rushing Yards per Point </td>
+				<td>Points per FG 0-19 Yards: </td>
+					<td>
+						
+							<input>
+						
+					</td>
+					<td>Points per Sack </td>
+					<td>
+						
+							<input>
+						
+					</td>
+					<td>Points for Allowed 0 Points</td>
 					<td>
 						
 							<input>
@@ -194,27 +271,17 @@
 			</tr>
 
 			<tr>
-				<td>Points per Rushing TD </td>
+				<td>Points per FG 20-29 Yards:</td>
 						<td>	
 							<input>
 						</td>
-			</tr>
-
-			<tr>
-				<td>Points per Fumble</td>
-						<td>	<input>
-				</td>
-			</tr>
-		</table>
-	</div>
-	</div>
-	<a href = "#" class = "span_1_of_12 bar receivingbar"></a>
-	<div href = "#" class = "span_1_of_12 sec receivingsection">
-		<div class = "boxes">
-		<h1>Receiving Settings</h1>
-		<table>
-			<tr>
-				<td>Points per Reception</td>
+							<td>Points per INT</td>
+					<td>
+						
+							<input>
+						
+					</td>
+					<td>Points for Allowed 1-6 Points</td>
 					<td>
 						
 							<input>
@@ -223,30 +290,89 @@
 			</tr>
 
 			<tr>
-				<td>Receiving Yards per Point </td>
-						<td>	
-							<input>
-						</td>
-			</tr>
-
-			<tr>
-				<td>Points per Receiving Touchdown</td>
+				<td>Points per FG 30-39 Yards </td>
 						<td>	<input>
 				</td>
+					<td>Points per Fumble Recovery </td>
+					<td>
+						
+							<input>
+						
+					</td>
+					<td>Points for Allowed 7-13 Points </td>
+					<td>
+						
+							<input>
+						
+					</td>
 			</tr>
-		</table>
+			<tr>
+					<td>Points per FG 40-49 Yards</td>
+						<td>	
+									<input>
+				
+				</td>
+					<td>Points per Defensive Touchdown</td>
+					<td>
+						
+							<input>
+						
+					</td>
+					<td>Points for allowed 14-20 Points</td>
+					<td>
+						
+							<input>
+						
+					</td>
+			</tr>
+			<tr>
+					<td>Points per FG 50+ Yards </td>
+						<td>	
+									<input>
+				
+				</td>
+					<td>Points per Safety</td>
+					<td>
+						
+							<input>
+						
+					</td>
+					<td>Points for allowed 21-27 Points</td>
+					<td>
+						
+							<input>
+						
+					</td>
+			</tr>
+			<tr>
+					<td>Points per PAT </td>
+						<td>	
+									<input>
+				
+				</td>
+					<td>Points per Block Kick </td>
+					<td>
+						
+							<input>
+						
+					</td>
+					<td>Points for allowed 28+ Points </td>
+					<td>
+						
+							<input>
+						
+					</td>
+			</tr>
+			</table>
+		
 	</div>
+	<div class = "rightarrow span_1_of_12">
+		<img src="Images/right-arrow.png">
 	</div>
-	<a href = "#" class = "span_1_of_12 bar kickingbar"> </a>
-	<div   class = "span_1_of_12 sec kickingsection"></div>
-	<a href = "#" class = "span_1_of_12 bar defensebar"></a>
-	<div class = "span_1_of_12 sec defensesection"></div>
 
-
-
+	</div>
 </div>
 </div>
-
 
 
 <div class = "clear"></div>
