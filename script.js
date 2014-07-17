@@ -3055,13 +3055,15 @@ playerArray[50] = new Array(23);
 
 		//USE THIS
 		//click on an A tag
-		$(".LM").click(function(){
+
+
+		$(".leseanmccoy").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("LM")){
+				if($(this).hasClass("leseanmccoy")){
 
 
-				$(".Ppage.LM").css("display","block");
-				$(".Ppage.LM").addClass("alive");
+				$(".Ppage.leseanmccoy").css("display","block");
+				$(".Ppage.leseanmccoy").addClass("alive");
 				$(".containme").css("z-index", "1000");
 				mainbody.slideUp(1300, function(){
 					$("#playerGrid").css("display","none");
