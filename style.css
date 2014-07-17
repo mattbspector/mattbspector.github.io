@@ -502,7 +502,11 @@ footer{
 	font-size: 18px;
 }
 .funnyNames p{
+	margin: 0;
+	padding: 0;
+	float: left;
 	font-size: 26px;
+	padding: 1em 0;
 
 }
 /*SPECIFIC PPAGES*/
@@ -875,7 +879,9 @@ footer{
 		font-size: 28px;
 	}
 
-
+.funnyNames p{
+	padding: 0.5em 0;
+}
 .passingsection td{
 	padding: 8px;
 }
@@ -902,6 +908,9 @@ footer{
 .pillar{
 	height: 10px;
 	width: 100%;
+}
+.tn{
+	display: none;
 }
 
 
