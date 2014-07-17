@@ -573,6 +573,16 @@ footer{
 	margin-top: 290px;
 }
 }
+
+@media only screen and (max-width: 1121px){
+	.should p, .shouldnot p{
+	margin: 10%;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+
+}
 @media only screen and (max-width: 1116px) {
 
 .rushingsection input{
@@ -640,6 +650,21 @@ footer{
 	}
 
 }
+@media only screen and (max-width: 905px) {
+	.should p, .shouldnot p{
+		margin: 6%;
+	}
+	.shouldnot h1, .should h1{
+		font-size: 25px;
+	}
+	.threefacts p{
+		font-size: 18px;
+		margin: 10px;
+	
+	}
+
+
+}
 @media only screen and (max-width: 836px) {
 	.rushingsection .boxes{
 		font-size: 12px;
@@ -702,6 +727,20 @@ footer{
  }
 
 }
+@media only screen and (max-width: 764px) {
+	.should p, .shouldnot p{
+		margin: 4%;
+	}
+	.shouldnot h1, .should h1{
+		font-size: 20px;
+	}
+	.threefacts p{
+		font-size: 18px;
+		margin: 10px;
+	}
+
+
+}
 
 @media only screen and (max-width: 741px) {
 	.styled select{
@@ -745,6 +784,20 @@ footer{
  .passingsection .boxes{
  	font-size: 14px;
  }
+
+}
+@media only screen and (max-width: 619px) {
+	.should p, .shouldnot p{
+		margin: 2%;
+		line-height: 1.1;
+	}
+	.shouldnot h1, .should h1{
+		font-size: 25px;
+	}
+	.threefacts p{
+		font-size: 18px;
+		margin: 5px;
+	}
 
 }
 @media only screen and (max-width: 567px) {
@@ -806,7 +859,22 @@ footer{
   margin-top:10px;
   text-align: center;
 
-}
+} 
+	.should p, .shouldnot p{
+		margin: 5%;
+		line-height: 1.5;
+	}
+	.threefacts p{
+		font-size: 15px;
+		margin: 3%;
+	}
+	 .should h1{
+		font-size: 30px;
+	}
+	.shouldnot h1{
+		font-size: 28px;
+	}
+
 
 .passingsection td{
 	padding: 8px;
