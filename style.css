@@ -484,7 +484,7 @@ footer{
 .funnyNames{
 	float: left;
 	padding: 1em 0;
-	height: 100px;
+	height: 200px;
 	text-align: center;
 }
 .threefacts{
@@ -818,7 +818,11 @@ footer{
 }
 .offvert{
 	width: 100%;
-	height: 50px;
+	height: 10px;
+}
+.pillar{
+	height: 10px;
+	width: 100%;
 }
 
 
