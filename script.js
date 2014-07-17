@@ -3094,13 +3094,20 @@ playerArray[50] = new Array(23);
 		});
 
 
-		$(".AP").click(function(){
+	$(".adrianpeterson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("AP")){
-				$(".Ppage.AP").css("display","block");
-				$(".Ppage.AP").addClass("alive");
+				if($(this).hasClass("adrianpeterson")){
+
+
+				$(".Ppage.adrianpeterson").css("display","block");
+				$(".Ppage.adrianpeterson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+
+				});
 			}
 					
 
@@ -3122,19 +3129,27 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 
-		$(".JC").click(function(){
+		$(".jamaalcharles").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("JC")){
-				$(".Ppage.JC").css("display","block");
-				$(".Ppage.JC").addClass("alive");
+				if($(this).hasClass("jamaalcharles")){
+
+
+				$(".Ppage.jamaalcharles").css("display","block");
+				$(".Ppage.jamaalcharles").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
+		
 
 			$(".MF").click(function(){
 			if(mainbody.is(":visible")){
@@ -3190,13 +3205,20 @@ playerArray[50] = new Array(23);
 			}
 			return false;
 		});
-			$(".JG").click(function(){
+		$(".jimmygraham").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("JG")){
-				$(".Ppage.JG").css("display","block");
-				$(".Ppage.JG").addClass("alive");
+				if($(this).hasClass("jimmygraham")){
+
+
+				$(".Ppage.jimmygraham").css("display","block");
+				$(".Ppage.jimmygraham").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+
+				});
 			}
 					
 

@@ -537,8 +537,90 @@ footer{
 .Ppage.leseanmccoy .funnyNames{
 	background-color: #3d9970;
 }
+/*AP*/
+.Ppage.adrianpeterson .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #b25fdc;
+	color: #222;
+	height: 200px;
+}
+.Ppage.adrianpeterson .shouldnot, .Ppage.adrianpeterson .should{
+	border-top: 10px #3b0360 solid;
+}
+.Ppage.adrianpeterson .offvert{
+	background-color: #3b0360;
 
+}
+.Ppage.adrianpeterson .threefacts{
+	background-color: #FFF;
+	border-top: 10px #3b0360 solid;
+	border-bottom: 10px #3b0360 solid;
+}
+.Ppage.adrianpeterson .pillar{
+	background-color: #3b0360;
+}
 
+.Ppage.adrianpeterson .funnyNames{
+	background-color: #b25fdc;
+}
+/*Jamaal Charles*/
+.Ppage.jamaalcharles .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #ff4136;
+	color: #222;
+	height: 200px;
+}
+.Ppage.jamaalcharles .shouldnot, .Ppage.jamaalcharles .should{
+	border-top: 10px #d10303 solid;
+}
+.Ppage.jamaalcharles .offvert{
+	background-color: #d10303;
+
+}
+.Ppage.jamaalcharles .threefacts{
+	background-color: #FFF;
+	border-top: 10px #d10303 solid;
+	border-bottom: 10px #d10303 solid;
+}
+.Ppage.jamaalcharles .pillar{
+	background-color: #d10303;
+}
+
+.Ppage.jamaalcharles .funnyNames{
+	background-color: #ff4136;
+}
+/* Jimmy Graham*/
+.Ppage.jimmygraham .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #c3ae5f;
+	color: #222;
+	height: 200px;
+}
+.Ppage.jimmygraham .shouldnot, .Ppage.jimmygraham .should{
+	border-top: 10px #a89974 solid;
+}
+.Ppage.jimmygraham .offvert{
+	background-color: #a89974;
+
+}
+.Ppage.jimmygraham .threefacts{
+	background-color: #FFF;
+	border-top: 10px #a89974 solid;
+	border-bottom: 10px #a89974 solid;
+}
+.Ppage.jimmygraham .pillar{
+	background-color: #a89974;
+}
+
+.Ppage.jimmygraham .funnyNames{
+	background-color: #c3ae5f;
+}
 /*responsive*/
 @media only screen and (max-width: 1242px) {
 
