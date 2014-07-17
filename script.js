@@ -7,10 +7,15 @@ $(document).ready(function(){
         function checkWidth() {
         if ($window.width() < 480) {
             $('.sec').addClass('span_12_of_12');
+            $('.rightarrow').hide();
+             $('.leftarrow').hide();
+
             };
 
         if ($window.width() >= 480) {
            $('.sec').removeClass('span_12_of_12');
+            $('.rightarrow').show();
+             $('.leftarrow').show();
         }
     }
 

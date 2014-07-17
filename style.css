@@ -59,20 +59,19 @@ body{
 		float: left;
 
 }
-.rightarrow img{
 
-	margin-top: 100%;
-
-}
 .leftarrow{
 
 		padding: 1em 0;
 		float: left;
 }
 .leftarrow img{
-	margin-top: 100%;
-
+	margin-top: 250px;
 }
+.rightarrow img{
+	margin-top: 250px;
+}
+
 
 table{
 	position: relative;
@@ -80,7 +79,7 @@ table{
 table img{
 	position: absolute;
 }
-.passingsection input, .receivingsection input{
+.passingsection input{
 	border:1px solid #FFF;
 	border-radius:20px;
 	height: 30px;
@@ -96,7 +95,7 @@ table img{
 	border:1px solid #FFF;
 	border-radius:20px;
 	height: 30px;
-	width: 100px;
+	width: 90px;
 	text-align: center;
 	font-size: 20px;
 	font-family: 'Lato';
@@ -113,7 +112,7 @@ td{
 	padding: 10px;
 }
 .rushingsection td{
-	padding: 5px;
+	padding: 2px;
 }
 
 .styled select{
@@ -143,7 +142,7 @@ td{
 	display: block;
 	position: relative;
 	z-index: 11;
-	color: #333;
+	color: #222;
 }
 .passingbar{
 	background-color: #9b50ba;
@@ -451,60 +450,230 @@ footer{
 	height: 300px;
 }
 
+@media only screen and (max-width: 1242px) {
 
-@media only screen and (max-width: 1020px) {
-	td{
-		padding: 8px;
+.passingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 25px;
+	width: 130px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+}
+.passingsection td{
+	padding: 4px;
+}
+}
+
+@media only screen and (max-width: 1166px) {
+
+.rushingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 25px;
+	width: 80px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+}
+.rushingsection img{
+	height: 60px;
+	width: 60px;
+	margin-top: 290px;
+}
+}
+@media only screen and (max-width: 1116px) {
+
+.rushingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 25px;
+	width: 50px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+}
+
+}
+@media only screen and (max-width: 978px) {
+
+.passingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 20px;
+	width: 100px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+}
+.passingsection td{
+	padding: 2px;
+}
+
+.passingsection img{
+	height: 60px;
+	width: 60px;
+	margin-top: 290px;
+}
+}
+@media only screen and (max-width: 953px) {
+	.rushingsection .boxes{
+		font-size: 13px;
+	}
+	.rushingsection .boxes{
+		margin-top: 30px;
 	}
 
-
 }
-
-@media only screen and (max-width: 888px) {
-
-	.styled select{
-   background: transparent;
-   width: 140px;
-   padding: 4px;
-   font-size: 18px;
-   border: 1px solid #CCC;
-   height: 30px;
- 
-}
-
-@media only screen and (max-width: 722px) {
-	.passingsection td, .rushingsetion td, .receivingsection td{
-		padding: 10px;
+@media only screen and (max-width: 836px) {
+	.rushingsection .boxes{
+		font-size: 12px;
+	}
+	.rushingsection .boxes{
+		margin-top: 30px;
+	}
+	.rushingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 20px;
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
 	}
 
-
 }
 
-.styled{
-   width: 120px;
-   height: 30px;
-   overflow: hidden;
-   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
-}
 
-td{
-		padding: 0px;
+@media only screen and (max-width: 786px) {
+	.rushingsection .boxes{
+		font-size: 11px;
 	}
+	.rushingsection .boxes{
+		margin-top: 0px;
+	}
+	.rushingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 20px;
+	width: 40px;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+	}
+
+	.rushingsection img{
+	height: 30px;
+	width: 30px;
+	margin-top: 330px;
+	}
+	.passingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 20px;
+	width: 80px;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
 }
+ .passingsection td{
+ 	padding: 0px;
+ }
+
+}
+
+@media only screen and (max-width: 681px) {
+
+	.passingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 15px;
+	width: 60px;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+}
+ .passingsection .boxes{
+ 	font-size: 14px;
+ }
+
+}
+@media only screen and (max-width: 567px) {
+	.rushingsection .boxes{
+		font-size: 10px;
+	}
+	.rushingsection .boxes{
+		margin-top: 0;
+	}
+	.rushingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 10px;
+	width: 30px;
+	text-align: center;
+	font-size: 8px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+	}
+	.passingsection input{
+	border:1px solid #FFF;
+	border-radius:20px;
+	height: 15px;
+	width: 40px;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Lato';
+	background-color: #FFF;
+	color: #222;
+	}
+	.passingsection img{
+	height: 30px;
+	width: 30px;
+	margin-top: 330px;
+	}
+
+}
+
+
+
 
 
 @media only screen and (max-width: 480px) {
-	.sec{
-		display: block;
-	}
 	.bar{
 		height: 80px;
 	}
 	.sec{
 		height: 350px;
 	}
-	td{
-		padding: 2px;
-	}
+	.bar .vertext{
+  text-decoration: none;
+  font-size: 50px;
+  color: #FFF;
+  -ms-transform:rotate(360deg); /* IE 9 */
+  -moz-transform:rotate(360deg); /* Firefox */
+  -webkit-transform:rotate(360deg); /* Safari and Chrome */
+  -o-transform:rotate(360deg); /* Opera */
+  margin-top:10px;
+  text-align: center;
+
+}
 	
 }
