@@ -453,20 +453,23 @@ footer{
 .should{
 	float: left;
 	padding: 1em 0;
-	height: 300px;
+	height: 320px;
 	width: 47.5%;
 	text-align: center;
 }
-.should h1, .shouldnot h1, .funnyNames h1{
+.should h1, .shouldnot h1, .funnyNames h1, .threefacts h1{
 	margin: 0;
 	padding: 0;
-	
 	font-size: 30px;
 	font-weight: 900;
 }
-
+.pillar{
+	float: left;
+	padding: 1em 0;
+	height: 240px;
+}
 .offvert{
-	height: 300px;
+	height: 340px;
 	width: 5%;
 	float: left;
 	padding: 1em 0;
@@ -474,7 +477,7 @@ footer{
 .shouldnot{
 	float: left;
 	padding: 1em 0;
-	height: 300px;
+	height: 320px;
 	width: 47.5%;
 	text-align: center;
 }
@@ -482,6 +485,12 @@ footer{
 	float: left;
 	padding: 1em 0;
 	height: 100px;
+	text-align: center;
+}
+.threefacts{
+	float: left;
+	padding: 1em 0;
+	height: 220px;
 	text-align: center;
 }
 
@@ -494,10 +503,22 @@ footer{
 	color: #222;
 	height: 200px;
 }
+.Ppage.leseanmccoy .shouldnot, .Ppage.leseanmccoy .should{
+	border-top: 10px #0a4737 solid;
+}
 .Ppage.leseanmccoy .offvert{
 	background-color: #0a4737;
 
 }
+.Ppage.leseanmccoy .threefacts{
+	background-color: #FFF;
+	border-top: 10px #0a4737 solid;
+	border-bottom: 10px #0a4737 solid;
+}
+.Ppage.leseanmccoy .pillar{
+	background-color: #0a4737;
+}
+
 .Ppage.leseanmccoy .funnyNames{
 	background-color: #3d9970;
 }
