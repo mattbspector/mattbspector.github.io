@@ -501,8 +501,28 @@ footer{
 	color: #222;
 }
 
+.styled select{
+   background:  transparent;
+   width: 130px;
+   padding: 5px;
+   font-size: 20px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.styled{
+   width: 100px;
+   height: 30px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
+
+
 }
 @media only screen and (max-width: 978px) {
+	.leaguesection td{
+		padding: 7px;
+	}
 
 .passingsection input{
 	border:1px solid #FFF;
@@ -597,6 +617,32 @@ footer{
 
 }
 
+@media only screen and (max-width: 741px) {
+	.styled select{
+   background: transparent;
+   width: 90px;
+   padding: 5px;
+   font-size: 20px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.styled{
+   width: 60px;
+   height: 34px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
+.leaguesection img{
+	margin-top: 290px;
+	height: 60px;
+	width: 60px;
+}
+.leaguesection td{
+	padding: 1px;
+}
+}
+
 @media only screen and (max-width: 681px) {
 
 	.passingsection input{
@@ -675,5 +721,14 @@ footer{
   text-align: center;
 
 }
-	
+
+.passingsection td{
+	padding: 8px;
+}
+.passingsection .boxes{
+	font-size: 14px;
+}
+.rushingsection td{
+	padding: 5px;
+}
 }
