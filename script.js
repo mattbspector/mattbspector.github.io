@@ -3069,7 +3069,7 @@ playerArray[50] = new Array(23);
 					$("#playerGrid").css("display","none");
 					$("#inputs").css("display","none");
 					$(".containme").css("position","relative");
-
+							window.scrollTo(0, 0);
 				});
 			}
 					
@@ -3078,21 +3078,26 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 
-
-		$(".PM").click(function(){
+	$(".peytonmanning").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("PM")){
-				$(".Ppage.PM").css("display","block");
-				$(".Ppage.PM").addClass("alive");
+				if($(this).hasClass("peytonmanning")){
+
+
+				$(".Ppage.peytonmanning").css("display","block");
+				$(".Ppage.peytonmanning").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});	
 			}
 					
 
 			}
 			return false;
 		});
-
 
 	$(".adrianpeterson").click(function(){
 			if(mainbody.is(":visible")){
@@ -3106,7 +3111,7 @@ playerArray[50] = new Array(23);
 					$("#playerGrid").css("display","none");
 					$("#inputs").css("display","none");
 					$(".containme").css("position","relative");
-
+							window.scrollTo(0, 0);
 				});
 			}
 					
@@ -3115,13 +3120,20 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-		$(".CJ").click(function(){
+	$(".calvinjohnson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("CJ")){
-				$(".Ppage.CJ").css("display","block");
-				$(".Ppage.CJ").addClass("alive");
+				if($(this).hasClass("calvinjohnson")){
+
+
+				$(".Ppage.calvinjohnson").css("display","block");
+				$(".Ppage.calvinjohnson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
 			}
 					
 
@@ -3141,7 +3153,7 @@ playerArray[50] = new Array(23);
 					$("#playerGrid").css("display","none");
 					$("#inputs").css("display","none");
 					$(".containme").css("position","relative");
-
+							window.scrollTo(0, 0);
 				});
 			}
 					
@@ -3151,27 +3163,40 @@ playerArray[50] = new Array(23);
 		});
 		
 
-			$(".MF").click(function(){
+			$(".mattforte").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("MF")){
-				$(".Ppage.MF").css("display","block");
-				$(".Ppage.MF").addClass("alive");
+				if($(this).hasClass("mattforte")){
+
+
+				$(".Ppage.mattforte").css("display","block");
+				$(".Ppage.mattforte").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
 			}
 					
 
 			}
 			return false;
 		});
-
-				$(".ML").click(function(){
+		$(".marshawnlynch").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("ML")){
-				$(".Ppage.ML").css("display","block");
-				$(".Ppage.ML").addClass("alive");
+				if($(this).hasClass("marshawnlynch")){
+
+
+				$(".Ppage.marshawnlynch").css("display","block");
+				$(".Ppage.marshawnlynch").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
 			}
 					
 
@@ -3179,26 +3204,41 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-			$(".EL").click(function(){
+			$(".eddielacy").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("EL")){
-				$(".Ppage.EL").css("display","block");
-				$(".Ppage.EL").addClass("alive");
+				if($(this).hasClass("eddielacy")){
+
+
+				$(".Ppage.eddielacy").css("display","block");
+				$(".Ppage.eddielacy").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
 			}
 					
 
 			}
 			return false;
 		});
-			$(".DM").click(function(){
+			
+	$(".dougmartin").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("DM")){
-				$(".Ppage.DM").css("display","block");
-				$(".Ppage.DM").addClass("alive");
+				if($(this).hasClass("dougmartin")){
+
+
+				$(".Ppage.dougmartin").css("display","block");
+				$(".Ppage.dougmartin").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
 			}
 					
 
@@ -3217,6 +3257,261 @@ playerArray[50] = new Array(23);
 					$("#playerGrid").css("display","none");
 					$("#inputs").css("display","none");
 					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		
+		$(".arianfoster").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("arianfoster")){
+
+
+				$(".Ppage.arianfoster").css("display","block");
+				$(".Ppage.arianfoster").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		
+
+			$(".aaronrodgers").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("aaronrodgers")){
+
+
+				$(".Ppage.aaronrodgers").css("display","block");
+				$(".Ppage.aaronrodgers").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".zacstacy").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("zacstacy")){
+
+
+				$(".Ppage.zacstacy").css("display","block");
+				$(".Ppage.zacstacy").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		
+			$(".demarcomurray").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("demarcomurray")){
+
+
+				$(".Ppage.demarcomurray").css("display","block");
+				$(".Ppage.demarcomurray").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".demaryiusthomas").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("demaryiusthomas")){
+
+
+				$(".Ppage.demaryiusthomas").css("display","block");
+				$(".Ppage.demaryiusthomas").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+				window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".ajgreen").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("ajgreen")){
+
+
+				$(".Ppage.ajgreen").css("display","block");
+				$(".Ppage.ajgreen").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		
+			$(".drewbrees").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("drewbrees")){
+
+
+				$(".Ppage.drewbrees").css("display","block");
+				$(".Ppage.drewbrees").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+
+			$(".dezbryant").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("dezbryant")){
+
+
+				$(".Ppage.dezbryant").css("display","block");
+				$(".Ppage.dezbryant").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		
+			$(".leveonbell").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("leveonbell")){
+
+
+				$(".Ppage.leveonbell").css("display","block");
+				$(".Ppage.leveonbell").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+							window.scrollTo(0, 0);
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		
+				$(".brandonmarshall").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("brandonmarshall")){
+
+
+				$(".Ppage.brandonmarshall").css("display","block");
+				$(".Ppage.brandonmarshall").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").css("display","none");
+					$("#inputs").css("display","none");
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+				$(".juliojones").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("juliojones")){
+
+
+				$(".Ppage.juliojones").css("display","block");
+				$(".Ppage.juliojones").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+
+
+		$(".jordynelson").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("jordynelson")){
+
+
+				$(".Ppage.jordynelson").css("display","block");
+				$(".Ppage.jordynelson").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
 
 				});
 			}
@@ -3226,183 +3521,22 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-			$(".AF").click(function(){
+		$(".alfredmorris").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("AF")){
-				$(".Ppage.AF").css("display","block");
-				$(".Ppage.AF").addClass("alive");
+				if($(this).hasClass("alfredmorris")){
+
+
+				$(".Ppage.alfredmorris").css("display","block");
+				$(".Ppage.alfredmorris").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-
-			$(".AR").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("AR")){
-				$(".Ppage.AR").css("display","block");
-				$(".Ppage.AR").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-
-				$(".ZS").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("ZS")){
-				$(".Ppage.ZS").css("display","block");
-				$(".Ppage.ZS").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-			$(".DM1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("DM1")){
-				$(".Ppage.DM1").css("display","block");
-				$(".Ppage.DM1").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-			$(".DT").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("DT")){
-				$(".Ppage.DT").css("display","block");
-				$(".Ppage.DT").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-			$(".AG").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("AG")){
-				$(".Ppage.AG").css("display","block");
-				$(".Ppage.AG").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-			$(".DB").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("DB")){
-				$(".Ppage.DB").css("display","block");
-				$(".Ppage.DB").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-
-				$(".DB1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("DB1")){
-				$(".Ppage.DB1").css("display","block");
-				$(".Ppage.DB1").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-		
-			$(".LB").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("LB")){
-				$(".Ppage.LB").css("display","block");
-				$(".Ppage.LB").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-			$(".BM").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("BM")){
-				$(".Ppage.BM").css("display","block");
-				$(".Ppage.BM").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-				$(".JJ").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("JJ")){
-				$(".Ppage.JJ").css("display","block");
-				$(".Ppage.JJ").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
 
 
-		$(".JN").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("JN")){
-				$(".Ppage.JN").css("display","block");
-				$(".Ppage.JN").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-		
-		
-		$(".AM").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("AM")){
-				$(".Ppage.AM").css("display","block");
-				$(".Ppage.AM").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				});
 			}
 					
 
@@ -3410,13 +3544,22 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 	
-		$(".AJ").click(function(){
+		$(".alshonjeffery").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("AJ")){
-				$(".Ppage.AJ").css("display","block");
-				$(".Ppage.AJ").addClass("alive");
+				if($(this).hasClass("alshonjeffery")){
+
+
+				$(".Ppage.alshonjeffery").css("display","block");
+				$(".Ppage.alshonjeffery").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3424,13 +3567,134 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 				
-	$(".MB").click(function(){
+		$(".monteeball").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("MB")){
-				$(".Ppage.MB").css("display","block");
-				$(".Ppage.MB").addClass("alive");
+				if($(this).hasClass("monteeball")){
+
+
+				$(".Ppage.monteeball").css("display","block");
+				$(".Ppage.monteeball").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".giovanibernard").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("giovanibernard")){
+
+
+				$(".Ppage.giovanibernard").css("display","block");
+				$(".Ppage.giovanibernard").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".juliusthomas").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("juliusthomas")){
+
+
+				$(".Ppage.juliusthomas").css("display","block");
+				$(".Ppage.juliusthomas").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".antoniobrown").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("antoniobrown")){
+
+
+				$(".Ppage.antoniobrown").css("display","block");
+				$(".Ppage.antoniobrown").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+
+	$(".reggiebush").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("reggiebush")){
+
+
+				$(".Ppage.reggiebush").css("display","block");
+				$(".Ppage.reggiebush").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+
+		$(".randallcobb").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("randallcobb")){
+
+
+				$(".Ppage.randallcobb").css("display","block");
+				$(".Ppage.randallcobb").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3438,86 +3702,23 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-	$(".GB").click(function(){
+
+		$(".andrejohnson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("GB")){
-				$(".Ppage.GB").css("display","block");
-				$(".Ppage.GB").addClass("alive");
+				if($(this).hasClass("andrejohnson")){
+
+
+				$(".Ppage.andrejohnson").css("display","block");
+				$(".Ppage.andrejohnson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-	
-		$(".JT").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("JT")){
-				$(".Ppage.JT").css("display","block");
-				$(".Ppage.JT").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-
-		$(".AB").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("AB")){
-				$(".Ppage.AB").css("display","block");
-				$(".Ppage.AB").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
 
 
-		$(".RB").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("RB")){
-				$(".Ppage.RB").css("display","block");
-				$(".Ppage.RB").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-
-		$(".RC").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("RC")){
-				$(".Ppage.RC").css("display","block");
-				$(".Ppage.RC").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		
-
-		$(".AJ1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("AJ1")){
-				$(".Ppage.AJ1").css("display","block");
-				$(".Ppage.AJ1").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				});
 			}
 					
 
@@ -3525,13 +3726,44 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 			
-		$(".BT").click(function(){
+			$(".bentate").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("BT")){
-				$(".Ppage.BT").css("display","block");
-				$(".Ppage.BT").addClass("alive");
+				if($(this).hasClass("bentate")){
+
+
+				$(".Ppage.bentate").css("display","block");
+				$(".Ppage.bentate").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".vincentjackson").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("vincentjackson")){
+
+
+				$(".Ppage.vincentjackson").css("display","block");
+				$(".Ppage.vincentjackson").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3539,42 +3771,46 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 	
-		$(".VJ").click(function(){
+
+			$(".larryfitzgerald").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("VJ")){
-				$(".Ppage.VJ").css("display","block");
-				$(".Ppage.VJ").addClass("alive");
+				if($(this).hasClass("larryfitzgerald")){
+
+
+				$(".Ppage.larryfitzgerald").css("display","block");
+				$(".Ppage.larryfitzgerald").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-	
 
-		$(".LF").click(function(){
+		$(".robertgriffin").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("LF")){
-				$(".Ppage.LF").css("display","block");
-				$(".Ppage.LF").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				if($(this).hasClass("robertgriffin")){
 
-			}
-			return false;
-		});
 
-		$(".RG").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("RG")){
-				$(".Ppage.RG").css("display","block");
-				$(".Ppage.RG").addClass("alive");
+				$(".Ppage.robertgriffin").css("display","block");
+				$(".Ppage.robertgriffin").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3582,83 +3818,44 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 			
-		$(".PG").click(function(){
+			$(".pierregarcon").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("PG")){
-				$(".Ppage.PG").css("display","block");
-				$(".Ppage.PG").addClass("alive");
+				if($(this).hasClass("pierregarcon")){
+
+
+				$(".Ppage.pierregarcon").css("display","block");
+				$(".Ppage.pierregarcon").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-	
-		$(".RM").click(function(){
+			$(".ryanmathews").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("RM")){
-				$(".Ppage.RM").css("display","block");
-				$(".Ppage.RM").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				if($(this).hasClass("ryanmathews")){
 
-			}
-			return false;
-		});
-			
-		$(".DS").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("DS")){
-				$(".Ppage.DS").css("display","block");
-				$(".Ppage.DS").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
 
-			}
-			return false;
-		});
-	
-		$(".MS").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("MS")){
-				$(".Ppage.MS").css("display","block");
-				$(".Ppage.MS").addClass("alive");
+				$(".Ppage.ryanmathews").css("display","block");
+				$(".Ppage.ryanmathews").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
 
-			}
-			return false;
-		});
 
-		$(".CS").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("CS")){
-				$(".Ppage.CS").css("display","block");
-				$(".Ppage.CS").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-	
-		$(".FG").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("FG")){
-				$(".Ppage.FG").css("display","block");
-				$(".Ppage.FG").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				});
 			}
 					
 
@@ -3666,13 +3863,156 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 			
-		$(".KA").click(function(){
+		$(".deseanjackson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("KA")){
-				$(".Ppage.KA").css("display","block");
-				$(".Ppage.KA").addClass("alive");
+				if($(this).hasClass("deseanjackson")){
+
+
+				$(".Ppage.deseanjackson").css("display","block");
+				$(".Ppage.deseanjackson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+	
+			$(".matthewstafford").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("matthewstafford")){
+
+
+				$(".Ppage.matthewstafford").css("display","block");
+				$(".Ppage.matthewstafford").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+	$(".cjspiller").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("cjspiller")){
+
+
+				$(".Ppage.cjspiller").css("display","block");
+				$(".Ppage.cjspiller").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+	
+		$(".frankgore").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("frankgore")){
+
+
+				$(".Ppage.frankgore").css("display","block");
+				$(".Ppage.frankgore").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".keenanallen").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("keenanallen")){
+
+
+				$(".Ppage.keenanallen").css("display","block");
+				$(".Ppage.keenanallen").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".victorcruz").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("victorcruz")){
+
+
+				$(".Ppage.victorcruz").css("display","block");
+				$(".Ppage.victorcruz").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});	
+		$(".roddywhite").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("roddywhite")){
+
+
+				$(".Ppage.roddywhite").css("display","block");
+				$(".Ppage.roddywhite").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3680,27 +4020,158 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 
-		$(".VC").click(function(){
+			$(".camnewton").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("VC")){
-				$(".Ppage.VC").css("display","block");
-				$(".Ppage.VC").addClass("alive");
+				if($(this).hasClass("camnewton")){
+
+
+				$(".Ppage.camnewton").css("display","block");
+				$(".Ppage.camnewton").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-			
-		$(".RW").click(function(){
+
+			$(".andreellington").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("RW")){
-				$(".Ppage.RW").css("display","block");
-				$(".Ppage.RW").addClass("alive");
+				if($(this).hasClass("andreellington")){
+
+
+				$(".Ppage.andreellington").css("display","block");
+				$(".Ppage.andreellington").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".weswelker").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("weswelker")){
+
+
+				$(".Ppage.weswelker").css("display","block");
+				$(".Ppage.weswelker").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+					
+		$(".andrewluck").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("andrewluck")){
+
+
+				$(".Ppage.andrewluck").css("display","block");
+				$(".Ppage.andrewluck").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".percyharvin").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("percyharvin")){
+
+
+				$(".Ppage.percyharvin").css("display","block");
+				$(".Ppage.percyharvin").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+	
+			$(".vernondavis").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("vernondavis")){
+
+
+				$(".Ppage.vernondavis").css("display","block");
+				$(".Ppage.vernondavis").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+
+			$(".trentrichardson").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("trentrichardson")){
+
+
+				$(".Ppage.trentrichardson").css("display","block");
+				$(".Ppage.trentrichardson").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3708,56 +4179,44 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-
-			$(".CN").click(function(){
+			$(".chrisjohnson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("CN")){
-				$(".Ppage.CN").css("display","block");
-				$(".Ppage.CN").addClass("alive");
+				if($(this).hasClass("chrisjohnson")){
+
+
+				$(".Ppage.chrisjohnson").css("display","block");
+				$(".Ppage.chrisjohnson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-
-		$(".AE").click(function(){
+			$(".michaelcrabtree").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("AE")){
-				$(".Ppage.AE").css("display","block");
-				$(".Ppage.AE").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				if($(this).hasClass("michaelcrabtree")){
 
-			}
-			return false;
-		});
-	
-		$(".WW").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("WW")){
-				$(".Ppage.WW").css("display","block");
-				$(".Ppage.WW").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
 
-			}
-			return false;
-		});
-					
-		$(".AL").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("AL")){
-				$(".Ppage.AL").css("display","block");
-				$(".Ppage.AL").addClass("alive");
+				$(".Ppage.michaelcrabtree").css("display","block");
+				$(".Ppage.michaelcrabtree").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3765,13 +4224,264 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 	
-		$(".PH").click(function(){
+			$(".rayrice").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("PH")){
-				$(".Ppage.PH").css("display","block");
-				$(".Ppage.PH").addClass("alive");
+				if($(this).hasClass("rayrice")){
+
+
+				$(".Ppage.rayrice").css("display","block");
+				$(".Ppage.rayrice").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".stevenjackson").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("stevenjackson")){
+
+
+				$(".Ppage.stevenjackson").css("display","block");
+				$(".Ppage.stevenjackson").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".tyhilton").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("tyhilton")){
+
+
+				$(".Ppage.tyhilton").css("display","block");
+				$(".Ppage.tyhilton").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".rashadjennings").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("rashadjennings")){
+
+
+				$(".Ppage.rashadjennings").css("display","block");
+				$(".Ppage.rashadjennings").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".shanevereen").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("shanevereen")){
+
+
+				$(".Ppage.shanevereen").css("display","block");
+				$(".Ppage.shanevereen").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".torreysmith").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("torreysmith")){
+
+
+				$(".Ppage.torreysmith").css("display","block");
+				$(".Ppage.torreysmith").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".joiquebell").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("joiquebell")){
+
+
+				$(".Ppage.joiquebell").css("display","block");
+				$(".Ppage.joiquebell").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".julianedelman").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("julianedelman")){
+
+
+				$(".Ppage.julianedelman").css("display","block");
+				$(".Ppage.julianedelman").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".robgronkowski").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("robgronkowski")){
+
+
+				$(".Ppage.robgronkowski").css("display","block");
+				$(".Ppage.robgronkowski").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".nickfoles").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("nickfoles")){
+
+
+				$(".Ppage.nickfoles").css("display","block");
+				$(".Ppage.nickfoles").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+			$(".cordarrellepatterson").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("cordarrellepatterson")){
+
+
+				$(".Ppage.cordarrellepatterson").css("display","block");
+				$(".Ppage.cordarrellepatterson").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".michaelfloyd").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("michaelfloyd")){
+
+
+				$(".Ppage.michaelfloyd").css("display","block");
+				$(".Ppage.michaelfloyd").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -3779,278 +4489,110 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 	
-		$(".VD").click(function(){
+			$(".stevanridley").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("VD")){
-				$(".Ppage.VD").css("display","block");
-				$(".Ppage.VD").addClass("alive");
+				if($(this).hasClass("stevanridley")){
+
+
+				$(".Ppage.stevanridley").css("display","block");
+				$(".Ppage.stevanridley").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-
-		$(".TR").click(function(){
+		$(".jeremymaclin").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("TR")){
-				$(".Ppage.TR").css("display","block");
-				$(".Ppage.TR").addClass("alive");
+				if($(this).hasClass("jeremymaclin")){
+
+
+				$(".Ppage.jeremymaclin").css("display","block");
+				$(".Ppage.jeremymaclin").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		
-		$(".CJ1").click(function(){
+			$(".bishopsankey").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("CJ1")){
-				$(".Ppage.CJ1").css("display","block");
-				$(".Ppage.CJ1").addClass("alive");
+				if($(this).hasClass("bishopsankey")){
+
+
+				$(".Ppage.bishopsankey").css("display","block");
+				$(".Ppage.bishopsankey").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		
-		$(".MC").click(function(){
+			$(".reggiewayne").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("MC")){
-				$(".Ppage.MC").css("display","block");
-				$(".Ppage.MC").addClass("alive");
+				if($(this).hasClass("reggiewayne")){
+
+
+				$(".Ppage.reggiewayne").css("display","block");
+				$(".Ppage.reggiewayne").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-	
-		$(".RR").click(function(){
+			$(".marquescolston").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("RR")){
-				$(".Ppage.RR").css("display","block");
-				$(".Ppage.RR").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				if($(this).hasClass("marquescolston")){
 
-			}
-			return false;
-		});
-			$(".SJ").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("SJ")){
-				$(".Ppage.SJ").css("display","block");
-				$(".Ppage.SJ").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
 
-			}
-			return false;
-		});
-		$(".TH").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("TH")){
-				$(".Ppage.TH").css("display","block");
-				$(".Ppage.TH").addClass("alive");
+				$(".Ppage.marquescolston").css("display","block");
+				$(".Ppage.marquescolston").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
 
-			}
-			return false;
-		});
-		$(".RJ").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("RJ")){
-				$(".Ppage.RJ").css("display","block");
-				$(".Ppage.RJ").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
 
-			}
-			return false;
-		});
-		$(".SV").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("SV")){
-				$(".Ppage.SV").css("display","block");
-				$(".Ppage.SV").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-			$(".TS").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("TS")){
-				$(".Ppage.TS").css("display","block");
-				$(".Ppage.TS").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".JB").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("JB")){
-				$(".Ppage.JB").css("display","block");
-				$(".Ppage.JB").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".JE").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("JE")){
-				$(".Ppage.JE").css("display","block");
-				$(".Ppage.JE").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".RG1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("RG1")){
-				$(".Ppage.RG1").css("display","block");
-				$(".Ppage.RG1").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".NF").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("NF")){
-				$(".Ppage.NF").css("display","block");
-				$(".Ppage.NF").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".CP").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("CP")){
-				$(".Ppage.CP").css("display","block");
-				$(".Ppage.CP").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".MF1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("MF1")){
-				$(".Ppage.MF1").css("display","block");
-				$(".Ppage.MF1").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-	
-		$(".SR").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("SR")){
-				$(".Ppage.SR").css("display","block");
-				$(".Ppage.SR").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".JM").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("JM")){
-				$(".Ppage.JM").css("display","block");
-				$(".Ppage.JM").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-			$(".BS").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("BS")){
-				$(".Ppage.BS").css("display","block");
-				$(".Ppage.BS").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".RW1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("RW1")){
-				$(".Ppage.RW1").css("display","block");
-				$(".Ppage.RW1").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
-
-			}
-			return false;
-		});
-		$(".MC1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("MC1")){
-				$(".Ppage.MC1").css("display","block");
-				$(".Ppage.MC1").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				});
 			}
 					
 
@@ -4058,39 +4600,66 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 																																			
-		$(".RW2").click(function(){
+			$(".russellwilson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("RW2")){
-				$(".Ppage.RW2").css("display","block");
-				$(".Ppage.RW2").addClass("alive");
+				if($(this).hasClass("russellwilson")){
+
+
+				$(".Ppage.russellwilson").css("display","block");
+				$(".Ppage.russellwilson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".PT").click(function(){
+			$(".pierrethomas").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("PT")){
-				$(".Ppage.PT").css("display","block");
-				$(".Ppage.PT").addClass("alive");
+				if($(this).hasClass("pierrethomas")){
+
+
+				$(".Ppage.pierrethomas").css("display","block");
+				$(".Ppage.pierrethomas").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".SW").click(function(){
+			$(".sammywatkins").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("SW")){
-				$(".Ppage.SW").css("display","block");
-				$(".Ppage.SW").addClass("alive");
+				if($(this).hasClass("sammywatkins")){
+
+
+				$(".Ppage.sammywatkins").css("display","block");
+				$(".Ppage.sammywatkins").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -4098,13 +4667,22 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 					
-	$(".KW").click(function(){
+		$(".kendallwright").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("KW")){
-				$(".Ppage.KW").css("display","block");
-				$(".Ppage.KW").addClass("alive");
+				if($(this).hasClass("kendallwright")){
+
+
+				$(".Ppage.kendallwright").css("display","block");
+				$(".Ppage.kendallwright").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -4112,39 +4690,66 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-	$(".JW").click(function(){
+		$(".jasonwitten").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("JW")){
-				$(".Ppage.JW").css("display","block");
-				$(".Ppage.JW").addClass("alive");
+				if($(this).hasClass("jasonwitten")){
+
+
+				$(".Ppage.jasonwitten").css("display","block");
+				$(".Ppage.jasonwitten").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-	$(".ES").click(function(){
+		$(".emmanuelsanders").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("ES")){
-				$(".Ppage.ES").css("display","block");
-				$(".Ppage.ES").addClass("alive");
+				if($(this).hasClass("emmanuelsanders")){
+
+
+				$(".Ppage.emmanuelsanders").css("display","block");
+				$(".Ppage.emmanuelsanders").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".KM").click(function(){
+		$(".knowshonmoreno").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("KM")){
-				$(".Ppage.KM").css("display","block");
-				$(".Ppage.KM").addClass("alive");
+				if($(this).hasClass("knowshonmoreno")){
+
+
+				$(".Ppage.knowshonmoreno").css("display","block");
+				$(".Ppage.knowshonmoreno").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -4152,13 +4757,22 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 					
-		$(".MW").click(function(){
+		$(".mikewallace").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("MW")){
-				$(".Ppage.MW").css("display","block");
-				$(".Ppage.MW").addClass("alive");
+				if($(this).hasClass("mikewallace")){
+
+
+				$(".Ppage.mikewallace").css("display","block");
+				$(".Ppage.mikewallace").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -4166,13 +4780,22 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 				
-	$(".GT").click(function(){
+		$(".goldentate").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("GT")){
-				$(".Ppage.GT").css("display","block");
-				$(".Ppage.GT").addClass("alive");
+				if($(this).hasClass("goldentate")){
+
+
+				$(".Ppage.goldentate").css("display","block");
+				$(".Ppage.goldentate").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -4180,13 +4803,66 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-	$(".TG").click(function(){
+		$(".tobygerhart").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("TG")){
-				$(".Ppage.TG").css("display","block");
-				$(".Ppage.TG").addClass("alive");
+				if($(this).hasClass("tobygerhart")){
+
+
+				$(".Ppage.tobygerhart").css("display","block");
+				$(".Ppage.tobygerhart").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+	$(".ericdecker").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("ericdecker")){
+
+
+				$(".Ppage.ericdecker").css("display","block");
+				$(".Ppage.ericdecker").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".cecilshorts").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("cecilshorts")){
+
+
+				$(".Ppage.cecilshorts").css("display","block");
+				$(".Ppage.cecilshorts").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
@@ -4194,42 +4870,22 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		
-	$(".ED").click(function(){
+		$(".terrancewilliams").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("ED")){
-				$(".Ppage.ED").css("display","block");
-				$(".Ppage.ED").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				if($(this).hasClass("terrancewilliams")){
 
-			}
-			return false;
-		});
 
-	$(".CS1").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("CS1")){
-				$(".Ppage.CS1").css("display","block");
-				$(".Ppage.CS1").addClass("alive");
+				$(".Ppage.terrancewilliams").css("display","block");
+				$(".Ppage.terrancewilliams").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
-			}
-					
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
 
-			}
-			return false;
-		});
-		
-		
-		$(".TW").click(function(){
-			if(mainbody.is(":visible")){
-				if($(this).hasClass("TW")){
-				$(".Ppage.TW").css("display","block");
-				$(".Ppage.TW").addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+
+				});
 			}
 					
 
@@ -4238,228 +4894,380 @@ playerArray[50] = new Array(23);
 		});
 					
 
-	$(".MJD").click(function(){
+	$(".mauricejonesdrew").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("MJD")){
-				$(".Ppage.MJD").css("display","block");
-				$(".Ppage.MJD").addClass("alive");
+				if($(this).hasClass("mauricejonesdrew")){
+
+
+				$(".Ppage.mauricejonesdrew").css("display","block");
+				$(".Ppage.mauricejonesdrew").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".CI").click(function(){
+		$(".chrisivory").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("CI")){
-				$(".Ppage.CI").css("display","block");
-				$(".Ppage.CI").addClass("alive");
+				if($(this).hasClass("chrisivory")){
+
+
+				$(".Ppage.chrisivory").css("display","block");
+				$(".Ppage.chrisivory").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".FJ").click(function(){
+		$(".fredjackson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("FJ")){
-				$(".Ppage.FJ").css("display","block");
-				$(".Ppage.FJ").addClass("alive");
+				if($(this).hasClass("fredjackson")){
+
+
+				$(".Ppage.fredjackson").css("display","block");
+				$(".Ppage.fredjackson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".DW").click(function(){
+		$(".dannywoodhead").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("DW")){
-				$(".Ppage.DW").css("display","block");
-				$(".Ppage.DW").addClass("alive");
+				if($(this).hasClass("dannywoodhead")){
+
+
+				$(".Ppage.dannywoodhead").css("display","block");
+				$(".Ppage.dannywoodhead").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".JG1").click(function(){
+			$(".joshgordon").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("JG1")){
-				$(".Ppage.JG1").css("display","block");
-				$(".Ppage.JG1").addClass("alive");
+				if($(this).hasClass("joshgordon")){
+
+
+				$(".Ppage.joshgordon").css("display","block");
+				$(".Ppage.joshgordon").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".DS1").click(function(){
+		$(".darrensproles").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("DS1")){
-				$(".Ppage.DS1").css("display","block");
-				$(".Ppage.DS1").addClass("alive");
+				if($(this).hasClass("darrensproles")){
+
+
+				$(".Ppage.darrensproles").css("display","block");
+				$(".Ppage.darrensproles").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".AB1").click(function(){
+			$(".anquanboldin").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("AB1")){
-				$(".Ppage.AB1").css("display","block");
-				$(".Ppage.AB1").addClass("alive");
+				if($(this).hasClass("anquanboldin")){
+
+
+				$(".Ppage.anquanboldin").css("display","block");
+				$(".Ppage.anquanboldin").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".DW1").click(function(){
+			$(".deangelowilliams").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("DW1")){
-				$(".Ppage.DW1").css("display","block");
-				$(".Ppage.DW1").addClass("alive");
+				if($(this).hasClass("deangelowilliams")){
+
+
+				$(".Ppage.deangelowilliams").css("display","block");
+				$(".Ppage.deangelowilliams").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".DW2").click(function(){
+			$(".davidwilson").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("DW2")){
-				$(".Ppage.DW2").css("display","block");
-				$(".Ppage.DW2").addClass("alive");
+				if($(this).hasClass("davidwilson")){
+
+
+				$(".Ppage.davidwilson").css("display","block");
+				$(".Ppage.davidwilson").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".BP").click(function(){
+			$(".bernardpierce").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("BP")){
-				$(".Ppage.BP").css("display","block");
-				$(".Ppage.BP").addClass("alive");
+				if($(this).hasClass("bernardpierce")){
+
+
+				$(".Ppage.bernardpierce").css("display","block");
+				$(".Ppage.bernardpierce").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".DH").click(function(){
+			$(".deandrehopkins").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("DH")){
-				$(".Ppage.DH").css("display","block");
-				$(".Ppage.DH").addClass("alive");
+				if($(this).hasClass("deandrehopkins")){
+
+
+				$(".Ppage.deandrehopkins").css("display","block");
+				$(".Ppage.deandrehopkins").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".RC1").click(function(){
+			$(".rileycooper").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("RC1")){
-				$(".Ppage.RC1").css("display","block");
-				$(".Ppage.RC1").addClass("alive");
+				if($(this).hasClass("rileycooper")){
+
+
+				$(".Ppage.rileycooper").css("display","block");
+				$(".Ppage.rileycooper").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".JC1").click(function(){
+			$(".jordancameron").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("JC1")){
-				$(".Ppage.JC1").css("display","block");
-				$(".Ppage.JC1").addClass("alive");
+				if($(this).hasClass("jordancameron")){
+
+
+				$(".Ppage.jordancameron").css("display","block");
+				$(".Ppage.jordancameron").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".DA").click(function(){
+			$(".dannyamendola").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("DA")){
-				$(".Ppage.DA").css("display","block");
-				$(".Ppage.DA").addClass("alive");
+				if($(this).hasClass("dannyamendola")){
+
+
+				$(".Ppage.dannyamendola").css("display","block");
+				$(".Ppage.dannyamendola").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".SDST").click(function(){
+		$(".seahawksd").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("SDST")){
-				$(".Ppage.SDST").css("display","block");
-				$(".Ppage.SDST").addClass("alive");
+				if($(this).hasClass("seahawksd")){
+
+
+				$(".Ppage.seahawksd").css("display","block");
+				$(".Ppage.seahawksd").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".CK").click(function(){
+			$(".colinkaepernick").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("CK")){
-				$(".Ppage.CK").css("display","block");
-				$(".Ppage.CK").addClass("alive");
+				if($(this).hasClass("colinkaepernick")){
+
+
+				$(".Ppage.colinkaepernick").css("display","block");
+				$(".Ppage.colinkaepernick").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
 		});
-		$(".MR").click(function(){
+		$(".mattryan").click(function(){
 			if(mainbody.is(":visible")){
-				if($(this).hasClass("MR")){
-				$(".Ppage.MR").css("display","block");
-				$(".Ppage.MR").addClass("alive");
+				if($(this).hasClass("mattryan")){
+
+
+				$(".Ppage.mattryan").css("display","block");
+				$(".Ppage.mattryan").addClass("alive");
 				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300);
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
 			}
 					
 
 			}
 			return false;
-		});
-																	
+		});														
 		$(".buttonClose").click(function(){
 			$("#playerGrid").css("display","block");
 			$("#inputs").css("display","block");

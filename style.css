@@ -509,8 +509,12 @@ footer{
 	padding: 1em 0;
 
 }
+.Ppage{
+	background-image: none;
+}
 /*SPECIFIC PPAGES*/
-.Ppage.leseanmccoy .name{
+
+.Ppage.eagles .name{
 	text-align: center;
 	font-size: 72px;
 	font-weight: 900;
@@ -518,27 +522,27 @@ footer{
 	color: #222;
 	height: 200px;
 }
-.Ppage.leseanmccoy .shouldnot, .Ppage.leseanmccoy .should{
+.Ppage.eagles .shouldnot, .Ppage.eagles .should{
 	border-top: 10px #0a4737 solid;
 }
-.Ppage.leseanmccoy .offvert{
+.Ppage.eagles .offvert{
 	background-color: #0a4737;
 
 }
-.Ppage.leseanmccoy .threefacts{
+.Ppage.eagles .threefacts{
 	background-color: #FFF;
 	border-top: 10px #0a4737 solid;
 	border-bottom: 10px #0a4737 solid;
 }
-.Ppage.leseanmccoy .pillar{
+.Ppage.eagles .pillar{
 	background-color: #0a4737;
 }
 
-.Ppage.leseanmccoy .funnyNames{
+.Ppage.eagles .funnyNames{
 	background-color: #3d9970;
 }
 /*AP*/
-.Ppage.adrianpeterson .name{
+.Ppage.vikings .name{
 	text-align: center;
 	font-size: 72px;
 	font-weight: 900;
@@ -546,27 +550,27 @@ footer{
 	color: #222;
 	height: 200px;
 }
-.Ppage.adrianpeterson .shouldnot, .Ppage.adrianpeterson .should{
+.Ppage.vikings .shouldnot, .Ppage.vikings .should{
 	border-top: 10px #3b0360 solid;
 }
-.Ppage.adrianpeterson .offvert{
+.Ppage.vikings .offvert{
 	background-color: #3b0360;
 
 }
-.Ppage.adrianpeterson .threefacts{
+.Ppage.vikings .threefacts{
 	background-color: #FFF;
 	border-top: 10px #3b0360 solid;
 	border-bottom: 10px #3b0360 solid;
 }
-.Ppage.adrianpeterson .pillar{
+.Ppage.vikings .pillar{
 	background-color: #3b0360;
 }
 
-.Ppage.adrianpeterson .funnyNames{
+.Ppage.vikings .funnyNames{
 	background-color: #b25fdc;
 }
 /*Jamaal Charles*/
-.Ppage.jamaalcharles .name{
+.Ppage.chiefs .name{
 	text-align: center;
 	font-size: 72px;
 	font-weight: 900;
@@ -574,27 +578,27 @@ footer{
 	color: #222;
 	height: 200px;
 }
-.Ppage.jamaalcharles .shouldnot, .Ppage.jamaalcharles .should{
+.Ppage.chiefs .shouldnot, .Ppage.chiefs .should{
 	border-top: 10px #d10303 solid;
 }
-.Ppage.jamaalcharles .offvert{
+.Ppage.chiefs .offvert{
 	background-color: #d10303;
 
 }
-.Ppage.jamaalcharles .threefacts{
+.Ppage.chiefs .threefacts{
 	background-color: #FFF;
 	border-top: 10px #d10303 solid;
 	border-bottom: 10px #d10303 solid;
 }
-.Ppage.jamaalcharles .pillar{
+.Ppage.chiefs .pillar{
 	background-color: #d10303;
 }
 
-.Ppage.jamaalcharles .funnyNames{
+.Ppage.chiefs .funnyNames{
 	background-color: #ff4136;
 }
 /* Jimmy Graham*/
-.Ppage.jimmygraham .name{
+.Ppage.saints .name{
 	text-align: center;
 	font-size: 72px;
 	font-weight: 900;
@@ -602,24 +606,816 @@ footer{
 	color: #222;
 	height: 200px;
 }
-.Ppage.jimmygraham .shouldnot, .Ppage.jimmygraham .should{
+.Ppage.saints .shouldnot, .Ppage.saints .should{
 	border-top: 10px #a89974 solid;
 }
-.Ppage.jimmygraham .offvert{
+.Ppage.saints .offvert{
 	background-color: #a89974;
 
 }
-.Ppage.jimmygraham .threefacts{
+.Ppage.saints .threefacts{
 	background-color: #FFF;
 	border-top: 10px #a89974 solid;
 	border-bottom: 10px #a89974 solid;
 }
-.Ppage.jimmygraham .pillar{
+.Ppage.saints .pillar{
 	background-color: #a89974;
 }
 
-.Ppage.jimmygraham .funnyNames{
+.Ppage.saints .funnyNames{
 	background-color: #c3ae5f;
+}
+
+
+/*Calvin Johnson*/
+.Ppage.lions .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #33a1ff;
+	color: #222;
+	height: 200px;
+}
+.Ppage.lions .shouldnot, .Ppage.lions .should{
+	border-top: 10px #0362a9 solid;
+}
+.Ppage.lions .offvert{
+	background-color: #0362a9;
+
+}
+.Ppage.lions .threefacts{
+	background-color: #FFF;
+	border-top: 10px #0362a9 solid;
+	border-bottom: 10px #0362a9 solid;
+}
+.Ppage.lions .pillar{
+	background-color: #0362a9;
+}
+
+.Ppage.lions .funnyNames{
+	background-color: #33a1ff;
+}
+/* Matt Forte */
+.Ppage.bears .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #0338a8;
+	color: #222;
+	height: 200px;
+}
+.Ppage.bears .shouldnot, .Ppage.bears .should{
+	border-top: 10px #1c1c40 solid;
+}
+.Ppage.bears .offvert{
+	background-color: #1c1c40;
+
+}
+.Ppage.bears .threefacts{
+	background-color: #FFF;
+	border-top: 10px #1c1c40 solid;
+	border-bottom: 10px #1c1c40 solid;
+}
+.Ppage.bears .pillar{
+	background-color: #1c1c40;
+}
+
+.Ppage.bears .funnyNames{
+	background-color: #0338a8;
+}
+/*Marshawn Lynch*/
+.Ppage.seahawks .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #4dbd38;
+	color: #222;
+	height: 200px;
+}
+.Ppage.seahawks .shouldnot, .Ppage.seahawks .should{
+	border-top: 10px #00295e solid;
+}
+.Ppage.seahawks .offvert{
+	background-color: #00295e;
+
+}
+.Ppage.seahawks .threefacts{
+	background-color: #FFF;
+	border-top: 10px #00295e solid;
+	border-bottom: 10px #00295e solid;
+}
+.Ppage.seahawks .pillar{
+	background-color: #00295e;
+}
+
+.Ppage.seahawks .funnyNames{
+	background-color: #4dbd38;
+}
+/*Eddie Lacy*/
+.Ppage.packers .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #209231;
+	color: #222;
+	height: 200px;
+}
+.Ppage.packers .shouldnot, .Ppage.packers .should{
+	border-top: 10px #244729 solid;
+}
+.Ppage.packers .offvert{
+	background-color: #244729;
+
+}
+.Ppage.packers .threefacts{
+	background-color: #FFF;
+	border-top: 10px #244729 solid;
+	border-bottom: 10px #244729 solid;
+}
+.Ppage.packers .pillar{
+	background-color: #244729;
+}
+
+.Ppage.packers .funnyNames{
+	background-color: #209231;
+}
+/* Peyton */
+.Ppage.broncos .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #fb7900;
+	color: #222;
+	height: 200px;
+}
+.Ppage.broncos .shouldnot, .Ppage.broncos .should{
+	border-top: 10px #f36a26 solid;
+}
+.Ppage.broncos .offvert{
+	background-color: #f36a26;
+
+}
+.Ppage.broncos .threefacts{
+	background-color: #FFF;
+	border-top: 10px #f36a26 solid;
+	border-bottom: 10px #f36a26 solid;
+}
+.Ppage.broncos .pillar{
+	background-color: #f36a26;
+}
+
+.Ppage.broncos .funnyNames{
+	background-color: #fb7900;
+}
+/*Doug Martin*/
+.Ppage.buccaneers .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #aaaaaa;
+	color: #222;
+	height: 200px;
+}
+.Ppage.buccaneers .shouldnot, .Ppage.buccaneers .should{
+	border-top: 10px #888888 solid;
+}
+.Ppage.buccaneers .offvert{
+	background-color: #888888;
+
+}
+.Ppage.buccaneers .threefacts{
+	background-color: #FFF;
+	border-top: 10px #888 solid;
+	border-bottom: 10px #888888 solid;
+}
+.Ppage.buccaneers .pillar{
+	background-color: #888888;
+}
+
+.Ppage.buccaneers .funnyNames{
+	background-color: #aaaaaa;
+}
+/*texans*/
+.Ppage.texans .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #356694;
+	color: #222;
+	height: 200px;
+}
+.Ppage.texans .shouldnot, .Ppage.texans .should{
+	border-top: 10px #01123e solid;
+}
+.Ppage.texans .offvert{
+	background-color: #01123e;
+
+}
+.Ppage.texans .threefacts{
+	background-color: #FFF;
+	border-top: 10px #01123e solid;
+	border-bottom: 10px #01123e solid;
+}
+.Ppage.texans .pillar{
+	background-color: #01123e;
+}
+
+.Ppage.texans .funnyNames{
+	background-color: #356694;
+}
+/*Rams*/
+.Ppage.rams .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #4a6280;
+	color: #222;
+	height: 200px;
+}
+.Ppage.rams .shouldnot, .Ppage.rams .should{
+	border-top: 10px #002859 solid;
+}
+.Ppage.rams .offvert{
+	background-color: #002859;
+
+}
+.Ppage.rams .threefacts{
+	background-color: #FFF;
+	border-top: 10px #002859 solid;
+	border-bottom: 10px #002859 solid;
+}
+.Ppage.rams .pillar{
+	background-color: #002859;
+}
+
+.Ppage.rams .funnyNames{
+	background-color: #4a6280;
+}
+/*Cowboys*/
+.Ppage.cowboys .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #9aa6ba;
+	color: #222;
+	height: 200px;
+}
+.Ppage.cowboys .shouldnot, .Ppage.cowboys .should{
+	border-top: 10px #0d254c solid;
+}
+.Ppage.cowboys .offvert{
+	background-color: #0d254c;
+
+}
+.Ppage.cowboys .threefacts{
+	background-color: #FFF;
+	border-top: 10px #0d254c solid;
+	border-bottom: 10px #0d254c solid;
+}
+.Ppage.cowboys .pillar{
+	background-color: #0d254c;
+}
+
+.Ppage.cowboys .funnyNames{
+	background-color: #9aa6ba;
+}
+/*Bengals*/
+.Ppage.bengals .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #ff8c03;
+	color: #222;
+	height: 200px;
+}
+.Ppage.bengals .shouldnot, .Ppage.bengals .should{
+	border-top: 10px #f04e23 solid;
+}
+.Ppage.bengals .offvert{
+	background-color: #f04e23;
+
+}
+.Ppage.bengals .threefacts{
+	background-color: #FFF;
+	border-top: 10px #f04e23 solid;
+	border-bottom: 10px #f04e23 solid;
+}
+.Ppage.bengals .pillar{
+	background-color: #f04e23;
+}
+
+.Ppage.bengals .funnyNames{
+	background-color: #ff8c03;
+}
+/*steelers*/
+.Ppage.steelers .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #444;
+	color: #FFF;
+	height: 200px;
+}
+.Ppage.steelers .shouldnot, .Ppage.steelers .should{
+	border-top: 10px #111 solid;
+}
+.Ppage.steelers .offvert{
+	background-color: #111;
+
+}
+.Ppage.steelers .threefacts{
+	background-color: #FFF;
+	border-top: 10px #111 solid;
+	border-bottom: 10px #111 solid;
+}
+.Ppage.steelers .pillar{
+	background-color: #111;
+}
+
+.Ppage.steelers .funnyNames{
+	color: #FFF;
+	background-color: #444;
+}
+/*Falcons*/
+.Ppage.falcons .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #c34141;
+	color: #222;
+	height: 200px;
+}
+.Ppage.falcons .shouldnot, .Ppage.falcons .should{
+	border-top: 10px #b60d20 solid;
+}
+.Ppage.falcons .offvert{
+	background-color: #b60d20;
+
+}
+.Ppage.falcons .threefacts{
+	background-color: #FFF;
+	border-top: 10px #b60d20 solid;
+	border-bottom: 10px #b60d20 solid;
+}
+.Ppage.falcons .pillar{
+	background-color: #b60d20;
+}
+
+.Ppage.falcons .funnyNames{
+	background-color: #c34141;
+}
+/*Redskins*/
+.Ppage.redskins .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #f6d986;
+	color: #222;
+	height: 200px;
+}
+.Ppage.redskins .shouldnot, .Ppage.redskins .should{
+	border-top: 10px #f4ba0e solid;
+}
+.Ppage.redskins .offvert{
+	background-color: #f4ba0e;
+
+}
+.Ppage.redskins .threefacts{
+	background-color: #FFF;
+	border-top: 10px #f4ba0e solid;
+	border-bottom: 10px #f4ba0e solid;
+}
+.Ppage.redskins .pillar{
+	background-color: #f4ba0e;
+}
+
+.Ppage.redskins .funnyNames{
+	background-color: #f6d986;
+}
+/*browns*/
+.Ppage.browns .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #a5744c;
+	color: #222;
+	height: 200px;
+}
+.Ppage.browns .shouldnot, .Ppage.browns .should{
+	border-top: 10px #291c09 solid;
+}
+.Ppage.browns .offvert{
+	background-color: #291c09;
+
+}
+.Ppage.browns .threefacts{
+	background-color: #FFF;
+	border-top: 10px #291c09 solid;
+	border-bottom: 10px #291c09 solid;
+}
+.Ppage.browns .pillar{
+	background-color: #291c09;
+}
+
+.Ppage.browns .funnyNames{
+	background-color: #a5744c;
+}
+/*cardinals*/
+.Ppage.cardinals .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #e32a45;
+	color: #222;
+	height: 200px;
+}
+.Ppage.cardinals .shouldnot, .Ppage.cardinals .should{
+	border-top: 10px #870619 solid;
+}
+.Ppage.cardinals .offvert{
+	background-color: #870619;
+
+}
+.Ppage.cardinals .threefacts{
+	background-color: #FFF;
+	border-top: 10px #870619 solid;
+	border-bottom: 10px #870619 solid;
+}
+.Ppage.cardinals .pillar{
+	background-color: #870619;
+}
+
+.Ppage.cardinals .funnyNames{
+	background-color: #e32a45;
+}
+/*Patriots*/
+.Ppage.patriots .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #2250a1;
+	color: #222;
+	height: 200px;
+}
+.Ppage.patriots .shouldnot, .Ppage.patriots .should{
+	border-top: 10px #0d244d solid;
+}
+.Ppage.patriots .offvert{
+	background-color: #0d244d;
+
+}
+.Ppage.patriots .threefacts{
+	background-color: #FFF;
+	border-top: 10px #0d244d solid;
+	border-bottom: 10px #0d244d solid;
+}
+.Ppage.patriots .pillar{
+	background-color: #0d244d;
+}
+
+.Ppage.patriots .funnyNames{
+	background-color: #2250a1;
+}
+/*chargers*/
+.Ppage.chargers .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #3997d3;
+	color: #222;
+	height: 200px;
+}
+.Ppage.chargers .shouldnot, .Ppage.chargers .should{
+	border-top: 10px #12274b solid;
+}
+.Ppage.chargers .offvert{
+	background-color: #12274b;
+
+}
+.Ppage.chargers .threefacts{
+	background-color: #FFF;
+	border-top: 10px #12274b solid;
+	border-bottom: 10px #12274b solid;
+}
+.Ppage.chargers .pillar{
+	background-color: #12274b;
+}
+
+.Ppage.chargers .funnyNames{
+	background-color: #3997d3;
+}
+/*bills*/
+.Ppage.bills .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #4d6b92;
+	color: #222;
+	height: 200px;
+}
+.Ppage.bills .shouldnot, .Ppage.bills .should{
+	border-top: 10px #143d75 solid;
+}
+.Ppage.bills .offvert{
+	background-color: #143d75;
+
+}
+.Ppage.bills .threefacts{
+	background-color: #FFF;
+	border-top: 10px #143d75 solid;
+	border-bottom: 10px #143d75 solid;
+}
+.Ppage.bills .pillar{
+	background-color: #143d75;
+}
+
+.Ppage.bills .funnyNames{
+	background-color: #4d6b92;
+}
+/*fortyniners*/
+.Ppage.fortyniners .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #bf0000;
+	color: #222;
+	height: 200px;
+}
+.Ppage.fortyniners .shouldnot, .Ppage.fortyniners .should{
+	border-top: 10px #ac011e solid;
+}
+.Ppage.fortyniners .offvert{
+	background-color: #ac011e;
+
+}
+.Ppage.fortyniners .threefacts{
+	background-color: #FFF;
+	border-top: 10px #ac011e solid;
+	border-bottom: 10px #ac011e solid;
+}
+.Ppage.fortyniners .pillar{
+	background-color: #ac011e;
+}
+
+.Ppage.fortyniners .funnyNames{
+	background-color: #bf0000;
+}
+/*Giants*/
+.Ppage.giants .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #0078ff;
+	color: #222;
+	height: 200px;
+}
+.Ppage.giants .shouldnot, .Ppage.giants .should{
+	border-top: 10px #003b7d solid;
+}
+.Ppage.giants .offvert{
+	background-color: #003b7d;
+
+}
+.Ppage.giants .threefacts{
+	background-color: #FFF;
+	border-top: 10px #003b7d solid;
+	border-bottom: 10px #003b7d solid;
+}
+.Ppage.giants .pillar{
+	background-color: #003b7d;
+}
+
+.Ppage.giants .funnyNames{
+	background-color: #0078ff;
+}
+/*Panthers*/
+.Ppage.panthers .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #0084c4;
+	color: #222;
+	height: 200px;
+}
+.Ppage.panthers .shouldnot, .Ppage.panthers .should{
+	border-top: 10px #5a819a solid;
+}
+.Ppage.panthers .offvert{
+	background-color: #5a819a;
+
+}
+.Ppage.panthers .threefacts{
+	background-color: #FFF;
+	border-top: 10px #5a819a solid;
+	border-bottom: 10px #5a819a solid;
+}
+.Ppage.panthers .pillar{
+	background-color: #5a819a;
+}
+
+.Ppage.panthers .funnyNames{
+	background-color: #0084c4;
+}
+/*Colts*/
+.Ppage.colts .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #bbd9f2;
+	color: #222;
+	height: 200px;
+}
+.Ppage.colts .shouldnot, .Ppage.colts .should{
+	border-top: 10px #143d75 solid;
+}
+.Ppage.colts .offvert{
+	background-color: #143d75;
+
+}
+.Ppage.colts .threefacts{
+	background-color: #FFF;
+	border-top: 10px #143d75 solid;
+	border-bottom: 10px #143d75 solid;
+}
+.Ppage.colts .pillar{
+	background-color: #143d75;
+}
+
+.Ppage.colts .funnyNames{
+	background-color: #bbd9f2;
+}
+/*jets*/
+.Ppage.jets .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #366d49;
+	color: #222;
+	height: 200px;
+}
+.Ppage.jets .shouldnot, .Ppage.jets .should{
+	border-top: 10px #0e351c solid;
+}
+.Ppage.jets .offvert{
+	background-color: #0e351c;
+
+}
+.Ppage.jets .threefacts{
+	background-color: #FFF;
+	border-top: 10px #0e351c solid;
+	border-bottom: 10px #0e351c solid;
+}
+.Ppage.jets .pillar{
+	background-color: #0e351c;
+}
+
+.Ppage.jets .funnyNames{
+	background-color: #366d49;
+}
+/*ravens*/
+.Ppage.ravens .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #32034a;
+	color: #FFF;
+	height: 200px;
+}
+.Ppage.ravens .shouldnot, .Ppage.ravens .should{
+	border-top: 10px #2d2062 solid;
+}
+.Ppage.ravens .offvert{
+	background-color: #2d2062;
+
+}
+.Ppage.ravens .threefacts{
+	background-color: #FFF;
+	border-top: 10px #2d2062 solid;
+	border-bottom: 10px #2d2062 solid;
+}
+.Ppage.ravens .pillar{
+	background-color: #2d2062;
+}
+
+.Ppage.ravens .funnyNames{
+	background-color: #32034a;
+	color: #FFF;
+}
+/*titans*/
+.Ppage.titans .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #b1dff4;
+	color: #222;
+	height: 200px;
+}
+.Ppage.titans .shouldnot, .Ppage.titans .should{
+	border-top: 10px #4095d1 solid;
+}
+.Ppage.titans .offvert{
+	background-color: #4095d1;
+
+}
+.Ppage.titans .threefacts{
+	background-color: #FFF;
+	border-top: 10px #4095d1 solid;
+	border-bottom: 10px #4095d1 solid;
+}
+.Ppage.titans .pillar{
+	background-color: #4095d1;
+}
+
+.Ppage.titans .funnyNames{
+	background-color: #b1dff4;
+
+}
+/*dolphins*/
+.Ppage.dolphins .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #46ffff;
+	color: #222;
+	height: 200px;
+}
+.Ppage.dolphins .shouldnot, .Ppage.dolphins .should{
+	border-top: 10px #fb7900 solid;
+}
+.Ppage.dolphins .offvert{
+	background-color: #fb7900;
+
+}
+.Ppage.dolphins .threefacts{
+	background-color: #FFF;
+	border-top: 10px #fb7900 solid;
+	border-bottom: 10px #fb7900 solid;
+}
+.Ppage.dolphins .pillar{
+	background-color: #fb7900;
+}
+
+.Ppage.dolphins .funnyNames{
+	background-color: #46ffff;
+
+}
+/*jaguars*/
+.Ppage.jaguars .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #39cccc;
+	color: #222;
+	height: 200px;
+}
+.Ppage.jaguars .shouldnot, .Ppage.jaguars .should{
+	border-top: 10px #21898f solid;
+}
+.Ppage.jaguars .offvert{
+	background-color: #21898f;
+
+}
+.Ppage.jaguars .threefacts{
+	background-color: #FFF;
+	border-top: 10px #21898f solid;
+	border-bottom: 10px #21898f solid;
+}
+.Ppage.jaguars .pillar{
+	background-color: #21898f;
+}
+
+.Ppage.jaguars .funnyNames{
+	background-color: #39cccc;
+
+}
+/*raiders*/
+.Ppage.raiders .name{
+	text-align: center;
+	font-size: 72px;
+	font-weight: 900;
+	background-color: #dddddd;
+	color: #222;
+	height: 200px;
+}
+.Ppage.raiders .shouldnot, .Ppage.raiders .should{
+	border-top: 10px #111 solid;
+}
+.Ppage.raiders .offvert{
+	background-color: #111;
+
+}
+.Ppage.raiders .threefacts{
+	background-color: #FFF;
+	border-top: 10px #111 solid;
+	border-bottom: 10px #111 solid;
+}
+.Ppage.raiders .pillar{
+	background-color: #111;
+}
+
+.Ppage.raiders .funnyNames{
+	background-color: #dddddd;
+
 }
 /*responsive*/
 @media only screen and (max-width: 1242px) {
@@ -637,6 +1433,9 @@ footer{
 }
 .passingsection td{
 	padding: 4px;
+}
+.Ppage.jimmygraham .should{
+	font-size: 18px;
 }
 }
 
