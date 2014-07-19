@@ -237,9 +237,9 @@ playerArray[1] = new Array(17);
 	playerArray[1][3] = 0;//INTERCEPTIONS
 	playerArray[1][4] = 1291;//RUSH YARDS 129 + 80 + 64 + 25 + 6 - 6
 	playerArray[1][5] = 10.2;//RUSHING TOUCHDOWNS
-	playerArray[1][6] = 32.5;//RECEPTIONS
-	playerArray[1][7] = 255;//RECEIVING YARDS
-	playerArray[1][8] = 1.3;//RECEIVING TOUCHDOWNS
+	playerArray[1][6] = 49.5;//RECEPTIONS
+	playerArray[1][7] = 500.2;//RECEIVING YARDS
+	playerArray[1][8] = 2.3;//RECEIVING TOUCHDOWNS
 	playerArray[1][9] = 2.5;//FUMBLES
 	playerArray[1][10] = 0;//TOTAL POINTS
 	playerArray[1][11] = 0;//BASELINE 
@@ -767,7 +767,7 @@ playerArray[27] = new Array(17);
 	playerArray[27][12] = "CJ Spiller";//NAME
 	playerArray[27][13] = "RB"; //POSITION
 	playerArray[27][14] = "bills"; //TEAM
-	playerArray[27][15] = "Images/Cj-Spiller.png";//PIC
+	playerArray[27][15] = "Images/CJ-Spiller.png";//PIC
 	playerArray[27][16] = "cjspiller";
 
 playerArray[28] = new Array(17);
@@ -1350,7 +1350,7 @@ playerArray[56] = new Array(17);
 	playerArray[56][12] = "T.Y. Hilton";//NAME
 	playerArray[56][13] = "WR"; //POSITION
 	playerArray[56][14] = "colts"; //TEAM
-	playerArray[56][15] = "Images/Ty-Hilton.png";//PIC
+	playerArray[56][15] = "Images/TY-Hilton.png";//PIC
 	playerArray[56][16] = "tyhilton";
 
 
@@ -1747,7 +1747,7 @@ playerArray[76] = new Array(17);
 	playerArray[76][13] = "QB"; //POSITION
 	playerArray[76][14] = "bears"; //TEAM
 	playerArray[76][15] = "Images/Jay-Cutler.png";//PIC
-	playerArray[76][16] = "jay cutler";
+	playerArray[76][16] = "jaycutler";
 
 
 
@@ -4707,7 +4707,271 @@ playerArray[99] = new Array(17);
 
 			}
 			return false;
-		});														
+		});	
+		$(".gregolsen").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("gregolsen")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.gregolsen").css("display","block");
+				$(".Ppage.gregolsen").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});		
+		$(".jordanreed").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("jordanreed")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.jordanreed").css("display","block");
+				$(".Ppage.jordanreed").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});		
+		$(".tombrady").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("tombrady")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.tombrady").css("display","block");
+				$(".Ppage.tombrady").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});		
+		$(".dennispitta").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("dennispitta")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.dennispitta").css("display","block");
+				$(".Ppage.dennispitta").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});	
+		$(".kylerudolph").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("kylerudolph")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.kylerudolph").css("display","block");
+				$(".Ppage.kylerudolph").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});		
+		$(".tonyromo").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("tonyromo")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.tonyromo").css("display","block");
+				$(".Ppage.tonyromo").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});		
+		$(".lamarmiller").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("lamarmiller")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.lamarmiller").css("display","block");
+				$(".Ppage.lamarmiller").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});		
+		$(".philliprivers").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("philliprivers")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.philliprivers").css("display","block");
+				$(".Ppage.philliprivers").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});
+		$(".terrancewest").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("terrancewest")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.terrancewest").css("display","block");
+				$(".Ppage.terrancewest").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});			
+		$(".jaycutler").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("jaycutler")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.jaycutler").css("display","block");
+				$(".Ppage.jaycutler").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});	
+		$(".mikeevans").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("mikeevans")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.mikeevans").css("display","block");
+				$(".Ppage.mikeevans").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});	
+		$(".marvinjones").click(function(){
+			if(mainbody.is(":visible")){
+				if($(this).hasClass("marvinjones")){
+
+						ycoord = $(this).offset().top;
+				$(".Ppage.marvinjones").css("display","block");
+				$(".Ppage.marvinjones").addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+		});																			
 		$(".buttonClose").click(function(){
 			$("#playerGrid").css("display","block");
 			$("#inputs").css("display","block");

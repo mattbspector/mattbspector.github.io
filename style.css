@@ -364,8 +364,9 @@ a h2{
 	margin-bottom: 5px;
 	padding: 5px;
 	font-style: none;
-	border-right: 2px #AAA solid;
+	/*border-right: 2px #AAA solid;*/
 	color: #FFF;
+	opacity: 0.9;
 
 
 
@@ -1423,6 +1424,9 @@ footer{
 	background-color: #dddddd;
 
 }
+.buttonClose:hover{
+	opacity: 0.2;
+}
 /*responsive*/
 @media only screen and (max-width: 1242px) {
 
@@ -1507,6 +1511,12 @@ footer{
 
 }
 @media only screen and (max-width: 978px) {
+	a h2{
+		font-size: 20px;
+	}
+	a img{
+		max-height: 195px;
+	}
 	.leaguesection td{
 		padding: 7px;
 	}
@@ -1799,6 +1809,11 @@ footer{
 .tn{
 	display: none;
 }
-
+a h2{
+	font-size: 30px;
+}
+a img{
+	max-height: 182px;
+}
 
 }
