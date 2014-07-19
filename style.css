@@ -188,9 +188,15 @@ td{
 	z-index: 10;
 }
 
+#playerGrid a:hover{
+	opacity: 0.7;
+
+}
+
 a img{
 	display:block;
-	margin: auto auto
+	margin: auto auto;
+	max-height: 189.8px;
 }
 
 .bears{

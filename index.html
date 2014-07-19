@@ -35,7 +35,7 @@
 				<td>Number of Teams: </td>
 					<td>
 						<div class = "styled">
-							<select>
+							<select class = "numTeams">
 			
 							<option value="4" selected = "selected">4</option>
 							<option value="6">6</option>
@@ -53,7 +53,7 @@
 						</div>
 				</td>
 				<td>RB/WR (FLEX) Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled"><select class = "RBWRflex">
 			<option value="0" selected = "selected">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -64,14 +64,14 @@
 			</tr>
 			<tr>
 				<td>QB Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled "><select class = "QBstart">
 			<option value="1" selected = "selected">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
 			</select></div>
 				</td>
 				<td>RB/WR/TE (FLEX) Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled"><select class = "RBWRTEflex">
 			<option value="0" selected = "selected">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -82,7 +82,7 @@
 			</tr>
 			<tr>
 				<td>RB Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled"><select class = "RBstart">
 			<option value="1" selected = "selected">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -90,7 +90,7 @@
 			</select></div>
 				</td>
 				<td>K Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled"><select class = "Kstart">
 			<option value="0" selected = "selected">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -100,7 +100,7 @@
 			</tr>
 			<tr>
 				<td>WR Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled"><select class = "WRstart">
 			<option value="1" selected = "selected">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -110,7 +110,7 @@
 			</select></div>
 				</td>
 				<td> D/ST Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled"><select class = "Dstart">
 			<option value="0" selected = "selected">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -121,7 +121,7 @@
 			<tr>
 
 				<td>TE Starters: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled"><select class = "TEstart">
 			<option value="0" selected = "selected">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -130,7 +130,7 @@
 			</select></div>
 				</td>
 				<td>Bench: </td>
-						<td>	<div class = "styled"><select>
+						<td>	<div class = "styled "><select class = "Bench">
 			<option value="0" selected = "selected">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -169,13 +169,13 @@
 				<td>Points per Completion: </td>
 					<td>
 						
-							<input>
+							<input class = "completions"> 
 						
 					</td>
 					<td>Rushing Yards per Point </td>
 					<td>
 						
-							<input>
+							<input class = "Rushyds">
 						
 					</td>
 			</tr>
@@ -183,50 +183,50 @@
 			<tr>
 				<td>Passing Yards per Point </td>
 						<td>	
-							<input>
+							<input class = "Passyds">
 						</td>
 							<td>Points per Rushing TD</td>
 					<td>
 						
-							<input>
+							<input class = "RushTD">
 						
 					</td>
 			</tr>
 
 			<tr>
 				<td>Points per Passing TD </td>
-						<td>	<input>
+						<td>	<input class = "PassTD">
 				</td>
 					<td>Points per Reception </td>
 					<td>
 						
-							<input>
+							<input class = "PPR">
 						
 					</td>
 			</tr>
 			<tr>
 					<td>Points per Interception</td>
 						<td>	
-									<input>
+									<input class = "Int">
 				
 				</td>
 					<td>Receiving Yards per Point</td>
 					<td>
 						
-							<input>
+							<input class = "Receiveyds">
 						
 					</td>
 			</tr>
 			<tr>
 					<td>Points per Fumble </td>
 						<td>	
-									<input>
+									<input class ="fumble">
 				
 				</td>
 					<td>Points per Receiving TD</td>
 					<td>
 						
-							<input>
+							<input class = "ReceiveTD">
 						
 					</td>
 			</tr>
@@ -254,19 +254,19 @@
 				<td>Points per FG 0-19 Yards: </td>
 					<td>
 						
-							<input>
+							<input class = "FG019">
 						
 					</td>
 					<td>Points per Sack </td>
 					<td>
 						
-							<input>
+							<input class = "sack">
 						
 					</td>
 					<td>Points for Allowed 0 Points</td>
 					<td>
 						
-							<input>
+							<input class = "pts0">
 						
 					</td>
 			</tr>
@@ -274,93 +274,93 @@
 			<tr>
 				<td>Points per FG 20-29 Yards:</td>
 						<td>	
-							<input>
+							<input class = "FG2029">
 						</td>
 							<td>Points per INT</td>
 					<td>
 						
-							<input>
+							<input class = "pick">
 						
 					</td>
 					<td>Points for Allowed 1-6 Points</td>
 					<td>
 						
-							<input>
+							<input class = "pts16">
 						
 					</td>
 			</tr>
 
 			<tr>
 				<td>Points per FG 30-39 Yards </td>
-						<td>	<input>
+						<td>	<input class = "FG3039">
 				</td>
 					<td>Points per Fumble Recovery </td>
 					<td>
 						
-							<input>
+							<input class = "fumbrecovery">
 						
 					</td>
 					<td>Points for Allowed 7-13 Points </td>
 					<td>
 						
-							<input>
+							<input class = "pts713">
 						
 					</td>
 			</tr>
 			<tr>
 					<td>Points per FG 40-49 Yards</td>
 						<td>	
-									<input>
+									<input class = "FG4049">
 				
 				</td>
 					<td>Points per Defensive Touchdown</td>
 					<td>
 						
-							<input>
+							<input class = "DefTD">
 						
 					</td>
 					<td>Points for allowed 14-20 Points</td>
 					<td>
 						
-							<input>
+							<input class = "pts1420">
 						
 					</td>
 			</tr>
 			<tr>
 					<td>Points per FG 50+ Yards </td>
 						<td>	
-									<input>
+									<input class = "FG50">
 				
 				</td>
 					<td>Points per Safety</td>
 					<td>
 						
-							<input>
+							<input class = "safety">
 						
 					</td>
 					<td>Points for allowed 21-27 Points</td>
 					<td>
 						
-							<input>
+							<input class = "pts2127">
 						
 					</td>
 			</tr>
 			<tr>
 					<td>Points per PAT </td>
 						<td>	
-									<input>
+									<input class = "PAT">
 				
 				</td>
 					<td>Points per Block Kick </td>
 					<td>
 						
-							<input>
+							<input class = "BlockKick">
 						
 					</td>
 					<td>Points for allowed 28+ Points </td>
 					<td>
 						
-							<input>
+							<input class = "pts28">
 						
 					</td>
 			</tr>
@@ -368,7 +368,7 @@
 		
 	</div>
 	<div class = "rightarrow span_1_of_12">
-		<img src="Images/right-arrow.png">
+		<button id = "submit"> submit</button>
 	</div>
 
 	</div>
@@ -424,7 +424,7 @@
 		<a href="#" id = "player-13" class = "span_3_of_12 cowboys demarcomurray"><h2>DeMarco Murray</h2>
 			<img src="Images/Demarco-Murray.png"></a>
 		<a href="#" id = "player-14" class = "span_3_of_12 broncos demaryiusthomas"><h2>Demaryius Thomas</h2>
-			<img src="Images/Demariyus-Thomas.png"></a>
+			<img src="Images/Demaryius-Thomas.png"></a>
 		<a href="#" id = "player-15" class = "span_3_of_12 bengals last ajgreen"><h2>A.J. Green</h2>
 		<img src="Images/AJ-Green.png"></a>
 	</div>
@@ -1259,20 +1259,20 @@
 			<div class = "section group name">
 				<div class = "span_12_of_12">
 				<p class = "text">Aaron Rodgers</p>
-				<p class = "info" >Quarterback | Seattle Seahawks | 5'11" | 199lb | Experience: 7 years</p>
+				<p class = "info" >Quarterback | Green Bay Packers | 6'2" | 225lb | Experience: 10 years</p>
 				</div>
 			</div>
 
 			<div class = "section group span_12_of_12">
 				<div class = "should ">
 					<h1>Why You Should Draft Him</h1>
-					<p> If anybody deserves to rule a kingdom and rightfully wear a crown on his head, it is Jamaal Charles, as he is the center piece of the Chiefs offense. His growing chemistry with Alex Smith makes him a likely candidate to lead all backs in total fantasy points. There is absolutely no reason that Jamaal Charles should be available after the second pick in the draft. Oh, and one last thing. Last year he scored a total of 19 touchdowns! I repeat: 19 touchdowns! </p>
+					<p>Aaron Rodgers has a skillset unlike any other quarterback in the NFL.  Rodgers pairs elite accuracy and arm strength with a superb running ability.  Although he missed some time last year with a collarbone injury, Rodgers managed to throw for at least 240 yards and a touchdown in every game he started.  With the emergence of Eddie Lacy as an offensive threat, expect Rodgers to have more room to operate and shred opposing defenses. </p>
 				</div>
 				<div class = "offvert">
 				</div>
 				<div class = "shouldnot ">
 				<h1>Why You Should Not Draft Him</h1>
-				<p>Knile Davis was beyond impressive when he filled in forJamaal late in the season last year. Andy Reid expects Davis&apos; workload to increase this season. Should this effect your view on Jamaal Charles? Potentially. But more realistically, Davis should serve as a potential handcuff in later rounds.</p>
+				<p>One major worry regarding Aaron Rodgers is the very shaky offensive line play of the Green Bay Packers.  Over the last two seasons, the Green Bay Packers have allowed an astounding 97 sacks.  Anybody willing to take Aaron Rodgers early in their fantasy draft better hope that the offensive line can keep him on his feet so he doesn&apos;t suffer the same fate he did last season missing 7 games.</p>
 				</div>
 				<div class = "clear"></div>
 			</div>
@@ -1280,10 +1280,10 @@
 				<div class = "pillar span_1_of_12"></div>
 				<div class = "threefacts span_10_of_12">
 					<h1>Three Facts</h1>
-					<p>1. &nbsp;In 2013, Jamaal Charles doubled the amount of receptions he had in 2012, gaining nearly 700 yards through the air under pass-heavy head coach, Andy Reid. </p>
-					<p>2.  &nbsp;Jamaal Charles sat out the last game of the season and still managed to have 33 more fantasy points (Yahoo! Standard Scoring) than any other player at his position.
+					<p>1. &nbsp;Aaron Rodgers holds the highest career regular season passer rating in NFL history. </p>
+					<p>2.  &nbsp;In 6 years as an NFL starter, Rodgers has accounted for 187 passing touchdowns and only 51 interceptions.
 					</p>
-					<p>3.  &nbsp;Last year, Jamaal Charles led the NFL in fantasy points per touch.</p>
+					<p>3.  &nbsp;Aaron Rodgers was the first quarterback to throw for 4,000 yards in his first two seasons as a starter.</p>
 				</div>
 				<div class = "pillar span_1_of_12"></div>
 				<div class = "clear"></div>
@@ -1292,8 +1292,8 @@
 				<div class = "funnyNames span_12_of_12">
 					<h1>Best Team Names</h1>
 					<div class = "span_2_of_12 tn" style="padding:1em 0; float:left"></div>
-					<p class = "span_4_of_12">Jamaal about the bread</p>
-					<p class = "span_4_of_12">Jamaal for one and one for Jamaal</p>
+					<p class = "span_4_of_12">Aaron out my Nelson</p>
+					<p class = "span_4_of_12">Mr. Rodgers Neighborhood</p>
 					<div class = "span_2_of_12 tn" style="padding:1em 0; float:left">
 				</div>
 				<div class = "clear"></div>
@@ -1468,20 +1468,20 @@
 			<div class = "section group name">
 				<div class = "span_12_of_12">
 				<p class = "text">A.J. Green</p>
-				<p class = "info" >Running Back | Seattle Seahawks | 5'11" | 199lb | Experience: 7 years</p>
+				<p class = "info" >Wide Receiver | Cincinatti Bengals | 6'4" | 207lb | Experience: 4 years</p>
 				</div>
 			</div>
 
 			<div class = "section group span_12_of_12">
 				<div class = "should ">
 					<h1>Why You Should Draft Him</h1>
-					<p> If anybody deserves to rule a kingdom and rightfully wear a crown on his head, it is Jamaal Charles, as he is the center piece of the Chiefs offense. His growing chemistry with Alex Smith makes him a likely candidate to lead all backs in total fantasy points. There is absolutely no reason that Jamaal Charles should be available after the second pick in the draft. Oh, and one last thing. Last year he scored a total of 19 touchdowns! I repeat: 19 touchdowns! </p>
+					<p> A.J. Green is simply a freak athlete.  Not only does he stand 6’4, but also has a wing span over 6 and a half feet and has an outstanding leaping ability.  Green consistently uses his size and speed to devastate defenses.  Only four years into his young NFL career, Green has already become a top 5 wide receiver and arguably the most dangerous deep threat in the game.  In 2013, A.J. Green was targeted an NFL high 178 times and hauled in 98 of those passes.</p>
 				</div>
 				<div class = "offvert">
 				</div>
 				<div class = "shouldnot ">
 				<h1>Why You Should Not Draft Him</h1>
-				<p>Knile Davis was beyond impressive when he filled in forJamaal late in the season last year. Andy Reid expects Davis&apos; workload to increase this season. Should this effect your view on Jamaal Charles? Potentially. But more realistically, Davis should serve as a potential handcuff in later rounds.</p>
+				<p>If it weren’t for a sub par quarterback, A.J. Green would undoubtedly be a top 3 fantasy wide receiver this upcoming season.  Many people question if Andy Dalton is capable of carrying the Cincinnati offense.  Without a trustworthy quarterback, drafting A.J. Green amongst the top 5 receivers could prove to be a mistake.  In addition to a shaky quarterback situation, the Bengals schedule doesn&apos;t favor Green, who will have to face Joe Haden (twice) and Darrelle Revis over the course of the season.</p>
 				</div>
 				<div class = "clear"></div>
 			</div>
@@ -1489,10 +1489,10 @@
 				<div class = "pillar span_1_of_12"></div>
 				<div class = "threefacts span_10_of_12">
 					<h1>Three Facts</h1>
-					<p>1. &nbsp;In 2013, Jamaal Charles doubled the amount of receptions he had in 2012, gaining nearly 700 yards through the air under pass-heavy head coach, Andy Reid. </p>
-					<p>2.  &nbsp;Jamaal Charles sat out the last game of the season and still managed to have 33 more fantasy points (Yahoo! Standard Scoring) than any other player at his position.
+					<p>1. &nbsp;A.J. Green was targeted at least 7 times in all but one game last season. </p>
+					<p>2.  &nbsp;To close out the 2013 regular season, Green scored 5 touchdowns in five games.
 					</p>
-					<p>3.  &nbsp;Last year, Jamaal Charles led the NFL in fantasy points per touch.</p>
+					<p>3.  &nbsp;In all three of his NFL seasons, Green has exceeded 1,000 receiving yards and 115 targets.</p>
 				</div>
 				<div class = "pillar span_1_of_12"></div>
 				<div class = "clear"></div>
@@ -1501,8 +1501,8 @@
 				<div class = "funnyNames span_12_of_12">
 					<h1>Best Team Names</h1>
 					<div class = "span_2_of_12 tn" style="padding:1em 0; float:left"></div>
-					<p class = "span_4_of_12">Jamaal about the bread</p>
-					<p class = "span_4_of_12">Jamaal for one and one for Jamaal</p>
+					<p class = "span_4_of_12">50 Shades of Green</p>
+					<p class = "span_4_of_12">Dark and Lean Green Machine</p>
 					<div class = "span_2_of_12 tn" style="padding:1em 0; float:left">
 				</div>
 				<div class = "clear"></div>
@@ -2740,7 +2740,7 @@
 			</div>
 		</div>
 	</div>
-	<div class = " Ppage frankgore niners">
+	<div class = " Ppage frankgore fortyniners">
 		<div class = "section group pageHeader">
 				<div class = "span_12_of_12">
 					<a href = "#"><img src = "Images/buttonClose.png" class = "buttonClose"></a>
@@ -3200,7 +3200,7 @@
 			</div>
 		</div>
 	</div>
-	<div class = " Ppage vernondavis niners">
+	<div class = " Ppage vernondavis fortyniners">
 		<div class = "section group pageHeader">
 				<div class = "span_12_of_12">
 					<a href = "#"><img src = "Images/buttonClose.png" class = "buttonClose"></a>
@@ -3353,7 +3353,7 @@
 			</div>
 		</div>
 	</div>
-	<div class = " Ppage michaelcrabtree niners">
+	<div class = " Ppage michaelcrabtree fortyniners">
 		<div class = "section group pageHeader">
 				<div class = "span_12_of_12">
 					<a href = "#"><img src = "Images/buttonClose.png" class = "buttonClose"></a>
@@ -4934,7 +4934,7 @@
 			</div>
 		</div>
 	</div>
-	<div class = " Ppage maricejonesdrew raiders">
+	<div class = " Ppage mauricejonesdrew raiders">
 		<div class = "section group pageHeader">
 				<div class = "span_12_of_12">
 					<a href = "#"><img src = "Images/buttonClose.png" class = "buttonClose"></a>
@@ -5241,7 +5241,7 @@
 			</div>
 		</div>
 	</div>
-	<div class = " Ppage anquanboldin niners">
+	<div class = " Ppage anquanboldin fortyniners">
 		<div class = "section group pageHeader">
 				<div class = "span_12_of_12">
 					<a href = "#"><img src = "Images/buttonClose.png" class = "buttonClose"></a>
@@ -5699,7 +5699,7 @@
 			</div>
 		</div>
 	</div>
-	<div class = " Ppage colinkaepernick niners">
+	<div class = " Ppage colinkaepernick fortyniners">
 		<div class = "section group pageHeader">
 				<div class = "span_12_of_12">
 					<a href = "#"><img src = "Images/buttonClose.png" class = "buttonClose"></a>

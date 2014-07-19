@@ -26,7 +26,10 @@ $(document).ready(function(){
     $(window).resize(checkWidth);
 
     $(".rightarrow").click(function(){
-    	if($(this).parent().parent().hasClass("leaguesection"))
+    	if($(".sec").is(":animated")){
+					return false;
+		}
+    	else if($(this).parent().parent().hasClass("leaguesection"))
     	{
     		var slider = $(".passingsection");
 			console.log("league");
@@ -63,6 +66,9 @@ $(document).ready(function(){
     })
 
     	 $(".leftarrow").click(function(){
+    	 if($(".sec").is(":animated")){
+					return false;
+		}
     	if($(this).parent().parent().hasClass("passingsection"))
     	{
     		var slider = $(".leaguesection");
@@ -205,2527 +211,2002 @@ $(document).ready(function(){
 
 
 
-	playerArray[0] = new Array(23);
+playerArray[0] = new Array(17);
 	playerArray[0][0] = 0;//COMPLETIONS
 	playerArray[0][1] = 0;//PASSING YARDS
 	playerArray[0][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[0][3] = 0;//INTERCEPTIONS
-	playerArray[0][4] = 1402;//RUSH YARDS
-	playerArray[0][5] = 9;//RUSHING TOUCHDOWNS
-	playerArray[0][6] = 42;//RECEPTIONS
-	playerArray[0][7] = 342;//RECEIVING YARDS
-	playerArray[0][8] = 3;//RECEIVING TOUCHDOWNS
-	playerArray[0][9] = 0;//Field Goals 0-19 Yards
-	playerArray[0][10] = 0;//Field Goals 20-29 Yards
-	playerArray[0][11] = 0;//Field Goals 30-39 Yards
-	playerArray[0][12] = 0;//Field Goals 40-49 Yards
-	playerArray[0][13] = 0;//Field Goals 50+
-	playerArray[0][14] = 0;//PAT
-	playerArray[0][15] = 0;//Sacks
-	playerArray[0][16] = 0;//Interceptions
-	playerArray[0][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[0][18] = "Lesean Mccoy";//NAME
-	playerArray[0][19] = "RB"; //POSITION
-	playerArray[0][20] = "eagles"; //TEAM
-	playerArray[0][21] = "Images/Lesean-Mccoy.png";//PIC
-	playerArray[0][22] = "LM";
+	playerArray[0][4] = 1149;//RUSH YARDS
+	playerArray[0][5] = 11.9;//RUSHING TOUCHDOWNS
+	playerArray[0][6] = 72;//RECEPTIONS
+	playerArray[0][7] = 630;//RECEIVING YARDS
+	playerArray[0][8] = 2.8;//RECEIVING TOUCHDOWNS
+	playerArray[0][9] = 4.1;//FUMBLES
+	playerArray[0][10] = 0;//TOTAL POINTS
+	playerArray[0][11] = 0;//BASELINE 
+	playerArray[0][12] = "Jamaal Charles";//NAME
+	playerArray[0][13] = "RB"; //POSITION
+	playerArray[0][14] = "chiefs"; //TEAM
+	playerArray[0][15] = "Images/Jamaal-Charles.png";//PIC
+	playerArray[0][16] = "jamaalcharles";
 
-
-	playerArray[1] = new Array(23);
+playerArray[1] = new Array(17);
 	playerArray[1][0] = 0;//COMPLETIONS
 	playerArray[1][1] = 0;//PASSING YARDS
 	playerArray[1][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[1][3] = 0;//INTERCEPTIONS
-	playerArray[1][4] = 1365;//RUSH YARDS
-	playerArray[1][5] = 13;//RUSHING TOUCHDOWNS
-	playerArray[1][6] = 40;//RECEPTIONS
-	playerArray[1][7] = 289;//RECEIVING YARDS
-	playerArray[1][8] = 2;//RECEIVING TOUCHDOWNS
-	playerArray[1][9] = 0;//Field Goals 0-19 Yards
-	playerArray[1][10] = 0;//Field Goals 20-29 Yards
-	playerArray[1][11] = 0;//Field Goals 30-39 Yards
-	playerArray[1][12] = 0;//Field Goals 40-49 Yards
-	playerArray[1][13] = 0;//Field Goals 50+
-	playerArray[1][14] = 0;//PAT
-	playerArray[1][15] = 0;//Sacks
-	playerArray[1][16] = 0;//Interceptions
-	playerArray[1][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[1][18] = "Adrian Peterson";//NAME
-	playerArray[1][19] = "RB"; //POSITION
-	playerArray[1][20] = "vikings";//TEAM
-	playerArray[1][21] = "Images/Adrian-Peterson.png";//PIC
-	playerArray[1][22] = "AP";
+	playerArray[1][4] = 1291;//RUSH YARDS 129 + 80 + 64 + 25 + 6 - 6
+	playerArray[1][5] = 10.2;//RUSHING TOUCHDOWNS
+	playerArray[1][6] = 32.5;//RECEPTIONS
+	playerArray[1][7] = 255;//RECEIVING YARDS
+	playerArray[1][8] = 1.3;//RECEIVING TOUCHDOWNS
+	playerArray[1][9] = 2.5;//FUMBLES
+	playerArray[1][10] = 0;//TOTAL POINTS
+	playerArray[1][11] = 0;//BASELINE 
+	playerArray[1][12] = "Lesean McCoy";//NAME
+	playerArray[1][13] = "RB"; //POSITION
+	playerArray[1][14] = "eagles"; //TEAM
+	playerArray[1][15] = "Images/Lesean-Mccoy.png";//PIC
+	playerArray[1][16] = "leseanmccoy";
 
 
-	playerArray[2] = new Array(23);
+playerArray[2] = new Array(17);
 	playerArray[2][0] = 0;//COMPLETIONS
 	playerArray[2][1] = 0;//PASSING YARDS
 	playerArray[2][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[2][3] = 0;//INTERCEPTIONS
-	playerArray[2][4] = 0;//RUSH YARDS
-	playerArray[2][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[2][6] = 94;//RECEPTIONS
-	playerArray[2][7] = 1664;//RECEIVING YARDS
-	playerArray[2][8] = 12;//RECEIVING TOUCHDOWNS
-	playerArray[2][9] = 0;//Field Goals 0-19 Yards
-	playerArray[2][10] = 0;//Field Goals 20-29 Yards
-	playerArray[2][11] = 0;//Field Goals 30-39 Yards
-	playerArray[2][12] = 0;//Field Goals 40-49 Yards
-	playerArray[2][13] = 0;//Field Goals 50+
-	playerArray[2][14] = 0;//PAT
-	playerArray[2][15] = 0;//Sacks
-	playerArray[2][16] = 0;//Interceptions
-	playerArray[2][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[2][18] = "Calvin Johnson";//NAME
-	playerArray[2][19] = "WR"; //POSITION
-	playerArray[2][20] = "lions";//BACKGROUND COLOR
-	playerArray[2][21] = "Images/Calvin-Johnson.png";//FONT-COLOR
-	playerArray[2][22] = "CJ";
+	playerArray[2][4] = 1436;//RUSH YARDS
+	playerArray[2][5] = 11;//RUSHING TOUCHDOWNS
+	playerArray[2][6] = 50.6;//RECEPTIONS
+	playerArray[2][7] = 421;//RECEIVING YARDS
+	playerArray[2][8] = 1.6;//RECEIVING TOUCHDOWNS
+	playerArray[2][9] = 5.4;//FUMBLES
+	playerArray[2][10] = 0;//TOTAL POINTS
+	playerArray[2][11] = 0;//BASELINE 
+	playerArray[2][12] = "Adrian Peterson";//NAME
+	playerArray[2][13] = "RB"; //POSITION
+	playerArray[2][14] = "vikings"; //TEAM
+	playerArray[2][15] = "Images/Adrian-Peterson.png";//PIC
+	playerArray[2][16] = "adrianpeterson";
 
-	playerArray[3] = new Array(23);
+
+playerArray[3] = new Array(17);
 	playerArray[3][0] = 0;//COMPLETIONS
 	playerArray[3][1] = 0;//PASSING YARDS
 	playerArray[3][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[3][3] = 0;//INTERCEPTIONS
-	playerArray[3][4] = 1260;//RUSH YARDS
-	playerArray[3][5] = 7;//RUSHING TOUCHDOWNS
-	playerArray[3][6] = 64;//RECEPTIONS
-	playerArray[3][7] = 587;//RECEIVING YARDS
-	playerArray[3][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[3][9] = 0;//Field Goals 0­19 Yards
-	playerArray[3][10] = 0;//Field Goals 20­29 Yards
-	playerArray[3][11] = 0;//Field Goals 30­39 Yards
-	playerArray[3][12] = 0;//Field Goals 40­49 Yards
-	playerArray[3][13] = 0;//Field Goals 50+
-	playerArray[3][14] = 0;//PAT
-	playerArray[3][15] = 0;//Sacks
-	playerArray[3][16] = 0;//Interceptions
-	playerArray[3][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[3][18] = "Jamaal Charles";//NAME
-	playerArray[3][19] = "RB";//Position
-	playerArray[3][20] = "chiefs";//BACKGROUND COLOR
-	playerArray[3][21] = "Images/Jamaal-Charles.png";//FONT­COLOR
-	playerArray[3][22] = "JC";
+	playerArray[3][4] = 1124;//RUSH YARDS
+	playerArray[3][5] = 10.4;//RUSHING TOUCHDOWNS
+	playerArray[3][6] = 45.8;//RECEPTIONS
+	playerArray[3][7] = 354;//RECEIVING YARDS
+	playerArray[3][8] = 1.6;//RECEIVING TOUCHDOWNS
+	playerArray[3][9] = 2.9;//FUMBLES
+	playerArray[3][10] = 0;//TOTAL POINTS
+	playerArray[3][11] = 0;//BASELINE 
+	playerArray[3][12] = "Eddie Lacy";//NAME
+	playerArray[3][13] = "RB"; //POSITION
+	playerArray[3][14] = "packers"; //TEAM
+	playerArray[3][15] = "Images/Eddie-Lacy.png";//PIC
+	playerArray[3][16] = "eddielacy";
 
-	playerArray[4] = new Array(23);
+playerArray[4] = new Array(17);
 	playerArray[4][0] = 0;//COMPLETIONS
 	playerArray[4][1] = 0;//PASSING YARDS
 	playerArray[4][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[4][3] = 0;//INTERCEPTIONS
-	playerArray[4][4] = 1227;//RUSH YARDS
-	playerArray[4][5] = 8;//RUSHING TOUCHDOWNS
-	playerArray[4][6] = 70;//RECEPTIONS
-	playerArray[4][7] = 576;//RECEIVING YARDS
+	playerArray[4][4] = 1233;//RUSH YARDS
+	playerArray[4][5] = 8.4;//RUSHING TOUCHDOWNS
+	playerArray[4][6] = 62.9;//RECEPTIONS
+	playerArray[4][7] = 541;//RECEIVING YARDS
 	playerArray[4][8] = 2;//RECEIVING TOUCHDOWNS
-	playerArray[4][9] = 0;//Field Goals 0-19 Yards
-	playerArray[4][10] = 0;//Field Goals 20-29 Yards
-	playerArray[4][11] = 0;//Field Goals 30-39 Yards
-	playerArray[4][12] = 0;//Field Goals 40-49 Yards
-	playerArray[4][13] = 0;//Field Goals 50+
-	playerArray[4][14] = 0;//PAT
-	playerArray[4][15] = 0;//Sacks
-	playerArray[4][16] = 0;//Interceptions
-	playerArray[4][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[4][18] = "Matt Forte";//NAME
-	playerArray[4][19] = "RB";//Position
-	playerArray[4][20] = "bears";//BACKGROUND COLOR
-	playerArray[4][21] = "Images/Matt-Forte.png";//FONT-COLOR
-	playerArray[4][22] = "MF";
+	playerArray[4][9] = 3.6;//FUMBLES
+	playerArray[4][10] = 0;//TOTAL POINTS
+	playerArray[4][11] = 0;//BASELINE 
+	playerArray[4][12] = "Matt Forte";//NAME
+	playerArray[4][13] = "RB"; //POSITION
+	playerArray[4][14] = "bears"; //TEAM
+	playerArray[4][15] = "Images/Matt-Forte.png";//PIC
+	playerArray[4][16] = "mattforte";
 
-	playerArray[5] = new Array(23);
+
+playerArray[5] = new Array(17);
 	playerArray[5][0] = 0;//COMPLETIONS
 	playerArray[5][1] = 0;//PASSING YARDS
 	playerArray[5][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[5][3] = 0;//INTERCEPTIONS
-	playerArray[5][4] = 1285;//RUSH YARDS
-	playerArray[5][5] = 12;//RUSHING TOUCHDOWNS
-	playerArray[5][6] = 33;//RECEPTIONS
-	playerArray[5][7] = 279;//RECEIVING YARDS
-	playerArray[5][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[5][9] = 0;//Field Goals 0-19 Yards
-	playerArray[5][10] = 0;//Field Goals 20-29 Yards
-	playerArray[5][11] = 0;//Field Goals 30-39 Yards
-	playerArray[5][12] = 0;//Field Goals 40-49 Yards
-	playerArray[5][13] = 0;//Field Goals 50+
-	playerArray[5][14] = 0;//PAT
-	playerArray[5][15] = 0;//Sacks
-	playerArray[5][16] = 0;//Interceptions
-	playerArray[5][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[5][18] = "Marshawn Lynch";//NAME
-	playerArray[5][19] = "RB";//Position
-	playerArray[5][20] = "seahawks";//BACKGROUND COLOR
-	playerArray[5][21] = "Images/Marshawn-Lynch.png";//FONT-COLOR
-	playerArray[5][22] = "ML";
+	playerArray[5][4] = 0;//RUSH YARDS
+	playerArray[5][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[5][6] = 100;//RECEPTIONS
+	playerArray[5][7] = 1480;//RECEIVING YARDS
+	playerArray[5][8] = 12.6;//RECEIVING TOUCHDOWNS
+	playerArray[5][9] = 1.3;//FUMBLES
+	playerArray[5][10] = 0;//TOTAL POINTS
+	playerArray[5][11] = 0;//BASELINE 
+	playerArray[5][12] = "Calvin Johnson";//NAME
+	playerArray[5][13] = "WR"; //POSITION
+	playerArray[5][14] = "lions"; //TEAM
+	playerArray[5][15] = "Images/Calvin-Johnson.png";//PIC
+	playerArray[5][16] = "calvinjohnson";
 
-	playerArray[6] = new Array(23);
+
+playerArray[6] = new Array(17);
 	playerArray[6][0] = 0;//COMPLETIONS
 	playerArray[6][1] = 0;//PASSING YARDS
 	playerArray[6][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[6][3] = 0;//INTERCEPTIONS
-	playerArray[6][4] = 1220;//RUSH YARDS
-	playerArray[6][5] = 10;//RUSHING TOUCHDOWNS
-	playerArray[6][6] = 42;//RECEPTIONS
-	playerArray[6][7] = 301;//RECEIVING YARDS
-	playerArray[6][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[6][9] = 0;//Field Goals 0-19 Yards
-	playerArray[6][10] = 0;//Field Goals 20-29 Yards
-	playerArray[6][11] = 0;//Field Goals 30-39 Yards
-	playerArray[6][12] = 0;//Field Goals 40-49 Yards
-	playerArray[6][13] = 0;//Field Goals 50+
-	playerArray[6][14] = 0;//PAT
-	playerArray[6][15] = 0;//Sacks
-	playerArray[6][16] = 0;//Interceptions
-	playerArray[6][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[6][18] = "Eddie Lacy";//NAME
-	playerArray[6][19] = "RB";//Position
-	playerArray[6][20] = "packers";//BACKGROUND COLOR
-	playerArray[6][21] = "Images/Eddie-Lacy.png";//FONT-COLOR
-	playerArray[6][22] = "EL";
+	playerArray[6][4] = 0;//RUSH YARDS
+	playerArray[6][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[6][6] = 91.2;//RECEPTIONS
+	playerArray[6][7] = 1154;//RECEIVING YARDS
+	playerArray[6][8] = 11.1;//RECEIVING TOUCHDOWNS
+	playerArray[6][9] = 0.6;//FUMBLES
+	playerArray[6][10] = 0;//TOTAL POINTS
+	playerArray[6][11] = 0;//BASELINE 
+	playerArray[6][12] = "Jimmy Graham";//NAME
+	playerArray[6][13] = "RB"; //POSITION
+	playerArray[6][14] = "saints"; //TEAM
+	playerArray[6][15] = "Images/Jimmy-Graham.png";//PIC
+	playerArray[6][16] = "jimmygraham";
 
-	playerArray[7] = new Array(23);
-	playerArray[7][0] = 435;//COMPLETIONS
-	playerArray[7][1] = 5210;//PASSING YARDS
-	playerArray[7][2] = 48;//PASSING TOUCHDOWNS
-	playerArray[7][3] = 12;//INTERCEPTIONS
-	playerArray[7][4] = -14;//RUSH YARDS
-	playerArray[7][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[7][6] = 0;//RECEPTIONS
-	playerArray[7][7] = 0;//RECEIVING YARDS
-	playerArray[7][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[7][9] = 0;//Field Goals 0-19 Yards
-	playerArray[7][10] = 0;//Field Goals 20-29 Yards
-	playerArray[7][11] = 0;//Field Goals 30-39 Yards
-	playerArray[7][12] = 0;//Field Goals 40-49 Yards
-	playerArray[7][13] = 0;//Field Goals 50+
-	playerArray[7][14] = 0;//PAT
-	playerArray[7][15] = 0;//Sacks
-	playerArray[7][16] = 0;//Interceptions
-	playerArray[7][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[7][18] = "Peyton Manning";//NAME
-	playerArray[7][19] = "QB";//Position
-	playerArray[7][20] = "broncos";//BACKGROUND COLOR
-	playerArray[7][21] = "Images/Peyton-Manning.png";//FONT-COLOR
-	playerArray[7][22] = "PM";
 
-	playerArray[8] = new Array(23);
+playerArray[7] = new Array(17);
+	playerArray[7][0] = 0;//COMPLETIONS
+	playerArray[7][1] = 0;//PASSING YARDS
+	playerArray[7][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[7][3] = 0;//INTERCEPTIONS
+	playerArray[7][4] = 1014;//RUSH YARDS
+	playerArray[7][5] = 7.4;//RUSHING TOUCHDOWNS
+	playerArray[7][6] = 51.6;//RECEPTIONS
+	playerArray[7][7] = 458;//RECEIVING YARDS
+	playerArray[7][8] = 1.5;//RECEIVING TOUCHDOWNS
+	playerArray[7][9] = 4.4;//FUMBLES
+	playerArray[7][10] = 0;//TOTAL POINTS
+	playerArray[7][11] = 0;//BASELINE 
+	playerArray[7][12] = "Montee Ball";//NAME
+	playerArray[7][13] = "RB"; //POSITION
+	playerArray[7][14] = "broncos"; //TEAM
+	playerArray[7][15] = "Images/Montee-Ball.png";//PIC
+	playerArray[7][16] = "monteeball";
+
+
+playerArray[8] = new Array(17);
 	playerArray[8][0] = 0;//COMPLETIONS
 	playerArray[8][1] = 0;//PASSING YARDS
 	playerArray[8][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[8][3] = 0;//INTERCEPTIONS
-	playerArray[8][4] = 1192;//RUSH YARDS
-	playerArray[8][5] = 8;//RUSHING TOUCHDOWNS
-	playerArray[8][6] = 43;//RECEPTIONS
-	playerArray[8][7] = 316;//RECEIVING YARDS
-	playerArray[8][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[8][9] = 0;//Field Goals 0-19 Yards
-	playerArray[8][10] = 0;//Field Goals 20-29 Yards
-	playerArray[8][11] = 0;//Field Goals 30-39 Yards
-	playerArray[8][12] = 0;//Field Goals 40-49 Yards
-	playerArray[8][13] = 0;//Field Goals 50+
-	playerArray[8][14] = 0;//PAT
-	playerArray[8][15] = 0;//Sacks
-	playerArray[8][16] = 0;//Interceptions
-	playerArray[8][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[8][18] = "Doug Martin";//NAME
-	playerArray[8][19] = "RB";//Position
-	playerArray[8][20] = "buccaneers";//BACKGROUND COLOR
-	playerArray[8][21] = "Images/Doug-Martin.png";//FONT-COLOR
-	playerArray[8][22] = "DM";
+	playerArray[8][4] = 1156;//RUSH YARDS
+	playerArray[8][5] = 10.4;//RUSHING TOUCHDOWNS
+	playerArray[8][6] = 25.9;//RECEPTIONS
+	playerArray[8][7] = 223;//RECEIVING YARDS
+	playerArray[8][8] = 1.1;//RECEIVING TOUCHDOWNS
+	playerArray[8][9] = 3.5;//FUMBLES
+	playerArray[8][10] = 0;//TOTAL POINTS
+	playerArray[8][11] = 0;//BASELINE 
+	playerArray[8][12] = "Marshawn Lynch";//NAME
+	playerArray[8][13] = "RB"; //POSITION
+	playerArray[8][14] = "seahawks"; //TEAM
+	playerArray[8][15] = "Images/Marshawn-Lynch.png";//PIC
+	playerArray[8][16] = "marshawnlynch";
 
-	playerArray[9] = new Array(23);
+
+
+playerArray[9] = new Array(17);
 	playerArray[9][0] = 0;//COMPLETIONS
 	playerArray[9][1] = 0;//PASSING YARDS
 	playerArray[9][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[9][3] = 0;//INTERCEPTIONS
-	playerArray[9][4] = 0;//RUSH YARDS
-	playerArray[9][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[9][6] = 84;//RECEPTIONS
-	playerArray[9][7] = 1115;//RECEIVING YARDS
-	playerArray[9][8] = 13;//RECEIVING TOUCHDOWNS
-	playerArray[9][9] = 0;//Field Goals 0-19 Yards
-	playerArray[9][10] = 0;//Field Goals 20-29 Yards
-	playerArray[9][11] = 0;//Field Goals 30-39 Yards
-	playerArray[9][12] = 0;//Field Goals 40-49 Yards
-	playerArray[9][13] = 0;//Field Goals 50+
-	playerArray[9][14] = 0;//PAT
-	playerArray[9][15] = 0;//Sacks
-	playerArray[9][16] = 0;//Interceptions
-	playerArray[9][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[9][18] = "Jimmy Graham";//NAME
-	playerArray[9][19] = "TE";//Position
-	playerArray[9][20] = "saints";//BACKGROUND COLOR
-	playerArray[9][21] = "Images/Jimmy-Graham.png";//FONT-COLOR
-	playerArray[9][22] = "JG";
+	playerArray[9][4] = 1229;//RUSH YARDS
+	playerArray[9][5] = 8.1;//RUSHING TOUCHDOWNS
+	playerArray[9][6] = 47;//RECEPTIONS
+	playerArray[9][7] = 377;//RECEIVING YARDS
+	playerArray[9][8] = 1;//RECEIVING TOUCHDOWNS
+	playerArray[9][9] = 2.2;//FUMBLES
+	playerArray[9][10] = 0;//TOTAL POINTS
+	playerArray[9][11] = 0;//BASELINE 
+	playerArray[9][12] = "Arian Foster";//NAME
+	playerArray[9][13] = "RB"; //POSITION
+	playerArray[9][14] = "texans"; //TEAM
+	playerArray[9][15] = "Images/Arian-Foster.png";//PIC
+	playerArray[9][16] = "arianfoster";
 
-	playerArray[10] = new Array(23);
+
+
+playerArray[10] = new Array(17);
 	playerArray[10][0] = 0;//COMPLETIONS
 	playerArray[10][1] = 0;//PASSING YARDS
 	playerArray[10][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[10][3] = 0;//INTERCEPTIONS
-	playerArray[10][4] = 1034;//RUSH YARDS
-	playerArray[10][5] = 8;//RUSHING TOUCHDOWNS
-	playerArray[10][6] = 37;//RECEPTIONS
-	playerArray[10][7] = 307;//RECEIVING YARDS
-	playerArray[10][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[10][9] = 0;//Field Goals 0-19 Yards
-	playerArray[10][10] = 0;//Field Goals 20-29 Yards
-	playerArray[10][11] = 0;//Field Goals 30-39 Yards
-	playerArray[10][12] = 0;//Field Goals 40-49 Yards
-	playerArray[10][13] = 0;//Field Goals 50+
-	playerArray[10][14] = 0;//PAT
-	playerArray[10][15] = 0;//Sacks
-	playerArray[10][16] = 0;//Interceptions
-	playerArray[10][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[10][18] = "Arian Foster";//NAME
-	playerArray[10][19] = "RB";//Position
-	playerArray[10][20] = "texans";//BACKGROUND COLOR
-	playerArray[10][21] = "Images/Arian-Foster.png";//FONT-COLOR
-	playerArray[10][22] = "AF";
+	playerArray[10][4] = 0;//RUSH YARDS
+	playerArray[10][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[10][6] = 107;//RECEPTIONS
+	playerArray[10][7] = 1377;//RECEIVING YARDS
+	playerArray[10][8] = 11.4;//RECEIVING TOUCHDOWNS
+	playerArray[10][9] = 1.6;//FUMBLES
+	playerArray[10][10] = 0;//TOTAL POINTS
+	playerArray[10][11] = 0;//BASELINE 
+	playerArray[10][12] = "Demaryius Thomas";//NAME
+	playerArray[10][13] = "WR"; //POSITION
+	playerArray[10][14] = "broncos"; //TEAM
+	playerArray[10][15] = "Images/Demaryius-Thomas.png";//PIC
+	playerArray[10][16] = "demaryiusthomas";
 
-	playerArray[11] = new Array(23);
-	playerArray[11][0] = 348;//COMPLETIONS
-	playerArray[11][1] = 4378;//PASSING YARDS
-	playerArray[11][2] = 39;//PASSING TOUCHDOWNS
-	playerArray[11][3] = 7;//INTERCEPTIONS
-	playerArray[11][4] = 225;//RUSH YARDS
-	playerArray[11][5] = 2;//RUSHING TOUCHDOWNS
-	playerArray[11][6] = 0;//RECEPTIONS
-	playerArray[11][7] = 0;//RECEIVING YARDS
-	playerArray[11][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[11][9] = 0;//Field Goals 0-19 Yards
-	playerArray[11][10] = 0;//Field Goals 20-29 Yards
-	playerArray[11][11] = 0;//Field Goals 30-39 Yards
-	playerArray[11][12] = 0;//Field Goals 40-49 Yards
-	playerArray[11][13] = 0;//Field Goals 50+
-	playerArray[11][14] = 0;//PAT
-	playerArray[11][15] = 0;//Sacks
-	playerArray[11][16] = 0;//Interceptions
-	playerArray[11][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[11][18] = "Aaron Rodgers";//NAME
-	playerArray[11][19] = "QB";//Position
-	playerArray[11][20] = "packers";//BACKGROUND COLOR
-	playerArray[11][21] = "Images/Aaron-Rodgers.png";//FONT-COLOR
-	playerArray[11][22] = "AR";
 
-	playerArray[12] = new Array(23);
+playerArray[11] = new Array(17);
+	playerArray[11][0] = 0;//COMPLETIONS
+	playerArray[11][1] = 0;//PASSING YARDS
+	playerArray[11][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[11][3] = 0;//INTERCEPTIONS
+	playerArray[11][4] = 0;//RUSH YARDS
+	playerArray[11][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[11][6] = 107;//RECEPTIONS
+	playerArray[11][7] = 1460;//RECEIVING YARDS
+	playerArray[11][8] = 10.9;//RECEIVING TOUCHDOWNS
+	playerArray[11][9] = 2.4;//FUMBLES
+	playerArray[11][10] = 0;//TOTAL POINTS
+	playerArray[11][11] = 0;//BASELINE 
+	playerArray[11][12] = "Dez Bryant";//NAME
+	playerArray[11][13] = "WR"; //POSITION
+	playerArray[11][14] = "cowboys"; //TEAM
+	playerArray[11][15] = "Images/Dez-Bryant.png";//PIC
+	playerArray[11][16] = "dezbryant";
+
+
+playerArray[12] = new Array(17);
 	playerArray[12][0] = 0;//COMPLETIONS
 	playerArray[12][1] = 0;//PASSING YARDS
 	playerArray[12][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[12][3] = 0;//INTERCEPTIONS
-	playerArray[12][4] = 1187;//RUSH YARDS
-	playerArray[12][5] = 9;//RUSHING TOUCHDOWNS
-	playerArray[12][6] = 21;//RECEPTIONS
-	playerArray[12][7] = 127;//RECEIVING YARDS
-	playerArray[12][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[12][9] = 0;//Field Goals 0-19 Yards
-	playerArray[12][10] = 0;//Field Goals 20-29 Yards
-	playerArray[12][11] = 0;//Field Goals 30-39 Yards
-	playerArray[12][12] = 0;//Field Goals 40-49 Yards
-	playerArray[12][13] = 0;//Field Goals 50+
-	playerArray[12][14] = 0;//PAT
-	playerArray[12][15] = 0;//Sacks
-	playerArray[12][16] = 0;//Interceptions
-	playerArray[12][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[12][18] = "Zac Stacy";//NAME
-	playerArray[12][19] = "RB";//Position
-	playerArray[12][20] = "rams";//BACKGROUND COLOR
-	playerArray[12][21] = "Images/Zac-Stacy.png";//FONT-COLOR
-	playerArray[12][22] = "ZS";
-
-	playerArray[13] = new Array(23);
+	playerArray[12][4] = 0;//RUSH YARDS
+	playerArray[12][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[12][6] = 89.5;//RECEPTIONS
+	playerArray[12][7] = 1296;//RECEIVING YARDS
+	playerArray[12][8] = 10.2;//RECEIVING TOUCHDOWNS
+	playerArray[12][9] = 1;//FUMBLES
+	playerArray[12][10] = 0;//TOTAL POINTS
+	playerArray[12][11] = 0;//BASELINE 
+	playerArray[12][12] = "A.J. Green";//NAME
+	playerArray[12][13] = "WR"; //POSITION
+	playerArray[12][14] = "bengals"; //TEAM
+	playerArray[12][15] = "Images/Aj-Green.png";//PIC
+	playerArray[12][16] = "ajgreen";
+playerArray[13] = new Array(17);
 	playerArray[13][0] = 0;//COMPLETIONS
 	playerArray[13][1] = 0;//PASSING YARDS
 	playerArray[13][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[13][3] = 0;//INTERCEPTIONS
-	playerArray[13][4] = 989;//RUSH YARDS
-	playerArray[13][5] = 8;//RUSHING TOUCHDOWNS
-	playerArray[13][6] = 56;//RECEPTIONS
-	playerArray[13][7] = 425;//RECEIVING YARDS
-	playerArray[13][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[13][9] = 0;//Field Goals 0-19 Yards
-	playerArray[13][10] = 0;//Field Goals 20-29 Yards
-	playerArray[13][11] = 0;//Field Goals 30-39 Yards
-	playerArray[13][12] = 0;//Field Goals 40-49 Yards
-	playerArray[13][13] = 0;//Field Goals 50+
-	playerArray[13][14] = 0;//PAT
-	playerArray[13][15] = 0;//Sacks
-	playerArray[13][16] = 0;//Interceptions
-	playerArray[13][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[13][18] = "DeMarco Murray";//NAME
-	playerArray[13][19] = "RB";//Position
-	playerArray[13][20] = "cowboys";//BACKGROUND COLOR
-	playerArray[13][21] = "Images/Demarco-Murray.png";//FONT-COLOR
-	playerArray[13][22] = "DM1";
+	playerArray[13][4] = 0;//RUSH YARDS
+	playerArray[13][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[13][6] = 92.4;//RECEPTIONS
+	playerArray[13][7] = 1280;//RECEIVING YARDS
+	playerArray[13][8] = 10.8;//RECEIVING TOUCHDOWNS
+	playerArray[13][9] = 0.6;//FUMBLES
+	playerArray[13][10] = 0;//TOTAL POINTS
+	playerArray[13][11] = 0;//BASELINE 
+	playerArray[13][12] = "Brandon Marshall";//NAME
+	playerArray[13][13] = "WR"; //POSITION
+	playerArray[13][14] = "bears"; //TEAM
+	playerArray[13][15] = "Images/Brandon-Marshall.png";//PIC
+	playerArray[13][16] = "brandonmarshall";
 
-	playerArray[14] = new Array(23);
-	playerArray[14][0] = 0;//COMPLETIONS
-	playerArray[14][1] = 0;//PASSING YARDS
-	playerArray[14][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[14][3] = 0;//INTERCEPTIONS
-	playerArray[14][4] = 0;//RUSH YARDS
-	playerArray[14][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[14][6] = 93;//RECEPTIONS
-	playerArray[14][7] = 1400;//RECEIVING YARDS
-	playerArray[14][8] = 13;//RECEIVING TOUCHDOWNS
-	playerArray[14][9] = 0;//Field Goals 0-19 Yards
-	playerArray[14][10] = 0;//Field Goals 20-29 Yards
-	playerArray[14][11] = 0;//Field Goals 30-39 Yards
-	playerArray[14][12] = 0;//Field Goals 40-49 Yards
-	playerArray[14][13] = 0;//Field Goals 50+
-	playerArray[14][14] = 0;//PAT
-	playerArray[14][15] = 0;//Sacks
-	playerArray[14][16] = 0;//Interceptions
-	playerArray[14][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[14][18] = "Demaryius Thomas";//NAME
-	playerArray[14][19] = "WR";//Position
-	playerArray[14][20] = "broncos";//BACKGROUND COLOR
-	playerArray[14][21] = "Images/Demariyus-Thomas.png";//FONT-COLOR
-	playerArray[14][22] = "DT";
 
-	playerArray[15] = new Array(23);
+playerArray[14] = new Array(17);
+	playerArray[14][0] = 465;//COMPLETIONS
+	playerArray[14][1] = 5395;//PASSING YARDS
+	playerArray[14][2] = 43.8;//PASSING TOUCHDOWNS
+	playerArray[14][3] = 13.2;//INTERCEPTIONS
+	playerArray[14][4] = -15.2;//RUSH YARDS
+	playerArray[14][5] = 1.3;//RUSHING TOUCHDOWNS
+	playerArray[14][6] = 0;//RECEPTIONS
+	playerArray[14][7] = 0;//RECEIVING YARDS
+	playerArray[14][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[14][9] = 8.9;//FUMBLES
+	playerArray[14][10] = 0;//TOTAL POINTS
+	playerArray[14][11] = 0;//BASELINE 
+	playerArray[14][12] = "Peyton Manningl";//NAME
+	playerArray[14][13] = "QB"; //POSITION
+	playerArray[14][14] = "broncos"; //TEAM
+	playerArray[14][15] = "Images/Peyton-Manning.png";//PIC
+	playerArray[14][16] = "peytonmanning";
+
+
+playerArray[15] = new Array(17);
 	playerArray[15][0] = 0;//COMPLETIONS
 	playerArray[15][1] = 0;//PASSING YARDS
 	playerArray[15][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[15][3] = 0;//INTERCEPTIONS
-	playerArray[15][4] = 0;//RUSH YARDS
-	playerArray[15][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[15][6] = 90;//RECEPTIONS
-	playerArray[15][7] = 1336;//RECEIVING YARDS
-	playerArray[15][8] = 11;//RECEIVING TOUCHDOWNS
-	playerArray[15][9] = 0;//Field Goals 0-19 Yards
-	playerArray[15][10] = 0;//Field Goals 20-29 Yards
-	playerArray[15][11] = 0;//Field Goals 30-39 Yards
-	playerArray[15][12] = 0;//Field Goals 40-49 Yards
-	playerArray[15][13] = 0;//Field Goals 50+
-	playerArray[15][14] = 0;//PAT
-	playerArray[15][15] = 0;//Sacks
-	playerArray[15][16] = 0;//Interceptions
-	playerArray[15][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[15][18] = "A.J. Green";//NAME
-	playerArray[15][19] = "WR";//Position
-	playerArray[15][20] = "bengals";//BACKGROUND COLOR
-	playerArray[15][21] = "Images/AJ-Green.png";//FONT-COLOR
-	playerArray[15][22] = "AG";
+	playerArray[15][4] = 1111;//RUSH YARDS
+	playerArray[15][5] = 9.8;//RUSHING TOUCHDOWNS
+	playerArray[15][6] = 54.8;//RECEPTIONS
+	playerArray[15][7] = 451;//RECEIVING YARDS
+	playerArray[15][8] = 1.4;//RECEIVING TOUCHDOWNS
+	playerArray[15][9] = 3.6;//FUMBLES
+	playerArray[15][10] = 0;//TOTAL POINTS
+	playerArray[15][11] = 0;//BASELINE 
+	playerArray[15][12] = "DeMarco Murray";//NAME
+	playerArray[15][13] = "RB"; //POSITION
+	playerArray[15][14] = "cowboys"; //TEAM
+	playerArray[15][15] = "Images/Demarco-Murray.png";//PIC
+	playerArray[15][16] = "demarcomurray";
 
-	playerArray[16] = new Array(23);
-	playerArray[16][0] = 435;//COMPLETIONS
-	playerArray[16][1] = 4880;//PASSING YARDS
-	playerArray[16][2] = 39;//PASSING TOUCHDOWNS
-	playerArray[16][3] = 15;//INTERCEPTIONS
-	playerArray[16][4] = 64;//RUSH YARDS
-	playerArray[16][5] = 1;//RUSHING TOUCHDOWNS
-	playerArray[16][6] = 0;//RECEPTIONS
-	playerArray[16][7] = 0;//RECEIVING YARDS
-	playerArray[16][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[16][9] = 0;//Field Goals 0-19 Yards
-	playerArray[16][10] = 0;//Field Goals 20-29 Yards
-	playerArray[16][11] = 0;//Field Goals 30-39 Yards
-	playerArray[16][12] = 0;//Field Goals 40-49 Yards
-	playerArray[16][13] = 0;//Field Goals 50+
-	playerArray[16][14] = 0;//PAT
-	playerArray[16][15] = 0;//Sacks
-	playerArray[16][16] = 0;//Interceptions
-	playerArray[16][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[16][18] = "Drew Brees";//NAME
-	playerArray[16][19] = "QB";//Position
-	playerArray[16][20] = "saints";//BACKGROUND COLOR
-	playerArray[16][21] = "Images/Drew-Brees.png";//FONT-COLOR
-	playerArray[16][22] = "DB";
 
-	playerArray[17] = new Array(23);
-	playerArray[17][0] = 0;//COMPLETIONS
-	playerArray[17][1] = 0;//PASSING YARDS
-	playerArray[17][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[17][3] = 0;//INTERCEPTIONS
-	playerArray[17][4] = 8;//RUSH YARDS
-	playerArray[17][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[17][6] = 100;//RECEPTIONS
-	playerArray[17][7] = 1327;//RECEIVING YARDS
-	playerArray[17][8] = 12;//RECEIVING TOUCHDOWNS
-	playerArray[17][9] = 0;//Field Goals 0-19 Yards
-	playerArray[17][10] = 0;//Field Goals 20-29 Yards
-	playerArray[17][11] = 0;//Field Goals 30-39 Yards
-	playerArray[17][12] = 0;//Field Goals 40-49 Yards
-	playerArray[17][13] = 0;//Field Goals 50+
-	playerArray[17][14] = 0;//PAT
-	playerArray[17][15] = 0;//Sacks
-	playerArray[17][16] = 0;//Interceptions
-	playerArray[17][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[17][18] = "Dez Bryant";//NAME
-	playerArray[17][19] = "WR";//Position
-	playerArray[17][20] = "cowboys";//BACKGROUND COLOR
-	playerArray[17][21] = "Images/Dez-Bryant.png";//FONT-COLOR
-	playerArray[17][22] = "DB1";
 
-	playerArray[18] = new Array(23);
+playerArray[16] = new Array(17);
+	playerArray[16][0] = 0;//COMPLETIONS
+	playerArray[16][1] = 0;//PASSING YARDS
+	playerArray[16][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[16][3] = 0;//INTERCEPTIONS
+	playerArray[16][4] = 960;//RUSH YARDS
+	playerArray[16][5] = 5.6;//RUSHING TOUCHDOWNS
+	playerArray[16][6] = 49.2;//RECEPTIONS
+	playerArray[16][7] = 418;//RECEIVING YARDS
+	playerArray[16][8] = 2.2;//RECEIVING TOUCHDOWNS
+	playerArray[16][9] = 2.4;//FUMBLES
+	playerArray[16][10] = 0;//TOTAL POINTS
+	playerArray[16][11] = 0;//BASELINE 
+	playerArray[16][12] = "Le&apos;Veon Bell";//NAME
+	playerArray[16][13] = "RB"; //POSITION
+	playerArray[16][14] = "steelers"; //TEAM
+	playerArray[16][15] = "Images/Leveon-Bell.png";//PIC
+	playerArray[16][16] = "leveonbell";
+
+
+playerArray[17] = new Array(17);
+	playerArray[17][0] = 446;//COMPLETIONS
+	playerArray[17][1] = 5277;//PASSING YARDS
+	playerArray[17][2] = 37.9;//PASSING TOUCHDOWNS
+	playerArray[17][3] = 16.5;//INTERCEPTIONS
+	playerArray[17][4] = 47.6;//RUSH YARDS
+	playerArray[17][5] = 0.9;//RUSHING TOUCHDOWNS
+	playerArray[17][6] = 0;//RECEPTIONS
+	playerArray[17][7] = 0;//RECEIVING YARDS
+	playerArray[17][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[17][9] = 7.7;//FUMBLES
+	playerArray[17][10] = 0;//TOTAL POINTS
+	playerArray[17][11] = 0;//BASELINE 
+	playerArray[17][12] = "Drew Brees";//NAME
+	playerArray[17][13] = "QB"; //POSITION
+	playerArray[17][14] = "saints"; //TEAM
+	playerArray[17][15] = "Images/Drew-Brees.png";//PIC
+	playerArray[17][16] = "drewbrees";
+
+
+playerArray[18] = new Array(17);
 	playerArray[18][0] = 0;//COMPLETIONS
 	playerArray[18][1] = 0;//PASSING YARDS
 	playerArray[18][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[18][3] = 0;//INTERCEPTIONS
-	playerArray[18][4] = 1073;//RUSH YARDS
-	playerArray[18][5] = 8;//RUSHING TOUCHDOWNS
-	playerArray[18][6] = 52;//RECEPTIONS
-	playerArray[18][7] = 358;//RECEIVING YARDS
-	playerArray[18][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[18][9] = 0;//Field Goals 0-19 Yards
-	playerArray[18][10] = 0;//Field Goals 20-29 Yards
-	playerArray[18][11] = 0;//Field Goals 30-39 Yards
-	playerArray[18][12] = 0;//Field Goals 40-49 Yards
-	playerArray[18][13] = 0;//Field Goals 50+
-	playerArray[18][14] = 0;//PAT
-	playerArray[18][15] = 0;//Sacks
-	playerArray[18][16] = 0;//Interceptions
-	playerArray[18][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[18][18] = "Le'Veon Bell";//NAME
-	playerArray[18][19] = "RB";//Position
-	playerArray[18][20] = "steelers";//BACKGROUND COLOR
-	playerArray[18][21] = "Images/Leveon-Bell.png";//FONT-COLOR
-	playerArray[18][22] = "LB";
+	playerArray[18][4] = 9.4;//RUSH YARDS
+	playerArray[18][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[18][6] = 106;//RECEPTIONS
+	playerArray[18][7] = 1371;//RECEIVING YARDS
+	playerArray[18][8] = 9.9;//RECEIVING TOUCHDOWNS
+	playerArray[18][9] = 1.4;//FUMBLES
+	playerArray[18][10] = 0;//TOTAL POINTS
+	playerArray[18][11] = 0;//BASELINE 
+	playerArray[18][12] = "Julio Jones";//NAME
+	playerArray[18][13] = "WR"; //POSITION
+	playerArray[18][14] = "falcons"; //TEAM
+	playerArray[18][15] = "Images/Julio-Jones.png";//PIC
+	playerArray[18][16] = "juliojones";
 
-	playerArray[19] = new Array(23);
+
+playerArray[19] = new Array(17);
 	playerArray[19][0] = 0;//COMPLETIONS
 	playerArray[19][1] = 0;//PASSING YARDS
 	playerArray[19][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[19][3] = 0;//INTERCEPTIONS
-	playerArray[19][4] = 0;//RUSH YARDS
-	playerArray[19][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[19][6] = 95;//RECEPTIONS
-	playerArray[19][7] = 1230;//RECEIVING YARDS
-	playerArray[19][8] = 12;//RECEIVING TOUCHDOWNS
-	playerArray[19][9] = 0;//Field Goals 0-19 Yards
-	playerArray[19][10] = 0;//Field Goals 20-29 Yards
-	playerArray[19][11] = 0;//Field Goals 30-39 Yards
-	playerArray[19][12] = 0;//Field Goals 40-49 Yards
-	playerArray[19][13] = 0;//Field Goals 50+
-	playerArray[19][14] = 0;//PAT
-	playerArray[19][15] = 0;//Sacks
-	playerArray[19][16] = 0;//Interceptions
-	playerArray[19][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[19][18] = "Brandon Marshall";//NAME
-	playerArray[19][19] = "WR";//Position
-	playerArray[19][20] = "bears";//BACKGROUND COLOR
-	playerArray[19][21] = "Images/Brandon-Marshall.png";//FONT-COLOR
-	playerArray[19][22] = "BM";
+	playerArray[19][4] = 1063;//RUSH YARDS
+	playerArray[19][5] = 7.9;//RUSHING TOUCHDOWNS
+	playerArray[19][6] = 49.5;//RECEPTIONS
+	playerArray[19][7] = 419;//RECEIVING YARDS
+	playerArray[19][8] = 1.2;//RECEIVING TOUCHDOWNS
+	playerArray[19][9] = 3.2;//FUMBLES
+	playerArray[19][10] = 0;//TOTAL POINTS
+	playerArray[19][11] = 0;//BASELINE 
+	playerArray[19][12] = "Giovani Bernard";//NAME
+	playerArray[19][13] = "RB"; //POSITION
+	playerArray[19][14] = "bengals"; //TEAM
+	playerArray[19][15] = "Images/Giovani-Bernard.png";//PIC
+	playerArray[19][16] = "giovanibernard";
 
-	playerArray[20] = new Array(23);
+
+playerArray[20] = new Array(17);
 	playerArray[20][0] = 0;//COMPLETIONS
 	playerArray[20][1] = 0;//PASSING YARDS
 	playerArray[20][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[20][3] = 0;//INTERCEPTIONS
-	playerArray[20][4] = 19;//RUSH YARDS
-	playerArray[20][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[20][6] = 97;//RECEPTIONS
-	playerArray[20][7] = 1387;//RECEIVING YARDS
-	playerArray[20][8] = 9;//RECEIVING TOUCHDOWNS
-	playerArray[20][9] = 0;//Field Goals 0-19 Yards
-	playerArray[20][10] = 0;//Field Goals 20-29 Yards
-	playerArray[20][11] = 0;//Field Goals 30-39 Yards
-	playerArray[20][12] = 0;//Field Goals 40-49 Yards
-	playerArray[20][13] = 0;//Field Goals 50+
-	playerArray[20][14] = 0;//PAT
-	playerArray[20][15] = 0;//Sacks
-	playerArray[20][16] = 0;//Interceptions
-	playerArray[20][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[20][18] = "Julio Jones";//NAME
-	playerArray[20][19] = "WR";//Position
-	playerArray[20][20] = "falcons";//BACKGROUND COLOR
-	playerArray[20][21] = "Images/Julio-Jones.png";//FONT-COLOR
-	playerArray[20][22] = "JJ";
+	playerArray[20][4] = 93.6;//RUSH YARDS
+	playerArray[20][5] = 0.3;//RUSHING TOUCHDOWNS
+	playerArray[20][6] = 81.3;//RECEPTIONS
+	playerArray[20][7] = 1164;//RECEIVING YARDS
+	playerArray[20][8] = 8.3;//RECEIVING TOUCHDOWNS
+	playerArray[20][9] = 2.0;//FUMBLES
+	playerArray[20][10] = 0;//TOTAL POINTS
+	playerArray[20][11] = 0;//BASELINE 
+	playerArray[20][12] = "Alshon Jeffery";//NAME
+	playerArray[20][13] = "WR"; //POSITION
+	playerArray[20][14] = "bears"; //TEAM
+	playerArray[20][15] = "Images/Alshon-Jeffery.png";//PIC
+	playerArray[20][16] = "alshonjeffery";
 
-	playerArray[21] = new Array(23);
-	playerArray[21][0] = 0;//COMPLETIONS
-	playerArray[21][1] = 0;//PASSING YARDS
-	playerArray[21][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[21][3] = 0;//INTERCEPTIONS
-	playerArray[21][4] = 0;//RUSH YARDS
-	playerArray[21][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[21][6] = 82;//RECEPTIONS
-	playerArray[21][7] = 1286;//RECEIVING YARDS
-	playerArray[21][8] = 10;//RECEIVING TOUCHDOWNS
-	playerArray[21][9] = 0;//Field Goals 0-19 Yards
-	playerArray[21][10] = 0;//Field Goals 20-29 Yards
-	playerArray[21][11] = 0;//Field Goals 30-39 Yards
-	playerArray[21][12] = 0;//Field Goals 40-49 Yards
-	playerArray[21][13] = 0;//Field Goals 50+
-	playerArray[21][14] = 0;//PAT
-	playerArray[21][15] = 0;//Sacks
-	playerArray[21][16] = 0;//Interceptions
-	playerArray[21][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[21][18] = "Jordy Nelson";//NAME
-	playerArray[21][19] = "WR";//Position
-	playerArray[21][20] = "packers";//BACKGROUND COLOR
-	playerArray[21][21] = "Images/Jordy-Nelson.png";//FONT-COLOR
-	playerArray[21][22] = "JN";
 
-	playerArray[22] = new Array(23);
+
+playerArray[21] = new Array(17);
+	playerArray[21][0] = 390;//COMPLETIONS
+	playerArray[21][1] = 4557;//PASSING YARDS
+	playerArray[21][2] = 31.4;//PASSING TOUCHDOWNS
+	playerArray[21][3] = 11;//INTERCEPTIONS
+	playerArray[21][4] = 272;//RUSH YARDS
+	playerArray[21][5] = 1.7;//RUSHING TOUCHDOWNS
+	playerArray[21][6] = 0;//RECEPTIONS
+	playerArray[21][7] = 0;//RECEIVING YARDS
+	playerArray[21][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[21][9] = 8.8;//FUMBLES
+	playerArray[21][10] = 0;//TOTAL POINTS
+	playerArray[21][11] = 0;//BASELINE 
+	playerArray[21][12] = "Aaron Rodgers";//NAME
+	playerArray[21][13] = "QB"; //POSITION
+	playerArray[21][14] = "packers"; //TEAM
+	playerArray[21][15] = "Images/Aaron-Rodgers.png";//PIC
+	playerArray[21][16] = "aaronrodgers";
+
+
+playerArray[22] = new Array(17);
 	playerArray[22][0] = 0;//COMPLETIONS
 	playerArray[22][1] = 0;//PASSING YARDS
 	playerArray[22][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[22][3] = 0;//INTERCEPTIONS
-	playerArray[22][4] = 1287;//RUSH YARDS
-	playerArray[22][5] = 9;//RUSHING TOUCHDOWNS
-	playerArray[22][6] = 8;//RECEPTIONS
-	playerArray[22][7] = 62;//RECEIVING YARDS
-	playerArray[22][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[22][9] = 0;//Field Goals 0-19 Yards
-	playerArray[22][10] = 0;//Field Goals 20-29 Yards
-	playerArray[22][11] = 0;//Field Goals 30-39 Yards
-	playerArray[22][12] = 0;//Field Goals 40-49 Yards
-	playerArray[22][13] = 0;//Field Goals 50+
-	playerArray[22][14] = 0;//PAT
-	playerArray[22][15] = 0;//Sacks
-	playerArray[22][16] = 0;//Interceptions
-	playerArray[22][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[22][18] = "Alfred Morris";//NAME
-	playerArray[22][19] = "RB";//Position
-	playerArray[22][20] = "redskins";//BACKGROUND COLOR
-	playerArray[22][21] = "Images/Alfred-Morris.png";//FONT-COLOR
-	playerArray[22][22] = "AM";
+	playerArray[22][4] = 0;//RUSH YARDS
+	playerArray[22][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[22][6] = 95.7;//RECEPTIONS
+	playerArray[22][7] = 1281;//RECEIVING YARDS
+	playerArray[22][8] = 9.8;//RECEIVING TOUCHDOWNS
+	playerArray[22][9] = 0.6;//FUMBLES
+	playerArray[22][10] = 0;//TOTAL POINTS
+	playerArray[22][11] = 0;//BASELINE 
+	playerArray[22][12] = "Jordy Nelson";//NAME
+	playerArray[22][13] = "WR"; //POSITION
+	playerArray[22][14] = "packers"; //TEAM
+	playerArray[22][15] = "Images/Jordy-Nelson.png";//PIC
+	playerArray[22][16] = "jordynelson";
 
-	playerArray[23] = new Array(23);
+
+playerArray[23] = new Array(17);
 	playerArray[23][0] = 0;//COMPLETIONS
 	playerArray[23][1] = 0;//PASSING YARDS
 	playerArray[23][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[23][3] = 0;//INTERCEPTIONS
-	playerArray[23][4] = 85;//RUSH YARDS
-	playerArray[23][5] = 1;//RUSHING TOUCHDOWNS
-	playerArray[23][6] = 85;//RECEPTIONS
-	playerArray[23][7] = 1284;//RECEIVING YARDS
-	playerArray[23][8] = 8;//RECEIVING TOUCHDOWNS
-	playerArray[23][9] = 0;//Field Goals 0-19 Yards
-	playerArray[23][10] = 0;//Field Goals 20-29 Yards
-	playerArray[23][11] = 0;//Field Goals 30-39 Yards
-	playerArray[23][12] = 0;//Field Goals 40-49 Yards
-	playerArray[23][13] = 0;//Field Goals 50+
-	playerArray[23][14] = 0;//PAT
-	playerArray[23][15] = 0;//Sacks
-	playerArray[23][16] = 0;//Interceptions
-	playerArray[23][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[23][18] = "Alshon Jeffery";//NAME
-	playerArray[23][19] = "WR";//Position
-	playerArray[23][20] = "bears";//BACKGROUND COLOR
-	playerArray[23][21] = "Images/Alshon-Jeffery.png";//FONT-COLOR
-	playerArray[23][22] = "AJ";
+	playerArray[23][4] = 1167;//RUSH YARDS
+	playerArray[23][5] = 9;//RUSHING TOUCHDOWNS
+	playerArray[23][6] = 12.7;//RECEPTIONS
+	playerArray[23][7] = 106;//RECEIVING YARDS
+	playerArray[23][8] = 0.5;//RECEIVING TOUCHDOWNS
+	playerArray[23][9] = 4.4;//FUMBLES
+	playerArray[23][10] = 0;//TOTAL POINTS
+	playerArray[23][11] = 0;//BASELINE 
+	playerArray[23][12] = "Alfred Morris";//NAME
+	playerArray[23][13] = "RB"; //POSITION
+	playerArray[23][14] = "redskins"; //TEAM
+	playerArray[23][15] = "Images/Alfred-Morris.png";//PIC
+	playerArray[23][16] = "alfredmorris";
 
-	playerArray[24] = new Array(23);
+
+playerArray[24] = new Array(17);
 	playerArray[24][0] = 0;//COMPLETIONS
 	playerArray[24][1] = 0;//PASSING YARDS
 	playerArray[24][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[24][3] = 0;//INTERCEPTIONS
-	playerArray[24][4] = 943;//RUSH YARDS
-	playerArray[24][5] = 9;//RUSHING TOUCHDOWNS
-	playerArray[24][6] = 54;//RECEPTIONS
-	playerArray[24][7] = 333;//RECEIVING YARDS
-	playerArray[24][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[24][9] = 0;//Field Goals 0-19 Yards
-	playerArray[24][10] = 0;//Field Goals 20-29 Yards
-	playerArray[24][11] = 0;//Field Goals 30-39 Yards
-	playerArray[24][12] = 0;//Field Goals 40-49 Yards
-	playerArray[24][13] = 0;//Field Goals 50+
-	playerArray[24][14] = 0;//PAT
-	playerArray[24][15] = 0;//Sacks
-	playerArray[24][16] = 0;//Interceptions
-	playerArray[24][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[24][18] = "Montee Ball";//NAME
-	playerArray[24][19] = "RB";//Position
-	playerArray[24][20] = "broncos";//BACKGROUND COLOR
-	playerArray[24][21] = "Images/Montee-Ball.png";//FONT-COLOR
-	playerArray[24][22] = "MB";
+	playerArray[24][4] = 1018;//RUSH YARDS
+	playerArray[24][5] = 8.2;//RUSHING TOUCHDOWNS
+	playerArray[24][6] = 44.7;//RECEPTIONS
+	playerArray[24][7] = 372;//RECEIVING YARDS
+	playerArray[24][8] = 1.1;//RECEIVING TOUCHDOWNS
+	playerArray[24][9] = 2.5;//FUMBLES
+	playerArray[24][10] = 0;//TOTAL POINTS
+	playerArray[24][11] = 0;//BASELINE 
+	playerArray[24][12] = "Zac Stacy";//NAME
+	playerArray[24][13] = "RB"; //POSITION
+	playerArray[24][14] = "rams"; //TEAM
+	playerArray[24][15] = "Images/Zac-Stacy.png";//PIC
+	playerArray[24][16] = "zacstacy";
 
-	playerArray[25] = new Array(23);
+
+playerArray[25] = new Array(17);
 	playerArray[25][0] = 0;//COMPLETIONS
 	playerArray[25][1] = 0;//PASSING YARDS
 	playerArray[25][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[25][3] = 0;//INTERCEPTIONS
-	playerArray[25][4] = 927;//RUSH YARDS
-	playerArray[25][5] = 3;//RUSHING TOUCHDOWNS
-	playerArray[25][6] = 52;//RECEPTIONS
-	playerArray[25][7] = 478;//RECEIVING YARDS
-	playerArray[25][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[25][9] = 0;//Field Goals 0-19 Yards
-	playerArray[25][10] = 0;//Field Goals 20-29 Yards
-	playerArray[25][11] = 0;//Field Goals 30-39 Yards
-	playerArray[25][12] = 0;//Field Goals 40-49 Yards
-	playerArray[25][13] = 0;//Field Goals 50+
-	playerArray[25][14] = 0;//PAT
-	playerArray[25][15] = 0;//Sacks
-	playerArray[25][16] = 0;//Interceptions
-	playerArray[25][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[25][18] = "Giovani Bernard";//NAME
-	playerArray[25][19] = "RB";//Position
-	playerArray[25][20] = "bengals";//BACKGROUND COLOR
-	playerArray[25][21] = "Images/Giovani-Bernard.png";//FONT-COLOR
-	playerArray[25][22] = "GB";
+	playerArray[25][4] = 1026;//RUSH YARDS
+	playerArray[25][5] = 5.1;//RUSHING TOUCHDOWNS
+	playerArray[25][6] = 50.1;//RECEPTIONS
+	playerArray[25][7] = 499;//RECEIVING YARDS
+	playerArray[25][8] = 1.3;//RECEIVING TOUCHDOWNS
+	playerArray[25][9] = 2.6;//FUMBLES
+	playerArray[25][10] = 0;//TOTAL POINTS
+	playerArray[25][11] = 0;//BASELINE 
+	playerArray[25][12] = "Andre Ellington";//NAME
+	playerArray[25][13] = "RB"; //POSITION
+	playerArray[25][14] = "cardinals"; //TEAM
+	playerArray[25][15] = "Images/Andre-Ellington.png";//PIC
+	playerArray[25][16] = "andreellington";
 
-	playerArray[26] = new Array(23);
+
+playerArray[26] = new Array(17);
 	playerArray[26][0] = 0;//COMPLETIONS
 	playerArray[26][1] = 0;//PASSING YARDS
 	playerArray[26][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[26][3] = 0;//INTERCEPTIONS
-	playerArray[26][4] = 0;//RUSH YARDS
-	playerArray[26][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[26][6] = 72;//RECEPTIONS
-	playerArray[26][7] = 923;//RECEIVING YARDS
-	playerArray[26][8] = 12;//RECEIVING TOUCHDOWNS
-	playerArray[26][9] = 0;//Field Goals 0-19 Yards
-	playerArray[26][10] = 0;//Field Goals 20-29 Yards
-	playerArray[26][11] = 0;//Field Goals 30-39 Yards
-	playerArray[26][12] = 0;//Field Goals 40-49 Yards
-	playerArray[26][13] = 0;//Field Goals 50+
-	playerArray[26][14] = 0;//PAT
-	playerArray[26][15] = 0;//Sacks
-	playerArray[26][16] = 0;//Interceptions
-	playerArray[26][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[26][18] = "Julius Thomas";//NAME
-	playerArray[26][19] = "TE";//Position
-	playerArray[26][20] = "broncos";//BACKGROUND COLOR
-	playerArray[26][21] = "Images/Julius-Thomas.png";//FONT-COLOR
-	playerArray[26][22] = "JT";
+	playerArray[26][4] = 42.5;//RUSH YARDS
+	playerArray[26][5] = 0.1;//RUSHING TOUCHDOWNS
+	playerArray[26][6] = 104;//RECEPTIONS
+	playerArray[26][7] = 1342;//RECEIVING YARDS
+	playerArray[26][8] = 7.2;//RECEIVING TOUCHDOWNS
+	playerArray[26][9] = 0.7;//FUMBLES
+	playerArray[26][10] = 0;//TOTAL POINTS
+	playerArray[26][11] = 0;//BASELINE 
+	playerArray[26][12] = "Antonio Brown";//NAME
+	playerArray[26][13] = "WR"; //POSITION
+	playerArray[26][14] = "steelers"; //TEAM
+	playerArray[26][15] = "Images/Antonio-Brown.png";//PIC
+	playerArray[26][16] = "antoniobrown";
 
-	playerArray[27] = new Array(23);
+
+playerArray[27] = new Array(17);
 	playerArray[27][0] = 0;//COMPLETIONS
 	playerArray[27][1] = 0;//PASSING YARDS
 	playerArray[27][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[27][3] = 0;//INTERCEPTIONS
-	playerArray[27][4] = 47;//RUSH YARDS
-	playerArray[27][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[27][6] = 109;//RECEPTIONS
-	playerArray[27][7] = 1435;//RECEIVING YARDS
-	playerArray[27][8] = 7;//RECEIVING TOUCHDOWNS
-	playerArray[27][9] = 0;//Field Goals 0-19 Yards
-	playerArray[27][10] = 0;//Field Goals 20-29 Yards
-	playerArray[27][11] = 0;//Field Goals 30-39 Yards
-	playerArray[27][12] = 0;//Field Goals 40-49 Yards
-	playerArray[27][13] = 0;//Field Goals 50+
-	playerArray[27][14] = 0;//PAT
-	playerArray[27][15] = 0;//Sacks
-	playerArray[27][16] = 0;//Interceptions
-	playerArray[27][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[27][18] = "Antonio Brown";//NAME
-	playerArray[27][19] = "WR";//Position
-	playerArray[27][20] = "steelers";//BACKGROUND COLOR
-	playerArray[27][21] = "Images/Antonio-Brown.png";//FONT-COLOR
-	playerArray[27][22] = "AB";
+	playerArray[27][4] = 984;//RUSH YARDS
+	playerArray[27][5] = 3.3;//RUSHING TOUCHDOWNS
+	playerArray[27][6] = 46.8;//RECEPTIONS
+	playerArray[27][7] = 378;//RECEIVING YARDS
+	playerArray[27][8] = 0.8;//RECEIVING TOUCHDOWNS
+	playerArray[27][9] = 4.1;//FUMBLES
+	playerArray[27][10] = 0;//TOTAL POINTS
+	playerArray[27][11] = 0;//BASELINE 
+	playerArray[27][12] = "CJ Spiller";//NAME
+	playerArray[27][13] = "RB"; //POSITION
+	playerArray[27][14] = "bills"; //TEAM
+	playerArray[27][15] = "Images/Cj-Spiller.png";//PIC
+	playerArray[27][16] = "cjspiller";
 
-	playerArray[28] = new Array(23);
+playerArray[28] = new Array(17);
 	playerArray[28][0] = 0;//COMPLETIONS
 	playerArray[28][1] = 0;//PASSING YARDS
 	playerArray[28][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[28][3] = 0;//INTERCEPTIONS
-	playerArray[28][4] = 904;//RUSH YARDS
-	playerArray[28][5] = 5;//RUSHING TOUCHDOWNS
-	playerArray[28][6] = 50;//RECEPTIONS
-	playerArray[28][7] = 456;//RECEIVING YARDS
-	playerArray[28][8] = 3;//RECEIVING TOUCHDOWNS
-	playerArray[28][9] = 0;//Field Goals 0-19 Yards
-	playerArray[28][10] = 0;//Field Goals 20-29 Yards
-	playerArray[28][11] = 0;//Field Goals 30-39 Yards
-	playerArray[28][12] = 0;//Field Goals 40-49 Yards
-	playerArray[28][13] = 0;//Field Goals 50+
-	playerArray[28][14] = 0;//PAT
-	playerArray[28][15] = 0;//Sacks
-	playerArray[28][16] = 0;//Interceptions
-	playerArray[28][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[28][18] = "Reggie Bush";//NAME
-	playerArray[28][19] = "RB";//Position
-	playerArray[28][20] = "lions";//BACKGROUND COLOR
-	playerArray[28][21] = "Images/Reggie-Bush.png";//FONT-COLOR
-	playerArray[28][22] = "RB";
+	playerArray[28][4] = 0;//RUSH YARDS
+	playerArray[28][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[28][6] = 81.2;//RECEPTIONS
+	playerArray[28][7] = 1061;//RECEIVING YARDS
+	playerArray[28][8] = 8.7;//RECEIVING TOUCHDOWNS
+	playerArray[28][9] = 1.0;//FUMBLES
+	playerArray[28][10] = 0;//TOTAL POINTS
+	playerArray[28][11] = 0;//BASELINE 
+	playerArray[28][12] = "Keenan Allen";//NAME
+	playerArray[28][13] = "WR"; //POSITION
+	playerArray[28][14] = "chargers"; //TEAM
+	playerArray[28][15] = "Images/Keenan-Allen.png";//PIC
+	playerArray[28][16] = "keenanallen";
 
-	playerArray[29] = new Array(23);
+
+
+playerArray[29] = new Array(17);
 	playerArray[29][0] = 0;//COMPLETIONS
 	playerArray[29][1] = 0;//PASSING YARDS
 	playerArray[29][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[29][3] = 0;//INTERCEPTIONS
-	playerArray[29][4] = 123;//RUSH YARDS
-	playerArray[29][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[29][6] = 87;//RECEPTIONS
-	playerArray[29][7] = 1233;//RECEIVING YARDS
-	playerArray[29][8] = 8;//RECEIVING TOUCHDOWNS
-	playerArray[29][9] = 0;//Field Goals 0-19 Yards
-	playerArray[29][10] = 0;//Field Goals 20-29 Yards
-	playerArray[29][11] = 0;//Field Goals 30-39 Yards
-	playerArray[29][12] = 0;//Field Goals 40-49 Yards
-	playerArray[29][13] = 0;//Field Goals 50+
-	playerArray[29][14] = 0;//PAT
-	playerArray[29][15] = 0;//Sacks
-	playerArray[29][16] = 0;//Interceptions
-	playerArray[29][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[29][18] = "Randall Cobb";//NAME
-	playerArray[29][19] = "WR";//Position
-	playerArray[29][20] = "packers";//BACKGROUND COLOR
-	playerArray[29][21] = "Images/Randall-Cobb.png";//FONT-COLOR
-	playerArray[29][22] = "RC";
+	playerArray[29][4] = 1004;//RUSH YARDS
+	playerArray[29][5] = 4.9;//RUSHING TOUCHDOWNS
+	playerArray[29][6] = 29.6;//RECEPTIONS
+	playerArray[29][7] = 241;//RECEIVING YARDS
+	playerArray[29][8] = 0.7;//RECEIVING TOUCHDOWNS
+	playerArray[29][9] = 2.6;//FUMBLES
+	playerArray[29][10] = 0;//TOTAL POINTS
+	playerArray[29][11] = 0;//BASELINE 
+	playerArray[29][12] = "Ryan Mathews";//NAME
+	playerArray[29][13] = "RB"; //POSITION
+	playerArray[29][14] = "chargers"; //TEAM
+	playerArray[29][15] = "Images/Ryan-Mathews.png";//PIC
+	playerArray[29][16] = "ryanmathews";
 
-	playerArray[30] = new Array(23);
+
+playerArray[30] = new Array(17);
 	playerArray[30][0] = 0;//COMPLETIONS
 	playerArray[30][1] = 0;//PASSING YARDS
 	playerArray[30][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[30][3] = 0;//INTERCEPTIONS
-	playerArray[30][4] = 0;//RUSH YARDS
-	playerArray[30][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[30][6] = 100;//RECEPTIONS
-	playerArray[30][7] = 1367;//RECEIVING YARDS
-	playerArray[30][8] = 7;//RECEIVING TOUCHDOWNS
-	playerArray[30][9] = 0;//Field Goals 0-19 Yards
-	playerArray[30][10] = 0;//Field Goals 20-29 Yards
-	playerArray[30][11] = 0;//Field Goals 30-39 Yards
-	playerArray[30][12] = 0;//Field Goals 40-49 Yards
-	playerArray[30][13] = 0;//Field Goals 50+
-	playerArray[30][14] = 0;//PAT
-	playerArray[30][15] = 0;//Sacks
-	playerArray[30][16] = 0;//Interceptions
-	playerArray[30][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[30][18] = "Andre Johnson";//NAME
-	playerArray[30][19] = "WR";//Position
-	playerArray[30][20] = "texans";//BACKGROUND COLOR
-	playerArray[30][21] = "Images/Andre-Johnson.png";//FONT-COLOR
-	playerArray[30][22] = "AJ1";
+	playerArray[30][4] = 68.7;//RUSH YARDS
+	playerArray[30][5] = 0.3;//RUSHING TOUCHDOWNS
+	playerArray[30][6] = 82.9;//RECEPTIONS
+	playerArray[30][7] = 1015;//RECEIVING YARDS
+	playerArray[30][8] = 7.5;//RECEIVING TOUCHDOWNS
+	playerArray[30][9] = 0.9;//FUMBLES
+	playerArray[30][10] = 0;//TOTAL POINTS
+	playerArray[30][11] = 0;//BASELINE 
+	playerArray[30][12] = "Randall Cobb";//NAME
+	playerArray[30][13] = "WR"; //POSITION
+	playerArray[30][14] = "packers"; //TEAM
+	playerArray[30][15] = "Images/Randall-Cobb.png";//PIC
+	playerArray[30][16] = "randallcobb";
 
-	playerArray[31] = new Array(23);
+
+playerArray[31] = new Array(17);
 	playerArray[31][0] = 0;//COMPLETIONS
 	playerArray[31][1] = 0;//PASSING YARDS
 	playerArray[31][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[31][3] = 0;//INTERCEPTIONS
-	playerArray[31][4] = 1101;//RUSH YARDS
-	playerArray[31][5] = 7;//RUSHING TOUCHDOWNS
-	playerArray[31][6] = 37;//RECEPTIONS
-	playerArray[31][7] = 288;//RECEIVING YARDS
-	playerArray[31][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[31][9] = 0;//Field Goals 0-19 Yards
-	playerArray[31][10] = 0;//Field Goals 20-29 Yards
-	playerArray[31][11] = 0;//Field Goals 30-39 Yards
-	playerArray[31][12] = 0;//Field Goals 40-49 Yards
-	playerArray[31][13] = 0;//Field Goals 50+
-	playerArray[31][14] = 0;//PAT
-	playerArray[31][15] = 0;//Sacks
-	playerArray[31][16] = 0;//Interceptions
-	playerArray[31][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[31][18] = "Ben Tate";//NAME
-	playerArray[31][19] = "RB";//Position
-	playerArray[31][20] = "browns";//BACKGROUND COLOR
-	playerArray[31][21] = "Images/Ben-Tate.png";//FONT-COLOR
-	playerArray[31][22] = "BT";
+	playerArray[31][4] = 1087;//RUSH YARDS
+	playerArray[31][5] = 5.4;//RUSHING TOUCHDOWNS
+	playerArray[31][6] = 33.9;//RECEPTIONS
+	playerArray[31][7] = 322;//RECEIVING YARDS
+	playerArray[31][8] = 1.1;//RECEIVING TOUCHDOWNS
+	playerArray[31][9] = 3.0;//FUMBLES
+	playerArray[31][10] = 0;//TOTAL POINTS
+	playerArray[31][11] = 0;//BASELINE 
+	playerArray[31][12] = "Doug Martin";//NAME
+	playerArray[31][13] = "RB"; //POSITION
+	playerArray[31][14] = "buccaneers"; //TEAM
+	playerArray[31][15] = "Images/Doug-Martin.png";//PIC
+	playerArray[31][16] = "dougmartin";
 
-	playerArray[32] = new Array(23);
+
+playerArray[32] = new Array(17);
 	playerArray[32][0] = 0;//COMPLETIONS
 	playerArray[32][1] = 0;//PASSING YARDS
 	playerArray[32][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[32][3] = 0;//INTERCEPTIONS
-	playerArray[32][4] = 12;//RUSH YARDS
+	playerArray[32][4] = 0;//RUSH YARDS
 	playerArray[32][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[32][6] = 73;//RECEPTIONS
-	playerArray[32][7] = 1235;//RECEIVING YARDS
-	playerArray[32][8] = 8;//RECEIVING TOUCHDOWNS
-	playerArray[32][9] = 0;//Field Goals 0-19 Yards
-	playerArray[32][10] = 0;//Field Goals 20-29 Yards
-	playerArray[32][11] = 0;//Field Goals 30-39 Yards
-	playerArray[32][12] = 0;//Field Goals 40-49 Yards
-	playerArray[32][13] = 0;//Field Goals 50+
-	playerArray[32][14] = 0;//PAT
-	playerArray[32][15] = 0;//Sacks
-	playerArray[32][16] = 0;//Interceptions
-	playerArray[32][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[32][18] = "Vincent Jackson";//NAME
-	playerArray[32][19] = "WR";//Position
-	playerArray[32][20] = "buccaneers";//BACKGROUND COLOR
-	playerArray[32][21] = "Images/Vincent-Jackson.png";//FONT-COLOR
-	playerArray[32][22] = "VJ";
+	playerArray[32][6] = 76.9;//RECEPTIONS
+	playerArray[32][7] = 1111;//RECEIVING YARDS
+	playerArray[32][8] = 5.5;//RECEIVING TOUCHDOWNS
+	playerArray[32][9] = 1.0;//FUMBLES
+	playerArray[32][10] = 0;//TOTAL POINTS
+	playerArray[32][11] = 0;//BASELINE 
+	playerArray[32][12] = "Vincent Jackson";//NAME
+	playerArray[32][13] = "WR"; //POSITION
+	playerArray[32][14] = "buccaneers"; //TEAM
+	playerArray[32][15] = "Images/Vincent-Jackson.png";//PIC
+	playerArray[32][16] = "vincentjackson";
 
-	playerArray[33] = new Array(23);
+
+playerArray[33] = new Array(17);
 	playerArray[33][0] = 0;//COMPLETIONS
 	playerArray[33][1] = 0;//PASSING YARDS
 	playerArray[33][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[33][3] = 0;//INTERCEPTIONS
-	playerArray[33][4] = 104;//RUSH YARDS
-	playerArray[33][5] = 1;//RUSHING TOUCHDOWNS
-	playerArray[33][6] = 73;//RECEPTIONS
-	playerArray[33][7] = 814;//RECEIVING YARDS
-	playerArray[33][8] = 7;//RECEIVING TOUCHDOWNS
-	playerArray[33][9] = 0;//Field Goals 0-19 Yards
-	playerArray[33][10] = 0;//Field Goals 20-29 Yards
-	playerArray[33][11] = 0;//Field Goals 30-39 Yards
-	playerArray[33][12] = 0;//Field Goals 40-49 Yards
-	playerArray[33][13] = 0;//Field Goals 50+
-	playerArray[33][14] = 0;//PAT
-	playerArray[33][15] = 0;//Sacks
-	playerArray[33][16] = 0;//Interceptions
-	playerArray[33][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[33][18] = "Cordarrelle Patterson";//NAME
-	playerArray[33][19] = "WR"; //POSITION
-	playerArray[33][20] = "vikings" //TEAM
-	playerArray[33][21] = "Images/Cordarrelle-Patterson.png";//PIC
-	playerArray[33][22] = "CP";
+	playerArray[33][4] = 1106;//RUSH YARDS
+	playerArray[33][5] = 4.4;//RUSHING TOUCHDOWNS
+	playerArray[33][6] = 34.8;//RECEPTIONS
+	playerArray[33][7] = 290;//RECEIVING YARDS
+	playerArray[33][8] = 1.0;//RECEIVING TOUCHDOWNS
+	playerArray[33][9] = 4.7;//FUMBLES
+	playerArray[33][10] = 0;//TOTAL POINTS
+	playerArray[33][11] = 0;//BASELINE 
+	playerArray[33][12] = "Toby Gerhart";//NAME
+	playerArray[33][13] = "RB"; //POSITION
+	playerArray[33][14] = "jaguars"; //TEAM
+	playerArray[33][15] = "Images/Toby-Gerhart.png";//PIC
+	playerArray[33][16] = "tobygerhart";
 
 
-	playerArray[34] = new Array(23);
-         playerArray[34][0] =0;//COMPLETIONS
-         playerArray[34][1] =0;//PASSING YARDS
-         playerArray[34][2] =0;//PASSING TOUCHDOWNS
-         playerArray[34][3] =0;//INTERCEPTIONS
-         playerArray[34][4] = 10;//RUSH YARDS
-         playerArray[34][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[34][6] = 92;//RECEPTIONS
-         playerArray[34][7] = 1060;//RECEIVING YARDS
-         playerArray[34][8] = 8;//RECEIVING TOUCHDOWNS
-         playerArray[34][9] = 0;//Field Goals 0-19 Yards
-         playerArray[34][10] = 0;//Field Goals 20-29 Yards
-         playerArray[34][11] = 0;//Field Goals 30-39 Yards
-         playerArray[34][12] = 0;//Field Goals 40-49 Yards
-         playerArray[34][13] = 0;//Field Goals 50+
-         playerArray[34][14] = 0;//PAT
-         playerArray[34][15] = 0;//Sacks
-         playerArray[34][16] = 0;//Interceptions
-         playerArray[34][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[34][18] = "Larry Fitzgerald";//NAME
-         playerArray[34][19] = "WR"//position
-         playerArray[34][20] = "cardinals";//BACKGROUND COLOR
-         playerArray[34][21] = "Images/Larry-Fitzgerald.png";//FONT-COLOR
-         playerArray[34][22] = "LF";
- 
-playerArray[35] = new Array(23);
-         playerArray[35][0] = 0;//COMPLETIONS
-         playerArray[35][1] = 0;//PASSING YARDS
-         playerArray[35][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[35][3] = 0;//INTERCEPTIONS
-         playerArray[35][4] = 0;//RUSH YARDS
-         playerArray[35][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[35][6] = 65;//RECEPTIONS
-         playerArray[35][7] = 890;//RECEIVING YARDS
-         playerArray[35][8] = 10;//RECEIVING TOUCHDOWNS
-         playerArray[35][9] = 0;//Field Goals 0-19 Yards
-         playerArray[35][10] = 0;//Field Goals 20-29 Yards
-         playerArray[35][11] = 0;//Field Goals 30-39 Yards
-         playerArray[35][12] = 0;//Field Goals 40-49 Yards
-         playerArray[35][13] = 0;//Field Goals 50+
-         playerArray[35][14] = 0;//PAT
-         playerArray[35][15] = 0;//Sacks
-         playerArray[35][16] = 0;//Interceptions
-         playerArray[35][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[35][18] = "Rob Gronkowski";//NAME
-         playerArray[35][19] = "TE";//NAME
-         playerArray[35][20] = "patriots";//BACKGROUND COLOR
-         playerArray[35][21] = "Images/Rob-Gronkowski.png";//FONT-COLOR
-         playerArray[35][22] = "RG";
- 
-playerArray[36] = new Array(23);
-         playerArray[36][0] = 0;//COMPLETIONS
-         playerArray[36][1] = 0;//PASSING YARDS
-         playerArray[36][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[36][3] = 0;//INTERCEPTIONS
-         playerArray[36][4] = 25;//RUSH YARDS
-         playerArray[36][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[36][6] = 98;//RECEPTIONS
-         playerArray[36][7] = 1240;//RECEIVING YARDS
-         playerArray[36][8] = 8;//RECEIVING TOUCHDOWNS
-         playerArray[36][9] = 0;//Field Goals 0-19 Yards
-         playerArray[36][10] = 0;//Field Goals 20-29 Yards
-         playerArray[36][11] = 0;//Field Goals 30-39 Yards
-         playerArray[36][12] = 0;//Field Goals 40-49 Yards
-         playerArray[36][13] = 0;//Field Goals 50+
-         playerArray[36][14] = 0;//PAT
-         playerArray[36][15] = 0;//Sacks
-         playerArray[36][16] = 0;//Interceptions
-         playerArray[36][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[36][18] = "Pierre Garcon";//NAME
-         playerArray[36][19] = "WR";//NAME
-         playerArray[36][20] = "redskins";//BACKGROUND COLOR
-         playerArray[36][21] = "Images/Pierre-Garcon.png";//FONT-COLOR
-         playerArray[36][22] = "PG";
- 
-playerArray[37] = new Array(23);
-         playerArray[37][0] = 0;//COMPLETIONS
-         playerArray[37][1] = 0;//PASSING YARDS
-         playerArray[37][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[37][3] = 0;//INTERCEPTIONS
-         playerArray[37][4] = 1125;//RUSH YARDS
-         playerArray[37][5] = 7;//RUSHING TOUCHDOWNS
-         playerArray[37][6] = 18;//RECEPTIONS
-         playerArray[37][7] = 166;//RECEIVING YARDS
-         playerArray[37][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[37][9] = 0;//Field Goals 0-19 Yards
-         playerArray[37][10] = 0;//Field Goals 20-29 Yards
-         playerArray[37][11] = 0;//Field Goals 30-39 Yards
-         playerArray[37][12] = 0;//Field Goals 40-49 Yards
-         playerArray[37][13] = 0;//Field Goals 50+
-         playerArray[37][14] = 0;//PAT
-         playerArray[37][15] = 0;//Sacks
-         playerArray[37][16] = 0;//Interceptions
-         playerArray[37][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[37][18] = "Ryan Mathews";//NAME
-         playerArray[37][19] = "RB";//NAME
-         playerArray[37][20] = "chargers";//BACKGROUND COLOR
-         playerArray[37][21] = "Images/Ryan-Mathews.png";//FONT-COLOR
-         playerArray[37][22] = "RM";
- 
-        
-playerArray[38] = new Array(23);
-         playerArray[38][0] = 0;//COMPLETIONS
-         playerArray[38][1] = 0;//PASSING YARDS
-         playerArray[38][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[38][3] = 0;//INTERCEPTIONS
-         playerArray[38][4] = 31;//RUSH YARDS
-         playerArray[38][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[38][6] = 75;//RECEPTIONS
-         playerArray[38][7] = 1170;//RECEIVING YARDS
-         playerArray[38][8] = 7;//RECEIVING TOUCHDOWNS
-         playerArray[38][9] = 0;//Field Goals 0-19 Yards
-         playerArray[38][10] = 0;//Field Goals 20-29 Yards
-         playerArray[38][11] = 0;//Field Goals 30-39 Yards
-         playerArray[38][12] = 0;//Field Goals 40-49 Yards
-         playerArray[38][13] = 0;//Field Goals 50+
-         playerArray[38][14] = 0;//PAT
-         playerArray[38][15] = 0;//Sacks
-         playerArray[38][16] = 0;//Interceptions
-         playerArray[38][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[38][18] = "Desean Jackson";//NAME
-         playerArray[38][19] = "WR";//NAME
-         playerArray[38][20] = "redskins";//BACKGROUND COLOR
-         playerArray[38][21] = "Images/Desean-Jackson.png";//FONT-COLOR
-         playerArray[38][22] = "DS";
- 
- 
-playerArray[39] = new Array(23);
-         playerArray[39][0] = 400;//COMPLETIONS
-         playerArray[39][1] = 4600;//PASSING YARDS
-         playerArray[39][2] = 31;//PASSING TOUCHDOWNS
-         playerArray[39][3] = 20;//INTERCEPTIONS
-         playerArray[39][4] = 77;//RUSH YARDS
-         playerArray[39][5] = 2;//RUSHING TOUCHDOWNS
-         playerArray[39][6] = 0;//RECEPTIONS
-         playerArray[39][7] = 0;//RECEIVING YARDS
-         playerArray[39][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[39][9] = 0;//Field Goals 0-19 Yards
-         playerArray[39][10] = 0;//Field Goals 20-29 Yards
-         playerArray[39][11] = 0;//Field Goals 30-39 Yards
-         playerArray[39][12] = 0;//Field Goals 40-49 Yards
-         playerArray[39][13] = 0;//Field Goals 50+
-         playerArray[39][14] = 0;//PAT
-         playerArray[39][15] = 0;//Sacks
-         playerArray[39][16] = 0;//Interceptions
-         playerArray[39][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[39][18] = "Matthew Stafford";//NAME
-         playerArray[39][19] = "QB";//NAME
-         playerArray[39][20] = "lions";//BACKGROUND COLOR
-         playerArray[39][21] = "Images/Matthew-Stafford.png";//FONT-COLOR
-         playerArray[39][22] = "MS";
- 
- 
-playerArray[40] = new Array(23);
-         playerArray[40][0] = 0;//COMPLETIONS
-         playerArray[40][1] = 0;//PASSING YARDS
-         playerArray[40][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[40][3] = 0;//INTERCEPTIONS
-         playerArray[40][4] = 1001;//RUSH YARDS
-         playerArray[40][5] = 5;//RUSHING TOUCHDOWNS
-         playerArray[40][6] = 40;//RECEPTIONS
-         playerArray[40][7] = 310;//RECEIVING YARDS
-         playerArray[40][8] = 1;//RECEIVING TOUCHDOWNS
-         playerArray[40][9] = 0;//Field Goals 0-19 Yards
-         playerArray[40][10] = 0;//Field Goals 20-29 Yards
-         playerArray[40][11] = 0;//Field Goals 30-39 Yards
-         playerArray[40][12] = 0;//Field Goals 40-49 Yards
-         playerArray[40][13] = 0;//Field Goals 50+
-         playerArray[40][14] = 0;//PAT
-         playerArray[40][15] = 0;//Sacks
-         playerArray[40][16] = 0;//Interceptions
-         playerArray[40][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[40][18] = "C.J. Spiller";//NAME
-         playerArray[40][19] = "RB";//NAME
-         playerArray[40][20] = "bills";//BACKGROUND COLOR
-         playerArray[40][21] = "Images/CJ-Spiller.png";//FONT-COLOR
-         playerArray[40][22] = "CS";
- 
-playerArray[41] = new Array(23);
-         playerArray[41][0] = 0;//COMPLETIONS
-         playerArray[41][1] = 0;//PASSING YARDS
-         playerArray[41][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[41][3] = 0;//INTERCEPTIONS
-         playerArray[41][4] = 1123;//RUSH YARDS
-         playerArray[41][5] = 8;//RUSHING TOUCHDOWNS
-         playerArray[41][6] = 15;//RECEPTIONS
-         playerArray[41][7] = 130;//RECEIVING YARDS
-         playerArray[41][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[41][9] = 0;//Field Goals 0-19 Yards
-         playerArray[41][10] = 0;//Field Goals 20-29 Yards
-         playerArray[41][11] = 0;//Field Goals 30-39 Yards
-         playerArray[41][12] = 0;//Field Goals 40-49 Yards
-         playerArray[41][13] = 0;//Field Goals 50+
-         playerArray[41][14] = 0;//PAT
-         playerArray[41][15] = 0;//Sacks
-         playerArray[41][16] = 0;//Interceptions
-         playerArray[41][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[41][18] = "Frank Gore";//NAME
-         playerArray[41][19] = "RB";//NAME
-         playerArray[41][20] = "fortyniners";//BACKGROUND COLOR
-         playerArray[41][21] = "Images/Frank-Gore.png";//FONT-COLOR
-         playerArray[41][22] = "FG";
- 
-        
-playerArray[42] = new Array(23);
-         playerArray[42][0] = 0;//COMPLETIONS
-         playerArray[42][1] = 0;//PASSING YARDS
-         playerArray[42][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[42][3] = 0;//INTERCEPTIONS
-         playerArray[42][4] = 0;//RUSH YARDS
-         playerArray[42][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[42][6] = 80;//RECEPTIONS
-         playerArray[42][7] = 1045;//RECEIVING YARDS
-         playerArray[42][8] = 8;//RECEIVING TOUCHDOWNS
-         playerArray[42][9] = 0;//Field Goals 0-19 Yards
-         playerArray[42][10] = 0;//Field Goals 20-29 Yards
-         playerArray[42][11] = 0;//Field Goals 30-39 Yards
-         playerArray[42][12] = 0;//Field Goals 40-49 Yards
-         playerArray[42][13] = 0;//Field Goals 50+
-         playerArray[42][14] = 0;//PAT
-         playerArray[42][15] = 0;//Sacks
-         playerArray[42][16] = 0;//Interceptions
-         playerArray[42][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[42][18] = "Keenan Allen";//NAME
-         playerArray[42][19] = "WR";//NAME
-         playerArray[42][20] = "chargers";//BACKGROUND COLOR
-         playerArray[42][21] = "Images/Keenan-Allen.png";//FONT-COLOR
-         playerArray[42][22] = "KA";
- 
- 
-playerArray[43] = new Array(23);
-         playerArray[43][0] = 0;//COMPLETIONS
-         playerArray[43][1] = 0;//PASSING YARDS
-         playerArray[43][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[43][3] = 0;//INTERCEPTIONS
-         playerArray[43][4] = 0;//RUSH YARDS
-         playerArray[43][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[43][6] = 80;//RECEPTIONS
-         playerArray[43][7] = 1045;//RECEIVING YARDS
-         playerArray[43][8] = 7;//RECEIVING TOUCHDOWNS
-         playerArray[43][9] = 0;//Field Goals 0-19 Yards
-         playerArray[43][10] = 0;//Field Goals 20-29 Yards
-         playerArray[43][11] = 0;//Field Goals 30-39 Yards
-         playerArray[43][12] = 0;//Field Goals 40-49 Yards
-         playerArray[43][13] = 0;//Field Goals 50+
-         playerArray[43][14] = 0;//PAT
-         playerArray[43][15] = 0;//Sacks
-         playerArray[43][16] = 0;//Interceptions
-         playerArray[43][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[43][18] = "Victor Cruz";//NAME
-         playerArray[43][19] = "WR";//NAME
-         playerArray[43][20] = "giants";//BACKGROUND COLOR
-         playerArray[43][21] = "Images/Victor-Cruz.png";//FONT-COLOR
-         playerArray[43][22] = "VC";
- 
- 
-playerArray[44] = new Array(23);
-         playerArray[44][0] = 0;//COMPLETIONS
-         playerArray[44][1] = 0;//PASSING YARDS
-         playerArray[44][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[44][3] = 0;//INTERCEPTIONS
-         playerArray[44][4] = 0;//RUSH YARDS
-         playerArray[44][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[44][6] = 80;//RECEPTIONS
-         playerArray[44][7] = 1005;//RECEIVING YARDS
-         playerArray[44][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[44][9] = 0;//Field Goals 0-19 Yards
-         playerArray[44][10] = 0;//Field Goals 20-29 Yards
-         playerArray[44][11] = 0;//Field Goals 30-39 Yards
-         playerArray[44][12] = 0;//Field Goals 40-49 Yards
-         playerArray[44][13] = 0;//Field Goals 50+
-         playerArray[44][14] = 0;//PAT
-         playerArray[44][15] = 0;//Sacks
-         playerArray[44][16] = 0;//Interceptions
-         playerArray[44][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[44][18] = "Roddy White";//NAME
-         playerArray[44][19] = "WR";//NAME
-         playerArray[44][20] = "falcons";//BACKGROUND COLOR
-         playerArray[44][21] = "Images/Roddy-White.png";//FONT-COLOR
-         playerArray[44][22] = "RW";
- 
-playerArray[45] = new Array(23);
-         playerArray[45][0] = 276;//COMPLETIONS
-         playerArray[45][1] = 3365;//PASSING YARDS
-         playerArray[45][2] = 20;//PASSING TOUCHDOWNS
-         playerArray[45][3] = 15;//INTERCEPTIONS
-         playerArray[45][4] = 637;//RUSH YARDS
-         playerArray[45][5] = 8;//RUSHING TOUCHDOWNS
-         playerArray[45][6] = 0;//RECEPTIONS
-         playerArray[45][7] = 0;//RECEIVING YARDS
-         playerArray[45][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[45][9] = 0;//Field Goals 0-19 Yards
-         playerArray[45][10] = 0;//Field Goals 20-29 Yards
-         playerArray[45][11] = 0;//Field Goals 30-39 Yards
-         playerArray[45][12] = 0;//Field Goals 40-49 Yards
-         playerArray[45][13] = 0;//Field Goals 50+
-         playerArray[45][14] = 0;//PAT
-         playerArray[45][15] = 0;//Sacks
-         playerArray[45][16] = 0;//Interceptions
-         playerArray[45][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[45][18] = "Cam Newton";//NAME
-         playerArray[45][19] = "QB";//NAME
-         playerArray[45][20] = "panthers";//BACKGROUND COLOR
-         playerArray[45][21] = "Images/Cam-Newton.png";//FONT-COLOR
-         playerArray[45][22] = "CN";
- 
- 
-        
- 
- 
-playerArray[46] = new Array(23);
-         playerArray[46][0] = 0;//COMPLETIONS
-         playerArray[46][1] = 0;//PASSING YARDS
-         playerArray[46][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[46][3] = 0;//INTERCEPTIONS
-         playerArray[46][4] = 867;//RUSH YARDS
-         playerArray[46][5] = 3;//RUSHING TOUCHDOWNS
-         playerArray[46][6] = 48;//RECEPTIONS
-         playerArray[46][7] = 457;//RECEIVING YARDS
-         playerArray[46][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[46][9] = 0;//Field Goals 0-19 Yards
-         playerArray[46][10] = 0;//Field Goals 20-29 Yards
-         playerArray[46][11] = 0;//Field Goals 30-39 Yards
-         playerArray[46][12] = 0;//Field Goals 40-49 Yards
-         playerArray[46][13] = 0;//Field Goals 50+
-         playerArray[46][14] = 0;//PAT
-         playerArray[46][15] = 0;//Sacks
-         playerArray[46][16] = 0;//Interceptions
-         playerArray[46][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[46][18] = "Andre Ellington";//NAME
-         playerArray[46][19] = "RB";//NAME
-         playerArray[46][20] = "cardinals";//BACKGROUND COLOR
-         playerArray[46][21] = "Images/Andre-Ellington.png";//FONT-COLOR
-         playerArray[46][22] = "AE";
- 
-playerArray[47] = new Array(23);
-         playerArray[47][0] = 0;//COMPLETIONS
-         playerArray[47][1] = 0;//PASSING YARDS
-         playerArray[47][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[47][3] = 0;//INTERCEPTIONS
-         playerArray[47][4] = 0;//RUSH YARDS
-         playerArray[47][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[47][6] = 70;//RECEPTIONS
-         playerArray[47][7] = 919;//RECEIVING YARDS
-         playerArray[47][8] = 6;//RECEIVING TOUCHDOWNS
-         playerArray[47][9] = 0;//Field Goals 0-19 Yards
-         playerArray[47][10] = 0;//Field Goals 20-29 Yards
-         playerArray[47][11] = 0;//Field Goals 30-39 Yards
-         playerArray[47][12] = 0;//Field Goals 40-49 Yards
-         playerArray[47][13] = 0;//Field Goals 50+
-         playerArray[47][14] = 0;//PAT
-         playerArray[47][15] = 0;//Sacks
-         playerArray[47][16] = 0;//Interceptions
-         playerArray[47][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[47][18] = "Wes Welker";//NAME
-         playerArray[47][19] = "WR";//NAME
-         playerArray[47][20] = "broncos";//BACKGROUND COLOR
-         playerArray[47][21] = "Images/Wes-Welker.png";//FONT-COLOR
-         playerArray[47][22] = "WW";
- 
- 
- 
-playerArray[48] = new Array(23);
-         playerArray[48][0] = 357;//COMPLETIONS
-         playerArray[48][1] = 4071;//PASSING YARDS
-         playerArray[48][2] = 23;//PASSING TOUCHDOWNS
-         playerArray[48][3] = 10;//INTERCEPTIONS
-         playerArray[48][4] = 365;//RUSH YARDS
-         playerArray[48][5] = 3;//RUSHING TOUCHDOWNS
-         playerArray[48][6] = 0;//RECEPTIONS
-         playerArray[48][7] = 0;//RECEIVING YARDS
-         playerArray[48][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[48][9] = 0;//Field Goals 0-19 Yards
-         playerArray[48][10] = 0;//Field Goals 20-29 Yards
-         playerArray[48][11] = 0;//Field Goals 30-39 Yards
-         playerArray[48][12] = 0;//Field Goals 40-49 Yards
-         playerArray[48][13] = 0;//Field Goals 50+
-         playerArray[48][14] = 0;//PAT
-         playerArray[48][15] = 0;//Sacks
-         playerArray[48][16] = 0;//Interceptions
-         playerArray[48][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[48][18] = "Andrew Luck";//NAME
-         playerArray[48][19] = "QB";//NAME
-         playerArray[48][20] = "colts";//BACKGROUND COLOR
-         playerArray[48][21] = "Images/Andrew-Luck.png";//FONT-COLOR
-         playerArray[48][22] = "AL";
- 
- 
-playerArray[49] = new Array(23);
-         playerArray[49][0] = 0;//COMPLETIONS
-         playerArray[49][1] = 0;//PASSING YARDS
-         playerArray[49][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[49][3] = 0;//INTERCEPTIONS
-         playerArray[49][4] = 81;//RUSH YARDS
-         playerArray[49][5] = 1;//RUSHING TOUCHDOWNS
-         playerArray[49][6] = 77;//RECEPTIONS
-         playerArray[49][7] = 916;//RECEIVING YARDS
-         playerArray[49][8] = 0;//RECEIVING TOUCHDOWNS
-         playerArray[49][9] = 0;//Field Goals 0-19 Yards
-         playerArray[49][10] = 0;//Field Goals 20-29 Yards
-         playerArray[49][11] = 0;//Field Goals 30-39 Yards
-         playerArray[49][12] = 0;//Field Goals 40-49 Yards
-         playerArray[49][13] = 0;//Field Goals 50+
-         playerArray[49][14] = 0;//PAT
-         playerArray[49][15] = 0;//Sacks
-         playerArray[49][16] = 0;//Interceptions
-         playerArray[49][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[49][18] = "Percy Harvin";//NAME
-         playerArray[49][19] = "WR";//NAME
-         playerArray[49][20] = "seahawks";//BACKGROUND COLOR
-         playerArray[49][21] = "Images/Percy-Harvin.png";//FONT-COLOR
-         playerArray[49][22] = "PH";
- 
- 
-playerArray[50] = new Array(23);
-         playerArray[50][0] = 0;//COMPLETIONS
-         playerArray[50][1] = 0;//PASSING YARDS
-         playerArray[50][2] = 0;//PASSING TOUCHDOWNS
-         playerArray[50][3] = 0;//INTERCEPTIONS
-         playerArray[50][4] = 0;//RUSH YARDS
-         playerArray[50][5] = 0;//RUSHING TOUCHDOWNS
-         playerArray[50][6] = 57;//RECEPTIONS
-         playerArray[50][7] = 850;//RECEIVING YARDS
-         playerArray[50][8] = 12;//RECEIVING TOUCHDOWNS
-         playerArray[50][9] = 0;//Field Goals 0-19 Yards
-         playerArray[50][10] = 0;//Field Goals 20-29 Yards
-         playerArray[50][11] = 0;//Field Goals 30-39 Yards
-         playerArray[50][12] = 0;//Field Goals 40-49 Yards
-         playerArray[50][13] = 0;//Field Goals 50+
-         playerArray[50][14] = 0;//PAT
-         playerArray[50][15] = 0;//Sacks
-         playerArray[50][16] = 0;//Interceptions
-         playerArray[50][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-         playerArray[50][18] = "Vernon Davis";//NAME
-         playerArray[50][19] = "TE";//NAME
-         playerArray[50][20] = "fortyniners";//BACKGROUND COLOR
-         playerArray[50][21] = "Images/Vernon-Davis.png";//FONT-COLOR
-         playerArray[50][22] = "VD";
+playerArray[34] = new Array(17);
+	playerArray[34][0] = 0;//COMPLETIONS
+	playerArray[34][1] = 0;//PASSING YARDS
+	playerArray[34][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[34][3] = 0;//INTERCEPTIONS
+	playerArray[34][4] = 878;//RUSH YARDS
+	playerArray[34][5] = 8;//RUSHING TOUCHDOWNS
+	playerArray[34][6] = 35.9;//RECEPTIONS
+	playerArray[34][7] = 288;//RECEIVING YARDS
+	playerArray[34][8] = 0.6;//RECEIVING TOUCHDOWNS
+	playerArray[34][9] = 1.6;//FUMBLES
+	playerArray[34][10] = 0;//TOTAL POINTS
+	playerArray[34][11] = 0;//BASELINE 
+	playerArray[34][12] = "Rashad Jennings";//NAME
+	playerArray[34][13] = "RB"; //POSITION
+	playerArray[34][14] = "giants"; //TEAM
+	playerArray[34][15] = "Images/Rashad-Jennings.png";//PIC
+	playerArray[34][16] = "rashadjennings";
 
-    playerArray[51] = new Array(23);
+
+playerArray[35] = new Array(17);
+	playerArray[35][0] = 0;//COMPLETIONS
+	playerArray[35][1] = 0;//PASSING YARDS
+	playerArray[35][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[35][3] = 0;//INTERCEPTIONS
+	playerArray[35][4] = 0;//RUSH YARDS
+	playerArray[35][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[35][6] = 75.8;//RECEPTIONS
+	playerArray[35][7] = 868;//RECEIVING YARDS
+	playerArray[35][8] = 8.3;//RECEIVING TOUCHDOWNS
+	playerArray[35][9] = 1.0;//FUMBLES
+	playerArray[35][10] = 0;//TOTAL POINTS
+	playerArray[35][11] = 0;//BASELINE 
+	playerArray[35][12] = "Julius Thomas";//NAME
+	playerArray[35][13] = "TE"; //POSITION
+	playerArray[35][14] = "broncos"; //TEAM
+	playerArray[35][15] = "Images/Julius-Thomas.png";//PIC
+	playerArray[35][16] = "juliusthomas";
+
+
+playerArray[36] = new Array(17);
+	playerArray[36][0] = 0;//COMPLETIONS
+	playerArray[36][1] = 0;//PASSING YARDS
+	playerArray[36][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[36][3] = 0;//INTERCEPTIONS
+	playerArray[36][4] = 931;//RUSH YARDS
+	playerArray[36][5] = 6.6;//RUSHING TOUCHDOWNS
+	playerArray[36][6] = 39.3;//RECEPTIONS
+	playerArray[36][7] = 327;//RECEIVING YARDS
+	playerArray[36][8] = 1.2;//RECEIVING TOUCHDOWNS
+	playerArray[36][9] = 3.4;//FUMBLES
+	playerArray[36][10] = 0;//TOTAL POINTS
+	playerArray[36][11] = 0;//BASELINE 
+	playerArray[36][12] = "Bishop Sankey";//NAME
+	playerArray[36][13] = "RB"; //POSITION
+	playerArray[36][14] = "titans"; //TEAM
+	playerArray[36][15] = "Images/Bishop-Sankey.png";//PIC
+	playerArray[36][16] = "bishopsankey";
+
+
+
+playerArray[37] = new Array(17);
+	playerArray[37][0] = 0;//COMPLETIONS
+	playerArray[37][1] = 0;//PASSING YARDS
+	playerArray[37][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[37][3] = 0;//INTERCEPTIONS
+	playerArray[37][4] = 612;//RUSH YARDS
+	playerArray[37][5] = 3;//RUSHING TOUCHDOWNS
+	playerArray[37][6] = 58.2;//RECEPTIONS
+	playerArray[37][7] = 502;//RECEIVING YARDS
+	playerArray[37][8] = 1.5;//RECEIVING TOUCHDOWNS
+	playerArray[37][9] = 3.1;//FUMBLES
+	playerArray[37][10] = 0;//TOTAL POINTS
+	playerArray[37][11] = 0;//BASELINE 
+	playerArray[37][12] = "Reggie Bush";//NAME
+	playerArray[37][13] = "RB"; //POSITION
+	playerArray[37][14] = "lions"; //TEAM
+	playerArray[37][15] = "Images/Reggie-Bush.png";//PIC
+	playerArray[37][16] = "reggiebush";
+
+
+playerArray[38] = new Array(17);
+	playerArray[38][0] = 0;//COMPLETIONS
+	playerArray[38][1] = 0;//PASSING YARDS
+	playerArray[38][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[38][3] = 0;//INTERCEPTIONS
+	playerArray[38][4] = 0;//RUSH YARDS
+	playerArray[38][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[38][6] = 82.5;//RECEPTIONS
+	playerArray[38][7] = 1111;//RECEIVING YARDS
+	playerArray[38][8] = 5.8;//RECEIVING TOUCHDOWNS
+	playerArray[38][9] = 1.1;//FUMBLES
+	playerArray[38][10] = 0;//TOTAL POINTS
+	playerArray[38][11] = 0;//BASELINE 
+	playerArray[38][12] = "Victor Cruz";//NAME
+	playerArray[38][13] = "WR"; //POSITION
+	playerArray[38][14] = "giants"; //TEAM
+	playerArray[38][15] = "Images/Victor-Cruz.png";//PIC
+	playerArray[38][16] = "victorcruz";
+
+
+playerArray[39] = new Array(17);
+	playerArray[39][0] = 0;//COMPLETIONS
+	playerArray[39][1] = 0;//PASSING YARDS
+	playerArray[39][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[39][3] = 0;//INTERCEPTIONS
+	playerArray[39][4] = 10.9;//RUSH YARDS
+	playerArray[39][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[39][6] = 87.5;//RECEPTIONS
+	playerArray[39][7] = 1125;//RECEIVING YARDS
+	playerArray[39][8] = 8.5;//RECEIVING TOUCHDOWNS
+	playerArray[39][9] = 1.1;//FUMBLES
+	playerArray[39][10] = 0;//TOTAL POINTS
+	playerArray[39][11] = 0;//BASELINE 
+	playerArray[39][12] = "Larry Fitzgerald";//NAME
+	playerArray[39][13] = "WR"; //POSITION
+	playerArray[39][14] = "cardinals"; //TEAM
+	playerArray[39][15] = "Images/Larry-Fitzgerald.png";//PIC
+	playerArray[39][16] = "larryfitzgerald";
+
+
+playerArray[40] = new Array(17);
+	playerArray[40][0] = 0;//COMPLETIONS
+	playerArray[40][1] = 0;//PASSING YARDS
+	playerArray[40][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[40][3] = 0;//INTERCEPTIONS
+	playerArray[40][4] = 0;//RUSH YARDS
+	playerArray[40][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[40][6] = 89.1;//RECEPTIONS
+	playerArray[40][7] = 1011;//RECEIVING YARDS
+	playerArray[40][8] = 9.2;//RECEIVING TOUCHDOWNS
+	playerArray[40][9] = 0.6;//FUMBLES
+	playerArray[40][10] = 0;//TOTAL POINTS
+	playerArray[40][11] = 0;//BASELINE 
+	playerArray[40][12] = "Wes Welker";//NAME
+	playerArray[40][13] = "WR"; //POSITION
+	playerArray[40][14] = "broncos"; //TEAM
+	playerArray[40][15] = "Images/Wes-Welker.png";//PIC
+	playerArray[40][16] = "weswelker";
+
+
+playerArray[41] = new Array(17);
+	playerArray[41][0] = 0;//COMPLETIONS
+	playerArray[41][1] = 0;//PASSING YARDS
+	playerArray[41][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[41][3] = 0;//INTERCEPTIONS
+	playerArray[41][4] = 11.5;//RUSH YARDS
+	playerArray[41][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[41][6] = 90.1;//RECEPTIONS
+	playerArray[41][7] = 1108;//RECEIVING YARDS
+	playerArray[41][8] = 7.2;//RECEIVING TOUCHDOWNS
+	playerArray[41][9] = 1.0;//FUMBLES
+	playerArray[41][10] = 0;//TOTAL POINTS
+	playerArray[41][11] = 0;//BASELINE 
+	playerArray[41][12] = "Pierre Garson";//NAME
+	playerArray[41][13] = "WR"; //POSITION
+	playerArray[41][14] = "redskins"; //TEAM
+	playerArray[41][15] = "Images/Pierre-Garcon.png";//PIC
+	playerArray[41][16] = "pierregarcon";
+
+
+playerArray[42] = new Array(17);
+	playerArray[42][0] = 0;//COMPLETIONS
+	playerArray[42][1] = 0;//PASSING YARDS
+	playerArray[42][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[42][3] = 0;//INTERCEPTIONS
+	playerArray[42][4] = 0;//RUSH YARDS
+	playerArray[42][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[42][6] = 88.8;//RECEPTIONS
+	playerArray[42][7] = 1185;//RECEIVING YARDS
+	playerArray[42][8] = 6.2;//RECEIVING TOUCHDOWNS
+	playerArray[42][9] = 0.6;//FUMBLES
+	playerArray[42][10] = 0;//TOTAL POINTS
+	playerArray[42][11] = 0;//BASELINE 
+	playerArray[42][12] = "Andre Johnson";//NAME
+	playerArray[42][13] = "WR"; //POSITION
+	playerArray[42][14] = "texans"; //TEAM
+	playerArray[42][15] = "Images/Andre-Johnson.png";//PIC
+	playerArray[42][16] = "andrejohnson";
+
+
+playerArray[43] = new Array(17);
+	playerArray[43][0] = 0;//COMPLETIONS
+	playerArray[43][1] = 0;//PASSING YARDS
+	playerArray[43][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[43][3] = 0;//INTERCEPTIONS
+	playerArray[43][4] = 0;//RUSH YARDS
+	playerArray[43][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[43][6] = 83.3;//RECEPTIONS
+	playerArray[43][7] = 1086;//RECEIVING YARDS
+	playerArray[43][8] = 6.6;//RECEIVING TOUCHDOWNS
+	playerArray[43][9] = 1.9;//FUMBLES
+	playerArray[43][10] = 0;//TOTAL POINTS
+	playerArray[43][11] = 0;//BASELINE 
+	playerArray[43][12] = "Roddy White";//NAME
+	playerArray[43][13] = "WR"; //POSITION
+	playerArray[43][14] = "falcons"; //TEAM
+	playerArray[43][15] = "Images/Roddy-White.png";//PIC
+	playerArray[43][16] = "roddywhite";
+
+
+
+playerArray[44] = new Array(17);
+	playerArray[44][0] = 0;//COMPLETIONS
+	playerArray[44][1] = 0;//PASSING YARDS
+	playerArray[44][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[44][3] = 0;//INTERCEPTIONS
+	playerArray[44][4] = 116;//RUSH YARDS
+	playerArray[44][5] = 0.6;//RUSHING TOUCHDOWNS
+	playerArray[44][6] = 72.3;//RECEPTIONS
+	playerArray[44][7] = 816;//RECEIVING YARDS
+	playerArray[44][8] = 6.6;//RECEIVING TOUCHDOWNS
+	playerArray[44][9] = 1.2;//FUMBLES
+	playerArray[44][10] = 0;//TOTAL POINTS
+	playerArray[44][11] = 0;//BASELINE 
+	playerArray[44][12] = "Percy Harvin";//NAME
+	playerArray[44][13] = "WR"; //POSITION
+	playerArray[44][14] = "seahawks"; //TEAM
+	playerArray[44][15] = "Images/Percy-Harvin.png";//PIC
+	playerArray[44][16] = "percyharvin";
+
+
+
+playerArray[45] = new Array(17);
+	playerArray[45][0] = 0;//COMPLETIONS
+	playerArray[45][1] = 0;//PASSING YARDS
+	playerArray[45][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[45][3] = 0;//INTERCEPTIONS
+	playerArray[45][4] = 916;//RUSH YARDS
+	playerArray[45][5] = 9.5;//RUSHING TOUCHDOWNS
+	playerArray[45][6] = 16.1;//RECEPTIONS
+	playerArray[45][7] = 157;//RECEIVING YARDS
+	playerArray[45][8] = 0.5;//RECEIVING TOUCHDOWNS
+	playerArray[45][9] = 2.6;//FUMBLES
+	playerArray[45][10] = 0;//TOTAL POINTS
+	playerArray[45][11] = 0;//BASELINE 
+	playerArray[45][12] = "Frank Gore";//NAME
+	playerArray[45][13] = "RB"; //POSITION
+	playerArray[45][14] = "fortyniners"; //TEAM
+	playerArray[45][15] = "Images/Frank-Gore.png";//PIC
+	playerArray[45][16] = "frankgore";
+
+
+playerArray[46] = new Array(17);
+	playerArray[46][0] = 0;//COMPLETIONS
+	playerArray[46][1] = 0;//PASSING YARDS
+	playerArray[46][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[46][3] = 0;//INTERCEPTIONS
+	playerArray[46][4] = 0;//RUSH YARDS
+	playerArray[46][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[46][6] = 43.4;//RECEPTIONS
+	playerArray[46][7] = 631;//RECEIVING YARDS
+	playerArray[46][8] = 5.9;//RECEIVING TOUCHDOWNS
+	playerArray[46][9] = 0.6;//FUMBLES
+	playerArray[46][10] = 0;//TOTAL POINTS
+	playerArray[46][11] = 0;//BASELINE 
+	playerArray[46][12] = "Vernon Davis";//NAME
+	playerArray[46][13] = "TE"; //POSITION
+	playerArray[46][14] = "fortyniners"; //TEAM
+	playerArray[46][15] = "Images/Vernon-Davis.png";//PIC
+	playerArray[46][16] = "vernondavis";
+
+
+playerArray[47] = new Array(17);
+	playerArray[47][0] = 0;//COMPLETIONS
+	playerArray[47][1] = 0;//PASSING YARDS
+	playerArray[47][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[47][3] = 0;//INTERCEPTIONS
+	playerArray[47][4] = 137;//RUSH YARDS
+	playerArray[47][5] = 0.3;//RUSHING TOUCHDOWNS
+	playerArray[47][6] = 77.7;//RECEPTIONS
+	playerArray[47][7] = 923;//RECEIVING YARDS
+	playerArray[47][8] = 6.4;//RECEIVING TOUCHDOWNS
+	playerArray[47][9] = 0.6;//FUMBLES
+	playerArray[47][10] = 0;//TOTAL POINTS
+	playerArray[47][11] = 0;//BASELINE 
+	playerArray[47][12] = "Cordarrelle Patterson";//NAME
+	playerArray[47][13] = "WR"; //POSITION
+	playerArray[47][14] = "vikings"; //TEAM
+	playerArray[47][15] = "Images/Cordarrelle-Patterson.png";//PIC
+	playerArray[47][16] = "cordarrellepatterson";
+
+
+playerArray[48] = new Array(17);
+	playerArray[48][0] = 0;//COMPLETIONS
+	playerArray[48][1] = 0;//PASSING YARDS
+	playerArray[48][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[48][3] = 0;//INTERCEPTIONS
+	playerArray[48][4] = 0;//RUSH YARDS
+	playerArray[48][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[48][6] = 73.2;//RECEPTIONS
+	playerArray[48][7] = 916;//RECEIVING YARDS
+	playerArray[48][8] = 6.2;//RECEIVING TOUCHDOWNS
+	playerArray[48][9] = 0.8;//FUMBLES
+	playerArray[48][10] = 0;//TOTAL POINTS
+	playerArray[48][11] = 0;//BASELINE 
+	playerArray[48][12] = "Michael Crabtree";//NAME
+	playerArray[48][13] = "WR"; //POSITION
+	playerArray[48][14] = "fortyniners"; //TEAM
+	playerArray[48][15] = "Images/Michael-Crabtree.png";//PIC
+	playerArray[48][16] = "michaelcrabtree";
+
+
+playerArray[49] = new Array(17);
+	playerArray[49][0] = 0;//COMPLETIONS
+	playerArray[49][1] = 0;//PASSING YARDS
+	playerArray[49][2] = 0;//PASSING TOUCHDOWNS //43 + 40 + 140 + 70 + 18 - 2 309
+	playerArray[49][3] = 0;//INTERCEPTIONS
+	playerArray[49][4] = 433;//RUSH YARDS
+	playerArray[49][5] = 4.7;//RUSHING TOUCHDOWNS
+	playerArray[49][6] = 70.1;//RECEPTIONS
+	playerArray[49][7] = 699;//RECEIVING YARDS
+	playerArray[49][8] = 3.2;//RECEIVING TOUCHDOWNS
+	playerArray[49][9] = 1.9;//FUMBLES
+	playerArray[49][10] = 0;//TOTAL POINTS
+	playerArray[49][11] = 0;//BASELINE 
+	playerArray[49][12] = "Shane Vereen";//NAME
+	playerArray[49][13] = "RB"; //POSITION
+	playerArray[49][14] = "patriots"; //TEAM
+	playerArray[49][15] = "Images/Shane-Vereen.png";//PIC
+	playerArray[49][16] = "shanevereen";
+
+
+playerArray[50] = new Array(17);
+	playerArray[50][0] = 0;//COMPLETIONS
+	playerArray[50][1] = 0;//PASSING YARDS
+	playerArray[50][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[50][3] = 0;//INTERCEPTIONS
+	playerArray[50][4] = 23;//RUSH YARDS
+	playerArray[50][5] = 0.1;//RUSHING TOUCHDOWNS
+	playerArray[50][6] = 66.2;//RECEPTIONS
+	playerArray[50][7] = 971;//RECEIVING YARDS
+	playerArray[50][8] = 5.8;//RECEIVING TOUCHDOWNS
+	playerArray[50][9] = 0.9;//FUMBLES
+	playerArray[50][10] = 0;//TOTAL POINTS
+	playerArray[50][11] = 0;//BASELINE 
+	playerArray[50][12] = "Desean Jackson";//NAME
+	playerArray[50][13] = "WR"; //POSITION
+	playerArray[50][14] = "redskins"; //TEAM
+	playerArray[50][15] = "Images/Desean-Jackson.png";//PIC
+	playerArray[50][16] = "deseanjackson";
+
+
+playerArray[51] = new Array(17);
 	playerArray[51][0] = 0;//COMPLETIONS
 	playerArray[51][1] = 0;//PASSING YARDS
 	playerArray[51][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[51][3] = 0;//INTERCEPTIONS
-	playerArray[51][4] = 987;//RUSH YARDS
-	playerArray[51][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[51][6] = 43;//RECEPTIONS
-	playerArray[51][7] = 326;//RECEIVING YARDS
-	playerArray[51][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[51][9] = 0;//Field Goals 0-19 Yards
-	playerArray[51][10] = 0;//Field Goals 20-29 Yards
-	playerArray[51][11] = 0;//Field Goals 30-39 Yards
-	playerArray[51][12] = 0;//Field Goals 40-49 Yards
-	playerArray[51][13] = 0;//Field Goals 50+
-	playerArray[51][14] = 0;//PAT
-	playerArray[51][15] = 0;//Sacks
-	playerArray[51][16] = 0;//Interceptions
-	playerArray[51][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[51][18] = "Trent Richardson";//NAME
-	playerArray[51][19] = "RB"; //POSITION
-	playerArray[51][20] = "colts"; //TEAM
-	playerArray[51][21] = "Images/Trent-Richardson.png";//PIC
-	playerArray[51][22] = "TR";
+	playerArray[51][4] = 0;//RUSH YARDS
+	playerArray[51][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[51][6] = 78.7;//RECEPTIONS
+	playerArray[51][7] = 1041;//RECEIVING YARDS
+	playerArray[51][8] = 7.9;//RECEIVING TOUCHDOWNS
+	playerArray[51][9] = 0.8;//FUMBLES
+	playerArray[51][10] = 0;//TOTAL POINTS
+	playerArray[51][11] = 0;//BASELINE 
+	playerArray[51][12] = "Rob Gronkowski";//NAME
+	playerArray[51][13] = "TE"; //POSITION
+	playerArray[51][14] = "patriots"; //TEAM
+	playerArray[51][15] = "Images/Rob-Gronkowski.png";//PIC
+	playerArray[51][16] = "robgronkowski";
 
-	playerArray[52] = new Array(23);
+
+playerArray[52] = new Array(17);
 	playerArray[52][0] = 0;//COMPLETIONS
 	playerArray[52][1] = 0;//PASSING YARDS
 	playerArray[52][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[52][3] = 0;//INTERCEPTIONS
-	playerArray[52][4] = 802;//RUSH YARDS
-	playerArray[52][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[52][6] = 38;//RECEPTIONS
-	playerArray[52][7] = 330;//RECEIVING YARDS
-	playerArray[52][8] = 2;//RECEIVING TOUCHDOWNS
-	playerArray[52][9] = 0;//Field Goals 0-19 Yards
-	playerArray[52][10] = 0;//Field Goals 20-29 Yards
-	playerArray[52][11] = 0;//Field Goals 30-39 Yards
-	playerArray[52][12] = 0;//Field Goals 40-49 Yards
-	playerArray[52][13] = 0;//Field Goals 50+
-	playerArray[52][14] = 0;//PAT
-	playerArray[52][15] = 0;//Sacks
-	playerArray[52][16] = 0;//Interceptions
-	playerArray[52][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[52][18] = "Chris Johnson";//NAME
-	playerArray[52][19] = "RB"; //POSITION
-	playerArray[52][20] = "jets"; //TEAM
-	playerArray[52][21] = "Images/Chris-Johnson.png";//PIC
-	playerArray[52][22] = "CJ1";
+	playerArray[52][4] = 0;//RUSH YARDS
+	playerArray[52][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[52][6] = 71.9;//RECEPTIONS
+	playerArray[52][7] = 1044;//RECEIVING YARDS
+	playerArray[52][8] = 5.7;//RECEIVING TOUCHDOWNS
+	playerArray[52][9] = 0.5;//FUMBLES
+	playerArray[52][10] = 0;//TOTAL POINTS
+	playerArray[52][11] = 0;//BASELINE 
+	playerArray[52][12] = "Michael Floyd";//NAME
+	playerArray[52][13] = "WR"; //POSITION
+	playerArray[52][14] = "cardinals"; //TEAM
+	playerArray[52][15] = "Images/Michael-Floyd.png";//PIC
+	playerArray[52][16] = "michaelfloyd";
 
-	playerArray[53] = new Array(23);
+
+playerArray[53] = new Array(17);
 	playerArray[53][0] = 0;//COMPLETIONS
 	playerArray[53][1] = 0;//PASSING YARDS
 	playerArray[53][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[53][3] = 0;//INTERCEPTIONS
-	playerArray[53][4] = 12;//RUSH YARDS
-	playerArray[53][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[53][6] = 80;//RECEPTIONS
-	playerArray[53][7] = 1043;//RECEIVING YARDS
-	playerArray[53][8] = 6;//RECEIVING TOUCHDOWNS
-	playerArray[53][9] = 0;//Field Goals 0-19 Yards
-	playerArray[53][10] = 0;//Field Goals 20-29 Yards
-	playerArray[53][11] = 0;//Field Goals 30-39 Yards
-	playerArray[53][12] = 0;//Field Goals 40-49 Yards
-	playerArray[53][13] = 0;//Field Goals 50+
-	playerArray[53][14] = 0;//PAT
-	playerArray[53][15] = 0;//Sacks
-	playerArray[53][16] = 0;//Interceptions
-	playerArray[53][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[53][18] = "Michael Crabtree";//NAME
-	playerArray[53][19] = "WR"; //POSITION
-	playerArray[53][20] = "fortyniners"; //TEAM
-	playerArray[53][21] = "Images/Michael-Crabtree.png";//PIC
-	playerArray[53][22] = "MC";
+	playerArray[53][4] = 701;//RUSH YARDS
+	playerArray[53][5] = 6;//RUSHING TOUCHDOWNS
+	playerArray[53][6] = 47;//RECEPTIONS
+	playerArray[53][7] = 391;//RECEIVING YARDS
+	playerArray[53][8] = 1.1;//RECEIVING TOUCHDOWNS
+	playerArray[53][9] = 3.4;//FUMBLES
+	playerArray[53][10] = 0;//TOTAL POINTS
+	playerArray[53][11] = 0;//BASELINE 
+	playerArray[53][12] = "Joique Bell";//NAME
+	playerArray[53][13] = "RB"; //POSITION
+	playerArray[53][14] = "lions"; //TEAM
+	playerArray[53][15] = "Images/Joique-Bell.png";//PIC
+	playerArray[53][16] = "joiquebell";
 
-	playerArray[54] = new Array(23);
-	playerArray[54][0] = 0;//COMPLETIONS
-	playerArray[54][1] = 0;//PASSING YARDS
-	playerArray[54][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[54][3] = 0;//INTERCEPTIONS
-	playerArray[54][4] = 851;//RUSH YARDS
-	playerArray[54][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[54][6] = 50;//RECEPTIONS
-	playerArray[54][7] = 306;//RECEIVING YARDS
-	playerArray[54][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[54][9] = 0;//Field Goals 0-19 Yards
-	playerArray[54][10] = 0;//Field Goals 20-29 Yards
-	playerArray[54][11] = 0;//Field Goals 30-39 Yards
-	playerArray[54][12] = 0;//Field Goals 40-49 Yards
-	playerArray[54][13] = 0;//Field Goals 50+
-	playerArray[54][14] = 0;//PAT
-	playerArray[54][15] = 0;//Sacks
-	playerArray[54][16] = 0;//Interceptions
-	playerArray[54][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[54][18] = "Ray Rice";//NAME
-	playerArray[54][19] = "RB"; //POSITION
-	playerArray[54][20] = "ravens"; //TEAM
-	playerArray[54][21] = "Images/Ray-Rice.png";//PIC
-	playerArray[54][22] = "RR";
 
-	playerArray[55] = new Array(23);
-	playerArray[55][0] = 0;//COMPLETIONS
-	playerArray[55][1] = 0;//PASSING YARDS
-	playerArray[55][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[55][3] = 0;//INTERCEPTIONS
-	playerArray[55][4] = 877;//RUSH YARDS
-	playerArray[55][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[55][6] = 27;//RECEPTIONS
-	playerArray[55][7] = 221;//RECEIVING YARDS
-	playerArray[55][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[55][9] = 0;//Field Goals 0-19 Yards
-	playerArray[55][10] = 0;//Field Goals 20-29 Yards
-	playerArray[55][11] = 0;//Field Goals 30-39 Yards
-	playerArray[55][12] = 0;//Field Goals 40-49 Yards
-	playerArray[55][13] = 0;//Field Goals 50+
-	playerArray[55][14] = 0;//PAT
-	playerArray[55][15] = 0;//Sacks
-	playerArray[55][16] = 0;//Interceptions
-	playerArray[55][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[55][18] = "Steven Jackson";//NAME
-	playerArray[55][19] = "RB"; //POSITION
-	playerArray[55][20] = "falcons"; //TEAM
-	playerArray[55][21] = "Images/Steven-Jackson.png";//PIC
-	playerArray[55][22] = "SJ";
+playerArray[54] = new Array(17);
+	playerArray[54][0] = 418;//COMPLETIONS
+	playerArray[54][1] = 4930;//PASSING YARDS
+	playerArray[54][2] = 31.5;//PASSING TOUCHDOWNS
+	playerArray[54][3] = 19.5;//INTERCEPTIONS
+	playerArray[54][4] = 84.2;//RUSH YARDS
+	playerArray[54][5] = 1.3;//RUSHING TOUCHDOWNS
+	playerArray[54][6] = 0;//RECEPTIONS
+	playerArray[54][7] = 0;//RECEIVING YARDS
+	playerArray[54][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[54][9] = 11;//FUMBLES
+	playerArray[54][10] = 0;//TOTAL POINTS
+	playerArray[54][11] = 0;//BASELINE 
+	playerArray[54][12] = "Matthew Stafford";//NAME
+	playerArray[54][13] = "QB"; //POSITION
+	playerArray[54][14] = "lions"; //TEAM
+	playerArray[54][15] = "Images/Matthew-Stafford.png";//PIC
+	playerArray[54][16] = "matthewstafford";
 
-	playerArray[56] = new Array(23);
+
+playerArray[55] = new Array(17);
+	playerArray[55][0] = 286;//COMPLETIONS
+	playerArray[55][1] = 3439;//PASSING YARDS
+	playerArray[55][2] = 21.1;//PASSING TOUCHDOWNS
+	playerArray[55][3] = 17.9;//INTERCEPTIONS
+	playerArray[55][4] = 606;//RUSH YARDS
+	playerArray[55][5] = 3.6;//RUSHING TOUCHDOWNS
+	playerArray[55][6] = 0;//RECEPTIONS
+	playerArray[55][7] = 0;//RECEIVING YARDS
+	playerArray[55][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[55][9] = 5.6;//FUMBLES
+	playerArray[55][10] = 0;//TOTAL POINTS
+	playerArray[55][11] = 0;//BASELINE 
+	playerArray[55][12] = "Cam Newton";//NAME
+	playerArray[55][13] = "QB"; //POSITION
+	playerArray[55][14] = "panthers"; //TEAM
+	playerArray[55][15] = "Images/Cam-Newton.png";//PIC
+	playerArray[55][16] = "camnewton";
+
+
+playerArray[56] = new Array(17);
 	playerArray[56][0] = 0;//COMPLETIONS
 	playerArray[56][1] = 0;//PASSING YARDS
 	playerArray[56][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[56][3] = 0;//INTERCEPTIONS
-	playerArray[56][4] = 26;//RUSH YARDS
+	playerArray[56][4] = 0;//RUSH YARDS
 	playerArray[56][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[56][6] = 74;//RECEPTIONS
-	playerArray[56][7] = 1087;//RECEIVING YARDS
-	playerArray[56][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[56][9] = 0;//Field Goals 0-19 Yards
-	playerArray[56][10] = 0;//Field Goals 20-29 Yards
-	playerArray[56][11] = 0;//Field Goals 30-39 Yards
-	playerArray[56][12] = 0;//Field Goals 40-49 Yards
-	playerArray[56][13] = 0;//Field Goals 50+
-	playerArray[56][14] = 0;//PAT
-	playerArray[56][15] = 0;//Sacks
-	playerArray[56][16] = 0;//Interceptions
-	playerArray[56][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[56][18] = "T.Y. Hilton";//NAME
-	playerArray[56][19] = "WR"; //POSITION
-	playerArray[56][20] = "colts"; //TEAM
-	playerArray[56][21] = "Images/TY-Hilton.png";//PIC
-	playerArray[56][22] = "TH";
+	playerArray[56][6] = 73.7;//RECEPTIONS
+	playerArray[56][7] = 1006;//RECEIVING YARDS
+	playerArray[56][8] = 6;//RECEIVING TOUCHDOWNS
+	playerArray[56][9] = 0.5;//FUMBLES
+	playerArray[56][10] = 0;//TOTAL POINTS
+	playerArray[56][11] = 0;//BASELINE 
+	playerArray[56][12] = "T.Y. Hilton";//NAME
+	playerArray[56][13] = "WR"; //POSITION
+	playerArray[56][14] = "colts"; //TEAM
+	playerArray[56][15] = "Images/Ty-Hilton.png";//PIC
+	playerArray[56][16] = "tyhilton";
 
-	playerArray[57] = new Array(23);
+
+playerArray[57] = new Array(17);
 	playerArray[57][0] = 0;//COMPLETIONS
 	playerArray[57][1] = 0;//PASSING YARDS
 	playerArray[57][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[57][3] = 0;//INTERCEPTIONS
-	playerArray[57][4] = 960;//RUSH YARDS
-	playerArray[57][5] = 7;//RUSHING TOUCHDOWNS
-	playerArray[57][6] = 31;//RECEPTIONS
-	playerArray[57][7] = 218;//RECEIVING YARDS
-	playerArray[57][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[57][9] = 0;//Field Goals 0-19 Yards
-	playerArray[57][10] = 0;//Field Goals 20-29 Yards
-	playerArray[57][11] = 0;//Field Goals 30-39 Yards
-	playerArray[57][12] = 0;//Field Goals 40-49 Yards
-	playerArray[57][13] = 0;//Field Goals 50+
-	playerArray[57][14] = 0;//PAT
-	playerArray[57][15] = 0;//Sacks
-	playerArray[57][16] = 0;//Interceptions
-	playerArray[57][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[57][18] = "Rashad Jennings" ;//NAME
-	playerArray[57][19] = "RB"; //POSITION
-	playerArray[57][20] = "giants"; //TEAM
-	playerArray[57][21] = "Images/Rashad-Jennings.png";//PIC
-	playerArray[57][22] = "RJ";
+	playerArray[57][4] = 0;//RUSH YARDS
+	playerArray[57][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[57][6] = 57.4;//RECEPTIONS
+	playerArray[57][7] = 716;//RECEIVING YARDS
+	playerArray[57][8] = 6.5;//RECEIVING TOUCHDOWNS
+	playerArray[57][9] = 0.8;//FUMBLES
+	playerArray[57][10] = 0;//TOTAL POINTS
+	playerArray[57][11] = 0;//BASELINE 
+	playerArray[57][12] = "Jordan Cameron";//NAME
+	playerArray[57][13] = "TE"; //POSITION
+	playerArray[57][14] = "browns"; //TEAM
+	playerArray[57][15] = "Images/Jordan-Cameron.png";//PIC
+	playerArray[57][16] = "jordancameron";
+playerArray[58] = new Array(17);
+	playerArray[58][0] = 428;//COMPLETIONS
+	playerArray[58][1] = 4827;//PASSING YARDS
+	playerArray[58][2] = 30;//PASSING TOUCHDOWNS
+	playerArray[58][3] = 17;//INTERCEPTIONS
+	playerArray[58][4] = 82.2;//RUSH YARDS
+	playerArray[58][5] = 0.5;//RUSHING TOUCHDOWNS
+	playerArray[58][6] = 0;//RECEPTIONS
+	playerArray[58][7] = 0;//RECEIVING YARDS
+	playerArray[58][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[58][9] = 6.9;//FUMBLES
+	playerArray[58][10] = 0;//TOTAL POINTS
+	playerArray[58][11] = 0;//BASELINE 
+	playerArray[58][12] = "Matt Ryan";//NAME
+	playerArray[58][13] = "QB"; //POSITION
+	playerArray[58][14] = "falcons"; //TEAM
+	playerArray[58][15] = "Images/Matt-Ryan.png";//PIC
+	playerArray[58][16] = "mattryan";
 
-	playerArray[58] = new Array(23);
-	playerArray[58][0] = 0;//COMPLETIONS
-	playerArray[58][1] = 0;//PASSING YARDS
-	playerArray[58][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[58][3] = 0;//INTERCEPTIONS
-	playerArray[58][4] = 436;//RUSH YARDS
-	playerArray[58][5] = 2;//RUSHING TOUCHDOWNS
-	playerArray[58][6] = 72;//RECEPTIONS
-	playerArray[58][7] = 687;//RECEIVING YARDS
-	playerArray[58][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[58][9] = 0;//Field Goals 0-19 Yards
-	playerArray[58][10] = 0;//Field Goals 20-29 Yards
-	playerArray[58][11] = 0;//Field Goals 30-39 Yards
-	playerArray[58][12] = 0;//Field Goals 40-49 Yards
-	playerArray[58][13] = 0;//Field Goals 50+
-	playerArray[58][14] = 0;//PAT
-	playerArray[58][15] = 0;//Sacks
-	playerArray[58][16] = 0;//Interceptions
-	playerArray[58][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[58][18] = "Shane Vereen";//NAME
-	playerArray[58][19] = "RB"; //POSITION
-	playerArray[58][20] = "patriots"; //TEAM
-	playerArray[58][21] = "Images/Shane-Vereen.png";//PIC
-	playerArray[58][22] = "SV";
 
-	playerArray[59] = new Array(23);
-	playerArray[59][0] = 0;//COMPLETIONS
-	playerArray[59][1] = 0;//PASSING YARDS
-	playerArray[59][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[59][3] = 0;//INTERCEPTIONS
-	playerArray[59][4] = 12;//RUSH YARDS
-	playerArray[59][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[59][6] = 61;//RECEPTIONS
-	playerArray[59][7] = 1056;//RECEIVING YARDS
-	playerArray[59][8] = 6;//RECEIVING TOUCHDOWNS
-	playerArray[59][9] = 0;//Field Goals 0-19 Yards
-	playerArray[59][10] = 0;//Field Goals 20-29 Yards
-	playerArray[59][11] = 0;//Field Goals 30-39 Yards
-	playerArray[59][12] = 0;//Field Goals 40-49 Yards
-	playerArray[59][13] = 0;//Field Goals 50+
-	playerArray[59][14] = 0;//PAT
-	playerArray[59][15] = 0;//Sacks
-	playerArray[59][16] = 0;//Interceptions
-	playerArray[59][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[59][18] = "Torrey Smith";//NAME
-	playerArray[59][19] = "WR"; //POSITION
-	playerArray[59][20] = "ravens"; //TEAM
-	playerArray[59][21] = "Images/Torrey-Smith.png";//PIC
-	playerArray[59][22] = "TS";
+playerArray[59] = new Array(17);
+	playerArray[59][0] = 349;//COMPLETIONS
+	playerArray[59][1] = 4206;//PASSING YARDS
+	playerArray[59][2] = 27.4;//PASSING TOUCHDOWNS
+	playerArray[59][3] = 16.9;//INTERCEPTIONS
+	playerArray[59][4] = 347;//RUSH YARDS
+	playerArray[59][5] = 1.6;//RUSHING TOUCHDOWNS
+	playerArray[59][6] = 0;//RECEPTIONS
+	playerArray[59][7] = 0;//RECEIVING YARDS
+	playerArray[59][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[59][9] = 6.8;//FUMBLES
+	playerArray[59][10] = 0;//TOTAL POINTS
+	playerArray[59][11] = 0;//BASELINE 
+	playerArray[59][12] = "Andrew Luck";//NAME
+	playerArray[59][13] = "QB"; //POSITION
+	playerArray[59][14] = "colts"; //TEAM
+	playerArray[59][15] = "Images/Andrew-Luck.png";//PIC
+	playerArray[59][16] = "andrewluck";
 
-	playerArray[60] = new Array(23);
-	playerArray[60][0] = 0;//COMPLETIONS
-	playerArray[60][1] = 0;//PASSING YARDS
-	playerArray[60][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[60][3] = 0;//INTERCEPTIONS
-	playerArray[60][4] = 812;//RUSH YARDS
-	playerArray[60][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[60][6] = 43;//RECEPTIONS
-	playerArray[60][7] = 417;//RECEIVING YARDS
-	playerArray[60][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[60][9] = 0;//Field Goals 0-19 Yards
-	playerArray[60][10] = 0;//Field Goals 20-29 Yards
-	playerArray[60][11] = 0;//Field Goals 30-39 Yards
-	playerArray[60][12] = 0;//Field Goals 40-49 Yards
-	playerArray[60][13] = 0;//Field Goals 50+
-	playerArray[60][14] = 0;//PAT
-	playerArray[60][15] = 0;//Sacks
-	playerArray[60][16] = 0;//Interceptions
-	playerArray[60][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[60][18] = "Joique Bell";//NAME
-	playerArray[60][19] = "RB"; //POSITION
-	playerArray[60][20] = "lions"; //TEAM
-	playerArray[60][21] = "Images/Joique-Bell.png";//PIC
-	playerArray[60][22] = "JB";
 
-	playerArray[61] = new Array(23);
+playerArray[60] = new Array(17);
+	playerArray[60][0] = 328;//COMPLETIONS
+	playerArray[60][1] = 3934;//PASSING YARDS
+	playerArray[60][2] = 23.5;//PASSING TOUCHDOWNS
+	playerArray[60][3] = 15.2;//INTERCEPTIONS
+	playerArray[60][4] = 597;//RUSH YARDS
+	playerArray[60][5] = 2.3;//RUSHING TOUCHDOWNS
+	playerArray[60][6] = 0;//RECEPTIONS
+	playerArray[60][7] = 0;//RECEIVING YARDS
+	playerArray[60][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[60][9] = 10;//FUMBLES
+	playerArray[60][10] = 0;//TOTAL POINTS
+	playerArray[60][11] = 0;//BASELINE 
+	playerArray[60][12] = "Robert Griffin III";//NAME
+	playerArray[60][13] = "QB"; //POSITION
+	playerArray[60][14] = "redskins"; //TEAM
+	playerArray[60][15] = "Images/Robert-Griffin.png";//PIC
+	playerArray[60][16] = "robertgriffen";
+
+
+playerArray[61] = new Array(17);
 	playerArray[61][0] = 0;//COMPLETIONS
 	playerArray[61][1] = 0;//PASSING YARDS
 	playerArray[61][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[61][3] = 0;//INTERCEPTIONS
-	playerArray[61][4] = 34;//RUSH YARDS
-	playerArray[61][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[61][6] = 96;//RECEPTIONS
-	playerArray[61][7] = 935;//RECEIVING YARDS
-	playerArray[61][8] = 7;//RECEIVING TOUCHDOWNS
-	playerArray[61][9] = 0;//Field Goals 0-19 Yards
-	playerArray[61][10] = 0;//Field Goals 20-29 Yards
-	playerArray[61][11] = 0;//Field Goals 30-39 Yards
-	playerArray[61][12] = 0;//Field Goals 40-49 Yards
-	playerArray[61][13] = 0;//Field Goals 50+
-	playerArray[61][14] = 0;//PAT
-	playerArray[61][15] = 0;//Sacks
-	playerArray[61][16] = 0;//Interceptions
-	playerArray[61][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[61][18] = "Julian Edelman";//NAME
-	playerArray[61][19] = "WR"; //POSITION
-	playerArray[61][20] = "patriots"; //TEAM
-	playerArray[61][21] = "Images/Julian-Edelman.png";//PIC
-	playerArray[61][22] = "JE";
+	playerArray[61][4] = 1012;//RUSH YARDS
+	playerArray[61][5] = 9.6;//RUSHING TOUCHDOWNS
+	playerArray[61][6] = 6.7;//RECEPTIONS
+	playerArray[61][7] = 54.9;//RECEIVING YARDS
+	playerArray[61][8] = 0.2;//RECEIVING TOUCHDOWNS
+	playerArray[61][9] = 3.9;//FUMBLES
+	playerArray[61][10] = 0;//TOTAL POINTS
+	playerArray[61][11] = 0;//BASELINE 
+	playerArray[61][12] = "Stevan Ridley";//NAME
+	playerArray[61][13] = "RB"; //POSITION
+	playerArray[61][14] = "patriots"; //TEAM
+	playerArray[61][15] = "Images/Stevan-Ridley.png";//PIC
+	playerArray[61][16] = "stevanridley";
 
-	playerArray[62] = new Array(23);
-	playerArray[62][0] = 294;//COMPLETIONS
-	playerArray[62][1] = 3789;//PASSING YARDS
-	playerArray[62][2] = 22;//PASSING TOUCHDOWNS
-	playerArray[62][3] = 13;//INTERCEPTIONS
-	playerArray[62][4] = 563;//RUSH YARDS
-	playerArray[62][5] = 4;//RUSHING TOUCHDOWNS
-	playerArray[62][6] = 0;//RECEPTIONS
-	playerArray[62][7] = 0;//RECEIVING YARDS
-	playerArray[62][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[62][9] = 0;//Field Goals 0-19 Yards
-	playerArray[62][10] = 0;//Field Goals 20-29 Yards
-	playerArray[62][11] = 0;//Field Goals 30-39 Yards
-	playerArray[62][12] = 0;//Field Goals 40-49 Yards
-	playerArray[62][13] = 0;//Field Goals 50+
-	playerArray[62][14] = 0;//PAT
-	playerArray[62][15] = 0;//Sacks
-	playerArray[62][16] = 0;//Interceptions
-	playerArray[62][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[62][18] = "Robert Griffin III";//NAME
-	playerArray[62][19] = "QB"; //POSITION
-	playerArray[62][20] = "redskins"; //TEAM
-	playerArray[62][21] = "Images/Robert-Griffin.png";//PIC
-	playerArray[62][22] = "RG1";
 
-	playerArray[63] = new Array(23);
-	playerArray[63][0] = 299;//COMPLETIONS
-	playerArray[63][1] = 3969;//PASSING YARDS
-	playerArray[63][2] = 26;//PASSING TOUCHDOWNS
-	playerArray[63][3] = 11;//INTERCEPTIONS
-	playerArray[63][4] = 273;//RUSH YARDS
-	playerArray[63][5] = 3;//RUSHING TOUCHDOWNS
-	playerArray[63][6] = 0;//RECEPTIONS
-	playerArray[63][7] = 0;//RECEIVING YARDS
-	playerArray[63][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[63][9] = 0;//Field Goals 0-19 Yards
-	playerArray[63][10] = 0;//Field Goals 20-29 Yards
-	playerArray[63][11] = 0;//Field Goals 30-39 Yards
-	playerArray[63][12] = 0;//Field Goals 40-49 Yards
-	playerArray[63][13] = 0;//Field Goals 50+
-	playerArray[63][14] = 0;//PAT
-	playerArray[63][15] = 0;//Sacks
-	playerArray[63][16] = 0;//Interceptions
-	playerArray[63][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[63][18] = "Nick Foles";//NAME
-	playerArray[63][19] = "QB"; //POSITION
-	playerArray[63][20] = "eagles"; //TEAM
-	playerArray[63][21] = "Images/Nick-Foles.png";//PIC
-	playerArray[63][22] = "NF";
+playerArray[62] = new Array(17);
+	playerArray[62][0] = 0;//COMPLETIONS
+	playerArray[62][1] = 0;//PASSING YARDS
+	playerArray[62][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[62][3] = 0;//INTERCEPTIONS
+	playerArray[62][4] = 0;//RUSH YARDS
+	playerArray[62][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[62][6] = 67.3;//RECEPTIONS
+	playerArray[62][7] = 1046;//RECEIVING YARDS
+	playerArray[62][8] = 6.9;//RECEIVING TOUCHDOWNS
+	playerArray[62][9] = 1;//FUMBLES
+	playerArray[62][10] = 0;//TOTAL POINTS
+	playerArray[62][11] = 0;//BASELINE 
+	playerArray[62][12] = "Torrey Smith";//NAME
+	playerArray[62][13] = "WR"; //POSITION
+	playerArray[62][14] = "ravens"; //TEAM
+	playerArray[62][15] = "Images/Torrey-Smith.png";//PIC
+	playerArray[62][16] = "torreysmith";
 
-	playerArray[64] = new Array(23);
+
+playerArray[63] = new Array(17);
+	playerArray[63][0] = 0;//COMPLETIONS
+	playerArray[63][1] = 0;//PASSING YARDS
+	playerArray[63][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[63][3] = 0;//INTERCEPTIONS
+	playerArray[63][4] = 11;//RUSH YARDS
+	playerArray[63][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[63][6] = 89.2;//RECEPTIONS
+	playerArray[63][7] = 1047;//RECEIVING YARDS
+	playerArray[63][8] = 6.7;//RECEIVING TOUCHDOWNS
+	playerArray[63][9] = 0.6;//FUMBLES
+	playerArray[63][10] = 0;//TOTAL POINTS
+	playerArray[63][11] = 0;//BASELINE 
+	playerArray[63][12] = "Julian Edelman";//NAME
+	playerArray[63][13] = "WR"; //POSITION
+	playerArray[63][14] = "patriots"; //TEAM
+	playerArray[63][15] = "Images/Julian-Edelman.png";//PIC
+	playerArray[63][16] = "julianedelman";
+
+
+playerArray[64] = new Array(17);
 	playerArray[64][0] = 0;//COMPLETIONS
 	playerArray[64][1] = 0;//PASSING YARDS
 	playerArray[64][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[64][3] = 0;//INTERCEPTIONS
-	playerArray[64][4] = 0;//RUSH YARDS
-	playerArray[64][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[64][6] = 70;//RECEPTIONS
-	playerArray[64][7] = 1076;//RECEIVING YARDS
-	playerArray[64][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[64][9] = 0;//Field Goals 0-19 Yards
-	playerArray[64][10] = 0;//Field Goals 20-29 Yards
-	playerArray[64][11] = 0;//Field Goals 30-39 Yards
-	playerArray[64][12] = 0;//Field Goals 40-49 Yards
-	playerArray[64][13] = 0;//Field Goals 50+
-	playerArray[64][14] = 0;//PAT
-	playerArray[64][15] = 0;//Sacks
-	playerArray[64][16] = 0;//Interceptions
-	playerArray[64][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[64][18] = "Michael Floyd";//NAME
-	playerArray[64][19] = "WR"; //POSITION
-	playerArray[64][20] = "cardinals"; //TEAM
-	playerArray[64][21] = "Images/Michael-Floyd.png";//PIC
-	playerArray[64][22] = "MF1";
+	playerArray[64][4] = 882;//RUSH YARDS
+	playerArray[64][5] = 4.5;//RUSHING TOUCHDOWNS
+	playerArray[64][6] = 33.9;//RECEPTIONS
+	playerArray[64][7] = 273;//RECEIVING YARDS
+	playerArray[64][8] = 0.9;//RECEIVING TOUCHDOWNS
+	playerArray[64][9] = 2.7;//FUMBLES
+	playerArray[64][10] = 0;//TOTAL POINTS
+	playerArray[64][11] = 0;//BASELINE 
+	playerArray[64][12] = "Chris Johnson";//NAME
+	playerArray[64][13] = "RB"; //POSITION
+	playerArray[64][14] = "jets"; //TEAM
+	playerArray[64][15] = "Images/Chris-Johnson.png";//PIC
+	playerArray[64][16] = "chrisjohnson";
 
-	playerArray[65] = new Array(23);
+
+playerArray[65] = new Array(17);
 	playerArray[65][0] = 0;//COMPLETIONS
 	playerArray[65][1] = 0;//PASSING YARDS
 	playerArray[65][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[65][3] = 0;//INTERCEPTIONS
-	playerArray[65][4] = 1107;//RUSH YARDS
-	playerArray[65][5] = 8;//RUSHING TOUCHDOWNS
-	playerArray[65][6] = 8;//RECEPTIONS
-	playerArray[65][7] = 60;//RECEIVING YARDS
-	playerArray[65][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[65][9] = 0;//Field Goals 0-19 Yards
-	playerArray[65][10] = 0;//Field Goals 20-29 Yards
-	playerArray[65][11] = 0;//Field Goals 30-39 Yards
-	playerArray[65][12] = 0;//Field Goals 40-49 Yards
-	playerArray[65][13] = 0;//Field Goals 50+
-	playerArray[65][14] = 0;//PAT
-	playerArray[65][15] = 0;//Sacks
-	playerArray[65][16] = 0;//Interceptions
-	playerArray[65][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[65][18] = "Stevan Ridley";//NAME
-	playerArray[65][19] = "RB"; //POSITION
-	playerArray[65][20] = "patriots"; //TEAM
-	playerArray[65][21] = "Images/Stevan-Ridley.png";//PIC
-	playerArray[65][22] = "SR";
+	playerArray[65][4] = 11.1;//RUSH YARDS
+	playerArray[65][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[65][6] = 93.5;//RECEPTIONS
+	playerArray[65][7] = 1044;//RECEIVING YARDS
+	playerArray[65][8] = 5;//RECEIVING TOUCHDOWNS
+	playerArray[65][9] = 1.6;//FUMBLES
+	playerArray[65][10] = 0;//TOTAL POINTS
+	playerArray[65][11] = 0;//BASELINE 
+	playerArray[65][12] = "Kendall Wright";//NAME
+	playerArray[65][13] = "WR"; //POSITION
+	playerArray[65][14] = "titans"; //TEAM
+	playerArray[65][15] = "Images/Kendall-Wright.png";//PIC
+	playerArray[65][16] = "kendallwright";
 
 
-	playerArray[66] = new Array(23);
+playerArray[66] = new Array(17);
 	playerArray[66][0] = 0;//COMPLETIONS
 	playerArray[66][1] = 0;//PASSING YARDS
 	playerArray[66][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[66][3] = 0;//INTERCEPTIONS
 	playerArray[66][4] = 0;//RUSH YARDS
 	playerArray[66][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[66][6] = 63;//RECEPTIONS
-	playerArray[66][7] = 875;//RECEIVING YARDS
-	playerArray[66][8] = 7;//RECEIVING TOUCHDOWNS
-	playerArray[66][9] = 0;//Field Goals 0-19 Yards
-	playerArray[66][10] = 0;//Field Goals 20-29 Yards
-	playerArray[66][11] = 0;//Field Goals 30-39 Yards
-	playerArray[66][12] = 0;//Field Goals 40-49 Yards
-	playerArray[66][13] = 0;//Field Goals 50+
-	playerArray[66][14] = 0;//PAT
-	playerArray[66][15] = 0;//Sacks
-	playerArray[66][16] = 0;//Interceptions
-	playerArray[66][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[66][18] = "Jeremy Maclin";//NAME
-	playerArray[66][19] = "WR"; //POSITION
-	playerArray[66][20] = "eagles"; //TEAM
-	playerArray[66][21] = "Images/Jeremy-Maclin.png";//PIC
-	playerArray[66][22] = "JM";
+	playerArray[66][6] = 60.4;//RECEPTIONS
+	playerArray[66][7] = 819;//RECEIVING YARDS
+	playerArray[66][8] = 6.6;//RECEIVING TOUCHDOWNS
+	playerArray[66][9] = 0.7;//FUMBLES
+	playerArray[66][10] = 0;//TOTAL POINTS
+	playerArray[66][11] = 0;//BASELINE 
+	playerArray[66][12] = "Jeremy Maclin";//NAME
+	playerArray[66][13] = "WR"; //POSITION
+	playerArray[66][14] = "eagles"; //TEAM
+	playerArray[66][15] = "Images/Jeremy-Maclin.png";//PIC
+	playerArray[66][16] = "jeremymaclin";
 
-	playerArray[67] = new Array(23);
+
+playerArray[67] = new Array(17);
 	playerArray[67][0] = 0;//COMPLETIONS
 	playerArray[67][1] = 0;//PASSING YARDS
 	playerArray[67][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[67][3] = 0;//INTERCEPTIONS
-	playerArray[67][4] = 857;//RUSH YARDS
-	playerArray[67][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[67][6] = 30;//RECEPTIONS
-	playerArray[67][7] = 220;//RECEIVING YARDS
-	playerArray[67][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[67][9] = 0;//Field Goals 0-19 Yards
-	playerArray[67][10] = 0;//Field Goals 20-29 Yards
-	playerArray[67][11] = 0;//Field Goals 30-39 Yards
-	playerArray[67][12] = 0;//Field Goals 40-49 Yards
-	playerArray[67][13] = 0;//Field Goals 50+
-	playerArray[67][14] = 0;//PAT
-	playerArray[67][15] = 0;//Sacks
-	playerArray[67][16] = 0;//Interceptions
-	playerArray[67][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[67][18] = "Bishop Sankey";//NAME
-	playerArray[67][19] = "RB"; //POSITION
-	playerArray[67][20] = "titans"; //TEAM
-	playerArray[67][21] = "Images/Bishop-Sankey.png";//PIC
-	playerArray[67][22] = "BS";
+	playerArray[67][4] = 768;//RUSH YARDS
+	playerArray[67][5] = 6.7;//RUSHING TOUCHDOWNS
+	playerArray[67][6] = 36.9;//RECEPTIONS
+	playerArray[67][7] = 305;//RECEIVING YARDS
+	playerArray[67][8] = 1.5;//RECEIVING TOUCHDOWNS
+	playerArray[67][9] = 1.5;//FUMBLES
+	playerArray[67][10] = 0;//TOTAL POINTS
+	playerArray[67][11] = 0;//BASELINE 
+	playerArray[67][12] = "Steven Jackson";//NAME
+	playerArray[67][13] = "RB"; //POSITION
+	playerArray[67][14] = "falcons"; //TEAM
+	playerArray[67][15] = "Images/Steven-Jackson.png";//PIC
+	playerArray[67][16] = "stevenjackson";
 
 
-	playerArray[68] = new Array(23);
-	playerArray[68][0] = 0;//COMPLETIONS
-	playerArray[68][1] = 0;//PASSING YARDS
-	playerArray[68][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[68][3] = 0;//INTERCEPTIONS
-	playerArray[68][4] = 0;//RUSH YARDS
-	playerArray[68][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[68][6] = 90;//RECEPTIONS
-	playerArray[68][7] = 1108;//RECEIVING YARDS
-	playerArray[68][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[68][9] = 0;//Field Goals 0-19 Yards
-	playerArray[68][10] = 0;//Field Goals 20-29 Yards
-	playerArray[68][11] = 0;//Field Goals 30-39 Yards
-	playerArray[68][12] = 0;//Field Goals 40-49 Yards
-	playerArray[68][13] = 0;//Field Goals 50+
-	playerArray[68][14] = 0;//PAT
-	playerArray[68][15] = 0;//Sacks
-	playerArray[68][16] = 0;//Interceptions
-	playerArray[68][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[68][18] = "Reggie Wayne";//NAME
-	playerArray[68][19] = "WR"; //POSITION
-	playerArray[68][20] = "colts"; //TEAM
-	playerArray[68][21] = "Images/Reggie-Wayne.png";//PIC
-	playerArray[68][22] = "RW1";
+playerArray[68] = new Array(17);
+	playerArray[68][0] = 325;//COMPLETIONS
+	playerArray[68][1] = 3889;//PASSING YARDS
+	playerArray[68][2] = 31.7;//PASSING TOUCHDOWNS
+	playerArray[68][3] = 10.7;//INTERCEPTIONS
+	playerArray[68][4] = 240;//RUSH YARDS
+	playerArray[68][5] = 4.6;//RUSHING TOUCHDOWNS
+	playerArray[68][6] = 0;//RECEPTIONS
+	playerArray[68][7] = 0;//RECEIVING YARDS
+	playerArray[68][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[68][9] = 7;//FUMBLES
+	playerArray[68][10] = 0;//TOTAL POINTS
+	playerArray[68][11] = 0;//BASELINE 
+	playerArray[68][12] = "Nick Foles";//NAME
+	playerArray[68][13] = "QB"; //POSITION
+	playerArray[68][14] = "eagles"; //TEAM
+	playerArray[68][15] = "Images/Nick-Foles.png";//PIC
+	playerArray[68][16] = "nickfoles";
 
-	playerArray[69] = new Array(23);
+
+playerArray[69] = new Array(17);
 	playerArray[69][0] = 0;//COMPLETIONS
 	playerArray[69][1] = 0;//PASSING YARDS
 	playerArray[69][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[69][3] = 0;//INTERCEPTIONS
-	playerArray[69][4] = 0;//RUSH YARDS
-	playerArray[69][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[69][6] = 73;//RECEPTIONS
-	playerArray[69][7] = 907;//RECEIVING YARDS
-	playerArray[69][8] = 6;//RECEIVING TOUCHDOWNS
-	playerArray[69][9] = 0;//Field Goals 0-19 Yards
-	playerArray[69][10] = 0;//Field Goals 20-29 Yards
-	playerArray[69][11] = 0;//Field Goals 30-39 Yards
-	playerArray[69][12] = 0;//Field Goals 40-49 Yards
-	playerArray[69][13] = 0;//Field Goals 50+
-	playerArray[69][14] = 0;//PAT
-	playerArray[69][15] = 0;//Sacks
-	playerArray[69][16] = 0;//Interceptions
-	playerArray[69][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[69][18] = "Marques Colston";//NAME
-	playerArray[69][19] = "WR"; //POSITION
-	playerArray[69][20] = "saints" //TEAM
-	playerArray[69][21] = "Images/Marques-Colston.png";//PIC
-	playerArray[69][22] = "MC1";
+	playerArray[69][4] = 988;//RUSH YARDS
+	playerArray[69][5] = 6.6;//RUSHING TOUCHDOWNS
+	playerArray[69][6] = 16.8;//RECEPTIONS
+	playerArray[69][7] = 136;//RECEIVING YARDS
+	playerArray[69][8] = 0.3;//RECEIVING TOUCHDOWNS
+	playerArray[69][9] = 4.5;//FUMBLES
+	playerArray[69][10] = 0;//TOTAL POINTS
+	playerArray[69][11] = 0;//BASELINE 
+	playerArray[69][12] = "Ben Tate";//NAME
+	playerArray[69][13] = "RB"; //POSITION
+	playerArray[69][14] = "browns"; //TEAM
+	playerArray[69][15] = "Images/Ben-Tate.png";//PIC
+	playerArray[69][16] = "bentate";
 
 
-	playerArray[70] = new Array(23);
-	playerArray[70][0] = 257;//COMPLETIONS
-	playerArray[70][1] = 3264;//PASSING YARDS
-	playerArray[70][2] = 25;//PASSING TOUCHDOWNS
-	playerArray[70][3] = 10;//INTERCEPTIONS
-	playerArray[70][4] = 497;//RUSH YARDS
-	playerArray[70][5] = 3;//RUSHING TOUCHDOWNS
-	playerArray[70][6] = 0;//RECEPTIONS
-	playerArray[70][7] = 0;//RECEIVING YARDS
-	playerArray[70][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[70][9] = 0;//Field Goals 0-19 Yards
-	playerArray[70][10] = 0;//Field Goals 20-29 Yards
-	playerArray[70][11] = 0;//Field Goals 30-39 Yards
-	playerArray[70][12] = 0;//Field Goals 40-49 Yards
-	playerArray[70][13] = 0;//Field Goals 50+
-	playerArray[70][14] = 0;//PAT
-	playerArray[70][15] = 0;//Sacks
-	playerArray[70][16] = 0;//Interceptions
-	playerArray[70][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[70][18] = "Russell Wilson";//NAME
-	playerArray[70][19] = "QB"; //POSITION
-	playerArray[70][20] = "seahawks"; //TEAM
-	playerArray[70][21] = "Images/Russell-Wilson.png";//PIC
-	playerArray[70][22] = "RW2";
-
-	playerArray[71] = new Array(23);
+playerArray[70] = new Array(17);
+	playerArray[70][0] = 0;//COMPLETIONS
+	playerArray[70][1] = 0;//PASSING YARDS
+	playerArray[70][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[70][3] = 0;//INTERCEPTIONS
+	playerArray[70][4] = 0;//RUSH YARDS
+	playerArray[70][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[70][6] = 76.2;//RECEPTIONS
+	playerArray[70][7] = 996;//RECEIVING YARDS
+	playerArray[70][8] = 7.4;//RECEIVING TOUCHDOWNS
+	playerArray[70][9] = 0.5;//FUMBLES
+	playerArray[70][10] = 0;//TOTAL POINTS
+	playerArray[70][11] = 0;//BASELINE 
+	playerArray[70][12] = "Marques Colston";//NAME
+	playerArray[70][13] = "WR"; //POSITION
+	playerArray[70][14] = "saints"; //TEAM
+	playerArray[70][15] = "Images/Marques-Colston.png";//PIC
+	playerArray[70][16] = "marquescolston";
+playerArray[71] = new Array(17);
 	playerArray[71][0] = 0;//COMPLETIONS
 	playerArray[71][1] = 0;//PASSING YARDS
 	playerArray[71][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[71][3] = 0;//INTERCEPTIONS
-	playerArray[71][4] = 380;//RUSH YARDS
-	playerArray[71][5] = 2;//RUSHING TOUCHDOWNS
-	playerArray[71][6] = 70;//RECEPTIONS
-	playerArray[71][7] = 612;//RECEIVING YARDS
-	playerArray[71][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[71][9] = 0;//Field Goals 0-19 Yards
-	playerArray[71][10] = 0;//Field Goals 20-29 Yards
-	playerArray[71][11] = 0;//Field Goals 30-39 Yards
-	playerArray[71][12] = 0;//Field Goals 40-49 Yards
-	playerArray[71][13] = 0;//Field Goals 50+
-	playerArray[71][14] = 0;//PAT
-	playerArray[71][15] = 0;//Sacks
-	playerArray[71][16] = 0;//Interceptions
-	playerArray[71][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[71][18] = "Pierre Thomas";//NAME
-	playerArray[71][19] = "RB"; //POSITION
-	playerArray[71][20] = "saints"; //TEAM
-	playerArray[71][21] = "Images/Pierre-Thomas.png";//PIC
-	playerArray[71][22] = "PT";
+	playerArray[71][4] = 710;//RUSH YARDS
+	playerArray[71][5] = 7;//RUSHING TOUCHDOWNS
+	playerArray[71][6] = 30;//RECEPTIONS
+	playerArray[71][7] = 243;//RECEIVING YARDS
+	playerArray[71][8] = 0.6;//RECEIVING TOUCHDOWNS
+	playerArray[71][9] = 2.9;//FUMBLES
+	playerArray[71][10] = 0;//TOTAL POINTS
+	playerArray[71][11] = 0;//BASELINE 
+	playerArray[71][12] = "Trent Richardson";//NAME
+	playerArray[71][13] = "RB"; //POSITION
+	playerArray[71][14] = "colts"; //TEAM
+	playerArray[71][15] = "Images/Trent-Richardson.png";//PIC
+	playerArray[71][16] = "trentrichardson";
 
-	playerArray[72] = new Array(23);
+
+playerArray[72] = new Array(17);
 	playerArray[72][0] = 0;//COMPLETIONS
 	playerArray[72][1] = 0;//PASSING YARDS
 	playerArray[72][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[72][3] = 0;//INTERCEPTIONS
-	playerArray[72][4] = 42;//RUSH YARDS
-	playerArray[72][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[72][6] = 65;//RECEPTIONS
-	playerArray[72][7] = 893;//RECEIVING YARDS
-	playerArray[72][8] = 6;//RECEIVING TOUCHDOWNS
-	playerArray[72][9] = 0;//Field Goals 0-19 Yards
-	playerArray[72][10] = 0;//Field Goals 20-29 Yards
-	playerArray[72][11] = 0;//Field Goals 30-39 Yards
-	playerArray[72][12] = 0;//Field Goals 40-49 Yards
-	playerArray[72][13] = 0;//Field Goals 50+
-	playerArray[72][14] = 0;//PAT
-	playerArray[72][15] = 0;//Sacks
-	playerArray[72][16] = 0;//Interceptions
-	playerArray[72][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[72][18] = "Sammy Watkins";//NAME
-	playerArray[72][19] = "WR"; //POSITION
-	playerArray[72][20] = "bills"; //TEAM
-	playerArray[72][21] = "Images/Sammy-Watkins.png";//PIC
-	playerArray[72][22] = "SW";
+	playerArray[72][4] = 19.1;//RUSH YARDS
+	playerArray[72][5] = 0.1;//RUSHING TOUCHDOWNS
+	playerArray[72][6] = 70.3;//RECEPTIONS
+	playerArray[72][7] = 1020;//RECEIVING YARDS
+	playerArray[72][8] = 6.4;//RECEIVING TOUCHDOWNS
+	playerArray[72][9] = 1.0;//FUMBLES
+	playerArray[72][10] = 0;//TOTAL POINTS
+	playerArray[72][11] = 0;//BASELINE 
+	playerArray[72][12] = "Terrance Williams";//NAME
+	playerArray[72][13] = "WR"; //POSITION
+	playerArray[72][14] = "cowboys"; //TEAM
+	playerArray[72][15] = "Images/Terrance-Williams.png";//PIC
+	playerArray[72][16] = "terrancewilliams";
 
-	playerArray[73] = new Array(23);
+
+playerArray[73] = new Array(17);
 	playerArray[73][0] = 0;//COMPLETIONS
 	playerArray[73][1] = 0;//PASSING YARDS
 	playerArray[73][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[73][3] = 0;//INTERCEPTIONS
-	playerArray[73][4] = 8;//RUSH YARDS
+	playerArray[73][4] = 0;//RUSH YARDS
 	playerArray[73][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[73][6] = 91;//RECEPTIONS
-	playerArray[73][7] = 1051;//RECEIVING YARDS
-	playerArray[73][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[73][9] = 0;//Field Goals 0-19 Yards
-	playerArray[73][10] = 0;//Field Goals 20-29 Yards
-	playerArray[73][11] = 0;//Field Goals 30-39 Yards
-	playerArray[73][12] = 0;//Field Goals 40-49 Yards
-	playerArray[73][13] = 0;//Field Goals 50+
-	playerArray[73][14] = 0;//PAT
-	playerArray[73][15] = 0;//Sacks
-	playerArray[73][16] = 0;//Interceptions
-	playerArray[73][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[73][18] = "Kendall Wright";//NAME
-	playerArray[73][19] = "WR"; //POSITION
-	playerArray[73][20] = "titans"; //TEAM
-	playerArray[73][21] = "Images/Kendall-Wright.png";//PIC
-	playerArray[73][22] = "KW";
-
-	playerArray[74] = new Array(23);
-	playerArray[74][0] = 0;//COMPLETIONS
-	playerArray[74][1] = 0;//PASSING YARDS
-	playerArray[74][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[74][3] = 0;//INTERCEPTIONS
-	playerArray[74][4] = 0;//RUSH YARDS
-	playerArray[74][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[74][6] = 74;//RECEPTIONS
-	playerArray[74][7] = 818;//RECEIVING YARDS
-	playerArray[74][8] = 7;//RECEIVING TOUCHDOWNS
-	playerArray[74][9] = 0;//Field Goals 0-19 Yards
-	playerArray[74][10] = 0;//Field Goals 20-29 Yards
-	playerArray[74][11] = 0;//Field Goals 30-39 Yards
-	playerArray[74][12] = 0;//Field Goals 40-49 Yards
-	playerArray[74][13] = 0;//Field Goals 50+
-	playerArray[74][14] = 0;//PAT
-	playerArray[74][15] = 0;//Sacks
-	playerArray[74][16] = 0;//Interceptions
-	playerArray[74][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[74][18] = "Jason Witten";//NAME
-	playerArray[74][19] = "TE"; //POSITION
-	playerArray[74][20] = "cowboys"; //TEAM
-	playerArray[74][21] = "Images/Jason-Witten.png";//PIC
-	playerArray[74][22] = "JW";
+	playerArray[73][6] = 67.4;//RECEPTIONS
+	playerArray[73][7] = 839;//RECEIVING YARDS
+	playerArray[73][8] = 5.8;//RECEIVING TOUCHDOWNS
+	playerArray[73][9] = 0.5;//FUMBLES
+	playerArray[73][10] = 0;//TOTAL POINTS
+	playerArray[73][11] = 0;//BASELINE 
+	playerArray[73][12] = "Greg Olsen";//NAME
+	playerArray[73][13] = "TE"; //POSITION
+	playerArray[73][14] = "panthers"; //TEAM
+	playerArray[73][15] = "Images/Greg-Olsen.png";//PIC
+	playerArray[73][16] = "gregolsen";
 
 
-	playerArray[75] = new Array(23);
+playerArray[74] = new Array(17);
+	playerArray[74][0] = 409;//COMPLETIONS
+	playerArray[74][1] = 4881;//PASSING YARDS
+	playerArray[74][2] = 29.3;//PASSING TOUCHDOWNS
+	playerArray[74][3] = 16.2;//INTERCEPTIONS
+	playerArray[74][4] = 40.7;//RUSH YARDS
+	playerArray[74][5] = 0.9;//RUSHING TOUCHDOWNS
+	playerArray[74][6] = 0;//RECEPTIONS
+	playerArray[74][7] = 0;//RECEIVING YARDS
+	playerArray[74][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[74][9] = 5.6;//FUMBLES
+	playerArray[74][10] = 0;//TOTAL POINTS
+	playerArray[74][11] = 0;//BASELINE 
+	playerArray[74][12] = "Tony Romo";//NAME
+	playerArray[74][13] = "QB"; //POSITION
+	playerArray[74][14] = "cowboys"; //TEAM
+	playerArray[74][15] = "Images/Tony-Romo.png";//PIC
+	playerArray[74][16] = "tonyromo";
+
+
+playerArray[75] = new Array(17);
 	playerArray[75][0] = 0;//COMPLETIONS
 	playerArray[75][1] = 0;//PASSING YARDS
 	playerArray[75][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[75][3] = 0;//INTERCEPTIONS
-	playerArray[75][4] = 19;//RUSH YARDS
-	playerArray[75][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[75][6] = 77;//RECEPTIONS
-	playerArray[75][7] = 971;//RECEIVING YARDS
-	playerArray[75][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[75][9] = 0;//Field Goals 0-19 Yards
-	playerArray[75][10] = 0;//Field Goals 20-29 Yards
-	playerArray[75][11] = 0;//Field Goals 30-39 Yards
-	playerArray[75][12] = 0;//Field Goals 40-49 Yards
-	playerArray[75][13] = 0;//Field Goals 50+
-	playerArray[75][14] = 0;//PAT
-	playerArray[75][15] = 0;//Sacks
-	playerArray[75][16] = 0;//Interceptions
-	playerArray[75][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[75][18] = "Emmanuel Sanders";//NAME
-	playerArray[75][19] = "WR"; //POSITION
-	playerArray[75][20] = "broncos"; //TEAM
-	playerArray[75][21] = "Images/Emmanuel-Sanders.png";//PIC
-	playerArray[75][22] = "ES";
+	playerArray[75][4] = 590;//RUSH YARDS
+	playerArray[75][5] = 3.5;//RUSHING TOUCHDOWNS
+	playerArray[75][6] = 68.4;//RECEPTIONS
+	playerArray[75][7] = 533;//RECEIVING YARDS
+	playerArray[75][8] = 2.4;//RECEIVING TOUCHDOWNS
+	playerArray[75][9] = 1.9;//FUMBLES
+	playerArray[75][10] = 0;//TOTAL POINTS
+	playerArray[75][11] = 0;//BASELINE 
+	playerArray[75][12] = "Pierre Thomas";//NAME
+	playerArray[75][13] = "RB"; //POSITION
+	playerArray[75][14] = "saints"; //TEAM
+	playerArray[75][15] = "Images/Pierre-Thomas.png";//PIC
+	playerArray[75][16] = "pierrethomas";
 
 
-	playerArray[76] = new Array(23);
-	playerArray[76][0] = 0;//COMPLETIONS
-	playerArray[76][1] = 0;//PASSING YARDS
-	playerArray[76][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[76][3] = 0;//INTERCEPTIONS
-	playerArray[76][4] = 710;//RUSH YARDS
-	playerArray[76][5] = 5;//RUSHING TOUCHDOWNS
-	playerArray[76][6] = 31;//RECEPTIONS
-	playerArray[76][7] = 240;//RECEIVING YARDS
-	playerArray[76][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[76][9] = 0;//Field Goals 0-19 Yards
-	playerArray[76][10] = 0;//Field Goals 20-29 Yards
-	playerArray[76][11] = 0;//Field Goals 30-39 Yards
-	playerArray[76][12] = 0;//Field Goals 40-49 Yards
-	playerArray[76][13] = 0;//Field Goals 50+
-	playerArray[76][14] = 0;//PAT
-	playerArray[76][15] = 0;//Sacks
-	playerArray[76][16] = 0;//Interceptions
-	playerArray[76][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[76][18] = "Knowshon Moreno";//NAME
-	playerArray[76][19] = "RB"; //POSITION
-	playerArray[76][20] = "dolphins"; //TEAM
-	playerArray[76][21] = "Images/Knowshon-Moreno.png";//PIC
-	playerArray[76][22] = "KM";
+playerArray[76] = new Array(17);
+	playerArray[76][0] = 318;//COMPLETIONS
+	playerArray[76][1] = 3963;//PASSING YARDS
+	playerArray[76][2] = 28.8;//PASSING TOUCHDOWNS
+	playerArray[76][3] = 18.4;//INTERCEPTIONS
+	playerArray[76][4] = 198;//RUSH YARDS
+	playerArray[76][5] = 1;//RUSHING TOUCHDOWNS
+	playerArray[76][6] = 0;//RECEPTIONS
+	playerArray[76][7] = 0;//RECEIVING YARDS
+	playerArray[76][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[76][9] = 7.1;//FUMBLES
+	playerArray[76][10] = 0;//TOTAL POINTS
+	playerArray[76][11] = 0;//BASELINE 
+	playerArray[76][12] = "Jay Cutler";//NAME
+	playerArray[76][13] = "QB"; //POSITION
+	playerArray[76][14] = "bears"; //TEAM
+	playerArray[76][15] = "Images/Jay-Cutler.png";//PIC
+	playerArray[76][16] = "jay cutler";
 
-	playerArray[77] = new Array(23);
+
+
+playerArray[77] = new Array(17);
 	playerArray[77][0] = 0;//COMPLETIONS
 	playerArray[77][1] = 0;//PASSING YARDS
 	playerArray[77][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[77][3] = 0;//INTERCEPTIONS
-	playerArray[77][4] = 31;//RUSH YARDS
+	playerArray[77][4] = 0;//RUSH YARDS
 	playerArray[77][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[77][6] = 76;//RECEPTIONS
-	playerArray[77][7] = 986;//RECEIVING YARDS
-	playerArray[77][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[77][9] = 0;//Field Goals 0-19 Yards
-	playerArray[77][10] = 0;//Field Goals 20-29 Yards
-	playerArray[77][11] = 0;//Field Goals 30-39 Yards
-	playerArray[77][12] = 0;//Field Goals 40-49 Yards
-	playerArray[77][13] = 0;//Field Goals 50+
-	playerArray[77][14] = 0;//PAT
-	playerArray[77][15] = 0;//Sacks
-	playerArray[77][16] = 0;//Interceptions
-	playerArray[77][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[77][18] = "Mike Wallace";//NAME
-	playerArray[77][19] = "WR"; //POSITION
-	playerArray[77][20] = "dolphins"; //TEAM
-	playerArray[77][21] = "Images/Mike-Wallace.png";//PIC
-	playerArray[77][22] = "MW";
+	playerArray[77][6] = 82.6;//RECEPTIONS
+	playerArray[77][7] = 970;//RECEIVING YARDS
+	playerArray[77][8] = 5.7;//RECEIVING TOUCHDOWNS
+	playerArray[77][9] = 0.5;//FUMBLES
+	playerArray[77][10] = 0;//TOTAL POINTS
+	playerArray[77][11] = 0;//BASELINE 
+	playerArray[77][12] = "Jason Witten";//NAME
+	playerArray[77][13] = "TE"; //POSITION
+	playerArray[77][14] = "cowboys"; //TEAM
+	playerArray[77][15] = "Images/Jason-Witten.png";//PIC
+	playerArray[77][16] = "jasonwitten";
 
-	playerArray[78] = new Array(23);
+
+playerArray[78] = new Array(17);
 	playerArray[78][0] = 0;//COMPLETIONS
 	playerArray[78][1] = 0;//PASSING YARDS
 	playerArray[78][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[78][3] = 0;//INTERCEPTIONS
-	playerArray[78][4] = 50;//RUSH YARDS
+	playerArray[78][4] = 11;//RUSH YARDS
 	playerArray[78][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[78][6] = 84;//RECEPTIONS
-	playerArray[78][7] = 1041;//RECEIVING YARDS
-	playerArray[78][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[78][9] = 0;//Field Goals 0-19 Yards
-	playerArray[78][10] = 0;//Field Goals 20-29 Yards
-	playerArray[78][11] = 0;//Field Goals 30-39 Yards
-	playerArray[78][12] = 0;//Field Goals 40-49 Yards
-	playerArray[78][13] = 0;//Field Goals 50+
-	playerArray[78][14] = 0;//PAT
-	playerArray[78][15] = 0;//Sacks
-	playerArray[78][16] = 0;//Interceptions
-	playerArray[78][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[78][18] = "Golden Tate";//NAME
-	playerArray[78][19] = "WR"; //POSITION
-	playerArray[78][20] = "lions"; //TEAM
-	playerArray[78][21] = "Images/Golden-Tate.png";//PIC
-	playerArray[78][22] = "GT";
+	playerArray[78][6] = 67.8;//RECEPTIONS
+	playerArray[78][7] = 879;//RECEIVING YARDS
+	playerArray[78][8] = 4.7;//RECEIVING TOUCHDOWNS
+	playerArray[78][9] = 1.0;//FUMBLES
+	playerArray[78][10] = 0;//TOTAL POINTS
+	playerArray[78][11] = 0;//BASELINE 
+	playerArray[78][12] = "Golden Tate";//NAME
+	playerArray[78][13] = "WR"; //POSITION
+	playerArray[78][14] = "lions"; //TEAM
+	playerArray[78][15] = "Images/Golden-Tate.png";//PIC
+	playerArray[78][16] = "goldentate";
 
-	playerArray[79] = new Array(23);
+
+playerArray[79] = new Array(17);
 	playerArray[79][0] = 0;//COMPLETIONS
 	playerArray[79][1] = 0;//PASSING YARDS
 	playerArray[79][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[79][3] = 0;//INTERCEPTIONS
-	playerArray[79][4] = 876;//RUSH YARDS
-	playerArray[79][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[79][6] = 23;//RECEPTIONS
-	playerArray[79][7] = 176;//RECEIVING YARDS
-	playerArray[79][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[79][9] = 0;//Field Goals 0-19 Yards
-	playerArray[79][10] = 0;//Field Goals 20-29 Yards
-	playerArray[79][11] = 0;//Field Goals 30-39 Yards
-	playerArray[79][12] = 0;//Field Goals 40-49 Yards
-	playerArray[79][13] = 0;//Field Goals 50+
-	playerArray[79][14] = 0;//PAT
-	playerArray[79][15] = 0;//Sacks
-	playerArray[79][16] = 0;//Interceptions
-	playerArray[79][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[79][18] = "Toby Gerhart";//NAME
-	playerArray[79][19] = "RB"; //POSITION
-	playerArray[79][20] = "jaguars"; //TEAM
-	playerArray[79][21] = "Images/Toby-Gerhart.png";//PIC
-	playerArray[79][22] = "TG";
+	playerArray[79][4] = 887;//RUSH YARDS
+	playerArray[79][5] = 4.1;//RUSHING TOUCHDOWNS
+	playerArray[79][6] = 15.4;//RECEPTIONS
+	playerArray[79][7] = 129;//RECEIVING YARDS
+	playerArray[79][8] = 0.5;//RECEIVING TOUCHDOWNS
+	playerArray[79][9] = 2.0;//FUMBLES
+	playerArray[79][10] = 0;//TOTAL POINTS
+	playerArray[79][11] = 0;//BASELINE 
+	playerArray[79][12] = "Lamar Miller";//NAME
+	playerArray[79][13] = "RB"; //POSITION
+	playerArray[79][14] = "dolphins"; //TEAM
+	playerArray[79][15] = "Images/Lamar-Miller.png";//PIC
+	playerArray[79][16] = "lamarmiller";
 
-	playerArray[80] = new Array(23);
-	playerArray[80][0] = 0;//COMPLETIONS
-	playerArray[80][1] = 0;//PASSING YARDS
-	playerArray[80][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[80][3] = 0;//INTERCEPTIONS
-	playerArray[80][4] = 0;//RUSH YARDS
-	playerArray[80][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[80][6] = 64;//RECEPTIONS
-	playerArray[80][7] = 947;//RECEIVING YARDS
-	playerArray[80][8] = 8;//RECEIVING TOUCHDOWNS
-	playerArray[80][9] = 0;//Field Goals 0-19 Yards
-	playerArray[80][10] = 0;//Field Goals 20-29 Yards
-	playerArray[80][11] = 0;//Field Goals 30-39 Yards
-	playerArray[80][12] = 0;//Field Goals 40-49 Yards
-	playerArray[80][13] = 0;//Field Goals 50+
-	playerArray[80][14] = 0;//PAT
-	playerArray[80][15] = 0;//Sacks
-	playerArray[80][16] = 0;//Interceptions
-	playerArray[80][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[80][18] = "Eric Decker";//NAME
-	playerArray[80][19] = "WR"; //POSITION
-	playerArray[80][20] = "jets"; //TEAM
-	playerArray[80][21] = "Images/Eric-Decker.png";//PIC
-	playerArray[80][22] = "ED";
 
-	playerArray[81] = new Array(23);
+playerArray[80] = new Array(17);
+	playerArray[80][0] = 391;//COMPLETIONS
+	playerArray[80][1] = 4718;//PASSING YARDS
+	playerArray[80][2] = 30.4;//PASSING TOUCHDOWNS
+	playerArray[80][3] = 12;//INTERCEPTIONS
+	playerArray[80][4] = 28.9;//RUSH YARDS
+	playerArray[80][5] = 2.2;//RUSHING TOUCHDOWNS
+	playerArray[80][6] = 0;//RECEPTIONS
+	playerArray[80][7] = 0;//RECEIVING YARDS
+	playerArray[80][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[80][9] = 8.4;//FUMBLES
+	playerArray[80][10] = 0;//TOTAL POINTS
+	playerArray[80][11] = 0;//BASELINE 
+	playerArray[80][12] = "Tom Brady";//NAME
+	playerArray[80][13] = "QB"; //POSITION
+	playerArray[80][14] = "patriots"; //TEAM
+	playerArray[80][15] = "Images/Tom-Brady.png";//PIC
+	playerArray[80][16] = "tombrady";
+
+
+playerArray[81] = new Array(17);
 	playerArray[81][0] = 0;//COMPLETIONS
 	playerArray[81][1] = 0;//PASSING YARDS
 	playerArray[81][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[81][3] = 0;//INTERCEPTIONS
-	playerArray[81][4] = 0;//RUSH YARDS
-	playerArray[81][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[81][6] = 63;//RECEPTIONS
-	playerArray[81][7] = 882;//RECEIVING YARDS
-	playerArray[81][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[81][9] = 0;//Field Goals 0-19 Yards
-	playerArray[81][10] = 0;//Field Goals 20-29 Yards
-	playerArray[81][11] = 0;//Field Goals 30-39 Yards
-	playerArray[81][12] = 0;//Field Goals 40-49 Yards
-	playerArray[81][13] = 0;//Field Goals 50+
-	playerArray[81][14] = 0;//PAT
-	playerArray[81][15] = 0;//Sacks
-	playerArray[81][16] = 0;//Interceptions
-	playerArray[81][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[81][18] = "Cecil Shorts";//NAME
-	playerArray[81][19] = "WR"; //POSITION
-	playerArray[81][20] = "jaguars"; //TEAM
-	playerArray[81][21] = "Images/Cecil-Shorts.png";//PIC
-	playerArray[81][22] = "CS1";
+	playerArray[81][4] = 563;//RUSH YARDS
+	playerArray[81][5] = 4.8;//RUSHING TOUCHDOWNS
+	playerArray[81][6] = 27.1;//RECEPTIONS
+	playerArray[81][7] = 225;//RECEIVING YARDS
+	playerArray[81][8] = 0.6;//RECEIVING TOUCHDOWNS
+	playerArray[81][9] = 1.4;//FUMBLES
+	playerArray[81][10] = 0;//TOTAL POINTS
+	playerArray[81][11] = 0;//BASELINE 
+	playerArray[81][12] = "Maurice Jones-Drew";//NAME
+	playerArray[81][13] = "RB"; //POSITION
+	playerArray[81][14] = "raiders"; //TEAM
+	playerArray[81][15] = "Images/Maurice-Jones-Drew.png";//PIC
+	playerArray[81][16] = "mauricejonesdrew";
 
-	playerArray[82] = new Array(23);
+
+playerArray[82] = new Array(17);
 	playerArray[82][0] = 0;//COMPLETIONS
 	playerArray[82][1] = 0;//PASSING YARDS
 	playerArray[82][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[82][3] = 0;//INTERCEPTIONS
-	playerArray[82][4] = 19;//RUSH YARDS
+	playerArray[82][4] = 0;//RUSH YARDS
 	playerArray[82][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[82][6] = 57;//RECEPTIONS
-	playerArray[82][7] = 928;//RECEIVING YARDS
-	playerArray[82][8] = 6;//RECEIVING TOUCHDOWNS
-	playerArray[82][9] = 0;//Field Goals 0-19 Yards
-	playerArray[82][10] = 0;//Field Goals 20-29 Yards
-	playerArray[82][11] = 0;//Field Goals 30-39 Yards
-	playerArray[82][12] = 0;//Field Goals 40-49 Yards
-	playerArray[82][13] = 0;//Field Goals 50+
-	playerArray[82][14] = 0;//PAT
-	playerArray[82][15] = 0;//Sacks
-	playerArray[82][16] = 0;//Interceptions
-	playerArray[82][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[82][18] = "Terrance Williams";//NAME
-	playerArray[82][19] = "WR"; //POSITION
-	playerArray[82][20] = "cowboys"; //TEAM
-	playerArray[82][21] = "Images/Terrance-Williams.png";//PIC
-	playerArray[82][22] = "TW";
+	playerArray[82][6] = 65.3;//RECEPTIONS
+	playerArray[82][7] = 986;//RECEIVING YARDS
+	playerArray[82][8] = 5.5;//RECEIVING TOUCHDOWNS
+	playerArray[82][9] = 0.5;//FUMBLES
+	playerArray[82][10] = 0;//TOTAL POINTS
+	playerArray[82][11] = 0;//BASELINE 
+	playerArray[82][12] = "Mike Wallace";//NAME
+	playerArray[82][13] = "WR"; //POSITION
+	playerArray[82][14] = "dolphins"; //TEAM
+	playerArray[82][15] = "Images/Mike-Wallace.png";//PIC
+	playerArray[82][16] = "mikewallace";
 
-	playerArray[83] = new Array(23);
-	playerArray[83][0] = 0;//COMPLETIONS
-	playerArray[83][1] = 0;//PASSING YARDS
-	playerArray[83][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[83][3] = 0;//INTERCEPTIONS
-	playerArray[83][4] = 524;//RUSH YARDS
-	playerArray[83][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[83][6] = 36;//RECEPTIONS
-	playerArray[83][7] = 260;//RECEIVING YARDS
-	playerArray[83][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[83][9] = 0;//Field Goals 0-19 Yards
-	playerArray[83][10] = 0;//Field Goals 20-29 Yards
-	playerArray[83][11] = 0;//Field Goals 30-39 Yards
-	playerArray[83][12] = 0;//Field Goals 40-49 Yards
-	playerArray[83][13] = 0;//Field Goals 50+
-	playerArray[83][14] = 0;//PAT
-	playerArray[83][15] = 0;//Sacks
-	playerArray[83][16] = 0;//Interceptions
-	playerArray[83][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[83][18] = "Maurice Jones-Drew";//NAME
-	playerArray[83][19] = "RB"; //POSITION
-	playerArray[83][20] = "raiders"; //TEAM
-	playerArray[83][21] = "Images/Maurice-Jones-Drew.png";//PIC
-	playerArray[83][22] = "MJD";
-
-	playerArray[84] = new Array(23);
-	playerArray[84][0] = 0;//COMPLETIONS
-	playerArray[84][1] = 0;//PASSING YARDS
-	playerArray[84][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[84][3] = 0;//INTERCEPTIONS
-	playerArray[84][4] = 743;//RUSH YARDS
-	playerArray[84][5] = 6;//RUSHING TOUCHDOWNS
-	playerArray[84][6] = 3;//RECEPTIONS
-	playerArray[84][7] = 17;//RECEIVING YARDS
+playerArray[83] = new Array(17);
+	playerArray[83][0] = 255;//COMPLETIONS
+	playerArray[83][1] = 3020;//PASSING YARDS
+	playerArray[83][2] = 25.3;//PASSING TOUCHDOWNS
+	playerArray[83][3] = 11.6;//INTERCEPTIONS
+	playerArray[83][4] = 454;//RUSH YARDS
+	playerArray[83][5] = 1.3;//RUSHING TOUCHDOWNS
+	playerArray[83][6] = 0;//RECEPTIONS
+	playerArray[83][7] = 0;//RECEIVING YARDS
+	playerArray[83][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[83][9] = 8.7;//FUMBLES
+	playerArray[83][10] = 0;//TOTAL POINTS
+	playerArray[83][11] = 0;//BASELINE 
+	playerArray[83][12] = "Russell Wilson";//NAME
+	playerArray[83][13] = "QB"; //POSITION
+	playerArray[83][14] = "seahawks"; //TEAM
+	playerArray[83][15] = "Images/Russell-Wilson.png";//PIC
+	playerArray[83][16] = "russellwilson";
+playerArray[84] = new Array(17);
+	playerArray[84][0] = 346;//COMPLETIONS
+	playerArray[84][1] = 4161;//PASSING YARDS
+	playerArray[84][2] = 29.9;//PASSING TOUCHDOWNS
+	playerArray[84][3] = 18.3;//INTERCEPTIONS
+	playerArray[84][4] = 65.1;//RUSH YARDS
+	playerArray[84][5] = 0.9;//RUSHING TOUCHDOWNS
+	playerArray[84][6] = 0;//RECEPTIONS
+	playerArray[84][7] = 0;//RECEIVING YARDS
 	playerArray[84][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[84][9] = 0;//Field Goals 0-19 Yards
-	playerArray[84][10] = 0;//Field Goals 20-29 Yards
-	playerArray[84][11] = 0;//Field Goals 30-39 Yards
-	playerArray[84][12] = 0;//Field Goals 40-49 Yards
-	playerArray[84][13] = 0;//Field Goals 50+
-	playerArray[84][14] = 0;//PAT
-	playerArray[84][15] = 0;//Sacks
-	playerArray[84][16] = 0;//Interceptions
-	playerArray[84][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[84][18] = "Chris Ivory";//NAME
-	playerArray[84][19] = "RB"; //POSITION
-	playerArray[84][20] = "jets"; //TEAM
-	playerArray[84][21] = "Images/Chris-Ivory.png";//PIC
-	playerArray[84][22] = "CI";
+	playerArray[84][9] = 5.4;//FUMBLES
+	playerArray[84][10] = 0;//TOTAL POINTS
+	playerArray[84][11] = 0;//BASELINE 
+	playerArray[84][12] = "Phillip Rivers";//NAME
+	playerArray[84][13] = "QB"; //POSITION
+	playerArray[84][14] = "chargers"; //TEAM
+	playerArray[84][15] = "Images/Phillip-Rivers.png";//PIC
+	playerArray[84][16] = "philliprivers";
 
-	playerArray[85] = new Array(23);
+
+playerArray[85] = new Array(17);
 	playerArray[85][0] = 0;//COMPLETIONS
 	playerArray[85][1] = 0;//PASSING YARDS
 	playerArray[85][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[85][3] = 0;//INTERCEPTIONS
-	playerArray[85][4] = 563;//RUSH YARDS
-	playerArray[85][5] = 4;//RUSHING TOUCHDOWNS
-	playerArray[85][6] = 36;//RECEPTIONS
-	playerArray[85][7] = 286;//RECEIVING YARDS
-	playerArray[85][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[85][9] = 0;//Field Goals 0-19 Yards
-	playerArray[85][10] = 0;//Field Goals 20-29 Yards
-	playerArray[85][11] = 0;//Field Goals 30-39 Yards
-	playerArray[85][12] = 0;//Field Goals 40-49 Yards
-	playerArray[85][13] = 0;//Field Goals 50+
-	playerArray[85][14] = 0;//PAT
-	playerArray[85][15] = 0;//Sacks
-	playerArray[85][16] = 0;//Interceptions
-	playerArray[85][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[85][18] = "Fred Jackson";//NAME
-	playerArray[85][19] = "RB"; //POSITION
-	playerArray[85][20] = "bills"; //TEAM
-	playerArray[85][21] = "Images/Fred-Jackson.png";//PIC
-	playerArray[85][22] = "FJ";
+	playerArray[85][4] = 0;//RUSH YARDS
+	playerArray[85][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[85][6] = 77.7;//RECEPTIONS
+	playerArray[85][7] = 1028;//RECEIVING YARDS
+	playerArray[85][8] = 5.4;//RECEIVING TOUCHDOWNS
+	playerArray[85][9] = 0.5;//FUMBLES
+	playerArray[85][10] = 0;//TOTAL POINTS
+	playerArray[85][11] = 0;//BASELINE 
+	playerArray[85][12] = "Cecil Shorts";//NAME
+	playerArray[85][13] = "WR"; //POSITION
+	playerArray[85][14] = "jaguars"; //TEAM
+	playerArray[85][15] = "Images/Cecil-Shorts.png";//PIC
+	playerArray[85][16] = "cecilshorts";
 
-	playerArray[86] = new Array(23);
-	playerArray[86][0] = 0;//COMPLETIONS
-	playerArray[86][1] = 0;//PASSING YARDS
-	playerArray[86][2] = 0;//PASSING TOUCHDOWNS
-	playerArray[86][3] = 0;//INTERCEPTIONS
-	playerArray[86][4] = 385;//RUSH YARDS
-	playerArray[86][5] = 1;//RUSHING TOUCHDOWNS
-	playerArray[86][6] = 67;//RECEPTIONS
-	playerArray[86][7] = 534;//RECEIVING YARDS
-	playerArray[86][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[86][9] = 0;//Field Goals 0-19 Yards
-	playerArray[86][10] = 0;//Field Goals 20-29 Yards
-	playerArray[86][11] = 0;//Field Goals 30-39 Yards
-	playerArray[86][12] = 0;//Field Goals 40-49 Yards
-	playerArray[86][13] = 0;//Field Goals 50+
-	playerArray[86][14] = 0;//PAT
-	playerArray[86][15] = 0;//Sacks
-	playerArray[86][16] = 0;//Interceptions
-	playerArray[86][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[86][18] = "Danny Woodhead";//NAME
-	playerArray[86][19] = "RB"; //POSITION
-	playerArray[86][20] = "chargers"; //TEAM
-	playerArray[86][21] = "Images/Danny-Woodhead.png";//PIC
-	playerArray[86][22] = "DW";
 
-	playerArray[87] = new Array(23);
+playerArray[86] = new Array(17);
+	playerArray[86][0] = 259;//COMPLETIONS
+	playerArray[86][1] = 3227;//PASSING YARDS
+	playerArray[86][2] = 22.3;//PASSING TOUCHDOWNS
+	playerArray[86][3] = 12.5;//INTERCEPTIONS
+	playerArray[86][4] = 676;//RUSH YARDS
+	playerArray[86][5] = 1.9;//RUSHING TOUCHDOWNS
+	playerArray[86][6] = 0;//RECEPTIONS
+	playerArray[86][7] = 0;//RECEIVING YARDS
+	playerArray[86][8] = 0;//RECEIVING TOUCHDOWNS
+	playerArray[86][9] = 7.8;//FUMBLES
+	playerArray[86][10] = 0;//TOTAL POINTS
+	playerArray[86][11] = 0;//BASELINE 
+	playerArray[86][12] = "Colin Kaepernick";//NAME
+	playerArray[86][13] = "QB"; //POSITION
+	playerArray[86][14] = "fortyniners"; //TEAM
+	playerArray[86][15] = "Images/Colin-Kaepernick.png";//PIC
+	playerArray[86][16] = "colinkaepernick";
+
+
+playerArray[87] = new Array(17);
 	playerArray[87][0] = 0;//COMPLETIONS
 	playerArray[87][1] = 0;//PASSING YARDS
 	playerArray[87][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[87][3] = 0;//INTERCEPTIONS
-	playerArray[87][4] = 17;//RUSH YARDS
+	playerArray[87][4] = 0;//RUSH YARDS
 	playerArray[87][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[87][6] = 44;//RECEPTIONS
-	playerArray[87][7] = 765;//RECEIVING YARDS
-	playerArray[87][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[87][9] = 0;//Field Goals 0-19 Yards
-	playerArray[87][10] = 0;//Field Goals 20-29 Yards
-	playerArray[87][11] = 0;//Field Goals 30-39 Yards
-	playerArray[87][12] = 0;//Field Goals 40-49 Yards
-	playerArray[87][13] = 0;//Field Goals 50+
-	playerArray[87][14] = 0;//PAT
-	playerArray[87][15] = 0;//Sacks
-	playerArray[87][16] = 0;//Interceptions
-	playerArray[87][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[87][18] = "Josh Gordon";//NAME
-	playerArray[87][19] = "WR"; //POSITION
-	playerArray[87][20] = "browns"; //TEAM
-	playerArray[87][21] = "Images/Josh-Gordon.png";//PIC
-	playerArray[87][22] = "JG1";
+	playerArray[87][6] = 68.1;//RECEPTIONS
+	playerArray[87][7] = 869;//RECEIVING YARDS
+	playerArray[87][8] = 5.8;//RECEIVING TOUCHDOWNS
+	playerArray[87][9] = 0.6;//FUMBLES
+	playerArray[87][10] = 0;//TOTAL POINTS
+	playerArray[87][11] = 0;//BASELINE 
+	playerArray[87][12] = "Reggie Wayne";//NAME
+	playerArray[87][13] = "WR"; //POSITION
+	playerArray[87][14] = "colts"; //TEAM
+	playerArray[87][15] = "Images/Reggie-Wayne.png";//PIC
+	playerArray[87][16] = "reggiewayne";
 
-	playerArray[88] = new Array(23);
+
+playerArray[88] = new Array(17);
 	playerArray[88][0] = 0;//COMPLETIONS
 	playerArray[88][1] = 0;//PASSING YARDS
 	playerArray[88][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[88][3] = 0;//INTERCEPTIONS
-	playerArray[88][4] = 176;//RUSH YARDS
-	playerArray[88][5] = 1;//RUSHING TOUCHDOWNS
-	playerArray[88][6] = 91;//RECEPTIONS
-	playerArray[88][7] = 745;//RECEIVING YARDS
-	playerArray[88][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[88][9] = 0;//Field Goals 0-19 Yards
-	playerArray[88][10] = 0;//Field Goals 20-29 Yards
-	playerArray[88][11] = 0;//Field Goals 30-39 Yards
-	playerArray[88][12] = 0;//Field Goals 40-49 Yards
-	playerArray[88][13] = 0;//Field Goals 50+
-	playerArray[88][14] = 0;//PAT
-	playerArray[88][15] = 0;//Sacks
-	playerArray[88][16] = 0;//Interceptions
-	playerArray[88][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[88][18] = "Darren Sproles";//NAME
-	playerArray[88][19] = "RB"; //POSITION
-	playerArray[88][20] = "eagles"; //TEAM
-	playerArray[88][21] = "Images/Darren-Sproles.png";//PIC
-	playerArray[88][22] = "DS1";
+	playerArray[88][4] = 492;//RUSH YARDS
+	playerArray[88][5] = 3.5;//RUSHING TOUCHDOWNS
+	playerArray[88][6] = 27.7;//RECEPTIONS
+	playerArray[88][7] = 230;//RECEIVING YARDS
+	playerArray[88][8] = 0.9;//RECEIVING TOUCHDOWNS
+	playerArray[88][9] = 1.9;//FUMBLES
+	playerArray[88][10] = 0;//TOTAL POINTS
+	playerArray[88][11] = 0;//BASELINE 
+	playerArray[88][12] = "Terrance West";//NAME
+	playerArray[88][13] = "RB"; //POSITION
+	playerArray[88][14] = "browns"; //TEAM
+	playerArray[88][15] = "Images/Terrance-West.png";//PIC
+	playerArray[88][16] = "terrancewest";
 
-	playerArray[89] = new Array(23);
+
+playerArray[89] = new Array(17);
 	playerArray[89][0] = 0;//COMPLETIONS
 	playerArray[89][1] = 0;//PASSING YARDS
 	playerArray[89][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[89][3] = 0;//INTERCEPTIONS
-	playerArray[89][4] = 14;//RUSH YARDS
+	playerArray[89][4] = 0;//RUSH YARDS
 	playerArray[89][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[89][6] = 69;//RECEPTIONS
-	playerArray[89][7] = 967;//RECEIVING YARDS
-	playerArray[89][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[89][9] = 0;//Field Goals 0-19 Yards
-	playerArray[89][10] = 0;//Field Goals 20-29 Yards
-	playerArray[89][11] = 0;//Field Goals 30-39 Yards
-	playerArray[89][12] = 0;//Field Goals 40-49 Yards
-	playerArray[89][13] = 0;//Field Goals 50+
-	playerArray[89][14] = 0;//PAT
-	playerArray[89][15] = 0;//Sacks
-	playerArray[89][16] = 0;//Interceptions
-	playerArray[89][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[89][18] = "Anquan Boldin";//NAME
-	playerArray[89][19] = "WR"; //POSITION
-	playerArray[89][20] = "fortyniners"; //TEAM
-	playerArray[89][21] = "Images/Anquan-Boldin.png";//PIC
-	playerArray[89][22] = "AB1";
+	playerArray[89][6] = 66.2;//RECEPTIONS
+	playerArray[89][7] = 876;//RECEIVING YARDS
+	playerArray[89][8] = 7;//RECEIVING TOUCHDOWNS
+	playerArray[89][9] = 1;//FUMBLES
+	playerArray[89][10] = 0;//TOTAL POINTS
+	playerArray[89][11] = 0;//BASELINE 
+	playerArray[89][12] = "Emmanuel Sanders";//NAME
+	playerArray[89][13] = "WR"; //POSITION
+	playerArray[89][14] = "broncos"; //TEAM
+	playerArray[89][15] = "Images/Emmanuel-Sanders.png";//PIC
+	playerArray[89][16] = "emmanuelsanders";
 
-	playerArray[90] = new Array(23);
+
+playerArray[90] = new Array(17);
 	playerArray[90][0] = 0;//COMPLETIONS
 	playerArray[90][1] = 0;//PASSING YARDS
 	playerArray[90][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[90][3] = 0;//INTERCEPTIONS
-	playerArray[90][4] = 814;//RUSH YARDS
-	playerArray[90][5] = 2;//RUSHING TOUCHDOWNS
-	playerArray[90][6] = 23;//RECEPTIONS
-	playerArray[90][7] = 210;//RECEIVING YARDS
-	playerArray[90][8] = 1;//RECEIVING TOUCHDOWNS
-	playerArray[90][9] = 0;//Field Goals 0-19 Yards
-	playerArray[90][10] = 0;//Field Goals 20-29 Yards
-	playerArray[90][11] = 0;//Field Goals 30-39 Yards
-	playerArray[90][12] = 0;//Field Goals 40-49 Yards
-	playerArray[90][13] = 0;//Field Goals 50+
-	playerArray[90][14] = 0;//PAT
-	playerArray[90][15] = 0;//Sacks
-	playerArray[90][16] = 0;//Interceptions
-	playerArray[90][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[90][18] = "DeAngelo Williams";//NAME
-	playerArray[90][19] = "RB"; //POSITION
-	playerArray[90][20] = "panthers"; //TEAM
-	playerArray[90][21] = "Images/Deangelo-Williams.png";//PIC
-	playerArray[90][22] = "DW1";
+	playerArray[90][4] = 0;//RUSH YARDS
+	playerArray[90][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[90][6] = 72.5;//RECEPTIONS
+	playerArray[90][7] = 961;//RECEIVING YARDS
+	playerArray[90][8] = 5.4;//RECEIVING TOUCHDOWNS
+	playerArray[90][9] = 1.3;//FUMBLES
+	playerArray[90][10] = 0;//TOTAL POINTS
+	playerArray[90][11] = 0;//BASELINE 
+	playerArray[90][12] = "Eric Decker";//NAME
+	playerArray[90][13] = "WR"; //POSITION
+	playerArray[90][14] = "jets"; //TEAM
+	playerArray[90][15] = "Images/Eric-Decker.png";//PIC
+	playerArray[90][16] = "ericdecker";
 
-	playerArray[91] = new Array(23);
+
+playerArray[91] = new Array(17);
 	playerArray[91][0] = 0;//COMPLETIONS
 	playerArray[91][1] = 0;//PASSING YARDS
 	playerArray[91][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[91][3] = 0;//INTERCEPTIONS
-	playerArray[91][4] = 418;//RUSH YARDS
-	playerArray[91][5] = 3;//RUSHING TOUCHDOWNS
-	playerArray[91][6] = 22;//RECEPTIONS
-	playerArray[91][7] = 177;//RECEIVING YARDS
-	playerArray[91][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[91][9] = 0;//Field Goals 0-19 Yards
-	playerArray[91][10] = 0;//Field Goals 20-29 Yards
-	playerArray[91][11] = 0;//Field Goals 30-39 Yards
-	playerArray[91][12] = 0;//Field Goals 40-49 Yards
-	playerArray[91][13] = 0;//Field Goals 50+
-	playerArray[91][14] = 0;//PAT
-	playerArray[91][15] = 0;//Sacks
-	playerArray[91][16] = 0;//Interceptions
-	playerArray[91][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[91][18] = "David Wilson";//NAME
-	playerArray[91][19] = "RB"; //POSITION
-	playerArray[91][20] = "giants"; //TEAM
-	playerArray[91][21] = "Images/David-Wilson.png";//PIC
-	playerArray[91][22] = "DW2";
+	playerArray[91][4] = 0;//RUSH YARDS
+	playerArray[91][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[91][6] = 58.5;//RECEPTIONS
+	playerArray[91][7] = 864;//RECEIVING YARDS
+	playerArray[91][8] = 5.1;//RECEIVING TOUCHDOWNS
+	playerArray[91][9] = 0.8;//FUMBLES
+	playerArray[91][10] = 0;//TOTAL POINTS
+	playerArray[91][11] = 0;//BASELINE 
+	playerArray[91][12] = "Mike Evans";//NAME
+	playerArray[91][13] = "WR"; //POSITION
+	playerArray[91][14] = "buccaneers"; //TEAM
+	playerArray[91][15] = "Images/Mike-Evans.png";//PIC
+	playerArray[91][16] = "mikeevans";
 
-	playerArray[92] = new Array(23);
+
+playerArray[92] = new Array(17);
 	playerArray[92][0] = 0;//COMPLETIONS
 	playerArray[92][1] = 0;//PASSING YARDS
 	playerArray[92][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[92][3] = 0;//INTERCEPTIONS
-	playerArray[92][4] = 608;//RUSH YARDS
-	playerArray[92][5] = 4;//RUSHING TOUCHDOWNS
-	playerArray[92][6] = 24;//RECEPTIONS
-	playerArray[92][7] = 120;//RECEIVING YARDS
-	playerArray[92][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[92][9] = 0;//Field Goals 0-19 Yards
-	playerArray[92][10] = 0;//Field Goals 20-29 Yards
-	playerArray[92][11] = 0;//Field Goals 30-39 Yards
-	playerArray[92][12] = 0;//Field Goals 40-49 Yards
-	playerArray[92][13] = 0;//Field Goals 50+
-	playerArray[92][14] = 0;//PAT
-	playerArray[92][15] = 0;//Sacks
-	playerArray[92][16] = 0;//Interceptions
-	playerArray[92][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[92][18] = "Bernard Pierce";//NAME
-	playerArray[92][19] = "RB"; //POSITION
-	playerArray[92][20] = "ravens"; //TEAM
-	playerArray[92][21] = "Images/Bernard-Pierce.png";//PIC
-	playerArray[92][22] = "BP";
+	playerArray[92][4] = 0;//RUSH YARDS
+	playerArray[92][5] = 0;//RUSHING TOUCHDOWNS
+	playerArray[92][6] = 55.9;//RECEPTIONS
+	playerArray[92][7] = 817;//RECEIVING YARDS
+	playerArray[92][8] = 7.6;//RECEIVING TOUCHDOWNS
+	playerArray[92][9] = 0.3;//FUMBLES
+	playerArray[92][10] = 0;//TOTAL POINTS
+	playerArray[92][11] = 0;//BASELINE 
+	playerArray[92][12] = "Riley Cooper";//NAME
+	playerArray[92][13] = "WR"; //POSITION
+	playerArray[92][14] = "eagles"; //TEAM
+	playerArray[92][15] = "Images/Riley-Cooper.png";//PIC
+	playerArray[92][16] = "rileycooper";
 
-	playerArray[93] = new Array(23);
+
+playerArray[93] = new Array(17);
 	playerArray[93][0] = 0;//COMPLETIONS
 	playerArray[93][1] = 0;//PASSING YARDS
 	playerArray[93][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[93][3] = 0;//INTERCEPTIONS
 	playerArray[93][4] = 0;//RUSH YARDS
 	playerArray[93][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[93][6] = 64;//RECEPTIONS
-	playerArray[93][7] = 970;//RECEIVING YARDS
-	playerArray[93][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[93][9] = 0;//Field Goals 0-19 Yards
-	playerArray[93][10] = 0;//Field Goals 20-29 Yards
-	playerArray[93][11] = 0;//Field Goals 30-39 Yards
-	playerArray[93][12] = 0;//Field Goals 40-49 Yards
-	playerArray[93][13] = 0;//Field Goals 50+
-	playerArray[93][14] = 0;//PAT
-	playerArray[93][15] = 0;//Sacks
-	playerArray[93][16] = 0;//Interceptions
-	playerArray[93][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[93][18] = "DeAndre Hopkins";//NAME
-	playerArray[93][19] = "WR"; //POSITION
-	playerArray[93][20] = "texans"; //TEAM
-	playerArray[93][21] = "Images/DeAndre-Hopkins.png";//PIC
-	playerArray[93][22] = "DH";
+	playerArray[93][6] = 61.4;//RECEPTIONS
+	playerArray[93][7] = 700;//RECEIVING YARDS
+	playerArray[93][8] = 4.8;//RECEIVING TOUCHDOWNS
+	playerArray[93][9] = 0.4;//FUMBLES
+	playerArray[93][10] = 0;//TOTAL POINTS
+	playerArray[93][11] = 0;//BASELINE 
+	playerArray[93][12] = "Dennis Pitta";//NAME
+	playerArray[93][13] = "TE"; //POSITION
+	playerArray[93][14] = "ravens"; //TEAM
+	playerArray[93][15] = "Images/Dennis-Pitta.png";//PIC
+	playerArray[93][16] = "dennispitta";
 
-	playerArray[94] = new Array(23);
+
+playerArray[94] = new Array(17);
 	playerArray[94][0] = 0;//COMPLETIONS
 	playerArray[94][1] = 0;//PASSING YARDS
 	playerArray[94][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[94][3] = 0;//INTERCEPTIONS
-	playerArray[94][4] = 0;//RUSH YARDS
-	playerArray[94][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[94][6] = 50;//RECEPTIONS
-	playerArray[94][7] = 816;//RECEIVING YARDS
-	playerArray[94][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[94][9] = 0;//Field Goals 0-19 Yards
-	playerArray[94][10] = 0;//Field Goals 20-29 Yards
-	playerArray[94][11] = 0;//Field Goals 30-39 Yards
-	playerArray[94][12] = 0;//Field Goals 40-49 Yards
-	playerArray[94][13] = 0;//Field Goals 50+
-	playerArray[94][14] = 0;//PAT
-	playerArray[94][15] = 0;//Sacks
-	playerArray[94][16] = 0;//Interceptions
-	playerArray[94][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[94][18] = "Riley Cooper";//NAME
-	playerArray[94][19] = "WR"; //POSITION
-	playerArray[94][20] = "eagles"; //TEAM
-	playerArray[94][21] = "Images/Riley-Cooper.png";//PIC
-	playerArray[94][22] = "RC1";
+	playerArray[94][4] = 50.8;//RUSH YARDS
+	playerArray[94][5] = 0.2;//RUSHING TOUCHDOWNS
+	playerArray[94][6] = 55.7;//RECEPTIONS
+	playerArray[94][7] = 759;//RECEIVING YARDS
+	playerArray[94][8] = 6.1;//RECEIVING TOUCHDOWNS
+	playerArray[94][9] = 0.5;//FUMBLES
+	playerArray[94][10] = 0;//TOTAL POINTS
+	playerArray[94][11] = 0;//BASELINE 
+	playerArray[94][12] = "Marvin Jones";//NAME
+	playerArray[94][13] = "WR"; //POSITION
+	playerArray[94][14] = "bengals"; //TEAM
+	playerArray[94][15] = "Images/Marvin-Jones.png";//PIC
+	playerArray[94][16] = "marvinjones";
 
-	playerArray[95] = new Array(23);
+
+playerArray[95] = new Array(17);
 	playerArray[95][0] = 0;//COMPLETIONS
 	playerArray[95][1] = 0;//PASSING YARDS
 	playerArray[95][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[95][3] = 0;//INTERCEPTIONS
-	playerArray[95][4] = 0;//RUSH YARDS
-	playerArray[95][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[95][6] = 74;//RECEPTIONS
-	playerArray[95][7] = 879;//RECEIVING YARDS
-	playerArray[95][8] = 7;//RECEIVING TOUCHDOWNS
-	playerArray[95][9] = 0;//Field Goals 0-19 Yards
-	playerArray[95][10] = 0;//Field Goals 20-29 Yards
-	playerArray[95][11] = 0;//Field Goals 30-39 Yards
-	playerArray[95][12] = 0;//Field Goals 40-49 Yards
-	playerArray[95][13] = 0;//Field Goals 50+
-	playerArray[95][14] = 0;//PAT
-	playerArray[95][15] = 0;//Sacks
-	playerArray[95][16] = 0;//Interceptions
-	playerArray[95][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[95][18] = "Jordan Cameron";//NAME
-	playerArray[95][19] = "TE"; //POSITION
-	playerArray[95][20] = "browns"; //TEAM
-	playerArray[95][21] = "Images/Jordan-Cameron.png";//PIC
-	playerArray[95][22] = "JC1";
+	playerArray[95][4] = 621;//RUSH YARDS
+	playerArray[95][5] = 6.1;//RUSHING TOUCHDOWNS
+	playerArray[95][6] = 35.2;//RECEPTIONS
+	playerArray[95][7] = 287;//RECEIVING YARDS
+	playerArray[95][8] = 0.6;//RECEIVING TOUCHDOWNS
+	playerArray[95][9] = 2.2;//FUMBLES
+	playerArray[95][10] = 0;//TOTAL POINTS
+	playerArray[95][11] = 0;//BASELINE 
+	playerArray[95][12] = "Fred Jackson";//NAME
+	playerArray[95][13] = "RB"; //POSITION
+	playerArray[95][14] = "bills"; //TEAM
+	playerArray[95][15] = "Images/Fred-Jackson.png";//PIC
+	playerArray[95][16] = "fredjackson";
 
-	playerArray[96] = new Array(23);
+
+playerArray[96] = new Array(17);
 	playerArray[96][0] = 0;//COMPLETIONS
 	playerArray[96][1] = 0;//PASSING YARDS
 	playerArray[96][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[96][3] = 0;//INTERCEPTIONS
 	playerArray[96][4] = 0;//RUSH YARDS
 	playerArray[96][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[96][6] = 65;//RECEPTIONS
-	playerArray[96][7] = 767;//RECEIVING YARDS
-	playerArray[96][8] = 4;//RECEIVING TOUCHDOWNS
-	playerArray[96][9] = 0;//Field Goals 0-19 Yards
-	playerArray[96][10] = 0;//Field Goals 20-29 Yards
-	playerArray[96][11] = 0;//Field Goals 30-39 Yards
-	playerArray[96][12] = 0;//Field Goals 40-49 Yards
-	playerArray[96][13] = 0;//Field Goals 50+
-	playerArray[96][14] = 0;//PAT
-	playerArray[96][15] = 0;//Sacks
-	playerArray[96][16] = 0;//Interceptions
-	playerArray[96][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[96][18] = "Danny Amendola";//NAME
-	playerArray[96][19] = "WR"; //POSITION
-	playerArray[96][20] = "patriots"; //TEAM
-	playerArray[96][21] = "Images/Danny-Amendola.png";//PIC
-	playerArray[96][22] = "DA";
+	playerArray[96][6] = 61.4;//RECEPTIONS
+	playerArray[96][7] = 719;//RECEIVING YARDS
+	playerArray[96][8] = 4.1;//RECEIVING TOUCHDOWNS
+	playerArray[96][9] = 0.4;//FUMBLES
+	playerArray[96][10] = 0;//TOTAL POINTS
+	playerArray[96][11] = 0;//BASELINE 
+	playerArray[96][12] = "Kyle Rudolph";//NAME
+	playerArray[96][13] = "TE"; //POSITION
+	playerArray[96][14] = "vikings"; //TEAM
+	playerArray[96][15] = "Images/Kyle-Rudolph.png";//PIC
+	playerArray[96][16] = "kylerudolph";
 
-	playerArray[97] = new Array(23);
+playerArray[97] = new Array(17);
 	playerArray[97][0] = 0;//COMPLETIONS
 	playerArray[97][1] = 0;//PASSING YARDS
 	playerArray[97][2] = 0;//PASSING TOUCHDOWNS
 	playerArray[97][3] = 0;//INTERCEPTIONS
-	playerArray[97][4] = 0;//RUSH YARDS
-	playerArray[97][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[97][6] = 0;//RECEPTIONS
-	playerArray[97][7] = 0;//RECEIVING YARDS
-	playerArray[97][8] = 5;//RECEIVING TOUCHDOWNS
-	playerArray[97][9] = 0;//Field Goals 0-19 Yards
-	playerArray[97][10] = 0;//Field Goals 20-29 Yards
-	playerArray[97][11] = 0;//Field Goals 30-39 Yards
-	playerArray[97][12] = 0;//Field Goals 40-49 Yards
-	playerArray[97][13] = 0;//Field Goals 50+
-	playerArray[97][14] = 0;//PAT
-	playerArray[97][15] = 41;//Sacks
-	playerArray[97][16] = 26;//Interceptions
-	playerArray[97][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[97][18] = "Seahawks D/ST";//NAME
-	playerArray[97][19] = "DST"; //POSITION
-	playerArray[97][20] = "seahawks"; //TEAM
-	playerArray[97][21] = "Images/Seahawks-DST.png";//PIC
-	playerArray[97][22] = "SDST";
+	playerArray[97][4] = 722;//RUSH YARDS
+	playerArray[97][5] = 4.5;//RUSHING TOUCHDOWNS
+	playerArray[97][6] = 23.1;//RECEPTIONS
+	playerArray[97][7] = 193;//RECEIVING YARDS
+	playerArray[97][8] = 0.4;//RECEIVING TOUCHDOWNS
+	playerArray[97][9] = 2.0;//FUMBLES
+	playerArray[97][10] = 0;//TOTAL POINTS
+	playerArray[97][11] = 0;//BASELINE 
+	playerArray[97][12] = "Bernard Pierce";//NAME
+	playerArray[97][13] = "RB"; //POSITION
+	playerArray[97][14] = "ravens"; //TEAM
+	playerArray[97][15] = "Images/Bernard-Pierce.png";//PIC
+	playerArray[97][16] = "bernardpierce";
 
-	playerArray[98] = new Array(23);
-	playerArray[98][0] = 248;//COMPLETIONS
-	playerArray[98][1] = 3378;//PASSING YARDS
-	playerArray[98][2] = 22;//PASSING TOUCHDOWNS
-	playerArray[98][3] = 11;//INTERCEPTIONS
-	playerArray[98][4] = 474;//RUSH YARDS
-	playerArray[98][5] = 4;//RUSHING TOUCHDOWNS
-	playerArray[98][6] = 0;//RECEPTIONS
-	playerArray[98][7] = 0;//RECEIVING YARDS
-	playerArray[98][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[98][9] = 0;//Field Goals 0-19 Yards
-	playerArray[98][10] = 0;//Field Goals 20-29 Yards
-	playerArray[98][11] = 0;//Field Goals 30-39 Yards
-	playerArray[98][12] = 0;//Field Goals 40-49 Yards
-	playerArray[98][13] = 0;//Field Goals 50+
-	playerArray[98][14] = 0;//PAT
-	playerArray[98][15] = 0;//Sacks
-	playerArray[98][16] = 0;//Interceptions
-	playerArray[98][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[98][18] = "Colin Kaepernick";//NAME
-	playerArray[98][19] = "QB"; //POSITION
-	playerArray[98][20] = "fortyniners"; //TEAM
-	playerArray[98][21] = "Images/Colin-Kaepernick.png";//PIC
-	playerArray[98][22] = "CK";
 
-	playerArray[99] = new Array(23);
-	playerArray[99][0] = 419;//COMPLETIONS
-	playerArray[99][1] = 4377;//PASSING YARDS
-	playerArray[99][2] = 28;//PASSING TOUCHDOWNS
-	playerArray[99][3] = 14;//INTERCEPTIONS
-	playerArray[99][4] = 86;//RUSH YARDS
+playerArray[98] = new Array(17);
+	playerArray[98][0] = 0;//COMPLETIONS
+	playerArray[98][1] = 0;//PASSING YARDS
+	playerArray[98][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[98][3] = 0;//INTERCEPTIONS
+	playerArray[98][4] = 647;//RUSH YARDS
+	playerArray[98][5] = 5.8;//RUSHING TOUCHDOWNS
+	playerArray[98][6] = 34.1;//RECEPTIONS
+	playerArray[98][7] = 282;//RECEIVING YARDS
+	playerArray[98][8] = 1.0;//RECEIVING TOUCHDOWNS
+	playerArray[98][9] = 2.1;//FUMBLES
+	playerArray[98][10] = 0;//TOTAL POINTS
+	playerArray[98][11] = 0;//BASELINE 
+	playerArray[98][12] = "Ray Rice";//NAME
+	playerArray[98][13] = "RB"; //POSITION
+	playerArray[98][14] = "ravens"; //TEAM
+	playerArray[98][15] = "Images/Ray-Rice.png";//PIC
+	playerArray[98][16] = "rayrice";
+
+
+playerArray[99] = new Array(17);
+	playerArray[99][0] = 0;//COMPLETIONS
+	playerArray[99][1] = 0;//PASSING YARDS
+	playerArray[99][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[99][3] = 0;//INTERCEPTIONS
+	playerArray[99][4] = 0;//RUSH YARDS
 	playerArray[99][5] = 0;//RUSHING TOUCHDOWNS
-	playerArray[99][6] = 0;//RECEPTIONS
-	playerArray[99][7] = 0;//RECEIVING YARDS
-	playerArray[99][8] = 0;//RECEIVING TOUCHDOWNS
-	playerArray[99][9] = 0;//Field Goals 0-19 Yards
-	playerArray[99][10] = 0;//Field Goals 20-29 Yards
-	playerArray[99][11] = 0;//Field Goals 30-39 Yards
-	playerArray[99][12] = 0;//Field Goals 40-49 Yards
-	playerArray[99][13] = 0;//Field Goals 50+
-	playerArray[99][14] = 0;//PAT
-	playerArray[99][15] = 0;//Sacks
-	playerArray[99][16] = 0;//Interceptions
-	playerArray[99][17] = 0;//Total Points ALWAYS PUT 0 FOR THIS
-	playerArray[99][18] = "Matt Ryan";//NAME
-	playerArray[99][19] = "QB"; //POSITION
-	playerArray[99][20] = "falcons"; //TEAM
-	playerArray[99][21] = "Images/Matt-Ryan.png";//PIC
-	playerArray[99][22] = "MR";
+	playerArray[99][6] = 65.8;//RECEPTIONS
+	playerArray[99][7] = 728;//RECEIVING YARDS
+	playerArray[99][8] = 4.5;//RECEIVING TOUCHDOWNS
+	playerArray[99][9] = 0.9;//FUMBLES
+	playerArray[99][10] = 0;//TOTAL POINTS
+	playerArray[99][11] = 0;//BASELINE 
+	playerArray[99][12] = "Jordan Reed";//NAME
+	playerArray[99][13] = "TE"; //POSITION
+	playerArray[99][14] = "redskins"; //TEAM
+	playerArray[99][15] = "Images/Jordan-Reed.png";//PIC
+	playerArray[99][16] = "jordanreed";
+
+
 
 
 	var helpme = $("#player-0");
@@ -2736,266 +2217,216 @@ playerArray[50] = new Array(23);
 		$("#submit").click(function(){
 			var x = $('selector').val();
 
-			var Completions = parseFloat(document.getElementById("completion").value);
-			var PassYards = parseFloat(document.getElementById("PassYards").value);
-			var PassTD = parseFloat(document.getElementById("PassTD").value);
-			var QBInt = parseFloat(document.getElementById("QBInt").value);
-			var RushYards = parseFloat(document.getElementById("RushYards").value);
-			var RushTD = parseFloat(document.getElementById("RushTD").value);
-			var PPR = parseFloat(document.getElementById("PPR").value);
-			var RecYards = parseFloat(document.getElementById("RECyd").value);
-			var RecTD = parseFloat(document.getElementById("CatchTD").value);
-			var FG019 = parseFloat(document.getElementById("FG0-19").value);
-			var FG2029 = parseFloat(document.getElementById("FG20-29").value);
-			var FG3039 = parseFloat(document.getElementById("FG30-39").value);
-			var FG4049 = parseFloat(document.getElementById("FG40-49").value);
-			var FG50 = parseFloat(document.getElementById("FG50").value);
-			var PAT = parseFloat(document.getElementById("PAT").value);
-			var SACKS = parseFloat(document.getElementById("SACKS").value);
-			var PICK = parseFloat(document.getElementById("PICK").value);
+
+			var numteams = parseFloat($(".numTeams").val());
+			console.log($(".numTeams").val());
+			console.log(numteams)
+			var RBWRFlex = parseFloat($(".RBWRflex").val());
+			var QBStarter = parseFloat($(".QBstart").val());
+			var RBWRTEFlex = parseFloat($(".RBWRTEflex").val());
+			var RBStarter = parseFloat($(".RBstart").val());
+			var KStarter = parseFloat($(".Kstart").val());
+			var WRStarter = parseFloat($(".WRstart").val());
+			var DStarter = parseFloat($(".Dstart").val());
+			var TEStarter = parseFloat($(".TEstart").val());
+			var BenchPlayers = parseFloat($(".Bench").val());
+
+
+			var Completions = parseFloat($(".completions").val());
+			console.log($("completions").val());
+			console.log(Completions);
+			var RushYards = parseFloat($(".Rushyds").val());
+			var PassYards = parseFloat($(".Passyds").val());
+			var RushingTD = parseFloat($(".RushTD").val());
+			var PassingTD = parseFloat($(".PassTD").val());
+			var PointsPerR = parseFloat($(".PPR").val());
+			var INT = parseFloat($(".Int").val());
+			var ReceivingYards = parseFloat($(".Receiveyds").val());
+			var Fumbles = parseFloat($(".fumble").val());
+			var ReceivingTD = parseFloat($(".ReceiveTD").val());
+
+
+			var FG0 = parseFloat($(".FG019").val());
+			var Sack = parseFloat($(".sack").val());
+			var ptsallowed0 = parseFloat($(".pts0").val());
+			var FG20 = parseFloat($(".FG2029").val());
+			var Pick = parseFloat($(".pick").val());
+			var ptsallowed1 = parseFloat($(".pts16").val());
+			var FG30 = parseFloat($(".FG3039").val());
+			var FumbleRecovery = parseFloat($(".fumbrecovery").val());
+			var ptsallowed7 = parseFloat($(".pts713").val());
+			var FG40 = parseFloat($(".FG4049").val());	
+			var DefenseTD = parseFloat($(".DefTD").val());
+			var ptsallowed14 = parseFloat($(".pts1420").val());
+			var FG50plus = parseFloat($(".FG50").val());
+			var safety = parseFloat($(".safety").val());
+			var ptsallowed21 = parseFloat($(".pts2127").val());
+			var PointAT = parseFloat($(".PAT").val());
+			var BlockedKick = parseFloat($(".BlockKick").val());
+			var ptsallowed28 = parseFloat($(".pts28").val());
+
 
 			for(var i = 0; i < 100; i = i + 1){
-				for(var j = 0; j < 17; j = j + 1){
-					if (j == 0)
+				if(playerArray[i][13] == "D/ST")
+				{	if(playerArray[i][0]/16 == 0)
 					{
-						var temp = playerArray[i][j];
-						temp = temp * Completions;
-						playerArray[i][17] = playerArray[i][17] + temp;
+						playerArray[i][10] = playerArray[i][10] + ((playerArray[i][0]/16) * ptsallowed0);
 					}
-					else if(j == 1)
+					else if(playerArray[i][0]/16 <= 6)
 					{
-						var temp = playerArray[i][j];
-						if(PassYards != 0)
-						{
-							temp = temp/PassYards;
-						}
-						else{
-							temp = 0;
-						}
-						playerArray[i][17] = playerArray[i][17] + temp;
+						playerArray[i][10] = playerArray[i][10] + ((playerArray[i][0]/16) * ptsallowed1);
 					}
-					else if(j == 2)
+					else if(playerArray[i][0]/16 <= 13)
 					{
-						var temp = playerArray[i][j];
-
-						temp = temp * PassTD;
-						playerArray[i][17] = playerArray[i][17] + temp;
+						playerArray[i][10] = playerArray[i][10] + ((playerArray[i][0]/16) * ptsallowed7);
 					}
-					else if(j == 3)
+					else if(playerArray[i][0]/16 <= 20)
 					{
-						var temp = playerArray[i][j];
-						temp = temp * QBInt;
-						playerArray[i][17] = playerArray[i][17] + temp;
+						playerArray[i][10] = playerArray[i][10] + ((playerArray[i][0]/16) * ptsallowed14);
 					}
-					else if(j == 4)
+					else if(playerArray[i][0]/16 <= 27)
 					{
-						var temp = playerArray[i][j];
-						if(RushYards != 0)
-						{
-							temp = temp/RushYards;
-						}
-						else
-						{
-							temp = 0;
-						}
-						playerArray[i][17] = playerArray[i][17] + temp;
+						playerArray[i][10] =playerArray[i][10] + ((playerArray[i][0]/16) * ptsallowed21);
 					}
-					else if(j == 5)
+					else
 					{
-						var temp = playerArray[i][j];
-						temp = temp * RushTD;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 6)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * PPR;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 7)
-					{
-						var temp = playerArray[i][j];
-						if(RecYards != 0)
-						{
-							temp = temp / RecYards;
-						}
-						else
-						{
-							temp = 0;
-						}
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 8)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * RecTD;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 9)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * FG019;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 10)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * FG2029;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 11)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * FG3039;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 12)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * FG4049;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 13)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * FG50;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 14)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * PAT;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 15)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * SACKS;
-						playerArray[i][17] = playerArray[i][17] + temp;
-					}
-					else if(j == 16)
-					{
-						var temp = playerArray[i][j];
-						temp = temp * PICK;
-						playerArray[i][17] = playerArray[i][17] + temp;
+						playerArray[i][10] = playerArray[i][10] + ((playerArray[i][0]/16) * ptsallowed28);
 					}
 
+
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][1] * Sack);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][2] * safety);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][3] * Pick);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][4] * Sack);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][5] * Sack);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][6] * Sack)
 				}
-
+				else if (playerArray[i][13] == "K")
+				{
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][0] * FG0);//0-19 FG 
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][1] * FG20);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][2] * FG30);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][3] * FG40);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][4] * FG50plus);
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][5] * PointAT);
+					
+				}
+				else
+				{
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][0] * Completions);//COMPLETIONS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][1] / PassYards);//PASSING YARDS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][2] * PassingTD);//PASSING TOUCHDOWNS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][3] * INT);//INTERCEPTIONS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][4] / RushYards);//RUSH YARDS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][5] * RushingTD);//RUSHING TOUCHDOWNS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][6] * PointsPerR);//RECEPTIONS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][7] / ReceivingYards);//RECEIVING YARDS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][8] * ReceivingTD);//RECEIVING TOUCHDOWNS
+					playerArray[i][10] = playerArray[i][10] + (playerArray[i][9] * Fumbles);//FUMBLES
+				}
+					
 			}
+			//STILL HAVE TO ERROR CHECK IT ALL
 
-				playerArray.sort(function(a,b){return b[17] - a[17]}); //sort
+			playerArray.sort(function(a,b){return b[10] - a[10]}); //sort
 
-			var qbBase = Math.ceil(1.19625 * 8);
-			var rbBase = Math.ceil(1.92625 * 2.33 * 8);
-			var wrBase = Math.ceil(1.1975 * 3.33 * 8);
-			var teBase = Math.ceil(0.92975 * 1.33 * 8);
+			var qbBase = Math.ceil(1.19625 * QBStarter * numteams);
+			var rbBase = Math.ceil(1.92625 * (RBStarter + (RBWRFlex / 2.0) + (RBWRTEFlex / 3.0)) * numteams);
+			var wrBase = Math.ceil(1.1975 * (WRStarter + (RBWRFlex / 2.0) + (RBWRTEFlex / 3.0)) * numteams);
+			var teBase = Math.ceil(0.92975 * (TEStarter + (RBWRTEFlex / 3.0)) * numteams);
 
 			var qbnum = 0;
 			var rbnum = 0;
 			var wrnum = 0;
 			var tenum = 0;
+			var Knum = 0;
+			var Dnum = 0;
 
 			var qbcount = 0;
 			var rbcount = 0;
 			var wrcount = 0;
 			var tecount = 0;
+			var Kcount = 0;
+			var Dcount = 0;
 
 
 
 
 			for(var i = 0; i < 100; i = i + 1){
 
-				if(playerArray[i][19] == "QB" && (qbnum < qbBase))
+				if(playerArray[i][13] == "QB" && (qbnum <= qbBase))
 				{
+					qbcount = i;
+
 					qbnum = qbnum + 1;
 				}
-				if(playerArray[i][19] == "RB" && (rbnum < rbBase))
+				if(playerArray[i][13] == "RB" && (rbnum <= rbBase))
 				{
+					rbcount = i;
 					rbnum = rbnum + 1;
 				}
-				if(playerArray[i][19] == "TE" && (tenum < teBase))
+				if(playerArray[i][13] == "TE" && (tenum <= teBase))
 				{
 					tecount = i;
+					tenum = tenum + 1;
 				}
-				if(playerArray[i][19] == "WR" && (wrnum < wrBase))
+				if(playerArray[i][13] == "WR" && (wrnum <= wrBase))
 				{
+					wrcount = i;
 					wrnum = wrnum + 1;
 				}
-
-				if(qbnum == qbBase && qbcount == 0)
-				{	
-					qbcount = i;
+				if(playerArray[i][13] == "K" && Knum == 0)
+				{
+					Kcount = i;
+					Knum = 1;
+				}
+				if(playerArray[i][13] == "D/ST" && Dnum == 0)
+				{
+					Dcount = i;
+					Dnum = 1;
 				}
 
-
-				if(rbnum == rbBase && rbcount == 0)
-				{	
-					rbcount = i;
-				}
-
-				if(wrnum == wrBase && wrcount == 0)
-				{	
-					wrcount = i;
-				}
-
-				if(tenum == teBase && tecount == 0)
-				{	
-					tecount = i;
-				}
+			
 
 			}
-
-			if(qbcount == 0)
-				{	
-					qbcount = qbnum;
-				}
-
-
-				if(rbcount == 0)
-				{	
-					rbcount = rbnum;
-				}
-
-				if(wrcount == 0)
-				{	
-					wrcount = wrnum;
-				}
-
-				if(tecount == 0)
-				{	
-					tecount = tenum;
-				}
-
-
+			//potential error check here
 
 			for(var i = 0; i < 100; i = i + 1)
 			{
-				if(playerArray[i][19] == "QB")
+				if(playerArray[i][13] == "QB")
 				{
-					playerArray[i][0] = playerArray[i][17] - playerArray[qbcount][17];
+					playerArray[i][11] = playerArray[i][10] - playerArray[qbcount][10];
 				}
-				if(playerArray[i][19] == "RB")
+				if(playerArray[i][13] == "RB")
 				{
-					playerArray[i][0] = playerArray[i][17] - playerArray[rbcount][17];
+					playerArray[i][11] = playerArray[i][10] - playerArray[rbcount][10];
 				}
-				if(playerArray[i][19] == "TE")
+				if(playerArray[i][13] == "TE")
 				{
-					playerArray[i][0] = playerArray[i][17] - playerArray[tecount][17];
+					playerArray[i][11] = playerArray[i][10] - playerArray[tecount][10];
 				}
-				if(playerArray[i][19] == "WR")
+				if(playerArray[i][13] == "WR")
 				{
-					playerArray[i][0] = playerArray[i][17] - playerArray[wrcount][17];
+					playerArray[i][11] = playerArray[i][10] - playerArray[wrcount][10];
+				}
+				if(playerArray[i][13] == "K")
+				{
+					playerArray[i][11] = playerArray[i][10] - playerArray[Kcount][10];
+				}
+				if(playerArray[i][13] == "D/ST")
+				{
+					playerArray[i][11] = playerArray[i][10] - playerArray[Dcount][10];
 				}
 			}
 
 
 
 
-			playerArray.sort(function(a,b){return b[0] - a[0]}); //sort
+			playerArray.sort(function(a,b){return b[11] - a[11]}); //sort
+
+
+
 			$("#playerGrid").css("display","none");
-
-
 			var counter = 0;
 			var firstone = $(".firstsec");
 
@@ -3003,18 +2434,18 @@ playerArray[50] = new Array(23);
 
 				
 					
-					$(".current h2").replaceWith('<h2>' + playerArray[i][18] +'</h2>');
-					console.log(playerArray[i][18]);
+					$(".current h2").replaceWith('<h2>' + playerArray[i][12] +'</h2>');
+					console.log(playerArray[i][16]);
 					$(".current img").remove();
-					$('.current').append("<img src='" + playerArray[i][21] + "'/>")
+					$('.current').append("<img src='" + playerArray[i][15] + "'/>")
 					var currentLink = $(".current");
 					$(".current").removeClass();
 
 
 					currentLink.addClass("current");
 					$(".current").addClass("span_3_of_12");
-					$(".current").addClass(playerArray[i][20]);
-					$(".current").addClass(playerArray[i][22]);
+					$(".current").addClass(playerArray[i][14]);
+					$(".current").addClass(playerArray[i][16]);
 					$(".current").addClass("new");
 
 					if(counter < 3)
@@ -3038,7 +2469,8 @@ playerArray[50] = new Array(23);
 			$("#playerGrid").css("display","block");
 			for(var i = 0; i < 100; i = i + 1)
 			{
-				playerArray[i][17] = 0;
+				playerArray[i][10] = 0;
+				playerArray[i][11] = 0;
 			}
 
 			var helper = $("#player-0");
@@ -3050,6 +2482,7 @@ playerArray[50] = new Array(23);
 	
 	
 	var mainbody = $(".holder");
+	var ycoord = 0;
 	$("#playerGrid").hover(function(){
 
 
@@ -3058,9 +2491,10 @@ playerArray[50] = new Array(23);
 
 
 		$(".leseanmccoy").click(function(){
+		
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("leseanmccoy")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.leseanmccoy").css("display","block");
 				$(".Ppage.leseanmccoy").addClass("alive");
@@ -3079,9 +2513,10 @@ playerArray[50] = new Array(23);
 		});
 
 	$(".peytonmanning").click(function(){
+	
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("peytonmanning")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.peytonmanning").css("display","block");
 				$(".Ppage.peytonmanning").addClass("alive");
@@ -3100,9 +2535,10 @@ playerArray[50] = new Array(23);
 		});
 
 	$(".adrianpeterson").click(function(){
+			
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("adrianpeterson")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.adrianpeterson").css("display","block");
 				$(".Ppage.adrianpeterson").addClass("alive");
@@ -3121,9 +2557,10 @@ playerArray[50] = new Array(23);
 		});
 		
 	$(".calvinjohnson").click(function(){
+		
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("calvinjohnson")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.calvinjohnson").css("display","block");
 				$(".Ppage.calvinjohnson").addClass("alive");
@@ -3144,7 +2581,7 @@ playerArray[50] = new Array(23);
 		$(".jamaalcharles").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("jamaalcharles")){
-
+					ycoord = $(this).offset().top;
 
 				$(".Ppage.jamaalcharles").css("display","block");
 				$(".Ppage.jamaalcharles").addClass("alive");
@@ -3167,7 +2604,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("mattforte")){
 
-
+			ycoord = $(this).offset().top;
 				$(".Ppage.mattforte").css("display","block");
 				$(".Ppage.mattforte").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3186,7 +2623,7 @@ playerArray[50] = new Array(23);
 		$(".marshawnlynch").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("marshawnlynch")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.marshawnlynch").css("display","block");
 				$(".Ppage.marshawnlynch").addClass("alive");
@@ -3207,7 +2644,7 @@ playerArray[50] = new Array(23);
 			$(".eddielacy").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("eddielacy")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.eddielacy").css("display","block");
 				$(".Ppage.eddielacy").addClass("alive");
@@ -3229,7 +2666,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("dougmartin")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.dougmartin").css("display","block");
 				$(".Ppage.dougmartin").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3246,10 +2683,11 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 		$(".jimmygraham").click(function(){
+			ycoord = $(this).offset().top;
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("jimmygraham")){
 
-
+				ycoord = $(this).offset().top;		
 				$(".Ppage.jimmygraham").css("display","block");
 				$(".Ppage.jimmygraham").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3270,7 +2708,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("arianfoster")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.arianfoster").css("display","block");
 				$(".Ppage.arianfoster").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3292,7 +2730,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("aaronrodgers")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.aaronrodgers").css("display","block");
 				$(".Ppage.aaronrodgers").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3312,7 +2750,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("zacstacy")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.zacstacy").css("display","block");
 				$(".Ppage.zacstacy").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3333,7 +2771,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("demarcomurray")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.demarcomurray").css("display","block");
 				$(".Ppage.demarcomurray").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3353,7 +2791,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("demaryiusthomas")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.demaryiusthomas").css("display","block");
 				$(".Ppage.demaryiusthomas").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3373,7 +2811,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("ajgreen")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.ajgreen").css("display","block");
 				$(".Ppage.ajgreen").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3394,7 +2832,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("drewbrees")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.drewbrees").css("display","block");
 				$(".Ppage.drewbrees").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3436,7 +2874,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("leveonbell")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.leveonbell").css("display","block");
 				$(".Ppage.leveonbell").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3456,7 +2894,7 @@ playerArray[50] = new Array(23);
 				$(".brandonmarshall").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("brandonmarshall")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.brandonmarshall").css("display","block");
 				$(".Ppage.brandonmarshall").addClass("alive");
@@ -3475,10 +2913,12 @@ playerArray[50] = new Array(23);
 			return false;
 		});
 				$(".juliojones").click(function(){
-			if(mainbody.is(":visible")){
+					
+
+				if(mainbody.is(":visible")){
 				if($(this).hasClass("juliojones")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.juliojones").css("display","block");
 				$(".Ppage.juliojones").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3502,7 +2942,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("jordynelson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.jordynelson").css("display","block");
 				$(".Ppage.jordynelson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3525,7 +2965,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("alfredmorris")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.alfredmorris").css("display","block");
 				$(".Ppage.alfredmorris").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3548,7 +2988,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("alshonjeffery")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.alshonjeffery").css("display","block");
 				$(".Ppage.alshonjeffery").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3570,7 +3010,7 @@ playerArray[50] = new Array(23);
 		$(".monteeball").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("monteeball")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.monteeball").css("display","block");
 				$(".Ppage.monteeball").addClass("alive");
@@ -3593,7 +3033,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("giovanibernard")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.giovanibernard").css("display","block");
 				$(".Ppage.giovanibernard").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3615,7 +3055,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("juliusthomas")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.juliusthomas").css("display","block");
 				$(".Ppage.juliusthomas").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3637,7 +3077,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("antoniobrown")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.antoniobrown").css("display","block");
 				$(".Ppage.antoniobrown").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3660,7 +3100,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("reggiebush")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.reggiebush").css("display","block");
 				$(".Ppage.reggiebush").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3683,7 +3123,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("randallcobb")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.randallcobb").css("display","block");
 				$(".Ppage.randallcobb").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3707,7 +3147,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("andrejohnson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.andrejohnson").css("display","block");
 				$(".Ppage.andrejohnson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3730,7 +3170,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("bentate")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.bentate").css("display","block");
 				$(".Ppage.bentate").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3752,7 +3192,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("vincentjackson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.vincentjackson").css("display","block");
 				$(".Ppage.vincentjackson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3775,7 +3215,7 @@ playerArray[50] = new Array(23);
 			$(".larryfitzgerald").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("larryfitzgerald")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.larryfitzgerald").css("display","block");
 				$(".Ppage.larryfitzgerald").addClass("alive");
@@ -3799,7 +3239,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("robertgriffin")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.robertgriffin").css("display","block");
 				$(".Ppage.robertgriffin").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3822,7 +3262,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("pierregarcon")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.pierregarcon").css("display","block");
 				$(".Ppage.pierregarcon").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3844,7 +3284,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("ryanmathews")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.ryanmathews").css("display","block");
 				$(".Ppage.ryanmathews").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3867,7 +3307,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("deseanjackson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.deseanjackson").css("display","block");
 				$(".Ppage.deseanjackson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3890,7 +3330,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("matthewstafford")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.matthewstafford").css("display","block");
 				$(".Ppage.matthewstafford").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3912,7 +3352,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("cjspiller")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.cjspiller").css("display","block");
 				$(".Ppage.cjspiller").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3935,7 +3375,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("frankgore")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.frankgore").css("display","block");
 				$(".Ppage.frankgore").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3957,7 +3397,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("keenanallen")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.keenanallen").css("display","block");
 				$(".Ppage.keenanallen").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -3979,7 +3419,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("victorcruz")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.victorcruz").css("display","block");
 				$(".Ppage.victorcruz").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4001,7 +3441,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("roddywhite")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.roddywhite").css("display","block");
 				$(".Ppage.roddywhite").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4023,7 +3463,7 @@ playerArray[50] = new Array(23);
 			$(".camnewton").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("camnewton")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.camnewton").css("display","block");
 				$(".Ppage.camnewton").addClass("alive");
@@ -4046,7 +3486,7 @@ playerArray[50] = new Array(23);
 			$(".andreellington").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("andreellington")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.andreellington").css("display","block");
 				$(".Ppage.andreellington").addClass("alive");
@@ -4069,7 +3509,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("weswelker")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.weswelker").css("display","block");
 				$(".Ppage.weswelker").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4092,7 +3532,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("andrewluck")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.andrewluck").css("display","block");
 				$(".Ppage.andrewluck").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4114,7 +3554,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("percyharvin")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.percyharvin").css("display","block");
 				$(".Ppage.percyharvin").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4136,7 +3576,7 @@ playerArray[50] = new Array(23);
 			$(".vernondavis").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("vernondavis")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.vernondavis").css("display","block");
 				$(".Ppage.vernondavis").addClass("alive");
@@ -4160,7 +3600,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("trentrichardson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.trentrichardson").css("display","block");
 				$(".Ppage.trentrichardson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4182,7 +3622,7 @@ playerArray[50] = new Array(23);
 			$(".chrisjohnson").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("chrisjohnson")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.chrisjohnson").css("display","block");
 				$(".Ppage.chrisjohnson").addClass("alive");
@@ -4205,7 +3645,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("michaelcrabtree")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.michaelcrabtree").css("display","block");
 				$(".Ppage.michaelcrabtree").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4228,7 +3668,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("rayrice")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.rayrice").css("display","block");
 				$(".Ppage.rayrice").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4250,7 +3690,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("stevenjackson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.stevenjackson").css("display","block");
 				$(".Ppage.stevenjackson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4271,7 +3711,7 @@ playerArray[50] = new Array(23);
 		$(".tyhilton").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("tyhilton")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.tyhilton").css("display","block");
 				$(".Ppage.tyhilton").addClass("alive");
@@ -4293,7 +3733,7 @@ playerArray[50] = new Array(23);
 			$(".rashadjennings").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("rashadjennings")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.rashadjennings").css("display","block");
 				$(".Ppage.rashadjennings").addClass("alive");
@@ -4316,7 +3756,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("shanevereen")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.shanevereen").css("display","block");
 				$(".Ppage.shanevereen").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4338,7 +3778,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("torreysmith")){
 
-
+						ycoord = $(this).offset().top;	
 				$(".Ppage.torreysmith").css("display","block");
 				$(".Ppage.torreysmith").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4360,7 +3800,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("joiquebell")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.joiquebell").css("display","block");
 				$(".Ppage.joiquebell").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4381,7 +3821,7 @@ playerArray[50] = new Array(23);
 			$(".julianedelman").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("julianedelman")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.julianedelman").css("display","block");
 				$(".Ppage.julianedelman").addClass("alive");
@@ -4403,7 +3843,7 @@ playerArray[50] = new Array(23);
 		$(".robgronkowski").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("robgronkowski")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.robgronkowski").css("display","block");
 				$(".Ppage.robgronkowski").addClass("alive");
@@ -4425,7 +3865,7 @@ playerArray[50] = new Array(23);
 		$(".nickfoles").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("nickfoles")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.nickfoles").css("display","block");
 				$(".Ppage.nickfoles").addClass("alive");
@@ -4448,7 +3888,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("cordarrellepatterson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.cordarrellepatterson").css("display","block");
 				$(".Ppage.cordarrellepatterson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4470,7 +3910,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("michaelfloyd")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.michaelfloyd").css("display","block");
 				$(".Ppage.michaelfloyd").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4493,7 +3933,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("stevanridley")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.stevanridley").css("display","block");
 				$(".Ppage.stevanridley").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4515,7 +3955,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("jeremymaclin")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.jeremymaclin").css("display","block");
 				$(".Ppage.jeremymaclin").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4537,7 +3977,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("bishopsankey")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.bishopsankey").css("display","block");
 				$(".Ppage.bishopsankey").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4558,7 +3998,7 @@ playerArray[50] = new Array(23);
 			$(".reggiewayne").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("reggiewayne")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.reggiewayne").css("display","block");
 				$(".Ppage.reggiewayne").addClass("alive");
@@ -4581,7 +4021,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("marquescolston")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.marquescolston").css("display","block");
 				$(".Ppage.marquescolston").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4604,7 +4044,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("russellwilson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.russellwilson").css("display","block");
 				$(".Ppage.russellwilson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4626,7 +4066,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("pierrethomas")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.pierrethomas").css("display","block");
 				$(".Ppage.pierrethomas").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4648,7 +4088,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("sammywatkins")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.sammywatkins").css("display","block");
 				$(".Ppage.sammywatkins").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4670,7 +4110,7 @@ playerArray[50] = new Array(23);
 		$(".kendallwright").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("kendallwright")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.kendallwright").css("display","block");
 				$(".Ppage.kendallwright").addClass("alive");
@@ -4693,7 +4133,7 @@ playerArray[50] = new Array(23);
 		$(".jasonwitten").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("jasonwitten")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.jasonwitten").css("display","block");
 				$(".Ppage.jasonwitten").addClass("alive");
@@ -4716,7 +4156,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("emmanuelsanders")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.emmanuelsanders").css("display","block");
 				$(".Ppage.emmanuelsanders").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4738,7 +4178,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("knowshonmoreno")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.knowshonmoreno").css("display","block");
 				$(".Ppage.knowshonmoreno").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4761,7 +4201,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("mikewallace")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.mikewallace").css("display","block");
 				$(".Ppage.mikewallace").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4784,7 +4224,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("goldentate")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.goldentate").css("display","block");
 				$(".Ppage.goldentate").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4806,7 +4246,7 @@ playerArray[50] = new Array(23);
 		$(".tobygerhart").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("tobygerhart")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.tobygerhart").css("display","block");
 				$(".Ppage.tobygerhart").addClass("alive");
@@ -4829,7 +4269,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("ericdecker")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.ericdecker").css("display","block");
 				$(".Ppage.ericdecker").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4850,7 +4290,7 @@ playerArray[50] = new Array(23);
 		$(".cecilshorts").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("cecilshorts")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.cecilshorts").css("display","block");
 				$(".Ppage.cecilshorts").addClass("alive");
@@ -4874,7 +4314,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("terrancewilliams")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.terrancewilliams").css("display","block");
 				$(".Ppage.terrancewilliams").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4898,7 +4338,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("mauricejonesdrew")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.mauricejonesdrew").css("display","block");
 				$(".Ppage.mauricejonesdrew").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4920,7 +4360,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("chrisivory")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.chrisivory").css("display","block");
 				$(".Ppage.chrisivory").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -4941,7 +4381,7 @@ playerArray[50] = new Array(23);
 		$(".fredjackson").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("fredjackson")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.fredjackson").css("display","block");
 				$(".Ppage.fredjackson").addClass("alive");
@@ -4963,7 +4403,7 @@ playerArray[50] = new Array(23);
 		$(".dannywoodhead").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("dannywoodhead")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.dannywoodhead").css("display","block");
 				$(".Ppage.dannywoodhead").addClass("alive");
@@ -4986,7 +4426,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("joshgordon")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.joshgordon").css("display","block");
 				$(".Ppage.joshgordon").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5008,7 +4448,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("darrensproles")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.darrensproles").css("display","block");
 				$(".Ppage.darrensproles").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5030,7 +4470,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("anquanboldin")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.anquanboldin").css("display","block");
 				$(".Ppage.anquanboldin").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5052,7 +4492,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("deangelowilliams")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.deangelowilliams").css("display","block");
 				$(".Ppage.deangelowilliams").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5074,7 +4514,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("davidwilson")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.davidwilson").css("display","block");
 				$(".Ppage.davidwilson").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5096,7 +4536,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("bernardpierce")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.bernardpierce").css("display","block");
 				$(".Ppage.bernardpierce").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5117,7 +4557,7 @@ playerArray[50] = new Array(23);
 			$(".deandrehopkins").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("deandrehopkins")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.deandrehopkins").css("display","block");
 				$(".Ppage.deandrehopkins").addClass("alive");
@@ -5140,7 +4580,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("rileycooper")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.rileycooper").css("display","block");
 				$(".Ppage.rileycooper").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5162,7 +4602,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("jordancameron")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.jordancameron").css("display","block");
 				$(".Ppage.jordancameron").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5184,7 +4624,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("dannyamendola")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.dannyamendola").css("display","block");
 				$(".Ppage.dannyamendola").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5206,7 +4646,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("seahawksd")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.seahawksd").css("display","block");
 				$(".Ppage.seahawksd").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5227,7 +4667,7 @@ playerArray[50] = new Array(23);
 			$(".colinkaepernick").click(function(){
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("colinkaepernick")){
-
+						ycoord = $(this).offset().top;
 
 				$(".Ppage.colinkaepernick").css("display","block");
 				$(".Ppage.colinkaepernick").addClass("alive");
@@ -5250,7 +4690,7 @@ playerArray[50] = new Array(23);
 			if(mainbody.is(":visible")){
 				if($(this).hasClass("mattryan")){
 
-
+						ycoord = $(this).offset().top;
 				$(".Ppage.mattryan").css("display","block");
 				$(".Ppage.mattryan").addClass("alive");
 				$(".containme").css("z-index", "1000");
@@ -5279,25 +4719,11 @@ playerArray[50] = new Array(23);
 			});
 
 			$(".holder").css("display","block");
+			window.scrollTo(50, ycoord);
 
 			return false;
 
 		});
-			$("button").click(function(){
-			$("#playerGrid").css("display","block");
-			$("#inputs").css("display","block");
-			$(".containme").css("position","fixed");
-			mainbody.slideDown(1000,function(){
-			$(".containme").css("z-index","0");
-			$(".Ppage.alive").css("display","none");
-			$(".alive").removeClass("alive");
-			});
-
-			$(".holder").css("display","block");
-
-			return false;
-
-		});//will eventually remove this
 
 
 	});//hover
