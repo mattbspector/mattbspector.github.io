@@ -186,10 +186,19 @@ td{
 	position: relative;
 	display: block;
 	z-index: 10;
+	opacity: 1;
+
+
 }
 
 #playerGrid a:hover{
-	opacity: 0.7;
+
+	transition: ease-in-out 0.5s opacity;
+	-webkit-transition: ease-in-out 0.5s opacity;
+	-ms-transition: ease-in-out 0.5s opacity;
+	-o-transition: ease-in-out 0.5s opacity;
+	-moz-transition: ease-in-out 0.5s opacity;
+	opacity: 0.6;
 
 }
 
@@ -197,6 +206,7 @@ a img{
 	display:block;
 	margin: auto auto;
 	max-height: 189.8px;
+
 }
 
 .bears{
@@ -358,7 +368,6 @@ a img{
 a h2{
 	padding: 0;
 	margin: 0;
-	width: cover;
 	background-color:#222; 
 	margin-top: -16.5px;
 	margin-bottom: 5px;
@@ -368,6 +377,23 @@ a h2{
 	color: #FFF;
 	opacity: 0.9;
 
+
+
+}
+
+
+.num{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	font-size: 60px;
+	font-style: none;
+	/*border-right: 2px #AAA solid;*/
+	color: #222;
+	float: left;
+	font-weight: 900;
+	margin-top: 10%;
+	margin-left: 4%;
 
 
 }

@@ -1,10 +1,27 @@
 $(document).ready(function(){
 
-
  var $window = $(window);
 
         // Function to handle changes to style classes based on window width
         function checkWidth() {
+        if($window.width() < 660)
+       	{
+       		$("#playerGrid a").removeClass('span_4_of_12');
+       		$("#playerGrid a").removeClass('span_3_of_12');
+       		$("#playerGrid a").addClass('span_6_of_12');
+       	}
+     
+       	if(($window.width()  >= 660) && ($window.width() < 890))
+       	{	
+       		$("#playerGrid a").removeClass('span_6_of_12');
+       		$("#playerGrid a").removeClass('span_3_of_12');
+       		$("#playerGrid a").addClass('span_4_of_12');
+       	}
+       	if($window.width() >= 890)
+       	{
+       		$("#playerGrid a").removeClass('span_4_of_12');
+       		$("#playerGrid a").addClass('span_3_of_12');
+       	}
         if ($window.width() < 480) {
             $('.sec').addClass('span_12_of_12');
             $('.rightarrow').hide();
@@ -2207,6 +2224,45 @@ playerArray[99] = new Array(17);
 	playerArray[99][16] = "jordanreed";
 
 
+	playerArray[100] = new Array(17);
+	playerArray[100][0] = 0;//COMPLETIONS
+	playerArray[100][1] = 0;//PASSING YARDS
+	playerArray[100][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[100][3] = 0;//INTERCEPTIONS
+	playerArray[100][4] = 320;//RUSH YARDS
+	playerArray[100][5] = 2.6;//RUSHING TOUCHDOWNS
+	playerArray[100][6] = 48.3;//RECEPTIONS
+	playerArray[100][7] = 424;//RECEIVING YARDS
+	playerArray[100][8] = 1.9;//RECEIVING TOUCHDOWNS
+	playerArray[100][9] = 1.2;//FUMBLES
+	playerArray[100][10] = 0;//TOTAL POINTS
+	playerArray[100][11] = 0;//BASELINE 
+	playerArray[100][12] = "Darren Sproles";//NAME
+	playerArray[100][13] = "RB"; //POSITION
+	playerArray[100][14] = "eagles"; //TEAM
+	playerArray[100][15] = "Images/Darren-Sproles.png";//PIC
+	playerArray[100][16] = "darrensproles";
+
+	playerArray[101] = new Array(17);
+	playerArray[101][0] = 0;//COMPLETIONS
+	playerArray[101][1] = 0;//PASSING YARDS
+	playerArray[101][2] = 0;//PASSING TOUCHDOWNS
+	playerArray[101][3] = 0;//INTERCEPTIONS
+	playerArray[101][4] = 373;//RUSH YARDS
+	playerArray[101][5] = 3;//RUSHING TOUCHDOWNS
+	playerArray[101][6] = 46.8;//RECEPTIONS
+	playerArray[101][7] = 421;//RECEIVING YARDS
+	playerArray[101][8] = 2.2;//RECEIVING TOUCHDOWNS
+	playerArray[101][9] = 1.6;//FUMBLES
+	playerArray[101][10] = 0;//TOTAL POINTS
+	playerArray[101][11] = 0;//BASELINE 
+	playerArray[101][12] = "Danny Woodhead";//NAME
+	playerArray[101][13] = "RB"; //POSITION
+	playerArray[101][14] = "chargers"; //TEAM
+	playerArray[101][15] = "Images/Danny-Woodhead.png";//PIC
+	playerArray[101][16] = "dannywoodhead";
+
+
 
 
 	var helpme = $("#player-0");
@@ -2266,7 +2322,7 @@ playerArray[99] = new Array(17);
 			var ptsallowed28 = parseFloat($(".pts28").val());
 
 
-			for(var i = 0; i < 100; i = i + 1){
+			for(var i = 0; i < 102; i = i + 1){
 				if(playerArray[i][13] == "D/ST")
 				{	if(playerArray[i][0]/16 == 0)
 					{
@@ -2352,25 +2408,25 @@ playerArray[99] = new Array(17);
 
 
 
-			for(var i = 0; i < 100; i = i + 1){
+			for(var i = 0; i < 102; i = i + 1){
 
-				if(playerArray[i][13] == "QB" && (qbnum <= qbBase))
+				if(playerArray[i][13] == "QB" && (qbnum < qbBase))
 				{
 					qbcount = i;
 
 					qbnum = qbnum + 1;
 				}
-				if(playerArray[i][13] == "RB" && (rbnum <= rbBase))
+				if(playerArray[i][13] == "RB" && (rbnum < rbBase))
 				{
 					rbcount = i;
 					rbnum = rbnum + 1;
 				}
-				if(playerArray[i][13] == "TE" && (tenum <= teBase))
+				if(playerArray[i][13] == "TE" && (tenum < teBase))
 				{
 					tecount = i;
 					tenum = tenum + 1;
 				}
-				if(playerArray[i][13] == "WR" && (wrnum <= wrBase))
+				if(playerArray[i][13] == "WR" && (wrnum < wrBase))
 				{
 					wrcount = i;
 					wrnum = wrnum + 1;
@@ -2391,7 +2447,7 @@ playerArray[99] = new Array(17);
 			}
 			//potential error check here
 
-			for(var i = 0; i < 100; i = i + 1)
+			for(var i = 0; i < 102; i = i + 1)
 			{
 				if(playerArray[i][13] == "QB")
 				{
@@ -2430,7 +2486,7 @@ playerArray[99] = new Array(17);
 			var counter = 0;
 			var firstone = $(".firstsec");
 
-			for(var i = 0; i < 100; i = i + 1){
+			for(var i = 0; i < 102; i = i + 1){
 
 				
 					
@@ -2448,26 +2504,18 @@ playerArray[99] = new Array(17);
 					$(".current").addClass(playerArray[i][16]);
 					$(".current").addClass("new");
 
-					if(counter < 3)
-					{
+					
 						var nextlink  = $(".current").next();
 						$(".current").removeClass("current");
 						nextlink.addClass("current");
 						counter = counter + 1;
-					}
-					else
-					{
-						var nextlink = firstone.nextAll().first().children().first();
-						$(".current").removeClass("current");
-						nextlink.addClass("current");
-						firstone = firstone.nextAll().first();
-						counter = 0;
-					}
+					
+					
 
 			}
 
 			$("#playerGrid").css("display","block");
-			for(var i = 0; i < 100; i = i + 1)
+			for(var i = 0; i < 102; i = i + 1)
 			{
 				playerArray[i][10] = 0;
 				playerArray[i][11] = 0;
