@@ -4185,6 +4185,7 @@ playerArray[110] = new Array(17);
 				$(ppgaeplayername).addClass("alive");
 				$(".containme").css("z-index", "1000");
 				mainbody.slideUp(1300, function(){
+					$(".instructions").hide();
 					$("#playerGrid").hide();
 					$("#inputs").hide();
 					$(".containme").css("position","relative");
@@ -4202,9 +4203,11 @@ playerArray[110] = new Array(17);
 
 		})																	
 		$(".buttonClose").click(function(){
+
 			$("#playerGrid").css("display","block");
 			$("#inputs").css("display","block");
 			$(".containme").css("position","fixed");
+			$(".instructions").show();
 			mainbody.slideDown(1000,function(){
 			$(".containme").css("z-index","0");
 			$(".Ppage.alive").css("display","none");
