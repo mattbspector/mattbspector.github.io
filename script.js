@@ -802,7 +802,7 @@ playerArray[12] = new Array(17);
 	playerArray[12][12] = "A.J. Green";//NAME
 	playerArray[12][13] = "WR"; //POSITION
 	playerArray[12][14] = "bengals"; //TEAM
-	playerArray[12][15] = "Images/Aj-Green.png";//PIC
+	playerArray[12][15] = "Images/AJ-Green.png";//PIC
 	playerArray[12][16] = "ajgreen";
 playerArray[13] = new Array(17);
 	playerArray[13][0] = 0;//COMPLETIONS
@@ -3061,7 +3061,7 @@ playerArray[110] = new Array(17);
 	playerArray[125][13] = "WR"; //POSITION
 	playerArray[125][14] = "texans"; //TEAM
 	playerArray[125][15] = "Images/Deandre-Hopkins.png";//PIC
-	playerArray[125][16] = "deandrehopkins";
+	playerArray[125][16] = "deAndrehopkins";
 
 				playerArray[126] = new Array(17);
 	playerArray[126][0] = 326;//COMPLETIONS
@@ -4155,7 +4155,7 @@ playerArray[110] = new Array(17);
 			var helper = $("#player-0");
 			$(".current").removeClass("current");
 			helper.addClass("current");
-
+			$("footer").css("display", "block");
 	
 			return false;
 		}); //submit button
