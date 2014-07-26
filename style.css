@@ -3,7 +3,56 @@ body{
 	margin: 0;
 	height: 100%;
 }
+.instructions{
+	height: 330px;
+	background-color: #222;
+	padding: 1em 0;
+	float: left;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+}
+
+.filler{
+	padding: 1em 0;
+	float: left;
+}
+.submitBar{
+	height: 100px;
+	background-color: #222;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	padding: 1em 0;
+	position: relative;
+
+}
+
+.submitBar a{
+	text-decoration: none;
+	color: #FFF;
+	background-color: #68228B;
+	padding: 0.7em;
+	border-radius: 5px;
+	position: absolute;
+	left: 33%;
+	width: 30%;
+	top: 14px;
+	font-size: 40px;
+	font-weight: 700;
+
+
+}
+.submitBar a:hover{
+	opacity: 0.5;
+
+}
 /*star nav bar*/
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
 #inputs{
 	background-color: #cb9ae0;
 }
@@ -11,6 +60,26 @@ body{
 .navbar{
 	height: 400px;
 	margin: 0;
+	text-align: center;
+	display: none;
+
+}
+.topBarcustom p{
+	text-align: center;
+	color: #FFF;
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+.topBarpreset p{
+	text-align: center;
+	color: #FFF;
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+
 }
 .bar{
 
@@ -169,6 +238,78 @@ td{
 	z-index: 13;
 	color: #222;
 }
+.topBarcustom{
+	height: 50px;
+	padding: 1.5em 0;
+	background-color: #333;
+}
+.topBarpreset{
+	height: 50px;
+	padding: 1.3em 0;
+	background-color: #999;
+	text-decoration: none;
+
+}
+
+.topBarpreset:hover{
+	background-color: #BBB;
+	color: #8e44ad;
+	transition: ease-in-out 0.5s background-color;
+	-webkit-transition: ease-in-out 0.5s background-color;
+	-ms-transition: ease-in-out 0.5s background-color;
+	-o-transition: ease-in-out 0.5s background-color;
+	-moz-transition: ease-in-out 0.5s background-color;
+}
+.topBarpreset:hover p{
+	transition: ease-in-out 0.3s color;
+	-webkit-transition: ease-in-out 0.3s color;
+	-ms-transition: ease-in-out 0.3s color;
+	-o-transition: ease-in-out 0.3s color;
+	-moz-transition: ease-in-out 0.3s color;
+
+	color: #8e44ad;
+}
+
+.topBarcustom:hover{
+	background-color: #444;
+	color: #8e44ad;
+	transition: ease-in-out 0.5s background-color;
+	-webkit-transition: ease-in-out 0.5s background-color;
+	-ms-transition: ease-in-out 0.5s background-color;
+	-o-transition: ease-in-out 0.5s background-color;
+	-moz-transition: ease-in-out 0.5s background-color;
+}
+.topBarcustom:hover p{
+	transition: ease-in-out 0.3s color;
+	-webkit-transition: ease-in-out 0.3s color;
+	-ms-transition: ease-in-out 0.3s color;
+	-o-transition: ease-in-out 0.3s color;
+	-moz-transition: ease-in-out 0.3s color;
+
+	color: #8e44ad;
+}
+
+.presetbar{
+	text-align: center;
+	font-size: 1.3em;
+	background-color: #555;
+	display: none;
+}
+.presetbar .styled select{
+   background:  transparent;
+   width: 170px;
+   padding: 5px;
+   font-size: 20px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.presetbar .styled{
+   width: 140px;
+   height: 30px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
 /*end nav bar*/
 
 
@@ -190,7 +331,9 @@ td{
 
 
 }
-
+#playerGrid{
+	display: none;
+}
 #playerGrid a:hover{
 
 	transition: ease-in-out 0.5s opacity;
@@ -201,6 +344,7 @@ td{
 	opacity: 0.6;
 
 }
+
 
 a img{
 	display:block;
@@ -397,6 +541,35 @@ a h2{
 
 
 }
+
+.pos{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	font-size: 27px;
+	font-style: none;
+	/*border-right: 2px #AAA solid;*/
+	color: #FFF;
+	float: right;
+	font-weight: 900;
+	margin-top: -20%;
+	margin-left: 78%;
+	opacity: 0;
+
+
+}
+
+#playerGrid a:hover .pos{
+
+	transition: ease-in-out 0.5s opacity;
+	-webkit-transition: ease-in-out 0.5s opacity;
+	-ms-transition: ease-in-out 0.5s opacity;
+	-o-transition: ease-in-out 0.5s opacity;
+	-moz-transition: ease-in-out 0.5s opacity;
+	opacity: 1;
+
+
+}
 .last h2{
 	border-right: none;
 }
@@ -407,6 +580,8 @@ footer{
 	color:#222;
 	position: absolute;
 	z-index: 100;
+	display: none;
+	
 }
 
 #inputs{
@@ -1517,7 +1692,9 @@ footer{
 	background-color: #FFF;
 	color: #222;
 }
-
+.pos{
+	font-size: 25px;
+}
 .styled select{
    background:  transparent;
    width: 130px;
@@ -1575,6 +1752,10 @@ footer{
 	.rushingsection .boxes{
 		margin-top: 30px;
 	}
+	.pos{
+	font-size: 25px;
+	margin-left: 75%;
+}
 
 }
 @media only screen and (max-width: 905px) {
@@ -1653,6 +1834,22 @@ footer{
  	padding: 0px;
  }
 
+
+ .presetbar .styled select{
+   background:  transparent;
+   width: 120px;
+   padding: 5px;
+   font-size: 20px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.presetbar .styled{
+   width: 90px;
+   height: 30px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
 }
 @media only screen and (max-width: 764px) {
 	.should p, .shouldnot p{
@@ -1726,6 +1923,22 @@ footer{
 		margin: 5px;
 	}
 
+ .presetbar .styled select{
+   background:  transparent;
+   width: 100px;
+   padding: 2px;
+   font-size: 20px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.presetbar .styled{
+   width: 70px;
+   height: 30px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
+
 }
 @media only screen and (max-width: 567px) {
 	.rushingsection .boxes{
@@ -1761,6 +1974,48 @@ footer{
 	width: 30px;
 	margin-top: 330px;
 	}
+
+	 .presetbar .styled select{
+   background:  transparent;
+   width: 80px;
+   padding: 0px;
+   font-size: 16px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.presetbar .styled{
+   width: 50px;
+   height: 30px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
+
+.presetbar{
+	font-size: 12px;
+}
+
+
+
+.topBarcustom p{
+	text-align: center;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+
+}
+.topBarpreset p{
+	text-align: center;
+	color: #FFF;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	
+
+}
 
 }
 
