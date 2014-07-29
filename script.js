@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+$("#playerGrid").hide();
  var $window = $(window);
 
  		$(".presetbar .numteamspreset").prop("selectedIndex", -1);

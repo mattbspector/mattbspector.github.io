@@ -355,7 +355,7 @@ td{
 
 }
 #playerGrid{
-	display: none;
+	display: block;
 }
 #playerGrid a:hover{
 
