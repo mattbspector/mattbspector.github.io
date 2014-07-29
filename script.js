@@ -3064,8 +3064,8 @@ playerArray[110] = new Array(17);
 	playerArray[125][12] = "DeAndre Hopkins";//NAME
 	playerArray[125][13] = "WR"; //POSITION
 	playerArray[125][14] = "texans"; //TEAM
-	playerArray[125][15] = "Images/Deandre-Hopkins.png";//PIC
-	playerArray[125][16] = "deAndrehopkins";
+	playerArray[125][15] = "Images/DeAndre-Hopkins.png";//PIC
+	playerArray[125][16] = "deandrehopkins";
 
 				playerArray[126] = new Array(17);
 	playerArray[126][0] = 326;//COMPLETIONS
