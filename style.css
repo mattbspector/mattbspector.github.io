@@ -4,7 +4,7 @@ body{
 	height: 100%;
 }
 .instructions{
-	height: 330px;
+	height: 450px;
 	background-color: #222;
 	padding: 1em 0;
 	float: left;
@@ -12,7 +12,25 @@ body{
 	color: #FFF;
 	text-align: center;
 }
+.explanation{
+	font-size: 2em;
+	font-weight: 700;
+}
+.PageHeader h1
+{
+	font-size: 6em;
+	color: #FFF;
+	font-weight: 900;
+	margin: 0;
+	padding: 0;
 
+
+}
+.description{
+	font-size: 2.4em;
+	font-weight: 700;
+	margin-top: 4%;
+}
 .filler{
 	padding: 1em 0;
 	float: left;
@@ -47,6 +65,7 @@ body{
 	opacity: 0.5;
 
 }
+
 /*star nav bar*/
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
@@ -115,6 +134,10 @@ input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 	padding: 0;
 
 
+}
+
+#mainbody{
+	background-color: #FFF;
 }
 .boxes{
 	float: left;
@@ -705,9 +728,14 @@ footer{
 	margin: 5%;
 	line-height: 1.5;
 	font-size: 20px;
+	overflow: auto;
+	height: 75%;
 }
 .threefacts p{
 	font-size: 18px;
+	overflow: auto;
+	height:20%;
+	
 }
 .funnyNames p{
 	margin: 0;
@@ -2014,6 +2042,14 @@ footer{
 	margin: 0;
 	padding: 0;
 	
+
+}
+
+
+#submit{
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: -4%;
 
 }
 

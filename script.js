@@ -398,6 +398,8 @@ $(document).ready(function(){
 			$(".navbar").css("background-color", "#efccff");
     	}
 
+    	return false;
+
     })
 
     	 $(".leftarrow").click(function(){
@@ -435,6 +437,8 @@ $(document).ready(function(){
 			slider.addClass("active");
 			$(".navbar").css("background-color", "#cb9ae0");
     	}
+
+    	return false;
     });
 
 	$(".bar").click(function(){
@@ -2859,7 +2863,7 @@ playerArray[110] = new Array(17);
 	playerArray[115][13] = "QB"; //POSITION
 	playerArray[115][14] = "steelers"; //TEAM
 	playerArray[115][15] = "Images/Ben-Roethlisberger.png";//PIC
-	playerArray[115][16] = "benrothlisberger";
+	playerArray[115][16] = "benroethlisberger";
 
 
 
