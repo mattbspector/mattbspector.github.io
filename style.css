@@ -2,15 +2,37 @@ body{
 	font-family: 'Lato';
 	margin: 0;
 	height: 100%;
+	background-color: #222;
 }
+
+/*.topnav{
+	padding: 1em 0;
+	height: 15px;
+	background-color: #555;
+	position: fixed;
+	top: 0;
+}
+.topnav img{
+	max-height: 50px;
+	max-width: 50px;
+	margin-top: -2%;
+	float: left;
+	margin-left: 88%;
+}*/
+
+.purppurp{
+	font-weight: 900; color:#9b50ba; font-size:80px;
+}
+
 .instructions{
-	height: 450px;
+	height: 400px;
 	background-color: #222;
 	padding: 1em 0;
 	float: left;
 	margin: 0;
 	color: #FFF;
 	text-align: center;
+
 }
 .explanation{
 	font-size: 2em;
@@ -569,7 +591,7 @@ a h2{
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	font-size: 27px;
+	font-size: 23px;
 	font-style: none;
 	/*border-right: 2px #AAA solid;*/
 	color: #FFF;
@@ -1802,6 +1824,9 @@ footer{
 
 }
 @media only screen and (max-width: 836px) {
+	.purppurp{
+	font-weight: 900; color:#9b50ba; font-size:65px;
+}
 	.rushingsection .boxes{
 		font-size: 12px;
 	}
@@ -1824,6 +1849,7 @@ footer{
 
 
 @media only screen and (max-width: 786px) {
+
 	.rushingsection .boxes{
 		font-size: 11px;
 	}
@@ -1921,7 +1947,20 @@ footer{
 }
 
 @media only screen and (max-width: 681px) {
+	.purppurp{
+	font-weight: 900; color:#9b50ba; font-size:60px;
+}
 
+		.PageHeader h1
+{
+	font-size: 4em;
+	color: #FFF;
+	font-weight: 900;
+	margin: 0;
+	padding: 0;
+
+
+}
 	.passingsection input{
 	border:1px solid #FFF;
 	border-radius:20px;
@@ -1969,6 +2008,22 @@ footer{
 
 }
 @media only screen and (max-width: 567px) {
+			.PageHeader h1
+{
+	font-size: 2em;
+	color: #FFF;
+	font-weight: 900;
+	margin: 0;
+	padding: 0;
+
+
+}
+
+
+.purppurp{
+	font-weight: 900; color:#9b50ba; font-size:25px;
+}
+
 	.rushingsection .boxes{
 		font-size: 10px;
 	}

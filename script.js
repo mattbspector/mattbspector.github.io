@@ -1,5 +1,20 @@
 $(document).ready(function(){
+
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>300)
+     {
+        $('.topnav').fadeOut();
+     }
+    else
+     {
+      $('.topnav').fadeIn();
+     }
+ });
+
 $("#playerGrid").hide();
+$(".submitBar").hide();
  var $window = $(window);
 
  		$(".presetbar .numteamspreset").prop("selectedIndex", -1);
@@ -9,7 +24,8 @@ $("#playerGrid").hide();
  		var apple = 0;
  		var orange = 0;
  		var berry = 0;
- 		$(".topBarcustom").click(function(){
+ 	$(".topBarcustom").click(function(){
+ 			$(".submitBar").show();
  			apple = 1;
  			presetLeagueSettings();
  		if($(".navbar").is(":visible")){
@@ -31,6 +47,7 @@ $("#playerGrid").hide();
  		});
 
  		$(".topBarpreset").click(function(){
+ 			$(".submitBar").show();
  			apple = 0;
  		if($(".presetbar").is(":visible")){
  			return false;
@@ -3758,6 +3775,7 @@ playerArray[110] = new Array(17);
 	helpme.addClass("current");
 
 		$("#submit").click(function(){
+			$("body").css("background-color","#FFF");
 			if(apple == 0)
 			{
 				presetLeagueSettings();
@@ -4000,6 +4018,8 @@ playerArray[110] = new Array(17);
 			var rbBase = Math.ceil(1.72625 * (RBStarter + (RBWRFlex / 2.0) + (RBWRTEFlex / 3.0)) * numteams);
 			var wrBase = Math.ceil(1.3975 * (WRStarter + (RBWRFlex / 2.0) + (RBWRTEFlex / 3.0)) * numteams);
 			var teBase = Math.ceil(0.92975 * (TEStarter + (RBWRTEFlex / 3.0)) * numteams);
+			var kBase = KStarter;
+			var dBase = DStarter;
 
 			var qbnum = 0;
 			var rbnum = 0;
@@ -4041,15 +4061,15 @@ playerArray[110] = new Array(17);
 					wrcount = i;
 					wrnum = wrnum + 1;
 				}
-				if(playerArray[i][13] == "K" && Knum == 0)
+				if(playerArray[i][13] == "K" && (Knum < kBase))
 				{
 					Kcount = i;
-					Knum = 1;
+					Knum = Knum + 1;
 				}
-				if(playerArray[i][13] == "D/ST" && Dnum == 0)
+				if(playerArray[i][13] == "D/ST" && (Dnum < dBase))
 				{
 					Dcount = i;
-					Dnum = 1;
+					Dnum = Dnum + 1;;
 				}
 
 			
