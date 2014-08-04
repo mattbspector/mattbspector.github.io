@@ -32,6 +32,8 @@ body{
 	margin: 0;
 	color: #FFF;
 	text-align: center;
+	position: fixed;
+	top: 0;
 
 }
 .explanation{
@@ -287,12 +289,18 @@ td{
 	height: 50px;
 	padding: 1.5em 0;
 	background-color: #333;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
 }
 .topBarpreset{
 	height: 50px;
 	padding: 1.3em 0;
 	background-color: #999;
 	text-decoration: none;
+	position: fixed;
+	bottom: 98px;
+	width: 100%;
 
 }
 
@@ -1948,7 +1956,7 @@ footer{
 
 @media only screen and (max-width: 681px) {
 	.purppurp{
-	font-weight: 900; color:#9b50ba; font-size:60px;
+	font-weight: 900; color:#9b50ba; font-size:55px;
 }
 
 		.PageHeader h1
@@ -2008,6 +2016,20 @@ footer{
 
 }
 @media only screen and (max-width: 567px) {
+
+	.and{
+		font-size: 20px;
+	}
+		.instructions{
+	height: 230px;
+	background-color: #222;
+	padding: 1em 0;
+	float: left;
+	margin: 0;
+	color: #FFF;
+	text-align: center;
+
+}
 			.PageHeader h1
 {
 	font-size: 2em;
@@ -2115,6 +2137,23 @@ footer{
 
 
 @media only screen and (max-width: 480px) {
+
+	 .presetbar .styled select{
+   background:  transparent;
+   width: 60px;
+   padding: 0px;
+   font-size: 16px;
+   border: 1px solid #CCC;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.presetbar .styled{
+   width: 30px;
+   height: 30px;
+   overflow: hidden;
+   background: url(Images/dropdown-arrow.png) no-repeat 96% #ddd;
+}
+
 	.bar{
 		height: 80px;
 	}

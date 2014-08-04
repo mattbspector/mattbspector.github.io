@@ -25,6 +25,10 @@ $(".submitBar").hide();
  		var orange = 0;
  		var berry = 0;
  	$(".topBarcustom").click(function(){
+ 		$(".instructions").css("position","static");
+ 		$(".topBarpreset").css("position","static");
+ 	
+ 		$(".topBarcustom").css("position","static");
  			$(".submitBar").show();
  			apple = 1;
  			presetLeagueSettings();
@@ -47,6 +51,10 @@ $(".submitBar").hide();
  		});
 
  		$(".topBarpreset").click(function(){
+ 		$(".instructions").css("position","static");
+ 		$(".topBarpreset").css("position","static");
+ 	
+ 		$(".topBarcustom").css("position","static");
  			$(".submitBar").show();
  			apple = 0;
  		if($(".presetbar").is(":visible")){
@@ -4015,7 +4023,7 @@ playerArray[110] = new Array(17);
 			playerArray.sort(function(a,b){return b[10] - a[10]}); //sort
 
 			var qbBase = Math.ceil(1.3975 * QBStarter * numteams);
-			var rbBase = Math.ceil(1.72625 * (RBStarter + (RBWRFlex / 2.0) + (RBWRTEFlex / 3.0)) * numteams);
+			var rbBase = Math.ceil(1.80625 * (RBStarter + (RBWRFlex / 2.0) + (RBWRTEFlex / 3.0)) * numteams);
 			var wrBase = Math.ceil(1.3975 * (WRStarter + (RBWRFlex / 2.0) + (RBWRTEFlex / 3.0)) * numteams);
 			var teBase = Math.ceil(0.92975 * (TEStarter + (RBWRTEFlex / 3.0)) * numteams);
 			var kBase = KStarter;
