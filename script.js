@@ -32,7 +32,7 @@ $(".possort a").click(function(){
 		helper.addClass("current");
 		$(".firstsec a").show();
 		$(".theone").removeClass("theone");
-	$(this).addClass("theone");
+	    $(this).addClass("theone");
 		return false;
 
 	}
@@ -4543,7 +4543,10 @@ playerArray[110] = new Array(17);
 
 
 
-		function mainsort(){$(".possort").show();
+		function mainsort(){
+			$(".possort .theone").removeClass("theone");
+			$(".possort .ALL").addClass("theone");
+			$(".possort").show();
 			$("body").css("background-color","#FFF");
 			if(apple == 0)
 			{
@@ -4964,6 +4967,7 @@ playerArray[110] = new Array(17);
 			$(".current").removeClass("current");
 			helper.addClass("current");
 			$("footer").css("display", "block");
+
 	
 			return false;
 			}
