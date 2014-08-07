@@ -13,6 +13,62 @@ $(window).scroll(function() {
      }
  });
 
+$(".possort a").click(function(){
+	if($(this).hasClass("ALL"))
+	{
+		var num = 1;
+		for(var i = 1; i < 193; i = i+1)
+		{
+				$(".current .num").text(num);
+				num = num + 1;
+
+			var nextlink  = $(".current").next();
+			$(".current").removeClass("current");
+			nextlink.addClass("current");
+		}
+
+		var helper = $("#player-0");
+		$(".current").removeClass("current");
+		helper.addClass("current");
+		$(".firstsec a").show();
+		$(".theone").removeClass("theone");
+	$(this).addClass("theone");
+		return false;
+
+	}
+	var posclasses = $(this).attr('class').split(/\s+/);
+	var sortedone = posclasses[0];
+	var sortedblock = ".firstsec" +" " +"a" +"." + sortedone;
+	$(".firstsec a").hide();
+	$(sortedblock).show();
+	
+
+	var num = 1;
+	for(var i = 1; i < 193; i = i+1)
+	{
+		if($(".current").is(":visible"))
+		{
+		$(".current .num").text(num);
+		num = num + 1;
+		}
+
+		var nextlink  = $(".current").next();
+		$(".current").removeClass("current");
+		nextlink.addClass("current");
+	}
+
+	var helper = $("#player-0");
+	$(".current").removeClass("current");
+	helper.addClass("current");
+
+	$(".theone").removeClass("theone");
+	$(this).addClass("theone");
+	return false;
+
+
+});
+
+
 $("#playerGrid").hide();
 $(".submitBar").hide();
  var $window = $(window);
@@ -2623,7 +2679,7 @@ playerArray[99] = new Array(17);
 	playerArray[102][10] = 0;//TOTAL POINTS
 	playerArray[102][11] = 0;//BASELINE 
 	playerArray[102][12] = "Texans D/ST";//NAME
-	playerArray[102][13] = "D/ST"; //POSITION
+	playerArray[102][13] = "DST"; //POSITION
 	playerArray[102][14] = "texans"; //TEAM
 	playerArray[102][15] = "Images/Texans-DST.png";//PIC
 	playerArray[102][16] = "texansd";
@@ -2643,7 +2699,7 @@ playerArray[99] = new Array(17);
 	playerArray[103][10] = 0;//TOTAL POINTS
 	playerArray[103][11] = 0;//BASELINE 
 	playerArray[103][12] = "Rams D/ST";//NAME
-	playerArray[103][13] = "D/ST"; //POSITION
+	playerArray[103][13] = "DST"; //POSITION
 	playerArray[103][14] = "rams"; //TEAM
 	playerArray[103][15] = "Images/Rams-DST.png";//PIC
 	playerArray[103][16] = "ramsd";
@@ -2663,7 +2719,7 @@ playerArray[99] = new Array(17);
 	playerArray[104][10] = 0;//TOTAL POINTS
 	playerArray[104][11] = 0;//BASELINE 
 	playerArray[104][12] = "Chiefs D/ST";//NAME
-	playerArray[104][13] = "D/ST"; //POSITION
+	playerArray[104][13] = "DST"; //POSITION
 	playerArray[104][14] = "chiefs"; //TEAM
 	playerArray[104][15] = "Images/Chiefs-DST.png";//PIC
 	playerArray[104][16] = "chiefsd";
@@ -2784,7 +2840,7 @@ playerArray[110] = new Array(17);
 	playerArray[110][10] = 0;//TOTAL POINTS
 	playerArray[110][11] = 0;//BASELINE 
 	playerArray[110][12] = "Seahawks D/ST";//NAME
-	playerArray[110][13] = "D/ST"; //POSITION
+	playerArray[110][13] = "DST"; //POSITION
 	playerArray[110][14] = "seahawks"; //TEAM
 	playerArray[110][15] = "Images/Seahawks-DST.png";//PIC
 	playerArray[110][16] = "seahawksd";
@@ -2805,7 +2861,7 @@ playerArray[110] = new Array(17);
 	playerArray[111][10] = 0;//TOTAL POINTS
 	playerArray[111][11] = 0;//BASELINE 
 	playerArray[111][12] = "Fortyniners D/ST";//NAME
-	playerArray[111][13] = "D/ST"; //POSITION
+	playerArray[111][13] = "DST"; //POSITION
 	playerArray[111][14] = "fortyniners"; //TEAM
 	playerArray[111][15] = "Images/Fortyniners-DST.png";//PIC
 	playerArray[111][16] = "fortyninersd";
@@ -4233,7 +4289,7 @@ playerArray[110] = new Array(17);
 	playerArray[182][10] = 0;//TOTAL POINTS
 	playerArray[182][11] = 0;//BASELINE 
 	playerArray[182][12] = "Panthers D/ST";//NAME
-	playerArray[182][13] = "D/ST"; //POSITION
+	playerArray[182][13] = "DST"; //POSITION
 	playerArray[182][14] = "panthers"; //TEAM
 	playerArray[182][15] = "Images/Carolina-DST.png";//PIC
 	playerArray[182][16] = "panthersd";
@@ -4252,7 +4308,7 @@ playerArray[110] = new Array(17);
 	playerArray[183][10] = 0;//TOTAL POINTS
 	playerArray[183][11] = 0;//BASELINE 
 	playerArray[183][12] = "Bengals D/ST";//NAME
-	playerArray[183][13] = "D/ST"; //POSITION
+	playerArray[183][13] = "DST"; //POSITION
 	playerArray[183][14] = "bengals"; //TEAM
 	playerArray[183][15] = "Images/Cincinnati-DST.png";//PIC
 	playerArray[183][16] = "bengalsd";
@@ -4271,7 +4327,7 @@ playerArray[110] = new Array(17);
 	playerArray[184][10] = 0;//TOTAL POINTS
 	playerArray[184][11] = 0;//BASELINE 
 	playerArray[184][12] = "Cardinals D/ST";//NAME
-	playerArray[184][13] = "D/ST"; //POSITION
+	playerArray[184][13] = "DST"; //POSITION
 	playerArray[184][14] = "cardinals"; //TEAM
 	playerArray[184][15] = "Images/Cardinals-DST.png";//PIC
 	playerArray[184][16] = "cardinalsd";
@@ -4290,7 +4346,7 @@ playerArray[110] = new Array(17);
 	playerArray[185][10] = 0;//TOTAL POINTS
 	playerArray[185][11] = 0;//BASELINE 
 	playerArray[185][12] = "Patriots D/ST";//NAME
-	playerArray[185][13] = "D/ST"; //POSITION
+	playerArray[185][13] = "DST"; //POSITION
 	playerArray[185][14] = "patriots"; //TEAM
 	playerArray[185][15] = "Images/Patriots-DST.png";//PIC
 	playerArray[185][16] = "patriotsd";
@@ -4309,7 +4365,7 @@ playerArray[110] = new Array(17);
 	playerArray[186][10] = 0;//TOTAL POINTS
 	playerArray[186][11] = 0;//BASELINE 
 	playerArray[186][12] = "Broncos D/ST";//NAME
-	playerArray[186][13] = "D/ST"; //POSITION
+	playerArray[186][13] = "DST"; //POSITION
 	playerArray[186][14] = "broncos"; //TEAM
 	playerArray[186][15] = "Images/Broncos-DST.png";//PIC
 	playerArray[186][16] = "broncosd";
@@ -4328,7 +4384,7 @@ playerArray[110] = new Array(17);
 	playerArray[187][10] = 0;//TOTAL POINTS
 	playerArray[187][11] = 0;//BASELINE 
 	playerArray[187][12] = "Bears D/ST";//NAME
-	playerArray[187][13] = "D/ST"; //POSITION
+	playerArray[187][13] = "DST"; //POSITION
 	playerArray[187][14] = "bears"; //TEAM
 	playerArray[187][15] = "Images/Bears-DST.png";//PIC
 	playerArray[187][16] = "bearsd";
@@ -4347,7 +4403,7 @@ playerArray[110] = new Array(17);
 	playerArray[188][10] = 0;//TOTAL POINTS
 	playerArray[188][11] = 0;//BASELINE 
 	playerArray[188][12] = "Bills D/ST";//NAME
-	playerArray[188][13] = "D/ST"; //POSITION
+	playerArray[188][13] = "DST"; //POSITION
 	playerArray[188][14] = "bills"; //TEAM
 	playerArray[188][15] = "Images/Bills-DST.png";//PIC
 	playerArray[188][16] = "billsd";
@@ -4366,7 +4422,7 @@ playerArray[110] = new Array(17);
 	playerArray[189][10] = 0;//TOTAL POINTS
 	playerArray[189][11] = 0;//BASELINE 
 	playerArray[189][12] = "Colts D/ST";//NAME
-	playerArray[189][13] = "D/ST"; //POSITION
+	playerArray[189][13] = "DST"; //POSITION
 	playerArray[189][14] = "colts"; //TEAM
 	playerArray[189][15] = "Images/Colts-DST.png";//PIC
 	playerArray[189][16] = "coltsd";
@@ -4385,7 +4441,7 @@ playerArray[110] = new Array(17);
 	playerArray[190][10] = 0;//TOTAL POINTS
 	playerArray[190][11] = 0;//BASELINE 
 	playerArray[190][12] = "Ravens D/ST";//NAME
-	playerArray[190][13] = "D/ST"; //POSITION
+	playerArray[190][13] = "DST"; //POSITION
 	playerArray[190][14] = "ravens"; //TEAM
 	playerArray[190][15] = "Images/Ravens-DST.png";//PIC
 	playerArray[190][16] = "ravensd";
@@ -4405,7 +4461,7 @@ playerArray[110] = new Array(17);
 	playerArray[191][10] = 0;//TOTAL POINTS
 	playerArray[191][11] = 0;//BASELINE 
 	playerArray[191][12] = "Buccaneers D/ST";//NAME
-	playerArray[191][13] = "D/ST"; //POSITION
+	playerArray[191][13] = "DST"; //POSITION
 	playerArray[191][14] = "buccaneers"; //TEAM
 	playerArray[191][15] = "Images/Buccaneers-DST.png";//PIC
 	playerArray[191][16] = "buccaneersd";
@@ -4416,6 +4472,78 @@ playerArray[110] = new Array(17);
 	helpme.addClass("current");
 
 		$("#submit").click(function(){
+			
+			mainsort();
+		}); //submit button
+	
+	
+	var mainbody = $(".holder");
+	var ycoord = 0;
+	$("#playerGrid").hover(function(){
+
+
+
+		$("#playerGrid a").click(function(){
+		var classList = $(this).attr('class').split(/\s+/);
+
+		
+	
+			var playername = classList[1];
+			var ppgaeplayername = ".Ppage" + "." + playername;
+
+		if(mainbody.is(":visible")){
+				if($(this).hasClass(playername)){
+
+				ycoord = $(this).offset().top;
+				$(ppgaeplayername).css("display","block");
+				$(ppgaeplayername).addClass("alive");
+				$(".containme").css("z-index", "1000");
+				mainbody.slideUp(1300, function(){
+					$(".instructions").hide();
+					$("#playerGrid").hide();
+					$("#inputs").hide();
+					$(".containme").css("position","relative");
+					window.scrollTo(0, 0);
+
+
+				});
+			}
+					
+
+			}
+			return false;
+
+
+
+		})																	
+		$(".buttonClose").click(function(){
+
+			$("#playerGrid").css("display","block");
+			$("#inputs").css("display","block");
+			$(".containme").css("position","fixed");
+			$(".instructions").show();
+			mainbody.slideDown(1000,function(){
+			$(".containme").css("z-index","0");
+			$(".Ppage.alive").css("display","none");
+			$(".alive").removeClass("alive");
+			});
+
+			$(".holder").css("display","block");
+			window.scrollTo(50, ycoord);
+
+			return false;
+
+		});
+
+
+
+
+
+	});//hover
+
+
+
+		function mainsort(){$(".possort").show();
 			$("body").css("background-color","#FFF");
 			if(apple == 0)
 			{
@@ -4582,7 +4710,7 @@ playerArray[110] = new Array(17);
 
 
 			for(var i = 0; i < 192; i = i + 1){
-				if(playerArray[i][13] == "D/ST")
+				if(playerArray[i][13] == "DST")
 				{	if(playerArray[i][0]/16 == 0)
 					{
 						playerArray[i][10] = playerArray[i][10] + ((playerArray[i][0]/16) * ptsallowed0);
@@ -4707,7 +4835,7 @@ playerArray[110] = new Array(17);
 					Kcount = i;
 					Knum = Knum + 1;
 				}
-				if(playerArray[i][13] == "D/ST" && (Dnum < dBase))
+				if(playerArray[i][13] == "DST" && (Dnum < dBase))
 				{
 					Dcount = i;
 					Dnum = Dnum + 1;;
@@ -4740,7 +4868,7 @@ playerArray[110] = new Array(17);
 				{
 					playerArray[i][11] = playerArray[i][10] - 1000;
 				}
-				if(playerArray[i][13] == "D/ST")
+				if(playerArray[i][13] == "DST")
 				{
 					playerArray[i][11] = playerArray[i][10] - playerArray[Dcount][10];
 				}
@@ -4769,7 +4897,7 @@ playerArray[110] = new Array(17);
 					$('.current').append("<div class ='pos'>" + playerArray[i][13] + "</div>");
 					
 					$(".current").removeClass();
-					if(playerArray[i][13] == "D/ST")
+					if(playerArray[i][13] == "DST")
 					{
 						$(".current .pos").css("font-size", "20px");
 					}
@@ -4781,6 +4909,7 @@ playerArray[110] = new Array(17);
 
 					$(".current").addClass(playerArray[i][14]);
 					$(".current").addClass(playerArray[i][16]);
+					$(".current").addClass(playerArray[i][13]);
 					if($window.width() < 660)
 			       	{
 			       		$("#playerGrid a").addClass('span_6_of_12');
@@ -4806,10 +4935,24 @@ playerArray[110] = new Array(17);
 			}
 			berry = 1;
 
+
+
+			$(".firstsec a").show();
 			$("#playerGrid").slideDown(function(){
 				$("html, body").animate({
 					scrollTop: $("#playerGrid").offset().top},1500);
 			});
+
+			var helper = $("#player-0");
+			$(".current").removeClass("current");
+			helper.addClass("current");
+			for(i = 1; i < 193; i = i + 1)
+			{
+				$(".current .num").text(i);
+				var nextlink  = $(".current").next();
+				$(".current").removeClass("current");
+				nextlink.addClass("current");
+			}
 
 			for(var i = 0; i < 192; i = i + 1)
 			{
@@ -4823,70 +4966,6 @@ playerArray[110] = new Array(17);
 			$("footer").css("display", "block");
 	
 			return false;
-		}); //submit button
-	
-	
-	var mainbody = $(".holder");
-	var ycoord = 0;
-	$("#playerGrid").hover(function(){
-
-
-		//USE THIS
-		//click on an A tag
-
-		$("#playerGrid a").click(function(){
-		var classList = $(this).attr('class').split(/\s+/);
-
-		
-	
-			var playername = classList[1];
-			var ppgaeplayername = ".Ppage" + "." + playername;
-
-		if(mainbody.is(":visible")){
-				if($(this).hasClass(playername)){
-
-				ycoord = $(this).offset().top;
-				$(ppgaeplayername).css("display","block");
-				$(ppgaeplayername).addClass("alive");
-				$(".containme").css("z-index", "1000");
-				mainbody.slideUp(1300, function(){
-					$(".instructions").hide();
-					$("#playerGrid").hide();
-					$("#inputs").hide();
-					$(".containme").css("position","relative");
-					window.scrollTo(0, 0);
-
-
-				});
 			}
-					
-
-			}
-			return false;
-
-
-
-		})																	
-		$(".buttonClose").click(function(){
-
-			$("#playerGrid").css("display","block");
-			$("#inputs").css("display","block");
-			$(".containme").css("position","fixed");
-			$(".instructions").show();
-			mainbody.slideDown(1000,function(){
-			$(".containme").css("z-index","0");
-			$(".Ppage.alive").css("display","none");
-			$(".alive").removeClass("alive");
-			});
-
-			$(".holder").css("display","block");
-			window.scrollTo(50, ycoord);
-
-			return false;
-
-		});
-
-
-	});//hover
 
 });//doc ready

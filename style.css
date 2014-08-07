@@ -97,7 +97,7 @@ input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 
 #inputs{
-	background-color: #cb9ae0;
+	background-color: #FFF;
 }
 
 .navbar{
@@ -367,9 +367,36 @@ td{
 
 
 
+.possort{
+	height: 0px;
+	background-color: #777;
+	display: none;
 
+}
+
+.possort a{
+	padding: 1em 0;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background-color: #777;
+	font-size: 20px;
+	height: 30px;
+}
 .clear{
 	clear: both;
+}
+.possort a:hover{
+	opacity: 0.5;
+}
+
+.possort .theone{
+	opacity: 0.6;
+}
+
+.possort .DST{
+	border-right: none;
 }
 #playerGrid a{
 	padding:1em 0;
