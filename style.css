@@ -12,6 +12,10 @@ ul{
 	margin: 0;
 	text-align: center;
 	list-style: none;
+		width: 100%;
+	background-color: #444;
+	padding: 2%;
+	max-width: 96%;
 }
 nav li{
 	float: left;
@@ -39,16 +43,10 @@ nav{
 		margin-left: 22%;
 		width: 98%;
 		max-width: 96%;
-
-
 }
 
 header{
-	width: 100%;
-	background-color: #444;
-	position: absolute;
-	padding: 2%;
-	max-width: 96%;
+
 }
 
 .first{
