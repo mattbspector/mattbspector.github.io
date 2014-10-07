@@ -20,7 +20,7 @@ nav li{
 	background-color: #444;
 	text-align: center;
 	margin: 0;
-	font-size: 40px;
+	font-size: 20px;
 	font-weight: 900;
 	list-style: none;
 
@@ -35,7 +35,8 @@ nav a:hover{
 }
 nav{
 		margin-left: 22%;
-		width: 100%;
+		width: 98%;
+		max-width: 96%;
 
 
 }
@@ -57,10 +58,10 @@ header{
 	background-repeat: no-repeat;
 	background-color: blue;
 	height: 550px;
-	-o-background-size:100% 800px;
-	-webkit-background-size:100% 800px;
-	-moz-background-size:100% 800px;
-	background-size:100% 800px;
+	-o-background-size:100% 700px;
+	-webkit-background-size:100% 700px;
+	-moz-background-size:100% 700px;
+	background-size:100% 700px;
 	text-align: center;
 }
 
@@ -68,7 +69,7 @@ header{
 	margin: 0;
 	padding: 0;
 	color: #FFF;
-	font-size: 6em;
+	font-size: 3em;
 	font-weight: 900;
 
 }
