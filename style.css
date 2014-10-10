@@ -3,6 +3,7 @@ body{
 	font-family: 'Lato';
 	margin: 0;
 	font-size: 1em;
+	background-color: #0D1225;
 
 }
 nav{
@@ -60,14 +61,14 @@ nav a:hover{
 	background-repeat: no-repeat;
 	background-color: blue;
 	height: 550px;
-	-o-background-size:100% 700px;
-	-webkit-background-size:100% 700px;
-	-moz-background-size:100% 700px;
-	background-size:100% 700px;
+	-o-background-size:100% 600px;
+	-webkit-background-size:100% 600px;
+	-moz-background-size:100% 600px;
+	background-size:100% 600px;
 	text-align: center;
 }
 
-.bighouse p{
+.bighouse h1, .bighouse p{
 	margin: 0;
 	padding: 0;
 	color: #FFF;
@@ -76,5 +77,37 @@ nav a:hover{
 
 }
 .mainbody{
-	margin-top: 12%;
+	margin-top: 30%;
+	text-align: center;
+	color: #FFF;
+
+}
+
+.content{
+	margin: 5%;
+}
+
+.content a{
+	color:#fbf55d;
+	text-decoration: none;
+
+}
+
+.content img{
+	max-width: 150px;
+	max-height: 150px;
+	margin: 5%;
+}
+
+.content a:hover{
+	color:#FFF;
+	text-decoration: none;
+
+}
+
+footer{
+	background-color: #fbf55d;
+	height: 100%;
+	font-size: 1em;
+	color:#0D1225;
 }
