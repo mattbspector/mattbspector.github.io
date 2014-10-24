@@ -47,7 +47,7 @@ nav a{
 }
 
 nav a:hover{
-	color:#111;
+	color:#FFF;
 }
 
 
@@ -110,4 +110,129 @@ footer{
 	height: 100%;
 	font-size: 1em;
 	color:#0D1225;
+	text-align: center;
+}
+
+
+.active{
+	color: #FFF;
+}
+
+
+/*Ipad*/
+@media only screen and (min-width: 500px) {
+
+	header{
+	width: 100%;
+	background-color:  #fbf55d;
+	position: absolute;
+	padding: 2%;
+	max-width: 96%;
+	text-align: center;
+	}
+	ul{
+	margin: 0;
+	text-align: center;
+	list-style: none;
+	}
+	nav li{
+	float: left;
+	width: 43%;
+	padding: 1%;
+	background-color: #fbf55d;
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 900;
+	list-style: none;
+	height:40px;
+
+	}
+	nav a{
+	text-decoration: none;
+	color:#0D1225 ;
+	font-size: 3em;
+	}
+
+
+	.mainbody{
+	margin-top: 20%;
+	text-align: center;
+	color: #FFF;
+
+	}
+	footer{
+	background-color: #fbf55d;
+	height: 100%;
+	font-size: 2em;
+	color:#0D1225;
+	text-align: center;
+	}
+
+
+
+}
+
+/*Destop*/
+@media only screen and (min-width: 700px) {
+
+	header{
+	width: 100%;
+	background-color:  #fbf55d;
+	position: absolute;
+	padding: 0% 2% 0%;
+	max-width: 96%;
+	text-align: center;
+	}
+	ul{
+	margin: 0;
+	text-align: center;
+	list-style: none;
+	width: 100%;
+	}
+	nav li{
+	float: left;
+	width: 45%;
+	padding: 1%;
+	background-color: #fbf55d;
+	text-align: center;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 900;
+	list-style: none;
+	height:40px;
+
+	}
+	nav a{
+	text-decoration: none;
+	color:#0D1225 ;
+	font-size: 3em;
+	}
+
+
+	.mainbody{
+	margin-top: 10%;
+	text-align: center;
+	color: #FFF;
+	max-width: 750px;
+	margin: 10% auto 0;
+
+	}
+
+	.content{
+	margin: 5%;
+	margin-top: 2%;
+	}
+
+	footer{
+	background-color: #fbf55d;
+	height: 100%;
+	font-size: 2.8em;
+	color:#0D1225;
+	text-align: center;
+	}
+
+
+
+
 }
