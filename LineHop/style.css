@@ -2,27 +2,59 @@
 body{
 	padding: 0;
 	margin: 0;
+	font-family: 'Lato';
+	height: 100%;
+	width: 100%;
 }
 header{
+	position: fixed;
 	width: 100%;
 }
 nav{
 	width: 100%;
 	background-color: red;
-	float: left;
-	padding: 20px 0;
-	position: fixed;
 	top: 0;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	padding-left: 50px;
 }
 nav div{
-	float: left;
 	background-color: red;
-	padding: 0 20px;
+	padding: 20px 20px;
+	display: inline-block;
+	text-align: center;
+	margin: 0
+	vertical-align: middle;
+	height: 100%;
+
+}
+nav div:hover{
+	text-decoration: underline;
+}
+
+.Logo:hover{
+	background-color: red;
 }
 nav div a{
 	text-decoration: none;
 	color: white;
+	vertical-align: middle;
 }
+nav .WhereWeAre{
+	margin-left: 3em;
+}
+nav .LogIn{
+	float: right;
+	margin-right: 100px;
+	margin-top: 18px;
+}
+nav .Logo img{
+	vertical-align: middle;
+
+}
+
+
 
 /*BODY*/
 #MainBody{
