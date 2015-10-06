@@ -83,10 +83,16 @@ nav .Logo img{
 	height: 400px;
 }
 #PressMain{
-	background-color: #e74c3c;
+	background-color: #990000;
 	height: 150px;
 }
 #ContactMain{
 	background-color: #bdc3c7;
 	height: 200px;
+}
+@media only screen and (max-width: 930px)  {
+	.WhereWeAre{
+		margin-left: 0 !important;
+	}
+
 }

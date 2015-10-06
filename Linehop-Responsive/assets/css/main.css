@@ -2831,7 +2831,7 @@
 
 	#logo {
 		position: absolute;
-		left: 1em;
+		left: 2.4em;
 		top: 0;
 		height: 3em;
 		line-height: 3em;
@@ -3309,6 +3309,9 @@
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+		.imgtxt{
+			margin: 0 !important;
+		}
 
 		/* Basic */
 
@@ -3408,6 +3411,10 @@
 				}
 
 			#nav {
+				display: none;
+
+			}
+			.logoIMG{
 				display: none;
 			}
 
