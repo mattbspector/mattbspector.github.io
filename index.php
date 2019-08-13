@@ -14,7 +14,6 @@
 </head>
 <body style="text-align: center;">
 
-	<iframe src="https://giphy.com/embed/S5JSwmQYHOGMo" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/please-construction-patient-S5JSwmQYHOGMo">via GIPHY</a></p>
-
+	<img src="http://gph.is/1LJC0bH" width="80%" />
 </body>
 </html>
