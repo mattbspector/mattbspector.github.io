@@ -12,9 +12,9 @@
 <title>Matthew Spector</title>
 
 </head>
-<body>
+<body style="text-align: center;">
 
-	<img src="https://mattbspector.github.io/lambda" />
+	<iframe src="https://giphy.com/embed/S5JSwmQYHOGMo" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/please-construction-patient-S5JSwmQYHOGMo">via GIPHY</a></p>
 
 </body>
 </html>
